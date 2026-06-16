@@ -8,8 +8,10 @@
 
 site_name: AI Governance Watch
 site_description: >-
-  A PR-gated, continuously-watched reference library of the AI governance
-  standards an external AI risk auditor must keep current.
+  A continuously-watched reference library of the AI governance standards
+  (NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, CSA Agentic Profile,
+  Berkeley CLTC) — built and maintained by Siegfried Bolz, AI risk auditor and
+  Adobe Experience Manager (AEM) architect.
 site_author: Siegfried Bolz
 # Update site_url to the real Pages URL once deployed (user/repo Pages or custom domain).
 site_url: https://siegfriedbolz.github.io/ai-governance-watch/
@@ -31,6 +33,7 @@ exclude_docs: |
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   features:
     - navigation.instant
@@ -42,25 +45,33 @@ theme:
     - content.code.copy
     - content.action.view
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
+    # Dark "liquid-glass" look is the brand default (matches siegfried-bolz.de).
+    - scheme: slate
+      primary: black
+      accent: cyan
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
+    - scheme: default
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  font:
+    text: Inter
+    code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
 
 plugins:
   - search
+
+extra_css:
+  - assets/brand.css
+
+extra_javascript:
+  - assets/external-links.js
 
 markdown_extensions:
   - admonition
@@ -71,6 +82,8 @@ markdown_extensions:
       permalink: true
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 nav:
   - Home: index.md
@@ -88,7 +101,19 @@ nav:
       - NIST ITL Standards Landscape: reference_nist_itl_landscape.md
   - Changelog: changelog.md
 
+copyright: >-
+  © 2026 Siegfried Bolz — content licensed
+  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+  Built by <a href="https://www.siegfried-bolz.de" target="_blank" rel="noopener">siegfried-bolz.de</a>.
+
 extra:
   social:
+    - icon: fontawesome/solid/globe
+      link: https://www.siegfried-bolz.de
+      name: siegfried-bolz.de — services & contact
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/sbolz/
+      name: Siegfried Bolz on LinkedIn
     - icon: fontawesome/brands/github
       link: https://github.com/siegfriedbolz/ai-governance-watch
+      name: ai-governance-watch on GitHub

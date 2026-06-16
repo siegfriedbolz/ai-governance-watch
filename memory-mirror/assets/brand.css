@@ -1,0 +1,59 @@
+/* AI Governance Watch — brand styling to echo siegfried-bolz.de
+   (dark "liquid-glass" look: cool cyan / violet / teal accents on deep navy). */
+
+/* ---- Dark (default) scheme tuned to the website palette ---- */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color:        #04060e;
+  --md-default-bg-color--light: #080b1c;
+  --md-default-fg-color:        #eef2ff;
+  --md-default-fg-color--light: #aab3d4;
+  --md-default-fg-color--lighter: #7c86ad;
+  --md-primary-fg-color:  #080b1c;
+  --md-primary-bg-color:  #eef2ff;
+  --md-accent-fg-color:   #6ee7ff;
+  --md-typeset-a-color:   #6ee7ff;
+}
+
+/* deep radial background like the site (kept subtle, fixed on scroll) */
+[data-md-color-scheme="slate"] body {
+  background:
+    radial-gradient(1100px 620px at 50% -22%, #0a2433 0, transparent 46%),
+    radial-gradient(820px 820px at 50% 128%, #08283a 0, transparent 46%),
+    linear-gradient(180deg, #020308, #04060e 42%, #080b1c);
+  background-attachment: fixed;
+}
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs { background-color: #080b1c; }
+
+/* brand accent under the page title */
+.md-typeset h1 {
+  padding-bottom: .2em;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(90deg, #6ee7ff, #a78bfa 55%, #34d399) 1;
+}
+
+/* ---- home: portrait + certificate cards ---- */
+.sb-portrait {
+  float: right;
+  width: 150px; height: 150px;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 1px solid rgba(190, 235, 255, .45);
+  box-shadow: 0 14px 40px -12px #000,
+              inset 0 0 0 1px rgba(255, 255, 255, .4),
+              0 0 16px -3px rgba(110, 231, 255, .25);
+}
+@media (max-width: 480px) { .sb-portrait { float: none; display: block; margin: 0 auto 1rem; } }
+
+.sb-certs { display: flex; flex-wrap: wrap; gap: 18px; margin: .8rem 0 1.2rem; }
+.sb-certs figure { margin: 0; max-width: 270px; }
+.sb-certs img {
+  width: 100%; height: auto; border-radius: 12px;
+  border: 1px solid rgba(190, 235, 255, .35);
+  box-shadow: 0 10px 30px -12px #000;
+}
+.sb-certs figcaption {
+  font-size: .78rem; line-height: 1.4; margin-top: .4rem;
+  color: var(--md-default-fg-color--light);
+}

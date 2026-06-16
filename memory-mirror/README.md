@@ -33,10 +33,28 @@ Frontmatter:
 Body:
 
 - `## Summary` — 3–5 extractive sentences anchored to specific sections
-- `## Key Sections` — short bullets per major heading
+- `## In plain language` — our own-words explainer (not the normative text)
+- `## Key terms` — a short glossary in our own words
+- `## In depth` *(optional, public-domain / open-attribution sources only)* —
+  verbatim `!!! quote "Source text …"` blocks paired with "In our words" explanations
+- `## Key Sections` — the standard's function/clause structure
 - `## Audit-Relevant Anchors` — clauses an auditor would cite directly
+- `## Auditor Checklist` — concrete, evidence-oriented checks
+- `## Cross-Framework Mapping` — indicative cross-references to other standards
 - `## Recent Changes (rolling, last 5)` — severity-tagged delta log
-- `## Cross-references` — memory files that consume this reference
+- `## Sources` — public web sources only (no private/eBook provenance)
 
-Full template lives at `memory-mirror/reference_template.md` (added in
-Phase 2).
+Scope & licence note: these pages track **metadata, structure, and short
+quoted anchors** — never the full text of a standard (fair use; ISO text is
+paywalled). How much may be reproduced depends on each source's licence,
+recorded as `license` + `reproduction` in `sources/literature-watch.yaml` and
+shown in each page's "Provenance & licence" box:
+
+- `public-domain` (NIST) — quote freely, cite as courtesy.
+- `open-attribution` (EU/EUR-Lex, UK OGL) — reproduce with source acknowledgement.
+- `share-alike-noncommercial` (CSA, CC BY-NC-SA) — reuse non-commercially, attribute, share alike.
+- `facts-and-quotation` (Berkeley CLTC) — paraphrase facts/ideas, short attributed quotes only.
+- `proprietary-metadata-only` (ISO/IEC) — metadata + our own-words explanation only; no normative wording.
+
+Full template lives at
+`skills/ai-governance-watch/templates/reference.template.md` (Phase 2).

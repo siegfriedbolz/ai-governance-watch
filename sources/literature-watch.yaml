@@ -21,6 +21,8 @@ sources:
     domain: "NIST AI RMF"
     title: "NIST AI Risk Management Framework (AI 100-1) incl. GenAI Profile (AI 600-1) and the AI RMF Playbook"
     reference_file: reference_nist_ai_rmf.md
+    license: "U.S. Government work — public domain (NIST)"
+    reproduction: public-domain
     cadence: weekly
     enabled: true
     state: pilot
@@ -39,6 +41,8 @@ sources:
     domain: "EU AI Act"
     title: "Regulation (EU) 2024/1689 (Artificial Intelligence Act) and its implementing/amending acts"
     reference_file: reference_eu_ai_act.md
+    license: "© European Union, EUR-Lex — reuse under Decision 2011/833/EU (attribution)"
+    reproduction: open-attribution
     cadence: weekly
     enabled: true
     state: planned
@@ -54,6 +58,8 @@ sources:
     domain: "ISO/IEC 42001 (AIMS)"
     title: "ISO/IEC 42001:2023 — Artificial Intelligence Management System, plus the surrounding 42000-series"
     reference_file: reference_iso_42001.md
+    license: "ISO/IEC copyright — proprietary, paywalled"
+    reproduction: proprietary-metadata-only
     cadence: monthly
     enabled: true
     state: planned
@@ -66,6 +72,8 @@ sources:
     domain: "CSA / Agentic AI"
     title: "CSA NIST AI RMF: Agentic Profile (Cloud Security Alliance Lab Space)"
     reference_file: reference_csa_agentic_profile.md
+    license: "CC BY-NC-SA 4.0 (Cloud Security Alliance)"
+    reproduction: share-alike-noncommercial
     cadence: weekly
     enabled: true
     state: planned
@@ -78,6 +86,8 @@ sources:
     domain: "Cyber Thresholds"
     title: "UC Berkeley CLTC — AI risk thresholds (incl. AI-enabled cyber threats, Bayesian threshold work)"
     reference_file: reference_berkeley_cltc.md
+    license: "© UC Regents (CLTC) — no explicit open license"
+    reproduction: facts-and-quotation
     cadence: monthly
     enabled: true
     state: planned
@@ -90,6 +100,8 @@ sources:
     domain: "ISO AI Risk Mgmt"
     title: "ISO/IEC 23894:2023 — Guidance on AI risk management (companion to ISO 31000)"
     reference_file: reference_iso_23894.md
+    license: "ISO/IEC copyright — proprietary, paywalled"
+    reproduction: proprietary-metadata-only
     cadence: monthly
     enabled: true
     state: planned
@@ -102,6 +114,8 @@ sources:
     domain: "Standards inventory"
     title: "NIST ITL AI Program — International AI Standards Landscape"
     reference_file: reference_nist_itl_landscape.md
+    license: "U.S. Government work — public domain (NIST)"
+    reproduction: public-domain
     cadence: monthly
     enabled: true
     state: planned
@@ -114,6 +128,8 @@ sources:
     domain: "UK jurisdiction"
     title: "UK AI Regulation — A pro-innovation approach (White Paper, CP 815) and successors"
     reference_file: reference_uk_ai_white_paper.md
+    license: "© Crown copyright — Open Government Licence v3.0 (attribution)"
+    reproduction: open-attribution
     cadence: quarterly
     enabled: true
     state: planned
@@ -126,6 +142,8 @@ sources:
     domain: "Operational resilience"
     title: "DORA — Digital Operational Resilience Act (Regulation (EU) 2022/2554)"
     reference_file: reference_dora.md
+    license: "© European Union, EUR-Lex — reuse under Decision 2011/833/EU (attribution)"
+    reproduction: open-attribution
     cadence: quarterly
     enabled: true
     state: planned

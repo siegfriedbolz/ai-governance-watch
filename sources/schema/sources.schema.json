@@ -70,7 +70,7 @@
     "source": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "domain", "title", "reference_file", "cadence", "enabled", "targets"],
+      "required": ["id", "domain", "title", "reference_file", "cadence", "enabled", "license", "reproduction", "targets"],
       "properties": {
         "id": {
           "type": "string",
@@ -99,6 +99,15 @@
           "type": "string",
           "enum": ["planned", "pilot", "live"],
           "description": "Rollout state, mirrors the README source-coverage table."
+        },
+        "license": {
+          "type": "string",
+          "description": "Human-readable license/reuse status of the source content (e.g. 'U.S. Government work — public domain', 'CC BY-NC-SA 4.0', 'ISO copyright — proprietary')."
+        },
+        "reproduction": {
+          "type": "string",
+          "enum": ["public-domain", "open-attribution", "share-alike-noncommercial", "facts-and-quotation", "proprietary-metadata-only"],
+          "description": "Reproduction policy tier the library applies to this source. Governs how much of the source may be reproduced on a public page (vs. paraphrased in our own words)."
         },
         "targets": {
           "type": "array",

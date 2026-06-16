@@ -14,11 +14,12 @@ provenance_chain:
 
 # EU AI Act (Regulation (EU) 2024/1689)
 
-!!! info "Provenance"
+!!! info "Provenance & licence"
     **Source:** [EUR-Lex ELI permalink](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng) ·
     **Last observed:** `2026-06-16` ·
     **Version:** Base regulation in force 2024-08-01; **Digital Omnibus** provisional agreement 2026-05-07 ·
-    **Status:** planned
+    **Status:** planned ·
+    **Licence:** © European Union (EUR-Lex), Decision 2011/833/EU (`open-attribution`)
 
 !!! warning "Moving target — Digital Omnibus (2026)"
     On **7 May 2026** Council and Parliament reached a provisional agreement on
@@ -40,6 +41,56 @@ and applies in phases. As of mid-2026, prohibitions and GPAI model rules are
 already in force; the high-risk regime is being deferred by the Digital
 Omnibus (see warning above).
 
+## In plain language
+
+!!! note "Our explanation, not the official text"
+    Plain-language summary in our own words — not the normative text. Follow the
+    source for the authoritative wording. This is general information, not legal advice.
+
+The EU AI Act is a binding law that sorts AI systems by how risky they are and
+attaches duties to each level: some uses are banned, "high-risk" uses carry heavy
+obligations, and general-purpose models have their own rules. In short — the
+riskier the use, the more you must document, test, and supervise it. A 2026
+"Digital Omnibus" pushed several high-risk deadlines to 2027/2028, so *when* a
+duty applies is itself a moving target.
+
+## Key terms
+
+- **High-risk system** — an AI use listed in Annex III (or a safety component of a regulated product) that triggers the heaviest duties.
+- **GPAI** — a general-purpose AI model, with its own transparency and copyright duties.
+- **Conformity assessment** — the check (self- or third-party) that a high-risk system meets the rules before market.
+- **FRIA** — a fundamental-rights impact assessment some deployers must perform.
+
+## In depth: what counts as an "AI system"
+
+> **Reading guide:** the boxed **“Source text”** is the Act's own wording
+> (verbatim; EU law is reusable under EUR-Lex Decision 2011/833/EU with source
+> acknowledgement). Text marked **“In our words”** is our explanation.
+
+!!! quote "Source text — EU AI Act, Art. 3(1) (© European Union, EUR-Lex)"
+    ‘AI system’ means a machine-based system that is designed to operate with
+    varying levels of autonomy and that may exhibit adaptiveness after deployment,
+    and that, for explicit or implicit objectives, infers, from the input it
+    receives, how to generate outputs such as predictions, content,
+    recommendations, or decisions that can influence physical or virtual
+    environments.
+
+**In our words —** this single sentence decides whether the whole Act applies to
+you. The load-bearing phrases are *“machine-based”*, *“varying levels of
+autonomy”*, *“may exhibit adaptiveness”* and especially *“infers … how to
+generate outputs”*. A fixed, deterministic script usually falls **outside**; a
+model that *infers* its outputs falls **inside**. Once you are in scope, the
+risk **tier** — prohibited · high-risk · limited (transparency) · minimal —
+decides how heavy your duties are.
+
+!!! success "From my training — University of Oxford · *Managing Enterprise AI Risks* (2026)"
+    For high-risk systems the audit pivot I practise is **evidence over intent**:
+    risk classification, **Model Cards**, an **AI-SBOM**, a **living risk
+    register** and **Human-in-the-Loop (HITL)** controls mapped to Art. 9 / 14 / 15
+    — and I treat the EU AI Act, NIST AI RMF and ISO/IEC 42001 as *one* control
+    set, not three.
+    [Verify certificate ↗](https://certificates.conted.ox.ac.uk/5d483a65-dba2-47a2-92b0-8acfe0dcfd3a)
+
 ## Key Sections
 
 - **Art. 5 — Prohibited practices** — manipulative, exploitative, social-scoring, untargeted scraping, and (per the Omnibus) CSAM/NCII generation.
@@ -56,6 +107,33 @@ Omnibus (see warning above).
 - **Art. 27 (FRIA)** — directly relevant to the external-auditor engagement model.
 - **Art. 43 + Annex VI/VII** — which conformity route applies, and the evidence each requires.
 - **Implementation timeline** — which obligations are actually in force at engagement date (now itself a moving anchor due to the Omnibus).
+
+## Auditor Checklist
+
+Evidence-oriented checks for a high-risk AI engagement under the Act:
+
+- [ ] The system is correctly classified (prohibited / high-risk per Art. 6 + Annex III / limited / minimal).
+- [ ] A risk-management system is documented and maintained (Art. 9).
+- [ ] Data governance — training/validation/test data quality and bias — is examined (Art. 10).
+- [ ] Technical documentation per Annex IV is present and current (Art. 11).
+- [ ] Logging/record-keeping (Art. 12) and human oversight (Art. 14) are implemented.
+- [ ] Accuracy, robustness, and cybersecurity are evidenced (Art. 15).
+- [ ] A FRIA is performed where required (Art. 27).
+- [ ] The conformity-assessment route is chosen and evidenced; CE marking / registration done (Art. 43).
+- [ ] For GPAI: model documentation, copyright policy, training-data summary (Art. 53+).
+- [ ] Which obligations are actually in force at the engagement date (Digital Omnibus timeline).
+
+## Cross-Framework Mapping
+
+Indicative cross-references, **not** authoritative equivalences.
+
+| EU AI Act | NIST AI RMF | ISO/IEC 42001 |
+| --------- | ----------- | ------------- |
+| Art. 9 (risk management) | MAP + MANAGE | Cl. 6.1 + Cl. 8 |
+| Art. 10 (data governance) | MAP 2 / MEASURE | Annex A (data controls) |
+| Art. 14 (human oversight) | MANAGE | Annex A (oversight controls) |
+| Art. 15 (accuracy/robustness/cyber) | MEASURE 2 | Cl. 8 + Annex A |
+| Art. 17 (quality management system) | GOVERN | Cl. 4–10 (whole AIMS) |
 
 ## Recent Changes (rolling, last 5)
 

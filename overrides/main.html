@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+<!--
+  Theme override (not published content). Adds SEO / social-share meta tags so
+  the library — and its author, Siegfried Bolz — are discoverable. MkDocs
+  Material already emits <title>, description and the canonical link; this block
+  adds author, keywords, OpenGraph and Twitter Card metadata.
+-->
+
+{% block extrahead %}
+  {%- set page_title = config.site_name -%}
+  {%- if page and page.title and not page.is_homepage -%}
+    {%- set page_title = page.title ~ " — " ~ config.site_name -%}
+  {%- endif -%}
+  {%- set page_desc = page.meta.description if page and page.meta and page.meta.description else config.site_description -%}
+  {%- set page_keywords = page.meta.keywords if page and page.meta and page.meta.keywords else "AI governance, AI risk auditor, AI compliance, EU AI Act, NIST AI RMF, ISO/IEC 42001, ISO/IEC 23894, DORA, CSA Agentic Profile, AI governance consultant, AEM architect, Siegfried Bolz" -%}
+
+  <meta name="author" content="Siegfried Bolz">
+  <meta name="keywords" content="{{ page_keywords }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_desc | striptags | trim }}">
+  {%- if page and page.canonical_url %}
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  {%- endif %}
+  {%- set og_image = config.site_url ~ "assets/og-image.png" if config.site_url else "assets/og-image.png" %}
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AI Governance Watch — by Siegfried-Thor Bolz">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_desc | striptags | trim }}">
+  <meta name="twitter:image" content="{{ og_image }}">
+
+  <link rel="me" href="https://www.siegfried-bolz.de">
+  <link rel="me" href="https://www.linkedin.com/in/sbolz/">
+{% endblock %}

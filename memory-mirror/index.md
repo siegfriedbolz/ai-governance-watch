@@ -1,6 +1,7 @@
 ---
 title: AI Governance Watch
-description: A PR-gated, continuously-watched reference library of the AI governance standards an external AI risk auditor must keep current.
+description: "A continuously-watched reference library of AI governance standards — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, CSA Agentic Profile, Berkeley CLTC — by Siegfried-Thor Bolz, Enterprise AEMaaCS architect & AI risk auditor near Munich, Germany."
+keywords: "AI Risk Auditor, AI Governance, AI Compliance, CMS AI Audit, AI audit for enterprise CMS, EU AI Act, NIST AI RMF, ISO/IEC 42001, ISO/IEC 27001, ISO/IEC 23894, DORA, OWASP LLM & Agentic Top 10, MITRE ATLAS, CSA Agentic Profile, Berkeley CLTC, Adobe Experience Manager, AEMaaCS, AEM Exit, Headless CMS, RAG, Vertex AI, Cybersecurity, Siegfried-Thor Bolz"
 hide:
   - navigation
 ---
@@ -9,9 +10,17 @@ hide:
 
 A continuously-watched, **PR-gated reference library** of the AI governance
 standards an external AI risk auditor has to keep current. Each standard has
-its own page with a short, audit-oriented summary, the clauses you would cite,
-and a rolling log of what changed. Every page traces back to a verifiable
-observation of a public source at a documented point in time.
+its own page with a short, audit-oriented summary, a plain-language explainer,
+the clauses you would cite, and a rolling log of what changed. Every page traces
+back to a verifiable observation of a public source at a documented point in time.
+
+> Built and maintained by **[Siegfried-Thor Bolz](https://www.siegfried-bolz.de)** —
+> Enterprise **Adobe Experience Manager (AEM / AEMaaCS) architect & developer** and
+> **AI risk auditor**, near Munich, Germany. *"Most compliance auditors don't read
+> code. I do."*
+> [Website](https://www.siegfried-bolz.de) ·
+> [LinkedIn](https://www.linkedin.com/in/sbolz/) ·
+> [GitHub](https://github.com/siegfriedbolz/ai-governance-watch)
 
 !!! tip "How to use this library"
     Use the **search** (top of the page, or press `/`) to look across every
@@ -110,8 +119,70 @@ on a page without a human reviewing that diff** — the same provenance
 discipline an external auditor must demonstrate to a client. See the
 [changelog](changelog.md) for the running history.
 
-!!! note "Scope of these pages"
-    These pages track **metadata, structure, and short quoted anchors** of each
-    standard — not their full text. The standards keep their publishers'
-    licences; this library only extracts what fair-use quotation allows and
-    links back to every primary source.
+## About the author — work with me
+
+<img src="assets/portrait.png" alt="Portrait of Siegfried-Thor Bolz" class="sb-portrait">
+
+This library is built and maintained by **Siegfried-Thor Bolz** — an Enterprise
+**Adobe Experience Manager (AEM / AEMaaCS) architect & developer** and **AI risk
+auditor** near Munich, Germany, and Managing Director of CQ-Factory GmbH (Adobe
+Solution Partner, Silver). The red thread of my work: *from a rock-solid CMS to a
+governed, secure, end-to-end AI integration.* I can both **build** AI platforms
+and **audit** them against regulation — a rare combination. This watch system is
+a live demonstration of that discipline: it's how I keep a regulatory map current
+against a fast-moving target, with a defensible, provenance-backed trail.
+
+**How I can help:**
+
+- **AI governance, compliance & risk auditing** — assessing AI systems against
+  the EU AI Act, NIST AI RMF, ISO/IEC 42001 & 27001, the OWASP LLM & Agentic
+  Top 10 and MITRE ATLAS; risk classification, model cards, AI-SBOM, a living
+  risk register and control testing along Three Lines of Defence.
+- **Active monitoring** — standing up watch pipelines like this one so your
+  compliance map never silently drifts out of date.
+- **Secure, cloud-ready AEM & AI engineering** — AEM / AEMaaCS architecture,
+  migrations and the *AEM Exit* to headless, plus RAG / agentic AI on Google
+  Cloud — with web-application security and clean code at the core.
+
+### Credentials
+
+<div class="sb-certs" markdown>
+<figure markdown>
+![University of Oxford — Managing Enterprise AI Risks certificate](assets/cert-oxford.png)
+<figcaption><strong>University of Oxford</strong> — “Managing Enterprise AI Risks” (2026).
+<a href="https://certificates.conted.ox.ac.uk/5d483a65-dba2-47a2-92b0-8acfe0dcfd3a" target="_blank" rel="noopener">Verify ↗</a></figcaption>
+</figure>
+<figure markdown>
+![Packt — Generative AI and Agentic AI for Finance certificate, final score 100%](assets/cert-genai-finance.png)
+<figcaption><strong>Packt</strong> — “Generative AI &amp; Agentic AI for Finance”, Cohort 2 — final score <strong>100%</strong> (2026).</figcaption>
+</figure>
+</div>
+
+Plus **Adobe Solution Partner — Silver** (via CQ-Factory GmbH), and framework
+mastery across NIST AI RMF, the EU AI Act and ISO/IEC 27001 & 42001.
+
+**Let's talk:** [siegfried-bolz.de](https://www.siegfried-bolz.de) ·
+[LinkedIn](https://www.linkedin.com/in/sbolz/) ·
+[info@siegfried-bolz.de](mailto:info@siegfried-bolz.de) ·
+[GitHub](https://github.com/siegfriedbolz/ai-governance-watch)
+
+## Acknowledgement
+
+This project is the operational realisation of **Phase 5 — Active Monitoring**
+from **[Ajit Jaokar's](https://www.linkedin.com/in/ajitjaokar/)** concept of an *"Enterprise (collective) Second Brain using
+Claude Skills"*: the idea that a plain-Markdown knowledge base becomes an
+*executable* second brain when skills **reason over** what you know rather than
+merely store it. Ajit (University of Oxford) was my tutor on the *Managing
+Enterprise AI Risks* programme, and his framing is the intellectual backbone of
+this watch system. Read the original:
+[*The Enterprise (collective) Second Brain using Claude Skills*](https://www.linkedin.com/pulse/enterprise-collective-second-brain-using-claude-skills-ajit-jaokar-ykode/)
+— Ajit Jaokar, LinkedIn (May 2026).
+
+!!! note "Scope, licence & disclaimer"
+    Each page has an **"In plain language"** explainer written in our own words —
+    these are explanations, **not** the official or normative text, and **not
+    legal advice**. We track **metadata, structure, and short quoted anchors**,
+    never the full text. How much may be reproduced follows each source's
+    licence, shown in every page's "Provenance & licence" box (e.g. NIST =
+    public domain; EU/UK = reuse with attribution; CSA = CC BY-NC-SA; ISO =
+    metadata only). Every page links back to its primary source.

@@ -14,11 +14,12 @@ provenance_chain:
 
 # DORA — Digital Operational Resilience Act (Reg. (EU) 2022/2554)
 
-!!! info "Provenance"
+!!! info "Provenance & licence"
     **Source:** [EUR-Lex ELI permalink](https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng) ·
     **Last observed:** `2026-06-16` ·
     **Version:** Reg. (EU) 2022/2554 — **applies since 2025-01-17** ·
-    **Status:** planned
+    **Status:** planned ·
+    **Licence:** © European Union (EUR-Lex), Decision 2011/833/EU (`open-attribution`)
 
 ## Summary
 
@@ -31,6 +32,53 @@ institutions, fund managers, and more) and — importantly — extends to their
 *critical*. For an AI risk auditor it is the operational-resilience anchor for
 AI vendor concentration, model-provider outages, and third-party ICT
 dependency scenarios in regulated finance.
+
+## In plain language
+
+!!! note "Our explanation, not the official text"
+    Plain-language summary in our own words. EU legal text is reusable with
+    attribution (EUR-Lex, Decision 2011/833/EU). Not legal advice.
+
+DORA is an EU law that makes the financial sector resilient to IT failures and
+cyber-attacks — including failures at their tech and AI suppliers. In plain
+terms: banks and insurers must manage ICT risk, report incidents, test their
+resilience, and keep tight control over critical third-party providers. It's the
+operational-resilience angle on AI: what happens when your model provider goes
+down or is breached.
+
+## Key terms
+
+- **ICT third-party risk** — risk from outside tech / AI / cloud providers a financial firm depends on.
+- **TLPT** — threat-led penetration testing required of significant entities.
+- **Critical ICT third-party provider** — a major provider placed under direct EU oversight.
+
+## In depth: what DORA is actually for
+
+> **Reading guide:** the boxed **“Source text”** is DORA's own wording
+> (verbatim; EU law, reusable under EUR-Lex Decision 2011/833/EU with source
+> acknowledgement). Text marked **“In our words”** is our explanation.
+
+!!! quote "Source text — DORA, Art. 1(1) (© European Union, EUR-Lex)"
+    In order to achieve a high common level of digital operational resilience,
+    this Regulation lays down uniform requirements concerning the security of
+    network and information systems supporting the business processes of
+    financial entities.
+
+**In our words —** DORA's whole purpose in one line: keep the financial sector
+running through IT failures and cyber-attacks. It delivers this through five
+pillars — ICT risk management, incident reporting, resilience testing (incl.
+threat-led penetration testing), ICT third-party risk with direct oversight of
+*critical* providers, and information-sharing. For AI specifically, the sharp
+end is **third-party risk**: your model or cloud provider is an "ICT third
+party", so its outages and breaches become *your* regulated problem.
+
+!!! success "From my training — Packt · *Generative AI & Agentic AI for Finance* (2026, final score 100%) + Oxford finance-sector module"
+    My finance-sector training frames DORA's ICT third-party regime for AI:
+    LLM / foundation-model providers as **critical ICT third parties**,
+    **concentration risk** across a handful of vendors, and **threat-led
+    penetration testing (TLPT)** extended to **agentic AI** workflows — where AI
+    assurance and operational-resilience auditing meet.
+    [Course ↗](https://www.eventbrite.com/e/generative-ai-and-agentic-ai-for-finance-certification-cohort-2-tickets-1977795824552)
 
 ## Key Sections (five pillars)
 
@@ -45,6 +93,28 @@ dependency scenarios in regulated finance.
 - **Art. 28-30 (third-party risk)** — the register of information and contractual must-haves for ICT/AI vendors.
 - **Art. 24-27 (testing, incl. TLPT)** — resilience testing evidence an auditor inspects.
 - **Critical ICT third-party oversight** — directly relevant where a financial entity depends on a large AI/cloud provider.
+
+## Auditor Checklist
+
+Evidence-oriented checks for a financial-entity (or critical ICT provider) review:
+
+- [ ] An ICT risk-management framework is documented and board-owned (Art. 5–6).
+- [ ] ICT incident classification and reporting processes exist (Art. 17–19).
+- [ ] A resilience-testing programme runs, incl. TLPT for significant entities (Art. 24–27).
+- [ ] A register of information for ICT third parties is maintained (Art. 28).
+- [ ] Contractual must-haves with ICT/AI providers are in place (Art. 30).
+- [ ] Exit strategies and concentration risk for critical providers are assessed.
+- [ ] Reliance on critical ICT third parties (incl. cloud/AI) is within the oversight scope.
+
+## Cross-Framework Mapping
+
+Indicative cross-references, **not** authoritative equivalences.
+
+| DORA | NIST (CSF / AI RMF) | EU AI Act |
+| ---- | ------------------- | --------- |
+| Art. 5–16 (ICT risk management) | CSF Identify/Protect; AI RMF MANAGE | Art. 15 (robustness/cyber) |
+| Art. 17–23 (incident reporting) | CSF Respond | Art. 73 (serious-incident reporting) |
+| Art. 28–44 (ICT third-party) | AI RMF MAP 4 (supply chain) | Art. 25 (value-chain responsibilities) |
 
 ## Recent Changes (rolling, last 5)
 

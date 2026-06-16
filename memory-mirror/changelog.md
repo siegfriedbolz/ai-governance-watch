@@ -15,6 +15,33 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-06-16 — Fact-check pass & corrections
+
+Intensive accuracy review of all nine pages (dates, versions, article/clause
+numbers, verbatim quotes, licences), cross-checked via web sources and an
+independent verifier. Corrections made: **ISO/IEC 42006** is **published
+(42006:2025)**, not a draft; the CLTC **"Intolerable Risk Threshold
+Recommendations"** is **February 2025**, not January 2025; the **CSA Agentic
+Profile** draft date softened to "early 2026" (public page dated April 2026).
+All four verbatim "Source text" quotes (NIST, EU AI Act, DORA, UK) confirmed
+against their primary sources.
+
+## 2026-06-16 — Plain-language explainer + licence layer
+
+Each page gained an **"In plain language"** explainer (our own words, not the
+normative text), a **Key terms** glossary, and a **"Provenance & licence"** box.
+Per-source `license` + `reproduction` tiers were added to the schema and seed
+(public-domain / open-attribution / share-alike-noncommercial / facts-and-quotation
+/ proprietary-metadata-only) so reproduction stays within each provider's licence.
+No change to any underlying standard.
+
+## 2026-06-16 — Library depth enrichment
+
+All nine reference pages gained an **Auditor Checklist** (evidence-oriented
+checks) and a **Cross-Framework Mapping** (indicative cross-references to NIST /
+ISO / EU AI Act / OWASP). No change to any underlying standard — an editorial
+depth pass on the baseline. Future entries here track *standard* changes only.
+
 ## 2026-06-16 — Initial baseline
 
 First baseline snapshot of all five watched standards. Each reference page was

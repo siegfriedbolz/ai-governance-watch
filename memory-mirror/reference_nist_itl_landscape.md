@@ -14,11 +14,12 @@ provenance_chain:
 
 # NIST ITL — International AI Standards Landscape
 
-!!! info "Provenance"
+!!! info "Provenance & licence"
     **Source:** [NIST ITL AI Program](https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program) ·
     **Last observed:** `2026-06-16` ·
     **Version:** latest briefing — ITL AI Standards Landscape webinar (2026-03-06) ·
-    **Status:** planned
+    **Status:** planned ·
+    **Licence:** U.S. Government work — public domain (`public-domain`)
 
 ## Summary
 
@@ -32,6 +33,23 @@ summarised the current state in its **AI Standards Landscape webinar on
 6 March 2026**. Watching this source is how the library notices *new* standards
 worth adding before they are widely known.
 
+## In plain language
+
+!!! note "Our explanation, not the official text"
+    Plain-language summary in our own words. NIST material is U.S. Government work
+    (public domain). Not legal advice.
+
+This isn't a standard — it's NIST's map of *all* the AI standards and where the
+gaps are. We track it as an early-warning radar: when a new standard or
+evaluation method appears, this is usually where it surfaces first, telling us
+what to add to the library next.
+
+## Key terms
+
+- **Standards landscape** — the overall inventory of who is publishing what across AI standards bodies.
+- **ISO/IEC SC 42** — the subcommittee that writes the AI standards (42001, 23894, etc.).
+- **Meta-source** — a source *about* other sources, used here to spot what to watch next.
+
 ## Key Sections
 
 - **ITL's role** — NIST ITL's contribution to and coordination of AI standards.
@@ -44,6 +62,26 @@ worth adding before they are widely known.
 - **Standards inventory** — a defensible, government-maintained map of which standard applies to which AI concern.
 - **Gap signals** — early warning of emerging standards an auditor should start tracking.
 - **Cross-references** — pointers from the landscape into NIST AI RMF, ISO/IEC 42001/23894, and agentic-AI work.
+
+## Auditor Checklist
+
+This is a meta-source; the checks are about keeping the *rest* of the library current:
+
+- [ ] The organisation tracks an authoritative standards inventory, not an ad-hoc list.
+- [ ] The standards it relies on are still current (no superseded editions in use).
+- [ ] Emerging standards (agentic, GenAI evaluation) are on a watch list.
+- [ ] Each material AI-risk concern maps to an applicable standard.
+
+## Cross-Framework Mapping
+
+A landscape "where it points" map (not a control crosswalk):
+
+| Landscape area | Points to |
+| -------------- | --------- |
+| AI management systems | ISO/IEC 42001, ISO/IEC 23894 |
+| Risk framework | NIST AI RMF, GenAI Profile (600-1) |
+| Evaluation / testing | NIST evaluation work, ISO/IEC TR 24029 |
+| Agentic / GenAI security | CSA Agentic Profile, OWASP GenAI/Agentic |
 
 ## Recent Changes (rolling, last 5)
 
