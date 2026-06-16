@@ -1,0 +1,32 @@
+# Normalize line endings on commit (LF in repo, CRLF in working copy on Windows).
+* text=auto eol=lf
+
+# Source files: explicit text + LF.
+*.py     text eol=lf
+*.md     text eol=lf
+*.yaml   text eol=lf
+*.yml    text eol=lf
+*.json   text eol=lf
+*.sh     text eol=lf
+*.toml   text eol=lf
+*.cfg    text eol=lf
+*.ini    text eol=lf
+
+# Markdown line wrapping should not be silently re-flowed by git.
+*.md     diff=markdown
+
+# Raw snapshot archives stay binary so they don't pollute diffs (plan §0.5).
+*.html.gz binary
+*.html    binary
+*.pdf     binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+
+# JSON state files: ensure consistent LF + diff readability.
+*.state.json text eol=lf diff
+
+# Linguist hints — code lives under skills/ and scripts/, content under memory-mirror/.
+memory-mirror/** linguist-documentation
+docs/**          linguist-documentation

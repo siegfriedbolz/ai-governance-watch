@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/siegfriedbolz/ai-governance-watch/sources/schema/sources.schema.json",
+  "title": "ai-governance-watch source list",
+  "description": "Schema for sources/literature-watch.yaml — the single source-of-truth URL list the watch pipeline crawls. Every watched URL must sit on the domain allowlist (Appendix E hardening).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "sources"],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 1,
+      "description": "Schema version. Bump only on a breaking shape change."
+    },
+    "paused": {
+      "type": "boolean",
+      "default": false,
+      "description": "Global maintenance switch. When true the routine runs in dry-run mode and produces logs only, no PRs."
+    },
+    "defaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "user_agent": {
+          "type": "string",
+          "minLength": 10,
+          "description": "User-Agent sent on every fetch. Must identify the project and a contact (Appendix E)."
+        },
+        "cadence": {
+          "$ref": "#/$defs/cadence"
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/source" }
+    }
+  },
+  "$defs": {
+    "cadence": {
+      "type": "string",
+      "enum": ["weekly", "monthly", "quarterly"],
+      "description": "Crawl cadence. The routine batches all due sources into one run."
+    },
+    "adapter": {
+      "type": "string",
+      "enum": ["github_repo", "html_extraction", "eurlex_celex", "iso_metadata"],
+      "description": "Which adapter fetches and extracts this target."
+    },
+    "allowlisted_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "HTTPS URL on the domain allowlist. Adding a new domain is a deliberate, reviewed schema change.",
+      "pattern": "^https://(www\\.nist\\.gov|airc\\.nist\\.gov|nvlpubs\\.nist\\.gov|csrc\\.nist\\.gov|github\\.com|raw\\.githubusercontent\\.com|eur-lex\\.europa\\.eu|digital-strategy\\.ec\\.europa\\.eu|artificialintelligenceact\\.eu|(www\\.)?iso\\.org|cloudsecurityalliance\\.org|labs\\.cloudsecurityalliance\\.org|cltc\\.berkeley\\.edu|www\\.gov\\.uk)(/|$)"
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "adapter"],
+      "properties": {
+        "url": { "$ref": "#/$defs/allowlisted_url" },
+        "adapter": { "$ref": "#/$defs/adapter" },
+        "note": {
+          "type": "string",
+          "description": "Optional human note on what this target covers."
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "domain", "title", "reference_file", "cadence", "enabled", "targets"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$",
+          "description": "Stable machine id. Used in branch names, labels, lock-free PR search, and the reference frontmatter."
+        },
+        "domain": {
+          "type": "string",
+          "description": "Human-readable standard/domain name."
+        },
+        "title": {
+          "type": "string",
+          "description": "Full title of the standard or body of work."
+        },
+        "reference_file": {
+          "type": "string",
+          "pattern": "^reference_[a-z0-9_]+\\.md$",
+          "description": "The memory-mirror/ file this source maintains. Exactly one per source."
+        },
+        "cadence": { "$ref": "#/$defs/cadence" },
+        "enabled": {
+          "type": "boolean",
+          "description": "If false, the source is scoped but not yet crawled (planned state)."
+        },
+        "state": {
+          "type": "string",
+          "enum": ["planned", "pilot", "live"],
+          "description": "Rollout state, mirrors the README source-coverage table."
+        },
+        "targets": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/target" }
+        }
+      }
+    }
+  }
+}

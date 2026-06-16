@@ -1,0 +1,73 @@
+Creative Commons Attribution 4.0 International Public Licence (CC BY 4.0)
+
+Copyright (c) 2026 Siegfried Bolz
+
+This licence covers the **prose content** in this repository — every file
+under `memory-mirror/` and `docs/`, plus the human-readable text portions of
+`README.md`, `CONTRIBUTING.md`, `SECURITY.md`, and `CODE_OF_CONDUCT.md`.
+
+Code in this repository is licensed separately under the MIT licence — see
+`LICENSE`.
+
+Third-party source material (NIST publications, ISO standard metadata,
+EUR-Lex texts, CSA documents, Berkeley CLTC papers, etc.) remains under the
+licence of its original publisher; this repository only stores short
+extracts, summaries, hashes, version metadata, and links sufficient to make
+delta detection auditable. The `source_url` and
+`last_observed_commit_or_version` fields in each `reference_*.md` provide
+the attribution chain back to the canonical source.
+
+================================================================================
+
+By exercising the Licensed Rights (defined below), You accept and agree to
+be bound by the terms and conditions of this Creative Commons Attribution
+4.0 International Public License ("Public License"). To the extent this
+Public License may be interpreted as a contract, You are granted the
+Licensed Rights in consideration of Your acceptance of these terms and
+conditions, and the Licensor grants You such rights in consideration of
+benefits the Licensor receives from making the Licensed Material available
+under these terms and conditions.
+
+For the full legal code, see:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+For a human-readable summary, see:
+https://creativecommons.org/licenses/by/4.0/
+
+================================================================================
+
+You are free to:
+
+  Share — copy and redistribute the material in any medium or format
+  Adapt — remix, transform, and build upon the material
+            for any purpose, even commercially.
+
+Under the following terms:
+
+  Attribution — You must give appropriate credit, provide a link to the
+    licence, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor
+    endorses you or your use.
+
+  No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing anything
+    the licence permits.
+
+Notices:
+
+  You do not have to comply with the licence for elements of the material
+  in the public domain or where your use is permitted by an applicable
+  exception or limitation.
+
+  No warranties are given. The licence may not give you all of the
+  permissions necessary for your intended use. For example, other rights
+  such as publicity, privacy, or moral rights may limit how you use the
+  material.
+
+================================================================================
+
+Suggested attribution for downstream use:
+
+  "AI Governance Watch reference snapshots by Siegfried Bolz, licensed under
+   CC BY 4.0. Source: https://github.com/siegfriedbolz/ai-governance-watch
+   (commit <SHA>)."

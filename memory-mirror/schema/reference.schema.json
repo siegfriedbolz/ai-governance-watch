@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/siegfriedbolz/ai-governance-watch/memory-mirror/schema/reference.schema.json",
+  "title": "reference_*.md frontmatter",
+  "description": "Mandatory YAML frontmatter contract for every memory-mirror/reference_<source_id>.md file. The body sections are described in memory-mirror/README.md.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "name",
+    "description",
+    "type",
+    "source_id",
+    "source_url",
+    "last_observed_at",
+    "last_observed_commit_or_version",
+    "provenance_chain"
+  ],
+  "properties": {
+    "name": { "type": "string" },
+    "description": { "type": "string", "minLength": 10 },
+    "type": { "const": "reference" },
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "Must match an id in sources/literature-watch.yaml."
+    },
+    "source_url": { "type": "string", "format": "uri" },
+    "last_observed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 timestamp of the observation this file reflects."
+    },
+    "last_observed_commit_or_version": {
+      "type": "string",
+      "description": "Commit SHA, version tag, or edition/date the observation pins to."
+    },
+    "snapshot_path": {
+      "type": "string",
+      "pattern": "^_raw_snapshots/",
+      "description": "Relative path of the raw snapshot under memory-mirror/_raw_snapshots/. Optional for hand-authored baselines that predate snapshotting."
+    },
+    "provenance_chain": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Append-only audit trail. One entry per observation that changed this file.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["timestamp", "change"],
+        "properties": {
+          "timestamp": { "type": "string", "format": "date-time" },
+          "commit": { "type": "string", "description": "Repo commit SHA of the merge that landed this change." },
+          "pr": { "type": "string", "description": "PR number or URL." },
+          "change": {
+            "type": "string",
+            "enum": ["baseline", "editorial", "substantive", "version_bump"],
+            "description": "Severity of the change recorded by this entry."
+          }
+        }
+      }
+    }
+  }
+}

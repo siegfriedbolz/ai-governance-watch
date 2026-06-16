@@ -1,0 +1,154 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+.installed.cfg
+build/
+dist/
+sdist/
+wheels/
+share/python-wheels/
+MANIFEST
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# --- Test / type / lint caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# --- IDE / editors ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# --- macOS / Windows / Linux noise ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- Environment / secrets ---
+# Never commit env files or credentials. Token names are documented in
+# docs/secrets-inventory.md; the only production secret (GH_PAT) lives in the
+# Claude Code Routine env/vault, never in this repo.
+.env
+.env.*
+*.env
+!.env.example
+.envrc
+.netrc
+.pypirc
+.git-credentials
+
+# Credential / secret bundles
+secrets/
+.secrets/
+secrets.json
+secrets.yaml
+secrets.yml
+credentials.json
+*credentials*.json
+client_secret*.json
+*service-account*.json
+gha-creds-*.json
+*.token
+.token
+*.tokens
+token.txt
+tokens.txt
+token.json
+
+# Keys & certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.pkcs12
+*.crt
+*.cer
+*.der
+*.csr
+*.keystore
+*.jks
+*.gpg
+secring.*
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.ppk
+
+# --- Private Cowork memory mirror — never commit, even if copied into the repo ---
+# The PUBLIC, published library is `memory-mirror/` (MUST stay tracked).
+# The PRIVATE personal/project memory mirrors use the *ClaudeCoworkMemory naming
+# and live outside this repo; this guard blocks accidental inclusion.
+*ClaudeCoworkMemory/
+**/*ClaudeCoworkMemory/
+
+# --- Local backups / dumps that may hold private data ---
+*.bak
+*.orig
+*.tmp
+*.dump
+*.sqlite
+*.sqlite3
+*.db
+
+# --- Logs (audit log files live in dedicated structured paths) ---
+*.log
+logs/
+!logs/silent_updates.jsonl   # explicitly tracked for audit trail (per plan §7.1)
+
+# --- Local trigger / scratch ---
+scratch/
+.scratch/
+local_runs/
+
+# --- No lock files ---
+# The pipeline is single-trigger (one Claude Code Routine). There is no
+# parallel local runner, so there are no .locks/<source_id>.lock files and
+# no two-writer race to coordinate. (Removed with the dual-trigger model.)
+
+# --- Raw snapshots are NOT excluded ---
+# memory-mirror/_raw_snapshots/* are committed (audit trail).
+# Binary marking lives in .gitattributes, not here.
+
+# --- MkDocs Material build output (never committed; built in CI/Pages) ---
+site/
+.cache/
+
+# --- Node / frontend (in case prettier or markdownlint pulls them in) ---
+node_modules/
+package-lock.json
+yarn.lock
+.npm/

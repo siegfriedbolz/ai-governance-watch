@@ -1,0 +1,94 @@
+# MkDocs Material config for the public AI Governance Watch library.
+#
+# PRIVACY BOUNDARY (important): the site is built ONLY from `memory-mirror/`,
+# and within it only the published standard pages. `docs_dir` is the sole
+# content root, and `exclude_docs` strips internal/non-public files. Repo
+# docs (docs/, README, SECURITY, CONTRIBUTING, the implementation plan, the
+# private memory mirrors) are NEVER part of the rendered site.
+
+site_name: AI Governance Watch
+site_description: >-
+  A PR-gated, continuously-watched reference library of the AI governance
+  standards an external AI risk auditor must keep current.
+site_author: Siegfried Bolz
+# Update site_url to the real Pages URL once deployed (user/repo Pages or custom domain).
+site_url: https://siegfriedbolz.github.io/ai-governance-watch/
+
+repo_name: siegfriedbolz/ai-governance-watch
+repo_url: https://github.com/siegfriedbolz/ai-governance-watch
+edit_uri: edit/main/memory-mirror/
+
+# Only this directory is ever published.
+docs_dir: memory-mirror
+
+# Belt-and-braces: never publish internal/non-content files even though they
+# live under memory-mirror/. gitignore-style patterns (MkDocs >= 1.5).
+exclude_docs: |
+  README.md
+  schema/
+  _raw_snapshots/
+  *.gitkeep
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.view
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Frameworks & management systems:
+      - NIST AI RMF: reference_nist_ai_rmf.md
+      - ISO/IEC 42001: reference_iso_42001.md
+      - ISO/IEC 23894: reference_iso_23894.md
+  - Regulation & law:
+      - EU AI Act: reference_eu_ai_act.md
+      - UK AI White Paper: reference_uk_ai_white_paper.md
+      - DORA: reference_dora.md
+  - Agentic, thresholds & landscape:
+      - CSA Agentic Profile: reference_csa_agentic_profile.md
+      - Berkeley CLTC: reference_berkeley_cltc.md
+      - NIST ITL Standards Landscape: reference_nist_itl_landscape.md
+  - Changelog: changelog.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/siegfriedbolz/ai-governance-watch

@@ -1,0 +1,59 @@
+# Unit tests for the ai-governance-watch skill (adapters + lib).
+#
+# Stub for Phase 1. The actual test suite lands together with the NIST
+# pilot adapter in Phase 3. Until then this workflow exits cleanly so the
+# branch protection rule does not block PRs unnecessarily.
+
+name: test-skill
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "skills/**"
+      - ".github/workflows/test-skill.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    name: pytest (skill adapters + lib)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Detect whether the skill has any tests yet
+        id: detect
+        run: |
+          if compgen -G "skills/ai-governance-watch/tests/test_*.py" > /dev/null; then
+            echo "has_tests=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_tests=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Skip (no tests yet, Phase 3 placeholder)
+        if: steps.detect.outputs.has_tests == 'false'
+        run: |
+          echo "No test files present yet — this is expected before Phase 3."
+          echo "Skipping pytest invocation."
+
+      - name: Install test dependencies
+        if: steps.detect.outputs.has_tests == 'true'
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest pytest-httpx responses
+
+      - name: Run pytest
+        if: steps.detect.outputs.has_tests == 'true'
+        working-directory: skills/ai-governance-watch
+        run: pytest -q

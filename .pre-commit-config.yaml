@@ -1,0 +1,80 @@
+# Pre-commit hooks for ai-governance-watch.
+#
+# Install once locally:    pip install pre-commit && pre-commit install
+# Run on all files:        pre-commit run --all-files
+# CI runs the same hooks via .github/workflows/lint.yml (see Phase 1).
+#
+# Auditor discipline: every change in this repo is either typed code, a typed
+# YAML config, or a typed Markdown document. Pre-commit makes sure the typing
+# holds before anything reaches git history.
+
+minimum_pre_commit_version: "3.5.0"
+
+default_language_version:
+  python: python3.11
+
+repos:
+  # --- generic hygiene ---
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=512]
+      - id: check-yaml
+        # Allow the multi-document YAML used by GitHub Actions workflows.
+        args: [--allow-multiple-documents]
+      - id: check-json
+      - id: check-toml
+      - id: check-case-conflict
+      - id: mixed-line-ending
+        args: [--fix=lf]
+
+  # --- YAML lint (sources.yaml + workflows) ---
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        # Phase 1 uses yamllint defaults. A project-specific `.yamllint.yaml`
+        # is added in Phase 2 alongside the sources/ schema work, once the
+        # noise floor of real YAML content is known.
+        args: [-d, relaxed]
+
+  # --- Markdown lint (README, CONTRIBUTING, memory-mirror, docs) ---
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.41.0
+    hooks:
+      - id: markdownlint
+        # Phase 1: rely on markdownlint defaults; a project `.markdownlint.json`
+        # is added in Phase 2 if defaults turn out to be too noisy on the
+        # memory-mirror content (long quotes, anchored snippets).
+        # Disable line-length checks for now — auditor-style prose runs long.
+        args: [--disable, MD013, MD041, "--"]
+
+  # --- JSON formatting (state.json, schemas) ---
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        types_or: [json]
+        # Keep code formatting decisions out of prettier — Python uses ruff/black,
+        # YAML uses yamllint. Prettier scope is JSON only here.
+
+  # --- Python lint + format (will gain teeth in Phase 3 when adapters land) ---
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.5.7
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  # --- Secret scanning (defense in depth — secrets must never be committed) ---
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.4
+    hooks:
+      - id: gitleaks
+        # If a false positive appears, document the allowlist rule in
+        # .gitleaks.toml at the repo root and reference docs/secrets-inventory.md.

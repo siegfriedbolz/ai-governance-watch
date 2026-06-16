@@ -1,0 +1,135 @@
+# literature-watch.yaml — the single source-of-truth URL list.
+#
+# This is the ONLY legitimate place to add or remove a watched source.
+# A change here fires the routine's native GitHub source-change trigger,
+# which baselines the newly added source (see docs/routine-setup.md).
+#
+# Validates against sources/schema/sources.schema.json. Every URL must sit
+# on the domain allowlist enforced by that schema (Appendix E hardening).
+
+version: 1
+paused: false
+
+defaults:
+  # Identifies the crawler and a contact, per Appendix E. Contact is the public
+  # repo (open an issue) — no personal email in this public file.
+  user_agent: "ai-governance-watch/0.1 (+https://github.com/siegfriedbolz/ai-governance-watch)"
+  cadence: weekly
+
+sources:
+  - id: nist_ai_rmf
+    domain: "NIST AI RMF"
+    title: "NIST AI Risk Management Framework (AI 100-1) incl. GenAI Profile (AI 600-1) and the AI RMF Playbook"
+    reference_file: reference_nist_ai_rmf.md
+    cadence: weekly
+    enabled: true
+    state: pilot
+    targets:
+      - url: "https://github.com/usnistgov/ARIA"
+        adapter: github_repo
+        note: "NIST AI RMF Playbook / supporting material — commit-level watch via GitHub API."
+      - url: "https://www.nist.gov/itl/ai-risk-management-framework"
+        adapter: html_extraction
+        note: "AI RMF landing page — version, errata, crosswalk announcements."
+      - url: "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+        adapter: html_extraction
+        note: "GenAI Profile (AI 600-1) — frozen PDF; version metadata watch."
+
+  - id: eu_ai_act
+    domain: "EU AI Act"
+    title: "Regulation (EU) 2024/1689 (Artificial Intelligence Act) and its implementing/amending acts"
+    reference_file: reference_eu_ai_act.md
+    cadence: weekly
+    enabled: true
+    state: planned
+    targets:
+      - url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+        adapter: eurlex_celex
+        note: "Consolidated legal text via EUR-Lex/CELLAR — amendments, corrigenda, consolidations."
+      - url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        adapter: html_extraction
+        note: "EC policy hub — guidelines, delegated/implementing acts, timeline changes (e.g. Digital Omnibus)."
+
+  - id: iso_42001
+    domain: "ISO/IEC 42001 (AIMS)"
+    title: "ISO/IEC 42001:2023 — Artificial Intelligence Management System, plus the surrounding 42000-series"
+    reference_file: reference_iso_42001.md
+    cadence: monthly
+    enabled: true
+    state: planned
+    targets:
+      - url: "https://www.iso.org/standard/42001"
+        adapter: iso_metadata
+        note: "Catalogue metadata only (title, edition, status, stage). Full text is paywalled — never fetched."
+
+  - id: csa_agentic_profile
+    domain: "CSA / Agentic AI"
+    title: "CSA NIST AI RMF: Agentic Profile (Cloud Security Alliance Lab Space)"
+    reference_file: reference_csa_agentic_profile.md
+    cadence: weekly
+    enabled: true
+    state: planned
+    targets:
+      - url: "https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/"
+        adapter: html_extraction
+        note: "CSA Lab Space draft — version/stage and section structure watch."
+
+  - id: berkeley_cltc
+    domain: "Cyber Thresholds"
+    title: "UC Berkeley CLTC — AI risk thresholds (incl. AI-enabled cyber threats, Bayesian threshold work)"
+    reference_file: reference_berkeley_cltc.md
+    cadence: monthly
+    enabled: true
+    state: planned
+    targets:
+      - url: "https://cltc.berkeley.edu/program/ai-security-initiative/"
+        adapter: html_extraction
+        note: "AI Security Initiative hub — new white papers and profile releases."
+
+  - id: iso_23894
+    domain: "ISO AI Risk Mgmt"
+    title: "ISO/IEC 23894:2023 — Guidance on AI risk management (companion to ISO 31000)"
+    reference_file: reference_iso_23894.md
+    cadence: monthly
+    enabled: true
+    state: planned
+    targets:
+      - url: "https://www.iso.org/standard/77304.html"
+        adapter: iso_metadata
+        note: "Catalogue metadata only (edition, status, stage). Full text paywalled — never fetched."
+
+  - id: nist_itl_landscape
+    domain: "Standards inventory"
+    title: "NIST ITL AI Program — International AI Standards Landscape"
+    reference_file: reference_nist_itl_landscape.md
+    cadence: monthly
+    enabled: true
+    state: planned
+    targets:
+      - url: "https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program"
+        adapter: html_extraction
+        note: "ITL AI program overview — standards-landscape updates, webinars, priorities."
+
+  - id: uk_ai_white_paper
+    domain: "UK jurisdiction"
+    title: "UK AI Regulation — A pro-innovation approach (White Paper, CP 815) and successors"
+    reference_file: reference_uk_ai_white_paper.md
+    cadence: quarterly
+    enabled: true
+    state: planned
+    targets:
+      - url: "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach"
+        adapter: html_extraction
+        note: "White Paper landing + government responses; watch for a move from principles to statute."
+
+  - id: dora
+    domain: "Operational resilience"
+    title: "DORA — Digital Operational Resilience Act (Regulation (EU) 2022/2554)"
+    reference_file: reference_dora.md
+    cadence: quarterly
+    enabled: true
+    state: planned
+    targets:
+      - url: "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng"
+        adapter: eurlex_celex
+        note: "Consolidated legal text + RTS/ITS references; ICT third-party resilience scope."
