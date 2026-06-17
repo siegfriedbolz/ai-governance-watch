@@ -2,8 +2,6 @@
 title: AI Governance Watch
 description: "A continuously-watched reference library of AI governance standards — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, CSA Agentic Profile, Berkeley CLTC — by Siegfried-Thor Bolz, Enterprise AEMaaCS architect & AI risk auditor near Munich, Germany."
 keywords: "AI Risk Auditor, AI Governance, AI Compliance, CMS AI Audit, AI audit for enterprise CMS, EU AI Act, NIST AI RMF, ISO/IEC 42001, ISO/IEC 27001, ISO/IEC 23894, DORA, OWASP LLM & Agentic Top 10, MITRE ATLAS, CSA Agentic Profile, Berkeley CLTC, Adobe Experience Manager, AEMaaCS, AEM Exit, Headless CMS, RAG, Vertex AI, Cybersecurity, Siegfried-Thor Bolz"
-hide:
-  - navigation
 ---
 
 # AI Governance Watch
@@ -119,6 +117,10 @@ on a page without a human reviewing that diff** — the same provenance
 discipline an external auditor must demonstrate to a client. See the
 [changelog](changelog.md) for the running history.
 
+<div class="sb-about" markdown>
+
+<p class="sb-about-eyebrow">About the author · professional services — the reference library above stands on its own</p>
+
 ## About the author — work with me
 
 <img src="assets/portrait.png" alt="Portrait of Siegfried-Thor Bolz" class="sb-portrait">
@@ -144,22 +146,17 @@ against a fast-moving target, with a defensible, provenance-backed trail.
   migrations and the *AEM Exit* to headless, plus RAG / agentic AI on Google
   Cloud — with web-application security and clean code at the core.
 
-### Credentials
+??? note "Certifications & credentials — University of Oxford · Packt · Adobe (click to view)"
 
-<div class="sb-certs" markdown>
-<figure markdown>
-![University of Oxford — Managing Enterprise AI Risks certificate](assets/cert-oxford.png)
-<figcaption><strong>University of Oxford</strong> — “Managing Enterprise AI Risks” (2026).
-<a href="https://certificates.conted.ox.ac.uk/5d483a65-dba2-47a2-92b0-8acfe0dcfd3a" target="_blank" rel="noopener">Verify ↗</a></figcaption>
-</figure>
-<figure markdown>
-![Packt — Generative AI and Agentic AI for Finance certificate, final score 100%](assets/cert-genai-finance.png)
-<figcaption><strong>Packt</strong> — “Generative AI &amp; Agentic AI for Finance”, Cohort 2 — final score <strong>100%</strong> (2026).</figcaption>
-</figure>
-</div>
+    ![University of Oxford — Managing Enterprise AI Risks certificate](assets/cert-oxford.png){ .sb-cert }
 
-Plus **Adobe Solution Partner — Silver** (via CQ-Factory GmbH), and framework
-mastery across NIST AI RMF, the EU AI Act and ISO/IEC 27001 & 42001.
+    **University of Oxford** — "Managing Enterprise AI Risks" (2026) · [Verify ↗](https://certificates.conted.ox.ac.uk/5d483a65-dba2-47a2-92b0-8acfe0dcfd3a)
+
+    ![Packt — Generative AI and Agentic AI for Finance certificate, final score 100%](assets/cert-genai-finance.png){ .sb-cert }
+
+    **Packt** — "Generative AI & Agentic AI for Finance", Cohort 2 — final score **100%** (2026).
+
+    Plus **Adobe Solution Partner — Silver** (via CQ-Factory GmbH), and framework mastery across NIST AI RMF, the EU AI Act and ISO/IEC 27001 & 42001.
 
 **Let's talk:** [siegfried-bolz.de](https://www.siegfried-bolz.de) ·
 [LinkedIn](https://www.linkedin.com/in/sbolz/) ·
@@ -177,6 +174,8 @@ Enterprise AI Risks* programme, and his framing is the intellectual backbone of
 this watch system. Read the original:
 [*The Enterprise (collective) Second Brain using Claude Skills*](https://www.linkedin.com/pulse/enterprise-collective-second-brain-using-claude-skills-ajit-jaokar-ykode/)
 — Ajit Jaokar, LinkedIn (May 2026).
+
+</div>
 
 !!! note "Scope, licence & disclaimer"
     Each page has an **"In plain language"** explainer written in our own words —

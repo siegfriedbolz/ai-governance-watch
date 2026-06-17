@@ -57,3 +57,202 @@
   font-size: .78rem; line-height: 1.4; margin-top: .4rem;
   color: var(--md-default-fg-color--light);
 }
+
+/* ---- "About the author" liquid-glass container (echoes siegfried-bolz.de) ---- */
+.sb-about {
+  position: relative;
+  margin: 3rem 0 1.25rem;
+  padding: 1.6rem 1.9rem 1.9rem;
+  border-radius: 22px;
+  overflow: hidden;
+}
+.sb-about > :first-child { margin-top: 0; }
+.sb-about > :last-child { margin-bottom: 0; }
+.sb-about-eyebrow {
+  margin: 0 0 .6rem;
+  font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
+}
+
+/* Dark (default brand) scheme — clear "liquid glass": low blur, edge-lit cool rim */
+[data-md-color-scheme="slate"] .sb-about {
+  border: 1px solid rgba(190, 235, 255, .55);
+  background: linear-gradient(135deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.02) 50%, rgba(255,255,255,.01) 100%);
+  -webkit-backdrop-filter: blur(6px) saturate(1.35);
+  backdrop-filter: blur(6px) saturate(1.35);
+  box-shadow:
+    0 24px 60px -20px rgba(2, 6, 23, .75),
+    0 0 18px -3px rgba(110, 231, 255, .22),
+    inset 0 0 0 1px rgba(255, 255, 255, .5),
+    inset 0 0 16px rgba(150, 225, 255, .12);
+}
+/* even, edge-lit inner ring on all four sides (no directional gleam) */
+[data-md-color-scheme="slate"] .sb-about::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .35), inset 0 0 12px rgba(110, 231, 255, .12);
+}
+[data-md-color-scheme="slate"] .sb-about-eyebrow { color: var(--md-accent-fg-color); }
+
+/* Light scheme — softer tinted glass card (heavy blur on white looks muddy) */
+[data-md-color-scheme="default"] .sb-about {
+  border: 1px solid rgba(110, 231, 255, .45);
+  background: linear-gradient(135deg, rgba(110, 231, 255, .10), rgba(167, 139, 250, .07));
+  -webkit-backdrop-filter: blur(4px) saturate(1.2);
+  backdrop-filter: blur(4px) saturate(1.2);
+  box-shadow: 0 18px 50px -24px rgba(2, 6, 23, .35), inset 0 0 0 1px rgba(255, 255, 255, .6);
+}
+[data-md-color-scheme="default"] .sb-about-eyebrow { color: #2563a8; }
+
+/* respect reduced-transparency: drop the glass, keep a solid separated panel */
+@media (prefers-reduced-transparency: reduce) {
+  [data-md-color-scheme="slate"] .sb-about {
+    background: rgba(11, 16, 36, .94);
+    -webkit-backdrop-filter: none; backdrop-filter: none;
+  }
+}
+
+/* certificate images inside the collapsible */
+.md-typeset img.sb-cert {
+  max-width: 300px; width: 100%; height: auto; display: block;
+  border-radius: 12px; margin: .3rem 0 .2rem;
+  border: 1px solid rgba(190, 235, 255, .35);
+  box-shadow: 0 10px 30px -12px #000;
+}
+
+/* ---- "Watched standards" cards in the same liquid-glass style ---- */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset .grid > .card {
+  border: 1px solid rgba(190, 235, 255, .45);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.02) 60%, rgba(255,255,255,.01) 100%);
+  -webkit-backdrop-filter: blur(5px) saturate(1.3);
+  backdrop-filter: blur(5px) saturate(1.3);
+  box-shadow:
+    0 0 14px -4px rgba(110, 231, 255, .2),
+    inset 0 0 0 1px rgba(255, 255, 255, .4),
+    inset 0 0 14px rgba(150, 225, 255, .1);
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover,
+[data-md-color-scheme="slate"] .md-typeset .grid > .card:hover {
+  border-color: rgba(190, 235, 255, .78);
+  box-shadow:
+    0 0 18px -3px rgba(110, 231, 255, .42),
+    inset 0 0 0 1px rgba(255, 255, 255, .52),
+    inset 0 0 16px rgba(150, 225, 255, .14);
+  transform: translateY(-2px);
+}
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="default"] .md-typeset .grid > .card {
+  border: 1px solid rgba(110, 231, 255, .4);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(110, 231, 255, .07), rgba(167, 139, 250, .05));
+}
+
+/* make the WHOLE card clickable: stretch the title link over the card */
+.md-typeset .grid.cards > ul > li { position: relative; }
+.md-typeset .grid.cards > ul > li:hover { cursor: pointer; }
+.md-typeset .grid.cards > ul > li > p:first-child a::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: 1;
+}
+/* keep any other (inline) links inside a card clickable above the overlay */
+.md-typeset .grid.cards > ul > li p:not(:first-child) a { position: relative; z-index: 2; }
+
+/* ---- "How to use this library" (tip) — liquid glass, keep the green ---- */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-radius: 14px;
+  overflow: hidden;               /* round the green title bar too */
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip,
+[data-md-color-scheme="slate"] .md-typeset details.tip {
+  background: linear-gradient(135deg, rgba(52, 211, 153, .12) 0%, rgba(52, 211, 153, .04) 60%, rgba(255, 255, 255, .015) 100%);
+  -webkit-backdrop-filter: blur(5px) saturate(1.3);
+  backdrop-filter: blur(5px) saturate(1.3);
+  box-shadow:
+    0 0 16px -4px rgba(52, 211, 153, .28),
+    inset 0 0 0 1px rgba(255, 255, 255, .32),
+    inset 0 0 14px rgba(52, 211, 153, .10);
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip > .admonition-title {
+  background: rgba(52, 211, 153, .14);
+}
+[data-md-color-scheme="default"] .md-typeset .admonition.tip {
+  background: linear-gradient(135deg, rgba(52, 211, 153, .12), rgba(52, 211, 153, .05));
+  -webkit-backdrop-filter: blur(3px) saturate(1.2);
+  backdrop-filter: blur(3px) saturate(1.2);
+  box-shadow: 0 12px 40px -22px rgba(2, 6, 23, .35), inset 0 0 0 1px rgba(255, 255, 255, .5);
+}
+@media (prefers-reduced-transparency: reduce) {
+  [data-md-color-scheme="slate"] .md-typeset .admonition.tip {
+    background: rgba(11, 28, 24, .94);
+    -webkit-backdrop-filter: none; backdrop-filter: none;
+  }
+}
+
+/* ---- note / info / quote admonitions — liquid glass, keep their own colours ---- */
+.md-typeset .admonition.note, .md-typeset details.note,
+.md-typeset .admonition.info, .md-typeset details.info,
+.md-typeset .admonition.quote, .md-typeset details.quote {
+  border-radius: 14px; overflow: hidden;
+  -webkit-backdrop-filter: blur(5px) saturate(1.3);
+  backdrop-filter: blur(5px) saturate(1.3);
+}
+/* dark scheme: translucent tint + soft glow in each type's own colour */
+[data-md-color-scheme="slate"] .md-typeset .admonition.note,
+[data-md-color-scheme="slate"] .md-typeset details.note {
+  background: linear-gradient(135deg, rgba(68,138,255,.10), rgba(68,138,255,.03) 60%, rgba(255,255,255,.012));
+  box-shadow: 0 0 16px -4px rgba(68,138,255,.26), inset 0 0 0 1px rgba(255,255,255,.30), inset 0 0 14px rgba(68,138,255,.09);
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition.info,
+[data-md-color-scheme="slate"] .md-typeset details.info {
+  background: linear-gradient(135deg, rgba(0,184,212,.11), rgba(0,184,212,.035) 60%, rgba(255,255,255,.012));
+  box-shadow: 0 0 16px -4px rgba(0,184,212,.28), inset 0 0 0 1px rgba(255,255,255,.30), inset 0 0 14px rgba(0,184,212,.10);
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition.quote,
+[data-md-color-scheme="slate"] .md-typeset details.quote {
+  background: linear-gradient(135deg, rgba(158,158,158,.10), rgba(158,158,158,.035) 60%, rgba(255,255,255,.012));
+  box-shadow: 0 0 16px -4px rgba(158,158,158,.22), inset 0 0 0 1px rgba(255,255,255,.28), inset 0 0 14px rgba(158,158,158,.08);
+}
+/* light scheme: subtle tint */
+[data-md-color-scheme="default"] .md-typeset .admonition.note,
+[data-md-color-scheme="default"] .md-typeset details.note { background: linear-gradient(135deg, rgba(68,138,255,.10), rgba(68,138,255,.04)); }
+[data-md-color-scheme="default"] .md-typeset .admonition.info,
+[data-md-color-scheme="default"] .md-typeset details.info { background: linear-gradient(135deg, rgba(0,184,212,.10), rgba(0,184,212,.04)); }
+[data-md-color-scheme="default"] .md-typeset .admonition.quote,
+[data-md-color-scheme="default"] .md-typeset details.quote { background: linear-gradient(135deg, rgba(158,158,158,.12), rgba(158,158,158,.05)); }
+/* reduced transparency: solid panels */
+@media (prefers-reduced-transparency: reduce) {
+  [data-md-color-scheme="slate"] .md-typeset .admonition.note,
+  [data-md-color-scheme="slate"] .md-typeset .admonition.info,
+  [data-md-color-scheme="slate"] .md-typeset .admonition.quote {
+    -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(13,18,33,.94);
+  }
+}
+
+/* ---- success ("From my training") & warning ("EU Omnibus") — liquid glass, keep colours ---- */
+.md-typeset .admonition.success, .md-typeset details.success,
+.md-typeset .admonition.warning, .md-typeset details.warning {
+  border-radius: 14px; overflow: hidden;
+  -webkit-backdrop-filter: blur(5px) saturate(1.3);
+  backdrop-filter: blur(5px) saturate(1.3);
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition.success,
+[data-md-color-scheme="slate"] .md-typeset details.success {
+  background: linear-gradient(135deg, rgba(0,200,83,.11), rgba(0,200,83,.035) 60%, rgba(255,255,255,.012));
+  box-shadow: 0 0 16px -4px rgba(0,200,83,.28), inset 0 0 0 1px rgba(255,255,255,.30), inset 0 0 14px rgba(0,200,83,.10);
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition.warning,
+[data-md-color-scheme="slate"] .md-typeset details.warning {
+  background: linear-gradient(135deg, rgba(255,145,0,.11), rgba(255,145,0,.035) 60%, rgba(255,255,255,.012));
+  box-shadow: 0 0 16px -4px rgba(255,145,0,.28), inset 0 0 0 1px rgba(255,255,255,.30), inset 0 0 14px rgba(255,145,0,.10);
+}
+[data-md-color-scheme="default"] .md-typeset .admonition.success,
+[data-md-color-scheme="default"] .md-typeset details.success { background: linear-gradient(135deg, rgba(0,200,83,.10), rgba(0,200,83,.04)); }
+[data-md-color-scheme="default"] .md-typeset .admonition.warning,
+[data-md-color-scheme="default"] .md-typeset details.warning { background: linear-gradient(135deg, rgba(255,145,0,.10), rgba(255,145,0,.04)); }
+@media (prefers-reduced-transparency: reduce) {
+  [data-md-color-scheme="slate"] .md-typeset .admonition.success,
+  [data-md-color-scheme="slate"] .md-typeset .admonition.warning {
+    -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(13,18,33,.94);
+  }
+}
