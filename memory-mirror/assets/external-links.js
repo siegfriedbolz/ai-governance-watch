@@ -1,6 +1,8 @@
-/* Open external links (different host) in a new tab, with rel="noopener
-   noreferrer" for safety. Internal links and in-page anchors are left alone.
-   Instant-navigation safe: re-runs on every page via Material's document$. */
+/* Small front-end enhancements. Instant-navigation safe: re-runs on every page
+   via Material's document$.
+   1) Open external links (different host) in a new tab, with rel="noopener".
+   2) Fill the home-page "Last updated" subheadline from the git date that the
+      git-revision-date-localized plugin exposes as <meta name="page-updated">. */
 (function () {
   function markExternalLinks() {
     var here = location.host;
@@ -13,9 +15,22 @@
     });
   }
 
+  function fillLastUpdated() {
+    var box = document.querySelector('.sb-updated');
+    if (!box) return;
+    var meta = document.querySelector('meta[name="page-updated"]');
+    var span = box.querySelector('.js-updated');
+    if (meta && meta.content) {
+      if (span) span.textContent = meta.content;
+      box.hidden = false;            // reveal only once we have a real date
+    }
+  }
+
+  function run() { markExternalLinks(); fillLastUpdated(); }
+
   if (typeof document$ !== 'undefined' && document$ && document$.subscribe) {
-    document$.subscribe(markExternalLinks); // Material for MkDocs (instant nav)
+    document$.subscribe(run);        // Material for MkDocs (instant nav)
   } else {
-    document.addEventListener('DOMContentLoaded', markExternalLinks);
+    document.addEventListener('DOMContentLoaded', run);
   }
 })();

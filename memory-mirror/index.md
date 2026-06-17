@@ -6,6 +6,8 @@ keywords: "AI Risk Auditor, AI Governance, AI Compliance, CMS AI Audit, AI audit
 
 # AI Governance Watch
 
+<p class="sb-updated" hidden>Last updated: <span class="js-updated"></span></p>
+
 A continuously-watched, **PR-gated reference library** of the AI governance
 standards an external AI risk auditor has to keep current. Each standard has
 its own page with a short, audit-oriented summary, a plain-language explainer,
@@ -21,9 +23,11 @@ back to a verifiable observation of a public source at a documented point in tim
 > [GitHub](https://github.com/siegfriedbolz/ai-governance-watch)
 
 !!! tip "How to use this library"
-    Use the **search** (top of the page, or press `/`) to look across every
-    standard at once. Open a standard to read its summary and audit anchors.
-    Check the [changelog](changelog.md) to see what changed recently.
+    New here? Start with **[Standards at a glance](at-a-glance.md)** to compare
+    all nine, or browse the **[glossary](glossary.md)**. Use the **search** (top
+    of the page, or press `/`) to look across every standard at once. Open a
+    standard to read its summary and audit anchors, and check the
+    [changelog](changelog.md) to see what changed recently.
 
 ## Watched standards
 
@@ -134,34 +138,29 @@ and **audit** them against regulation — a rare combination. This watch system 
 a live demonstration of that discipline: it's how I keep a regulatory map current
 against a fast-moving target, with a defensible, provenance-backed trail.
 
-**How I can help:**
+??? note "How I can help — services, credentials & contact"
 
-- **AI governance, compliance & risk auditing** — assessing AI systems against
-  the EU AI Act, NIST AI RMF, ISO/IEC 42001 & 27001, the OWASP LLM & Agentic
-  Top 10 and MITRE ATLAS; risk classification, model cards, AI-SBOM, a living
-  risk register and control testing along Three Lines of Defence.
-- **Active monitoring** — standing up watch pipelines like this one so your
-  compliance map never silently drifts out of date.
-- **Secure, cloud-ready AEM & AI engineering** — AEM / AEMaaCS architecture,
-  migrations and the *AEM Exit* to headless, plus RAG / agentic AI on Google
-  Cloud — with web-application security and clean code at the core.
+    - **AI governance, compliance & risk auditing** — assessing AI systems against
+      the EU AI Act, NIST AI RMF, ISO/IEC 42001 & 27001, the OWASP LLM & Agentic
+      Top 10 and MITRE ATLAS; risk classification, model cards, AI-SBOM, a living
+      risk register and control testing along Three Lines of Defence.
+    - **Active monitoring** — standing up watch pipelines like this one so your
+      compliance map never silently drifts out of date.
+    - **Secure, cloud-ready AEM & AI engineering** — AEM / AEMaaCS architecture,
+      migrations and the *AEM Exit* to headless, plus RAG / agentic AI on Google
+      Cloud — with web-application security and clean code at the core.
 
-??? note "Certifications & credentials — University of Oxford · Packt · Adobe (click to view)"
+    See my applied guide: **[AI audit for enterprise CMS](ai-audit-for-cms.md)**.
+
+    **Credentials** — University of Oxford, *"Managing Enterprise AI Risks"* (2026)
+    · [Verify ↗](https://certificates.conted.ox.ac.uk/5d483a65-dba2-47a2-92b0-8acfe0dcfd3a)
+    · Packt, *"Generative AI & Agentic AI for Finance"*, Cohort 2 — **100%** (2026)
+    · Adobe Solution Partner — Silver (via CQ-Factory GmbH).
 
     ![University of Oxford — Managing Enterprise AI Risks certificate](assets/cert-oxford.png){ .sb-cert }
-
-    **University of Oxford** — "Managing Enterprise AI Risks" (2026) · [Verify ↗](https://certificates.conted.ox.ac.uk/5d483a65-dba2-47a2-92b0-8acfe0dcfd3a)
-
     ![Packt — Generative AI and Agentic AI for Finance certificate, final score 100%](assets/cert-genai-finance.png){ .sb-cert }
 
-    **Packt** — "Generative AI & Agentic AI for Finance", Cohort 2 — final score **100%** (2026).
-
-    Plus **Adobe Solution Partner — Silver** (via CQ-Factory GmbH), and framework mastery across NIST AI RMF, the EU AI Act and ISO/IEC 27001 & 42001.
-
-**Let's talk:** [siegfried-bolz.de](https://www.siegfried-bolz.de) ·
-[LinkedIn](https://www.linkedin.com/in/sbolz/) ·
-[info@siegfried-bolz.de](mailto:info@siegfried-bolz.de) ·
-[GitHub](https://github.com/siegfriedbolz/ai-governance-watch)
+    **Let's talk:** [siegfried-bolz.de](https://www.siegfried-bolz.de) · [LinkedIn](https://www.linkedin.com/in/sbolz/) · [info@siegfried-bolz.de](mailto:info@siegfried-bolz.de) · [GitHub](https://github.com/siegfriedbolz/ai-governance-watch)
 
 ## Acknowledgement
 

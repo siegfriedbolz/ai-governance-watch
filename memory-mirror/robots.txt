@@ -1,0 +1,26 @@
+# AI Governance Watch — search engines and AI/LLM crawlers are welcome.
+# NOTE: robots.txt is only honoured at the domain root. Update the Sitemap URL
+# below to match the final site_url (mkdocs.yml) when you move to a custom domain.
+
+User-agent: *
+Allow: /
+
+# Explicitly welcomed (all are allowed anyway) — search + generative engines
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot
+Allow: /
+
+Sitemap: https://siegfriedbolz.github.io/ai-governance-watch/sitemap.xml

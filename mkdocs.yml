@@ -13,7 +13,10 @@ site_description: >-
   Berkeley CLTC) — built and maintained by Siegfried Bolz, AI risk auditor and
   Adobe Experience Manager (AEM) architect.
 site_author: Siegfried Bolz
-# Update site_url to the real Pages URL once deployed (user/repo Pages or custom domain).
+# IMPORTANT: set this to the final URL before deploy — canonical links, OpenGraph
+# URLs, JSON-LD @ids and robots.txt Sitemap all derive from it. If you move to a
+# custom domain (e.g. a subpath/subdomain of siegfried-bolz.de), update it here
+# AND the Sitemap line in memory-mirror/robots.txt.
 site_url: https://siegfriedbolz.github.io/ai-governance-watch/
 
 repo_name: siegfriedbolz/ai-governance-watch
@@ -68,6 +71,11 @@ theme:
 
 plugins:
   - search
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: false
+      fallback_to_build_date: true   # local/shallow builds without full git history still work
+      strict: false                  # don't fail `mkdocs build --strict` on files with no git log yet
 
 extra_css:
   - assets/brand.css
@@ -89,6 +97,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Standards at a glance: at-a-glance.md
   - Frameworks & management systems:
       - NIST AI RMF: reference_nist_ai_rmf.md
       - ISO/IEC 42001: reference_iso_42001.md
@@ -101,12 +110,15 @@ nav:
       - CSA Agentic Profile: reference_csa_agentic_profile.md
       - Berkeley CLTC: reference_berkeley_cltc.md
       - NIST ITL Standards Landscape: reference_nist_itl_landscape.md
+  - AI audit for enterprise CMS: ai-audit-for-cms.md
+  - Glossary: glossary.md
   - Changelog: changelog.md
 
 copyright: >-
   © 2026 Siegfried Bolz — content licensed
   <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
   Built by <a href="https://www.siegfried-bolz.de" target="_blank" rel="noopener">siegfried-bolz.de</a>.
+  All information without warranty (alle Angaben ohne Gewähr) and not legal advice.
 
 extra:
   social:

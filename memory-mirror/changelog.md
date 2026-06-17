@@ -15,6 +15,14 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-06-16 — New pages + SEO/GEO
+
+Added three pages: **[Standards at a glance](at-a-glance.md)** (comparison of all
+nine), a consolidated **[Glossary](glossary.md)**, and an applied
+**[AI audit for enterprise CMS](ai-audit-for-cms.md)** guide. SEO/GEO:
+`robots.txt` (search + AI crawlers, sitemap) and JSON-LD structured data
+(Person · WebSite · ProfessionalService) on the home page.
+
 ## 2026-06-16 — Fact-check pass & corrections
 
 Intensive accuracy review of all nine pages (dates, versions, article/clause

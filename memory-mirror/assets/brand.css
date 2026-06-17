@@ -73,6 +73,14 @@
   font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
 }
 
+/* "Last updated" subheadline under the home H1 */
+.md-typeset .sb-updated {
+  margin: -.4rem 0 1.2rem;
+  font-size: .82rem; font-weight: 600; letter-spacing: .04em;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset .sb-updated time { color: var(--md-accent-fg-color); }
+
 /* Dark (default brand) scheme — clear "liquid glass": low blur, edge-lit cool rim */
 [data-md-color-scheme="slate"] .sb-about {
   border: 1px solid rgba(190, 235, 255, .55);

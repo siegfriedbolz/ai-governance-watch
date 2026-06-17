@@ -1,3 +1,4 @@
 # Documentation site dependencies (MkDocs Material).
 # Installed only in the Pages build job — not a runtime dependency of the skill.
 mkdocs-material>=9.5,<10
+mkdocs-git-revision-date-localized-plugin>=1.2

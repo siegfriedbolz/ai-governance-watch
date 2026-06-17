@@ -38,4 +38,72 @@
 
   <link rel="me" href="https://www.siegfried-bolz.de">
   <link rel="me" href="https://www.linkedin.com/in/sbolz/">
+
+  {%- if page and page.meta and page.meta.git_revision_date_localized_raw_iso_date %}
+  <meta name="page-updated" content="{{ page.meta.git_revision_date_localized_raw_iso_date }}">
+  {%- endif %}
+
+  {%- if page and page.is_homepage %}
+  {%- set base = config.site_url or "" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ base }}#website",
+        "url": "{{ base }}",
+        "name": "AI Governance Watch",
+        "description": "{{ config.site_description | striptags | trim }}",
+        "inLanguage": "en",
+        "publisher": { "@id": "{{ base }}#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ base }}#person",
+        "name": "Siegfried-Thor Bolz",
+        "jobTitle": "Enterprise AEMaaCS Architect & AI Risk Auditor",
+        "url": "https://www.siegfried-bolz.de",
+        "image": "{{ base }}assets/portrait.png",
+        "worksFor": { "@type": "Organization", "name": "CQ-Factory GmbH" },
+        "address": { "@type": "PostalAddress", "addressRegion": "Bavaria", "addressCountry": "DE" },
+        "sameAs": [
+          "https://www.linkedin.com/in/sbolz/",
+          "https://github.com/siegfriedbolz"
+        ],
+        "knowsAbout": [
+          "AI governance", "AI risk auditing", "AI compliance",
+          "EU AI Act", "NIST AI RMF", "ISO/IEC 42001", "ISO/IEC 23894",
+          "DORA", "CSA Agentic Profile", "OWASP Top 10 for LLM Applications",
+          "Adobe Experience Manager", "AEMaaCS", "Cybersecurity"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Managing Enterprise AI Risks — University of Oxford",
+            "url": "https://certificates.conted.ox.ac.uk/5d483a65-dba2-47a2-92b0-8acfe0dcfd3a"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Generative AI and Agentic AI for Finance — Packt (final score 100%)"
+          }
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "{{ base }}#service",
+        "name": "AI Governance & Risk Auditing — Siegfried-Thor Bolz",
+        "url": "https://www.siegfried-bolz.de",
+        "provider": { "@id": "{{ base }}#person" },
+        "areaServed": "EU",
+        "serviceType": [
+          "AI risk auditing",
+          "AI governance & compliance",
+          "Secure AEM / AEMaaCS engineering"
+        ]
+      }
+    ]
+  }
+  </script>
+  {%- endif %}
 {% endblock %}
