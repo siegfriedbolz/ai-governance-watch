@@ -45,7 +45,12 @@
     },
     "adapter": {
       "type": "string",
-      "enum": ["github_repo", "html_extraction", "eurlex_celex", "iso_metadata"],
+      "enum": [
+        "github_repo",
+        "html_extraction",
+        "eurlex_celex",
+        "iso_metadata"
+      ],
       "description": "Which adapter fetches and extracts this target."
     },
     "allowlisted_url": {
@@ -70,7 +75,17 @@
     "source": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "domain", "title", "reference_file", "cadence", "enabled", "license", "reproduction", "targets"],
+      "required": [
+        "id",
+        "domain",
+        "title",
+        "reference_file",
+        "cadence",
+        "enabled",
+        "license",
+        "reproduction",
+        "targets"
+      ],
       "properties": {
         "id": {
           "type": "string",
@@ -106,7 +121,13 @@
         },
         "reproduction": {
           "type": "string",
-          "enum": ["public-domain", "open-attribution", "share-alike-noncommercial", "facts-and-quotation", "proprietary-metadata-only"],
+          "enum": [
+            "public-domain",
+            "open-attribution",
+            "share-alike-noncommercial",
+            "facts-and-quotation",
+            "proprietary-metadata-only"
+          ],
           "description": "Reproduction policy tier the library applies to this source. Governs how much of the source may be reproduced on a public page (vs. paraphrased in our own words)."
         },
         "targets": {

@@ -195,9 +195,7 @@ frontmatter) is reused across phases.
 
 ---
 
-<sub>
 [ajit-pulse]: https://www.linkedin.com/pulse/enterprise-collective-second-brain-using-claude-skills-ajit-jaokar-ykode/
 [roadmap-issue]: https://github.com/siegfriedbolz/ai-governance-watch/issues
 [mit]: https://opensource.org/licenses/MIT
 [cc-by-4]: https://creativecommons.org/licenses/by/4.0/
-</sub>

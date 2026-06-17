@@ -3,7 +3,7 @@
 This project adopts the **Contributor Covenant v2.1** as its Code of Conduct.
 
 The full canonical text is published at:
-https://www.contributor-covenant.org/version/2/1/code_of_conduct/
+<https://www.contributor-covenant.org/version/2/1/code_of_conduct/>
 
 ## In short
 
@@ -39,5 +39,5 @@ relevant issue or PR thread where appropriate, redacted where necessary.
 ---
 
 Attribution: Contributor Covenant, version 2.1,
-https://www.contributor-covenant.org/version/2/1/code_of_conduct/ —
+<https://www.contributor-covenant.org/version/2/1/code_of_conduct/> —
 licensed under CC BY 4.0.
