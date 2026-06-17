@@ -1,6 +1,22 @@
 # AI Governance Watch — search engines and AI/LLM crawlers are welcome.
-# NOTE: robots.txt is only honoured at the domain root. Update the Sitemap URL
-# below to match the final site_url (mkdocs.yml) when you move to a custom domain.
+#
+# IMPORTANT — GitHub Pages PROJECT site limitation:
+#   robots.txt is only honoured at the DOMAIN ROOT. On the current project URL
+#   (https://siegfriedbolz.github.io/ai-governance-watch/) crawlers fetch
+#   https://siegfriedbolz.github.io/robots.txt — NOT this file under the
+#   /ai-governance-watch/ subpath. So the Sitemap autodiscovery and the
+#   per-bot directives below are effectively IGNORED until the site is served
+#   from a domain/subdomain root (e.g. governance.siegfried-bolz.de).
+#
+#   MITIGATION while on github.io (do this after every deploy as routine):
+#     1. Submit the sitemap manually in Google Search Console and Bing Webmaster
+#        Tools: https://siegfriedbolz.github.io/ai-governance-watch/sitemap.xml
+#     2. Crawling is allowed by default, so indexing is NOT blocked — only the
+#        explicit hints here are. An llms.txt is also published for AI crawlers:
+#        https://siegfriedbolz.github.io/ai-governance-watch/llms.txt
+#
+#   When you move to a custom domain, update site_url in mkdocs.yml AND the
+#   Sitemap URL below, and this file will then be honoured at the root.
 
 User-agent: *
 Allow: /

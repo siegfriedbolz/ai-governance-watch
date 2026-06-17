@@ -1,0 +1,33 @@
+# AI Governance Watch
+
+> A continuously-watched reference library of the AI governance standards an external AI risk auditor has to keep current — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, the UK pro-innovation approach, the CSA Agentic Profile, the Berkeley CLTC risk-threshold work, and the NIST ITL standards landscape. Built and maintained by Siegfried-Thor Bolz, Enterprise Adobe Experience Manager (AEM / AEMaaCS) architect and AI risk auditor near Munich, Germany.
+
+Each standard has its own page with an audit-oriented summary, a plain-language explainer, the clauses you would cite, an auditor checklist, a cross-framework mapping, and a rolling changelog of what changed. Content is general information, not legal advice; every page links back to its primary source. The site is in English.
+
+## Standards overview
+- [Standards at a glance](https://siegfriedbolz.github.io/ai-governance-watch/at-a-glance/): side-by-side comparison of all nine — type, binding vs voluntary, jurisdiction, status, and what each governs.
+
+## Frameworks & management systems
+- [NIST AI RMF](https://siegfriedbolz.github.io/ai-governance-watch/reference_nist_ai_rmf/): NIST's voluntary AI Risk Management Framework (AI RMF 1.0, NIST AI 100-1, 2023) — GOVERN / MAP / MEASURE / MANAGE, trustworthy-AI characteristics, and the Generative AI Profile (NIST AI 600-1, 2024).
+- [ISO/IEC 42001](https://siegfriedbolz.github.io/ai-governance-watch/reference_iso_42001/): the world's first certifiable AI Management System (AIMS) standard (2023); Annex SL structure, Annex A controls, Statement of Applicability, certification cycle.
+- [ISO/IEC 23894](https://siegfriedbolz.github.io/ai-governance-watch/reference_iso_23894/): guidance on managing AI-specific risk across the lifecycle (2023); the "how-to" companion to ISO 31000 and ISO/IEC 42001.
+
+## Regulation & law
+- [EU AI Act](https://siegfriedbolz.github.io/ai-governance-watch/reference_eu_ai_act/): Regulation (EU) 2024/1689, the first comprehensive binding AI law — risk tiers, high-risk obligations, GPAI rules, and the 2026 Digital Omnibus timeline changes.
+- [UK AI White Paper](https://siegfriedbolz.github.io/ai-governance-watch/reference_uk_ai_white_paper/): the UK's pro-innovation, principles-based, sector-led approach (2023 White Paper CP 815 + 2024 response) and the AI Growth Lab sandboxes.
+- [DORA](https://siegfriedbolz.github.io/ai-governance-watch/reference_dora/): Digital Operational Resilience Act (Regulation (EU) 2022/2554) — five pillars, ICT third-party and critical-provider oversight; the operational-resilience angle on AI vendor risk.
+
+## Agentic, thresholds & landscape
+- [CSA Agentic Profile](https://siegfriedbolz.github.io/ai-governance-watch/reference_csa_agentic_profile/): the Cloud Security Alliance's draft extension of the NIST AI RMF to agentic AI (AG-GV / AG-MP / AG-MS / AG-MG).
+- [Berkeley CLTC](https://siegfriedbolz.github.io/ai-governance-watch/reference_berkeley_cltc/): UC Berkeley Center for Long-Term Cybersecurity work on intolerable-risk thresholds and AI-enabled cyber-threat thresholds (Bayesian-network method).
+- [NIST ITL Standards Landscape](https://siegfriedbolz.github.io/ai-governance-watch/reference_nist_itl_landscape/): NIST's map of the global AI-standards field — a meta-source used to spot new standards worth tracking.
+
+## Reference
+- [AI audit for enterprise CMS](https://siegfriedbolz.github.io/ai-governance-watch/ai-audit-for-cms/): how these standards apply to AI features in enterprise CMS / Adobe Experience Manager.
+- [Glossary](https://siegfriedbolz.github.io/ai-governance-watch/glossary/): key AI-governance terms used across the library.
+- [Changelog](https://siegfriedbolz.github.io/ai-governance-watch/changelog/): rolling log of what changed and when.
+
+## About
+- [Siegfried-Thor Bolz — services & contact](https://www.siegfried-bolz.de): AI risk auditing, AI governance & compliance, secure AEM / AEMaaCS engineering.
+- [LinkedIn](https://www.linkedin.com/in/sbolz/)
+- [GitHub repository](https://github.com/siegfriedbolz/ai-governance-watch)

@@ -22,10 +22,12 @@ provenance_chain:
     **Licence:** © European Union (EUR-Lex), Decision 2011/833/EU (`open-attribution`)
 
 !!! warning "Moving target — Digital Omnibus (2026)"
-    On **7 May 2026** Council and Parliament reached a provisional agreement on
-    the *Digital Omnibus on AI*, **postponing high-risk obligations**: stand-alone
-    Annex III systems move from 2 Aug 2026 to **2 December 2027**; AI embedded in
-    Annex I regulated products to **2 August 2028**. It also adds an Article 5
+    Following the Commission's **19 November 2025** *Digital Omnibus* proposal, on
+    **7 May 2026** Council and Parliament reached a provisional agreement,
+    **postponing high-risk obligations**: stand-alone Annex III systems move from
+    2 Aug 2026 to **2 December 2027**; AI embedded in Annex I regulated products to
+    **2 August 2028** (the May trilogue replaced the proposal's conditional
+    "standards-ready" trigger with these fixed dates). It also adds an Article 5
     prohibition on AI generating CSAM / non-consensual intimate imagery. These
     take legal effect only on **publication in the Official Journal** (expected
     before 2 Aug 2026). Until then the original deadlines remain the law.
@@ -93,20 +95,20 @@ decides how heavy your duties are.
 
 ## Key Sections
 
-- **Art. 5 — Prohibited practices** — manipulative, exploitative, social-scoring, untargeted scraping, and (per the Omnibus) CSAM/NCII generation.
-- **Art. 6 + Annex III — High-risk classification** — the test for whether a system is high-risk; Art. 6(1) treated separately in the timeline.
-- **Art. 16 — Provider obligations** — risk management, data governance, technical documentation, logging, transparency, human oversight, accuracy/robustness/cybersecurity.
-- **Art. 27 — Fundamental Rights Impact Assessment (FRIA)** — required of certain deployers of high-risk systems.
-- **Art. 43 — Conformity assessment** — internal control vs notified-body routes.
-- **GPAI (Art. 51 ff.)** — model documentation, copyright policy, training-data summary; systemic-risk models carry added duties.
+- **[Art. 5 — Prohibited practices](https://artificialintelligenceact.eu/article/5/ "EU AI Act Article 5 — the AI practices banned outright: manipulation, exploitation of vulnerabilities, social scoring, untargeted facial scraping, and (per the Omnibus) CSAM/NCII generation.")** — manipulative, exploitative, social-scoring, untargeted scraping, and (per the Omnibus) CSAM/NCII generation.
+- **[Art. 6](https://artificialintelligenceact.eu/article/6/ "EU AI Act Article 6 — the classification test that determines whether an AI system counts as high-risk.") + [Annex III](https://artificialintelligenceact.eu/annex/3/) — High-risk classification** — the test for whether a system is high-risk; Art. 6(1) treated separately in the timeline.
+- **[Art. 16 — Provider obligations](https://artificialintelligenceact.eu/article/16/ "EU AI Act Article 16 — the duties a provider of a high-risk AI system owes: risk management, data governance, technical documentation, logging, transparency, human oversight, accuracy, robustness and cybersecurity.")** — risk management, data governance, technical documentation, logging, transparency, human oversight, accuracy/robustness/cybersecurity.
+- **[Art. 27 — Fundamental Rights Impact Assessment (FRIA)](https://artificialintelligenceact.eu/article/27/ "EU AI Act Article 27 — the Fundamental Rights Impact Assessment certain deployers of high-risk AI must perform before use.")** — required of certain deployers of high-risk systems.
+- **[Art. 43 — Conformity assessment](https://artificialintelligenceact.eu/article/43/ "EU AI Act Article 43 — the conformity-assessment routes (internal control vs notified body) a high-risk system must pass before market entry.")** — internal control vs notified-body routes.
+- **GPAI ([Art. 51 ff.](https://artificialintelligenceact.eu/article/51/ "EU AI Act Article 51 onwards — obligations for general-purpose AI models: documentation, copyright policy, training-data summary; systemic-risk models carry added duties."))** — model documentation, copyright policy, training-data summary; systemic-risk models carry added duties.
 
 ## Audit-Relevant Anchors
 
-- **Annex III** — the high-risk use-case list that scopes most conformity work.
-- **Art. 16 + Annex IV** — the technical documentation an auditor inspects.
-- **Art. 27 (FRIA)** — directly relevant to the external-auditor engagement model.
-- **Art. 43 + Annex VI/VII** — which conformity route applies, and the evidence each requires.
-- **Implementation timeline** — which obligations are actually in force at engagement date (now itself a moving anchor due to the Omnibus).
+- **[Annex III](https://artificialintelligenceact.eu/annex/3/ "EU AI Act Annex III — the list of high-risk use cases (recruitment, credit, biometrics, critical infrastructure, etc.) that scopes most conformity work.")** — the high-risk use-case list that scopes most conformity work.
+- **[Art. 16](https://artificialintelligenceact.eu/article/16/ "EU AI Act Article 16 — the full set of provider obligations for high-risk AI.") + [Annex IV](https://artificialintelligenceact.eu/annex/4/ "EU AI Act Annex IV — the contents of the technical documentation a provider must compile and an auditor inspects.")** — the technical documentation an auditor inspects.
+- **[Art. 27 (FRIA)](https://artificialintelligenceact.eu/article/27/ "EU AI Act Article 27 — the Fundamental Rights Impact Assessment; directly relevant to the external-auditor engagement model.")** — directly relevant to the external-auditor engagement model.
+- **[Art. 43](https://artificialintelligenceact.eu/article/43/ "EU AI Act Article 43 — the conformity-assessment procedures for high-risk AI.") + Annex [VI](https://artificialintelligenceact.eu/annex/6/ "EU AI Act Annex VI — the internal-control conformity-assessment route.")/[VII](https://artificialintelligenceact.eu/annex/7/ "EU AI Act Annex VII — the notified-body conformity-assessment route based on QMS and technical-documentation assessment.")** — which conformity route applies, and the evidence each requires.
+- **Implementation timeline**{ title="Which EU AI Act obligations are actually in force at the engagement date — itself a moving anchor after the 2026 Digital Omnibus deferred several high-risk deadlines." } — which obligations are actually in force at engagement date (now itself a moving anchor due to the Omnibus).
 
 ## Auditor Checklist
 
@@ -127,13 +129,16 @@ Evidence-oriented checks for a high-risk AI engagement under the Act:
 
 Indicative cross-references, **not** authoritative equivalences.
 
+Cells link to the **direct source** where readable (ISO clauses are paywalled, so
+only the ISO catalogue entry is public — see the [ISO/IEC 42001](reference_iso_42001.md) page).
+
 | EU AI Act | NIST AI RMF | ISO/IEC 42001 |
 | --------- | ----------- | ------------- |
-| Art. 9 (risk management) | MAP + MANAGE | Cl. 6.1 + Cl. 8 |
-| Art. 10 (data governance) | MAP 2 / MEASURE | Annex A (data controls) |
-| Art. 14 (human oversight) | MANAGE | Annex A (oversight controls) |
-| Art. 15 (accuracy/robustness/cyber) | MEASURE 2 | Cl. 8 + Annex A |
-| Art. 17 (quality management system) | GOVERN | Cl. 4–10 (whole AIMS) |
+| [Art. 9](https://artificialintelligenceact.eu/article/9/) (risk management) | [MAP](https://airc.nist.gov/airmf-resources/playbook/map/) + [MANAGE](https://airc.nist.gov/airmf-resources/playbook/manage/) | Cl. 6.1 + Cl. 8 |
+| [Art. 10](https://artificialintelligenceact.eu/article/10/) (data governance) | [MAP](https://airc.nist.gov/airmf-resources/playbook/map/) / [MEASURE](https://airc.nist.gov/airmf-resources/playbook/measure/) | Annex A (data controls) |
+| [Art. 14](https://artificialintelligenceact.eu/article/14/) (human oversight) | [MANAGE](https://airc.nist.gov/airmf-resources/playbook/manage/) | Annex A (oversight controls) |
+| [Art. 15](https://artificialintelligenceact.eu/article/15/) (accuracy/robustness/cyber) | [MEASURE](https://airc.nist.gov/airmf-resources/playbook/measure/) | Cl. 8 + Annex A |
+| [Art. 17](https://artificialintelligenceact.eu/article/17/) (quality management system) | [GOVERN](https://airc.nist.gov/airmf-resources/playbook/govern/) | Cl. 4–10 (whole AIMS) |
 
 ## Recent Changes (rolling, last 5)
 

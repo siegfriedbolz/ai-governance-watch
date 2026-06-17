@@ -19,7 +19,7 @@ provenance_chain:
     **Last observed:** `2026-06-16` ·
     **Version:** Lab Space draft v1 (early 2026) ·
     **Status:** planned ·
-    **Licence:** CC BY-NC-SA 4.0, CSA (`share-alike-noncommercial`)
+    **Licence:** no licence stated on the CSA Lab Space draft; CSA's published agentic work uses CC BY / CC BY-SA — treated here as facts & short attributed quotation (`facts-and-quotation`)
 
 ## Summary
 
@@ -37,8 +37,9 @@ and ISO/IEC 42001.
 ## In plain language
 
 !!! note "Our explanation, not the official text"
-    Plain-language summary in our own words — not the official text. CSA content
-    is CC BY-NC-SA: reuse non-commercially, attribute CSA, share alike. Not legal advice.
+    Plain-language summary in our own words — not the official text. The CSA Lab
+    Space draft states no explicit licence, so we paraphrase the concepts and
+    attribute CSA. Not legal advice.
 
 This CSA profile takes the NIST AI RMF and adapts it to *agentic* AI — systems
 that plan, call tools, hold memory, and act on their own. The core question it
@@ -52,20 +53,62 @@ CSA's wider AI controls catalogue.
 - **AG-GV / MP / MS / MG** — the agentic versions of NIST's govern / map / measure / manage.
 - **Oversight theatre** — human oversight that exists on paper but can't actually stop the agent.
 
+## In depth (in our own words)
+
+!!! note "Our explanation — not the official text"
+    Our own-words explanation of the concepts. The CSA Lab Space draft states no
+    explicit licence, so we paraphrase the concepts and attribute CSA. Not legal advice.
+
+**Why agentic AI needed its own profile.** The NIST AI RMF and the GenAI Profile
+were written for models that answer questions. *Agentic* systems are different:
+they pursue goals over many steps, call external tools and APIs, hold memory, and
+act with real autonomy. That introduces failure modes the original frameworks
+barely touch — an agent drifting from its intended goal, misusing a tool,
+escalating its own privileges, having its memory or context poisoned, or several
+agents triggering a cascade of actions no single human approved. CSA's Agentic
+Profile exists to extend the familiar NIST functions to exactly these risks.
+
+**The four agentic functions, in plain terms.** The profile mirrors NIST's
+GOVERN/MAP/MEASURE/MANAGE with agent-specific codes. **AG-GV (Govern)** is about
+the agent's *mandate*: who authorised it, what it is allowed to do, and who is
+accountable. **AG-MP (Map)** is about its *reach*: the tools, data and actions it
+can take — the attack and blast-radius surface. **AG-MS (Measure)** is about
+*evidence*: is the oversight actually effective, or just decorative? **AG-MG
+(Manage)** is about *control under stress*: containment, kill-switches, rollback
+and recovery when an agent behaves unexpectedly.
+
+**The questions an agentic audit really turns on.** In our practice the decisive
+checks are: Is the agent's authority *bounded* and least-privilege, or can it do
+far more than its task needs? Is every action *logged, attributable and
+reversible*? Is the human oversight *real* — can a person actually stop or undo the
+agent in time — or is it "oversight theatre"? Has the kill-switch ever been
+*tested*? Are memory-poisoning and inter-agent communication risks considered?
+
+**Where it sits in the ecosystem.** The profile plugs into CSA's wider control
+work — the AI Controls Matrix (AICM) and the catastrophic-risk programme — and
+lines up with the OWASP Top 10 for Agentic Applications and the EU AI Act's
+oversight duties. So it's both a risk lens and a crosswalk back to obligations you
+already have.
+
+**A caveat worth stating.** It is a **draft (v1)**. The structure is stable enough
+to use as an audit lens today, but specific clause numbers and controls may change
+— so cite it as evolving guidance, and re-check the current version before relying
+on exact references.
+
 ## Key Sections
 
-- **AG-GV (Govern)** — governance of agent objectives, authority, and accountability.
-- **AG-MP (Map)** — context, tools, and the agent's action surface.
-- **AG-MS (Measure)** — evaluation of agent behaviour, reliability, and oversight effectiveness.
-- **AG-MG (Manage)** — response, containment, and recovery for autonomous behaviour.
+- **[AG-GV (Govern)](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/)** — governance of agent objectives, authority, and accountability.
+- **[AG-MP (Map)](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/)** — context, tools, and the agent's action surface.
+- **[AG-MS (Measure)](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/)** — evaluation of agent behaviour, reliability, and oversight effectiveness.
+- **[AG-MG (Manage)](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/)** — response, containment, and recovery for autonomous behaviour.
 - **AI Controls Matrix (AICM) + Catastrophic Risk Annex** — control set for loss of human oversight and large-scale, irreversible outcomes.
 
 ## Audit-Relevant Anchors
 
-- **AG-GV controls** — is the agent's authority bounded, logged, and revocable? (Core agentic-audit question.)
-- **AG-MS controls** — evidence that oversight is real, not "oversight theatre".
-- **AICM mapping** — crosswalk an auditor can use to tie agentic controls back to NIST/ISO/EU obligations.
-- **Draft status** — anchors must be re-checked: v1 is not final, so cited clause numbers may shift.
+- **AG-GV controls**{ title="The CSA Agentic Profile's Govern controls — the core agentic-audit question of whether the agent's authority is bounded, logged and revocable." } — is the agent's authority bounded, logged, and revocable? (Core agentic-audit question.)
+- **AG-MS controls**{ title="The CSA Agentic Profile's Measure controls — evidence that human oversight of the agent is real and effective, not oversight theatre." } — evidence that oversight is real, not "oversight theatre".
+- **AICM mapping**{ title="A crosswalk from the CSA AI Controls Matrix that lets an auditor tie agentic controls back to NIST, ISO and EU AI Act obligations." } — crosswalk an auditor can use to tie agentic controls back to NIST/ISO/EU obligations.
+- **Draft status**{ title="The Agentic Profile is a draft (v1, not final), so cited function/control identifiers may shift — anchors must be re-checked against the current version." } — anchors must be re-checked: v1 is not final, so cited clause numbers may shift.
 
 ## Auditor Checklist
 
@@ -83,12 +126,14 @@ Evidence-oriented checks for an agentic-AI deployment:
 
 Indicative cross-references, **not** authoritative equivalences.
 
+Cells link to the direct source (CSA draft · NIST AIRC · EU AI Act · OWASP GenAI).
+
 | CSA Agentic | NIST AI RMF | EU AI Act | OWASP Agentic 2026 |
 | ----------- | ----------- | --------- | ------------------ |
-| AG-GV (govern) | GOVERN | Art. 14 (oversight) | Identity / privilege abuse |
-| AG-MP (map) | MAP | Art. 9 | Tool misuse |
-| AG-MS (measure) | MEASURE | Art. 15 | Human-agent trust exploitation |
-| AG-MG (manage) | MANAGE | Art. 9 (treatment) | Rogue agents / cascading failures |
+| [AG-GV](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/) (govern) | [GOVERN](https://airc.nist.gov/airmf-resources/playbook/govern/) | [Art. 14](https://artificialintelligenceact.eu/article/14/) (oversight) | [Identity / privilege abuse](https://genai.owasp.org/) |
+| [AG-MP](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/) (map) | [MAP](https://airc.nist.gov/airmf-resources/playbook/map/) | [Art. 9](https://artificialintelligenceact.eu/article/9/) | [Tool misuse](https://genai.owasp.org/) |
+| [AG-MS](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/) (measure) | [MEASURE](https://airc.nist.gov/airmf-resources/playbook/measure/) | [Art. 15](https://artificialintelligenceact.eu/article/15/) | [Human-agent trust exploitation](https://genai.owasp.org/) |
+| [AG-MG](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/) (manage) | [MANAGE](https://airc.nist.gov/airmf-resources/playbook/manage/) | [Art. 9](https://artificialintelligenceact.eu/article/9/) (treatment) | [Rogue agents / cascading failures](https://genai.owasp.org/) |
 
 ## Recent Changes (rolling, last 5)
 

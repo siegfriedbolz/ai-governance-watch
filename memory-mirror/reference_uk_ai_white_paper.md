@@ -5,7 +5,7 @@ type: reference
 source_id: uk_ai_white_paper
 source_url: "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach"
 last_observed_at: "2026-06-16T00:00:00Z"
-last_observed_commit_or_version: "White Paper CP 815 (2023-03); Government response (2024-02); AI Growth Lab consultation (opened 2025-10-21, closed 2026-01-02)"
+last_observed_commit_or_version: "White Paper CP 815 (2023-03); Government response (2024-02); AI Growth Lab consultation (opened 2025-10-21, closed 2026-01-07)"
 provenance_chain:
   - timestamp: "2026-06-16T00:00:00Z"
     pr: "baseline (manual)"
@@ -31,8 +31,8 @@ existing regulators (ICO, FCA, CMA, Ofcom, MHRA, and others) apply five
 cross-cutting principles within their domains rather than a new central AI
 regulator. In 2025-26 the approach is evolving toward experimentation — the
 DSIT **AI Growth Lab** (cross-economy regulatory sandboxes) opened for
-consultation on 21 October 2025, with the call for evidence closing 2 January
-2026. Targeted statutory rules (e.g. for foundation models) remain signalled
+consultation on 21 October 2025, with the call for evidence closing 7 January
+2026 (extended from an originally announced 2 January). Targeted statutory rules (e.g. for foundation models) remain signalled
 but not yet legislated.
 
 ## In plain language
@@ -96,16 +96,16 @@ statute.
 
 ## Key Sections
 
-- **Five principles** — (1) safety, security & robustness; (2) appropriate transparency & explainability; (3) fairness; (4) accountability & governance; (5) contestability & redress.
-- **Sector-led delivery** — regulators apply the principles using existing powers.
-- **Central functions** — monitoring, risk assessment, horizon-scanning support to regulators.
+- **[Five principles](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper "The UK White Paper's five cross-sector principles that existing regulators apply: safety/security/robustness; transparency & explainability; fairness; accountability & governance; contestability & redress.")** — (1) safety, security & robustness; (2) appropriate transparency & explainability; (3) fairness; (4) accountability & governance; (5) contestability & redress.
+- **Sector-led delivery**{ title="The UK's model of having existing sector regulators (ICO, FCA, Ofcom, etc.) apply the five AI principles using their current powers, rather than creating one central AI regulator." } — regulators apply the principles using existing powers.
+- **Central functions**{ title="The cross-government support functions — monitoring, risk assessment and horizon-scanning — that coordinate regulators and watch for gaps in the sector-led model." } — monitoring, risk assessment, horizon-scanning support to regulators.
 - **AI Growth Lab (2025-26)** — sandboxes with targeted, time-limited regulatory modifications.
 
 ## Audit-Relevant Anchors
 
-- **Five principles** — the lens a UK-facing audit maps controls against (vs the EU AI Act's hard obligations).
-- **Sector regulator guidance** — the actual binding expectations live in each regulator's rules (e.g. FCA), not in the White Paper.
-- **Divergence watch** — the key auditor question is whether/when the UK moves from principles to statute.
+- **[Five principles](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper "The UK White Paper's five cross-sector principles — the lens a UK-facing audit maps controls against, versus the EU AI Act's hard legal obligations.")** — the lens a UK-facing audit maps controls against (vs the EU AI Act's hard obligations).
+- **Sector regulator guidance**{ title="In the UK model the binding expectations live in each sector regulator's own rules (e.g. the FCA), not in the White Paper — so an audit must check the relevant regulator's guidance." } — the actual binding expectations live in each regulator's rules (e.g. the [FCA](https://www.fca.org.uk/ "Financial Conduct Authority — an example UK sector regulator whose own rules carry the binding AI-related expectations.")), not in the White Paper.
+- **Divergence watch**{ title="The key auditor question under the UK approach: whether and when the UK shifts from voluntary principles to binding statute." } — the key auditor question is whether/when the UK moves from principles to statute.
 
 ## Auditor Checklist
 
@@ -121,13 +121,15 @@ Evidence-oriented checks for a UK-facing engagement:
 
 Indicative cross-references, **not** authoritative equivalences.
 
+Cells link to the direct source (UK principles → the White Paper full text).
+
 | UK principle | NIST AI RMF | EU AI Act |
 | ------------ | ----------- | --------- |
-| Safety, security & robustness | MEASURE / MANAGE | Art. 15 |
-| Appropriate transparency & explainability | MAP / MEASURE | Art. 13 |
-| Fairness | MEASURE (bias) | Art. 10 (data) |
-| Accountability & governance | GOVERN | Art. 17 |
-| Contestability & redress | MANAGE | Art. 85–86 (complaints / remedies) |
+| [Safety, security & robustness](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper) | [MEASURE](https://airc.nist.gov/airmf-resources/playbook/measure/) / [MANAGE](https://airc.nist.gov/airmf-resources/playbook/manage/) | [Art. 15](https://artificialintelligenceact.eu/article/15/) |
+| [Transparency & explainability](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper) | [MAP](https://airc.nist.gov/airmf-resources/playbook/map/) / [MEASURE](https://airc.nist.gov/airmf-resources/playbook/measure/) | [Art. 13](https://artificialintelligenceact.eu/article/13/) |
+| [Fairness](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper) | [MEASURE](https://airc.nist.gov/airmf-resources/playbook/measure/) (bias) | [Art. 10](https://artificialintelligenceact.eu/article/10/) (data) |
+| [Accountability & governance](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper) | [GOVERN](https://airc.nist.gov/airmf-resources/playbook/govern/) | [Art. 17](https://artificialintelligenceact.eu/article/17/) |
+| [Contestability & redress](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper) | [MANAGE](https://airc.nist.gov/airmf-resources/playbook/manage/) | [Art. 85](https://artificialintelligenceact.eu/article/85/)–[86](https://artificialintelligenceact.eu/article/86/) |
 
 ## Recent Changes (rolling, last 5)
 

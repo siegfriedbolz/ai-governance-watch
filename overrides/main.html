@@ -105,5 +105,35 @@
     ]
   }
   </script>
+  {%- elif page and page.canonical_url %}
+  {%- set base = config.site_url or "" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": {{ page.title | tojson }},
+    "description": {{ (page_desc | striptags | trim) | tojson }},
+    "url": "{{ page.canonical_url }}",
+    "mainEntityOfPage": "{{ page.canonical_url }}",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    {%- if page.meta and page.meta.git_revision_date_localized_raw_iso_date %}
+    "dateModified": "{{ page.meta.git_revision_date_localized_raw_iso_date }}",
+    {%- endif %}
+    "author": { "@type": "Person", "name": "Siegfried-Thor Bolz", "url": "https://www.siegfried-bolz.de" },
+    "publisher": { "@type": "Person", "name": "Siegfried-Thor Bolz", "url": "https://www.siegfried-bolz.de" },
+    "isPartOf": { "@type": "WebSite", "name": "AI Governance Watch"{% if base %}, "url": "{{ base }}", "@id": "{{ base }}#website"{% endif %} }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "AI Governance Watch", "item": "{{ base }}" },
+      { "@type": "ListItem", "position": 2, "name": {{ page.title | tojson }}, "item": "{{ page.canonical_url }}" }
+    ]
+  }
+  </script>
   {%- endif %}
 {% endblock %}

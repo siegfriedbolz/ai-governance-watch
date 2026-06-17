@@ -1,5 +1,11 @@
 # ai-governance-watch
 
+**📖 Live library → <https://siegfriedbolz.github.io/ai-governance-watch/>**
+
+> *You are on the **source repository**. The published, searchable auditor-facing
+> site is the link above — it is built from `memory-mirror/` and served via GitHub
+> Pages, not rendered here on GitHub.*
+
 > ⚠️ **Work in Progress — Phase 5 of [Ajit Jaokar's 6-phase Second-Brain roadmap][ajit-pulse].**
 > Architecture is stable and the implementation plan is approved (v1.1).
 > The NIST adapter is in pilot. Other adapters land in waves over the coming
@@ -144,6 +150,11 @@ The auditor-facing site is built with **MkDocs Material** and deployed to
 GitHub Pages by `.github/workflows/pages.yml` on every push to `main`. It is a
 single, searchable library: a landing `index.md`, one page per watched
 standard, and a `changelog.md`.
+
+**Live URL:** <https://siegfriedbolz.github.io/ai-governance-watch/>
+(one-time setup: **Settings → Pages → Build and deployment → Source = "GitHub
+Actions"**, on a public repo; the URL then also appears under Settings → Pages
+after the first successful run).
 
 Only `memory-mirror/` is ever published (`docs_dir: memory-mirror`, plus
 `exclude_docs`). The internal `docs/`, this README, `SECURITY.md`, the

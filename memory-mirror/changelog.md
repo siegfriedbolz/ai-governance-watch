@@ -15,6 +15,34 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-06-17 — Tooltips on every Key Section term & link
+
+Completed tooltip coverage on the remaining pages. ISO/IEC 42001 (Clauses 4–10,
+Annex A–D) and ISO/IEC 23894 (Clauses 4–6, Annex A–C) now carry per-page hover
+definitions (kept page-local to avoid the "Annex B" cross-standard collision).
+Every linked Key Section entry — EU AI Act articles, DORA articles, UK principles,
+Berkeley CLTC papers and NIST ITL pages — now shows an explanatory tooltip on
+mouseover of the link itself, in addition to the existing term glossary.
+
+## 2026-06-16 — Key-term tooltips + source links
+
+Added hover/focus **tooltips** for ~27 key terms (defined once in a shared
+glossary, shown wherever a term appears) and expanded each definition. **Linked**
+the Key Sections, Audit-Relevant Anchors and Cross-Framework Mapping entries to
+their direct sources: EU AI Act articles/annexes (artificialintelligenceact.eu),
+DORA articles, NIST functions (AIRC Playbook), UK principles (gov.uk) and the
+CSA/Berkeley pages. ISO clauses are paywalled, so those cells point to the ISO
+catalogue rather than fabricated deep links.
+
+## 2026-06-16 — Deeper own-words explainers
+
+Expanded the five lighter pages — [ISO/IEC 42001](reference_iso_42001.md),
+[ISO/IEC 23894](reference_iso_23894.md), [CSA Agentic Profile](reference_csa_agentic_profile.md),
+[Berkeley CLTC](reference_berkeley_cltc.md) and [NIST ITL Landscape](reference_nist_itl_landscape.md)
+— with an "In depth (in our own words)" section. These explain the concepts in
+our own words (no verbatim text), so the paywalled/licence-restricted standards
+gain depth without reproducing any provider wording.
+
 ## 2026-06-16 — New pages + SEO/GEO
 
 Added three pages: **[Standards at a glance](at-a-glance.md)** (comparison of all

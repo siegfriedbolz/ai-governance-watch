@@ -82,17 +82,17 @@ party", so its outages and breaches become *your* regulated problem.
 
 ## Key Sections (five pillars)
 
-- **ICT risk management** — governance and a documented ICT risk framework (Arts. 5-16).
-- **ICT incident management & reporting** — classify and report major ICT-related incidents (Arts. 17-23).
-- **Digital operational resilience testing** — incl. threat-led penetration testing (TLPT) for significant entities (Arts. 24-27).
-- **ICT third-party risk** — contractual requirements + the **Critical ICT Third-Party Provider** oversight regime (Arts. 28-44).
-- **Information sharing** — voluntary cyber-threat intelligence exchange (Art. 45).
+- **ICT risk management** — governance and a documented ICT risk framework ([Arts. 5-16](https://www.digital-operational-resilience-act.com/Article_5.html "DORA Articles 5-16 — the board-owned ICT risk-management framework: identify, protect, detect, respond and recover.")).
+- **ICT incident management & reporting** — classify and report major ICT-related incidents ([Arts. 17-23](https://www.digital-operational-resilience-act.com/Article_17.html "DORA Articles 17-23 — detecting, logging, classifying and reporting major ICT-related incidents to regulators on set deadlines.")).
+- **Digital operational resilience testing** — incl. threat-led penetration testing (TLPT) for significant entities ([Arts. 24-27](https://www.digital-operational-resilience-act.com/Article_24.html "DORA Articles 24-27 — the resilience-testing programme, from vulnerability assessments up to threat-led penetration testing (TLPT) for significant entities.")).
+- **ICT third-party risk** — contractual requirements + the **Critical ICT Third-Party Provider** oversight regime ([Arts. 28-44](https://www.digital-operational-resilience-act.com/Article_28.html "DORA Articles 28-44 — managing ICT third-party dependencies contractually, plus EU oversight of Critical ICT Third-Party Providers.")).
+- **Information sharing** — voluntary cyber-threat intelligence exchange ([Art. 45](https://www.digital-operational-resilience-act.com/Article_45.html "DORA Article 45 — voluntary exchange of cyber-threat intelligence and indicators of compromise within trusted communities.")).
 
 ## Audit-Relevant Anchors
 
-- **Art. 28-30 (third-party risk)** — the register of information and contractual must-haves for ICT/AI vendors.
-- **Art. 24-27 (testing, incl. TLPT)** — resilience testing evidence an auditor inspects.
-- **Critical ICT third-party oversight** — directly relevant where a financial entity depends on a large AI/cloud provider.
+- **[Art. 28-30 (third-party risk)](https://www.digital-operational-resilience-act.com/Article_28.html "DORA Articles 28-30 — the register of information on ICT third parties plus the mandatory contractual provisions for ICT/AI vendors.")** — the register of information and contractual must-haves for ICT/AI vendors.
+- **[Art. 24-27 (testing, incl. TLPT)](https://www.digital-operational-resilience-act.com/Article_24.html "DORA Articles 24-27 — the resilience-testing programme up to threat-led penetration testing (TLPT); the testing evidence an auditor inspects.")** — resilience testing evidence an auditor inspects.
+- **Critical ICT third-party oversight**{ title="DORA's EU-level oversight regime for Critical ICT Third-Party Providers — directly relevant where a financial entity depends on a large AI or cloud provider." } — directly relevant where a financial entity depends on a large AI/cloud provider.
 
 ## Auditor Checklist
 
@@ -112,9 +112,9 @@ Indicative cross-references, **not** authoritative equivalences.
 
 | DORA | NIST (CSF / AI RMF) | EU AI Act |
 | ---- | ------------------- | --------- |
-| Art. 5–16 (ICT risk management) | CSF Identify/Protect; AI RMF MANAGE | Art. 15 (robustness/cyber) |
-| Art. 17–23 (incident reporting) | CSF Respond | Art. 73 (serious-incident reporting) |
-| Art. 28–44 (ICT third-party) | AI RMF MAP 4 (supply chain) | Art. 25 (value-chain responsibilities) |
+| [Art. 5–16](https://www.digital-operational-resilience-act.com/Article_5.html) (ICT risk management) | [CSF](https://www.nist.gov/cyberframework) Identify/Protect; AI RMF [MANAGE](https://airc.nist.gov/airmf-resources/playbook/manage/) | [Art. 15](https://artificialintelligenceact.eu/article/15/) (robustness/cyber) |
+| [Art. 17–23](https://www.digital-operational-resilience-act.com/Article_17.html) (incident reporting) | [CSF](https://www.nist.gov/cyberframework) Respond | [Art. 73](https://artificialintelligenceact.eu/article/73/) (serious-incident reporting) |
+| [Art. 28–44](https://www.digital-operational-resilience-act.com/Article_28.html) (ICT third-party) | AI RMF [MAP](https://airc.nist.gov/airmf-resources/playbook/map/) 4 (supply chain) | [Art. 25](https://artificialintelligenceact.eu/article/25/) (value-chain responsibilities) |
 
 ## Recent Changes (rolling, last 5)
 

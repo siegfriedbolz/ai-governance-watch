@@ -49,6 +49,7 @@ theme:
     - search.share
     - content.code.copy
     - content.action.view
+    - content.tooltips
   palette:
     # Dark "liquid-glass" look is the brand default (matches siegfried-bolz.de).
     - scheme: slate
@@ -94,6 +95,12 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
+  # Key-term tooltips: terms defined in includes/abbreviations.md show a hover/
+  # focus popover wherever they appear (Material "content.tooltips").
+  - abbr
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
 
 nav:
   - Home: index.md

@@ -106,20 +106,20 @@ trade-offs an auditor will later inspect.
 
 ## Key Sections
 
-- **GOVERN** — cross-cutting culture, policies, accountability, and roles for AI risk.
-- **MAP** — establish context; frame the system, its purpose, and its impacts.
-- **MEASURE** — analyse, benchmark, and monitor AI risks with quantitative and qualitative methods.
-- **MANAGE** — prioritise, respond to, and recover from risks; allocate resources.
+- **[GOVERN](https://airc.nist.gov/airmf-resources/playbook/govern/)** — cross-cutting culture, policies, accountability, and roles for AI risk.
+- **[MAP](https://airc.nist.gov/airmf-resources/playbook/map/)** — establish context; frame the system, its purpose, and its impacts.
+- **[MEASURE](https://airc.nist.gov/airmf-resources/playbook/measure/)** — analyse, benchmark, and monitor AI risks with quantitative and qualitative methods.
+- **[MANAGE](https://airc.nist.gov/airmf-resources/playbook/manage/)** — prioritise, respond to, and recover from risks; allocate resources.
 - **Trustworthy AI characteristics** — valid & reliable, safe, secure & resilient, accountable & transparent, explainable & interpretable, privacy-enhanced, and fair (with harmful bias managed).
-- **GenAI Profile (600-1)** — 12 risks incl. confabulation, dangerous/CBRN information, data privacy, harmful bias, information integrity, information security, IP, and value-chain/component integration.
-- **AI RMF Playbook** — actionable, suggested-action companion to the four functions (maintained as a living web resource on the AI Resource Center).
+- **[GenAI Profile (600-1)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)** — 12 risks incl. confabulation, dangerous/CBRN information, data privacy, harmful bias, information integrity, information security, IP, and value-chain/component integration.
+- **[AI RMF Playbook](https://airc.nist.gov/airmf-resources/playbook/)** — actionable, suggested-action companion to the four functions (maintained as a living web resource on the AI Resource Center).
 
 ## Audit-Relevant Anchors
 
-- **GOVERN 1.1 / 1.2** — legal and regulatory requirements are understood, documented, and managed; trustworthy-AI characteristics are reflected in policy.
-- **MAP 1.x** — intended purpose, context of use, and foreseeable misuse are documented (the basis of an audit scope).
-- **MEASURE 2.x** — system performance and trustworthiness are evaluated with named metrics and test sets.
-- **MANAGE 2.x / 4.x** — risk responses and post-deployment monitoring are documented and maintained — the audit trail an assessor inspects.
+- **[GOVERN 1.1 / 1.2](https://airc.nist.gov/airmf-resources/playbook/govern/ "NIST AI RMF GOVERN subcategories 1.1/1.2 — legal/regulatory requirements are understood and managed, and trustworthy-AI characteristics are reflected in organisational policy.")** — legal and regulatory requirements are understood, documented, and managed; trustworthy-AI characteristics are reflected in policy.
+- **[MAP 1.x](https://airc.nist.gov/airmf-resources/playbook/map/ "NIST AI RMF MAP category 1 — documenting intended purpose, context of use and foreseeable misuse; this framing sets the scope of an audit.")** — intended purpose, context of use, and foreseeable misuse are documented (the basis of an audit scope).
+- **[MEASURE 2.x](https://airc.nist.gov/airmf-resources/playbook/measure/ "NIST AI RMF MEASURE category 2 — evaluating system performance and trustworthiness with named metrics and test sets.")** — system performance and trustworthiness are evaluated with named metrics and test sets.
+- **[MANAGE 2.x / 4.x](https://airc.nist.gov/airmf-resources/playbook/manage/ "NIST AI RMF MANAGE categories 2/4 — documenting and maintaining risk responses and post-deployment monitoring; the audit trail an assessor inspects.")** — risk responses and post-deployment monitoring are documented and maintained — the audit trail an assessor inspects.
 
 ## Auditor Checklist
 
@@ -140,10 +140,10 @@ the official [NIST AIRC crosswalks](https://airc.nist.gov/) before relying on th
 
 | NIST AI RMF | ISO/IEC 42001 | EU AI Act | ISO/IEC 23894 |
 | ----------- | ------------- | --------- | ------------- |
-| GOVERN | Cl. 5 (leadership & policy) | Art. 17 (QMS) | Cl. 5 (framework) |
-| MAP | Cl. 6.1 + Cl. 8 (risk ID, impact) | Art. 9 + Annex III (risk, scope) | Cl. 6.2–6.4 |
-| MEASURE | Cl. 9 (performance evaluation) | Art. 15 (accuracy, robustness) | Cl. 6.4 (analysis) |
-| MANAGE | Cl. 8 + Cl. 10 (operation, improvement) | Art. 9 (risk treatment) | Cl. 6.5 (treatment) |
+| [GOVERN](https://airc.nist.gov/airmf-resources/playbook/govern/) | Cl. 5 (leadership & policy) | [Art. 17](https://artificialintelligenceact.eu/article/17/) (QMS) | Cl. 5 (framework) |
+| [MAP](https://airc.nist.gov/airmf-resources/playbook/map/) | Cl. 6.1 + Cl. 8 (risk ID, impact) | [Art. 9](https://artificialintelligenceact.eu/article/9/) + [Annex III](https://artificialintelligenceact.eu/annex/3/) (risk, scope) | Cl. 6.2–6.4 |
+| [MEASURE](https://airc.nist.gov/airmf-resources/playbook/measure/) | Cl. 9 (performance evaluation) | [Art. 15](https://artificialintelligenceact.eu/article/15/) (accuracy, robustness) | Cl. 6.4 (analysis) |
+| [MANAGE](https://airc.nist.gov/airmf-resources/playbook/manage/) | Cl. 8 + Cl. 10 (operation, improvement) | [Art. 9](https://artificialintelligenceact.eu/article/9/) (risk treatment) | Cl. 6.5 (treatment) |
 
 ## Recent Changes (rolling, last 5)
 

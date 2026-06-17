@@ -50,18 +50,49 @@ what to add to the library next.
 - **ISO/IEC SC 42** — the subcommittee that writes the AI standards (42001, 23894, etc.).
 - **Meta-source** — a source *about* other sources, used here to spot what to watch next.
 
+## In depth (in our own words)
+
+!!! note "Our explanation"
+    Our own-words explanation. NIST material is a U.S. Government work (public
+    domain). Not legal advice.
+
+**It's a map, not a standard.** Every other page in this library is a standard,
+framework or regulation you can be measured against. This one is different: it is
+NIST's *view of the whole field* — which bodies are writing which AI standards,
+how they relate, where they overlap, and where the gaps are. You don't "comply"
+with a landscape; you use it to navigate.
+
+**Who is on the map.** The international AI-standards ecosystem is crowded:
+**ISO/IEC JTC 1/SC 42** (the home of ISO/IEC 42001, 23894, 42005, 42006 and more),
+**IEEE**, **CEN-CENELEC** (which underpins the harmonised standards the EU AI Act
+will lean on), plus NIST's own measurement, evaluation and testing work and its
+AI-agent standards activity. NIST ITL tracks how these pieces fit and where the
+priorities are heading — currently evaluation/testing, generative AI and agentic
+systems.
+
+**Why we watch it.** For a "watch" library this is the early-warning radar. New
+standards, profiles and evaluation methods tend to surface in this landscape view
+before they're widely known. Tracking it is how we decide *what to add next* and
+how we make sure the standards already in the library haven't been superseded.
+
+**How to use it in an engagement.** Practically, it answers two auditor questions:
+"Is there a recognised standard for *this* AI concern?" and "Are the standards my
+client relies on still the current ones?" Use it as the index that points you to
+the right standard — then audit against that standard, not against the landscape
+itself.
+
 ## Key Sections
 
-- **ITL's role** — NIST ITL's contribution to and coordination of AI standards.
-- **The landscape** — the inventory of active and emerging AI standards across bodies.
-- **Priorities** — where NIST is focusing (evaluation, testing, agentic AI, GenAI).
-- **Progress** — status of in-flight standards and profiles.
+- **[ITL's role](https://www.nist.gov/artificial-intelligence/itl-ai-engagement "How NIST's Information Technology Laboratory contributes to and coordinates international AI standards work.")** — NIST ITL's contribution to and coordination of AI standards.
+- **[The landscape](https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program "The inventory of active and emerging AI standards across the major bodies — ISO/IEC SC 42, IEEE, CEN-CENELEC and others — and how they relate.")** — the inventory of active and emerging AI standards across bodies.
+- **Priorities**{ title="The areas NIST ITL is currently focusing its AI-standards effort on — evaluation and testing methods, generative AI and agentic systems." } — where NIST is focusing (evaluation, testing, agentic AI, GenAI).
+- **Progress**{ title="The current status of in-flight AI standards and profiles NIST ITL is tracking or contributing to." } — status of in-flight standards and profiles.
 
 ## Audit-Relevant Anchors
 
-- **Standards inventory** — a defensible, government-maintained map of which standard applies to which AI concern.
-- **Gap signals** — early warning of emerging standards an auditor should start tracking.
-- **Cross-references** — pointers from the landscape into NIST AI RMF, ISO/IEC 42001/23894, and agentic-AI work.
+- **Standards inventory**{ title="The government-maintained NIST ITL map of which AI standard applies to which concern — a defensible reference for scoping an audit." } — a defensible, government-maintained map of which standard applies to which AI concern.
+- **Gap signals**{ title="Early warning, surfaced in the landscape view, of emerging AI standards and evaluation methods an auditor should start tracking." } — early warning of emerging standards an auditor should start tracking.
+- **Cross-references**{ title="Pointers from the landscape into the specific standards an auditor then assesses against — NIST AI RMF, ISO/IEC 42001/23894 and agentic-AI work." } — pointers from the landscape into [NIST AI RMF](reference_nist_ai_rmf.md), [ISO/IEC 42001](reference_iso_42001.md)/[23894](reference_iso_23894.md), and [agentic-AI work](reference_csa_agentic_profile.md).
 
 ## Auditor Checklist
 
@@ -78,10 +109,10 @@ A landscape "where it points" map (not a control crosswalk):
 
 | Landscape area | Points to |
 | -------------- | --------- |
-| AI management systems | ISO/IEC 42001, ISO/IEC 23894 |
-| Risk framework | NIST AI RMF, GenAI Profile (600-1) |
-| Evaluation / testing | NIST evaluation work, ISO/IEC TR 24029 |
-| Agentic / GenAI security | CSA Agentic Profile, OWASP GenAI/Agentic |
+| AI management systems | [ISO/IEC 42001](reference_iso_42001.md), [ISO/IEC 23894](reference_iso_23894.md) |
+| Risk framework | [NIST AI RMF](reference_nist_ai_rmf.md), [GenAI Profile (600-1)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) |
+| Evaluation / testing | [NIST evaluation work](https://airc.nist.gov/), ISO/IEC TR 24029 |
+| Agentic / GenAI security | [CSA Agentic Profile](reference_csa_agentic_profile.md), [OWASP GenAI/Agentic](https://genai.owasp.org/) |
 
 ## Recent Changes (rolling, last 5)
 

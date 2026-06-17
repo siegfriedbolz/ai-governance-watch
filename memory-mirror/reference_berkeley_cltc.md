@@ -5,7 +5,7 @@ type: reference
 source_id: berkeley_cltc
 source_url: "https://cltc.berkeley.edu/program/ai-security-initiative/"
 last_observed_at: "2026-06-16T00:00:00Z"
-last_observed_commit_or_version: "Toward Risk Thresholds for AI-Enabled Cyber Threats (white paper, 2026-01-22); Intolerable Risk Threshold Recommendations (2025-02)"
+last_observed_commit_or_version: "Toward Risk Thresholds for AI-Enabled Cyber Threats (white paper, 2026-01-22); Intolerable Risk Threshold Recommendations (2025-02-03); Agentic AI Risk Management Standards Profile (2026-02-11)"
 provenance_chain:
   - timestamp: "2026-06-16T00:00:00Z"
     pr: "baseline (manual)"
@@ -29,8 +29,8 @@ as the "red lines" layer of AI governance. Its **"Toward Risk Thresholds for
 AI-Enabled Cyber Threats"** white paper (22 January 2026) proposes using
 **Bayesian networks** to derive and evaluate thresholds by combining evidence
 about both AI systems and the world. This builds on **"Intolerable Risk
-Threshold Recommendations for Artificial Intelligence"** (February 2025) and a
-new **Agentic AI Risk Management Standards Profile** (February 2026). The work
+Threshold Recommendations for Artificial Intelligence"** (3 February 2025) and a
+new **Agentic AI Risk Management Standards Profile** (11 February 2026). The work
 is policy-facing — it informs how developers and regulators set concrete limits
 before intolerable risks materialise.
 
@@ -52,18 +52,58 @@ concrete trigger points a developer or regulator can act on.
 - **Risk threshold** — a defined trigger point that, once crossed, demands a specific response.
 - **Cyber uplift** — how much an AI model increases an attacker's capability.
 
+## In depth (in our own words)
+
+!!! note "Our explanation — not the official text"
+    Our own-words explanation of the ideas. CLTC papers carry no explicit open
+    licence, so we paraphrase and quote only short, attributed passages. Follow
+    the source for the full text. Not legal advice.
+
+**The core idea: turn "be safe" into red lines.** Most AI policy says systems
+should be "safe" or "not pose unacceptable risk" — but without a defined line,
+that is unenforceable. CLTC's work is about making the line *concrete*: defining
+**intolerable-risk thresholds** — points beyond which a risk must be prevented
+outright, not merely managed — and the evidence that tells you a system is
+approaching one.
+
+**Why a Bayesian method.** Frontier-AI risk is full of uncertainty: you rarely
+have clean statistics, only partial evidence about a model's capabilities and
+about the world it acts in. CLTC's cyber-threat work proposes using **Bayesian
+networks** — a way to combine those uncertain pieces of evidence into a structured
+estimate of when a threshold is likely crossed. The point isn't the maths; it's
+replacing gut-feel "this seems risky" with a documented, reviewable line of
+reasoning that a developer or regulator can act on and others can scrutinise.
+
+**The cyber angle.** A recurring focus is **cyber uplift** — how much an AI model
+lowers the cost or skill needed to mount an attack. Tying thresholds to observed
+capability evaluations (e.g., can the model meaningfully help with offensive
+cyber, or with bio?) lets you decide *in advance* what capability level triggers
+which response.
+
+**Where it fits.** This is policy- and research-facing work, not a compliance
+standard. It complements the others: NIST AI RMF and the EU AI Act tell you to
+manage risk and (for systemic-risk GPAI) to evaluate dangerous capabilities, but
+they don't hand you the hard numeric "red lines" — CLTC is one of the most
+serious attempts to define them.
+
+**Why it matters for you.** For an auditor it provides *externally-sourced*,
+defensible "intolerable" lines to test a deployer's risk appetite and acceptance
+decisions against, plus a documented method to challenge ad-hoc risk acceptance.
+Treat it as evolving research — cite the specific paper and date, since the field
+is moving quickly.
+
 ## Key Sections
 
-- **Intolerable-risk thresholds** — categories of risk (e.g. CBRN, cyber, loss of control) that warrant hard limits, not just voluntary commitments.
-- **AI-enabled cyber-threat thresholds** — a structured, Bayesian-network method for setting thresholds on offensive-cyber uplift from AI.
-- **Agentic AI Risk Management Profile** — controls for the unique risks of agentic systems (complements the CSA Agentic Profile).
-- **Capability evaluations** — thresholds tied to observed model capabilities (cyber, biosecurity).
+- **[Intolerable-risk thresholds](https://cltc.berkeley.edu/publication/intolerable-ai-risk-thresholds/ "CLTC's categories of AI risk — e.g. CBRN, cyber, loss of control — that warrant hard 'red lines' rather than voluntary commitments.")** — categories of risk (e.g. CBRN, cyber, loss of control) that warrant hard limits, not just voluntary commitments.
+- **[AI-enabled cyber-threat thresholds](https://cltc.berkeley.edu/2026/01/22/cltc-white-paper-proposes-new-approach-to-risk-thresholds-for-ai-enabled-cyber-threats/ "CLTC's structured, Bayesian-network method (Jan 2026) for setting thresholds on how much a model lowers the cost/skill of offensive cyber-attacks.")** — a structured, Bayesian-network method for setting thresholds on offensive-cyber uplift from AI.
+- **[Agentic AI Risk Management Profile](https://cltc.berkeley.edu/program/ai-security-initiative/ "CLTC's controls for the unique risks of agentic AI systems, complementing the CSA Agentic Profile.")** — controls for the unique risks of agentic systems (complements the CSA Agentic Profile).
+- **[Capability evaluations](https://cltc.berkeley.edu/program/ai-security-initiative/ "Tests of what a model can actually do — e.g. cyber or biosecurity uplift — used to tie risk thresholds to observed capability rather than speculation.")** — thresholds tied to observed model capabilities (cyber, biosecurity).
 
 ## Audit-Relevant Anchors
 
-- **Threshold definitions** — give an auditor defensible, externally-sourced "intolerable" lines to test a deployer's risk appetite against.
-- **Bayesian threshold method** — a documented methodology an assessor can cite when challenging ad-hoc risk acceptance.
-- **Cyber-uplift framing** — directly relevant to security assessments of frontier-model deployments.
+- **[Threshold definitions](https://cltc.berkeley.edu/publication/intolerable-ai-risk-thresholds/ "CLTC's defined 'intolerable' risk lines — externally-sourced reference points an auditor can test a deployer's risk appetite against.")** — give an auditor defensible, externally-sourced "intolerable" lines to test a deployer's risk appetite against.
+- **[Bayesian threshold method](https://cltc.berkeley.edu/2026/01/22/cltc-white-paper-proposes-new-approach-to-risk-thresholds-for-ai-enabled-cyber-threats/ "CLTC's documented Bayesian-network methodology (Jan 2026) for setting cyber-threat thresholds — citable when challenging ad-hoc risk acceptance.")** — a documented methodology an assessor can cite when challenging ad-hoc risk acceptance.
+- **[Cyber-uplift framing](https://cltc.berkeley.edu/2026/01/22/cltc-white-paper-proposes-new-approach-to-risk-thresholds-for-ai-enabled-cyber-threats/ "Framing risk around how much a model lowers the cost/skill of cyber-attacks — directly relevant to security assessments of frontier-model deployments.")** — directly relevant to security assessments of frontier-model deployments.
 
 ## Auditor Checklist
 
@@ -81,9 +121,9 @@ Indicative cross-references, **not** authoritative equivalences.
 
 | Berkeley CLTC | NIST AI RMF | EU AI Act |
 | ------------- | ----------- | --------- |
-| Intolerable-risk thresholds | MANAGE (risk tolerance) | Art. 5 (prohibitions) / GPAI systemic risk |
-| Cyber-uplift method | MEASURE 2 | Art. 15 (cybersecurity) |
-| Capability evaluations | MEASURE | Art. 55 (GPAI systemic-risk evals) |
+| [Intolerable-risk thresholds](https://cltc.berkeley.edu/publication/intolerable-ai-risk-thresholds/) | [MANAGE](https://airc.nist.gov/airmf-resources/playbook/manage/) (risk tolerance) | [Art. 5](https://artificialintelligenceact.eu/article/5/) (prohibitions) / GPAI systemic risk |
+| [Cyber-uplift method](https://cltc.berkeley.edu/2026/01/22/cltc-white-paper-proposes-new-approach-to-risk-thresholds-for-ai-enabled-cyber-threats/) | [MEASURE](https://airc.nist.gov/airmf-resources/playbook/measure/) | [Art. 15](https://artificialintelligenceact.eu/article/15/) (cybersecurity) |
+| [Capability evaluations](https://cltc.berkeley.edu/program/ai-security-initiative/) | [MEASURE](https://airc.nist.gov/airmf-resources/playbook/measure/) | [Art. 55](https://artificialintelligenceact.eu/article/55/) (GPAI systemic-risk evals) |
 
 ## Recent Changes (rolling, last 5)
 
