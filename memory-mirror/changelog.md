@@ -15,6 +15,40 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-08-02 — EU AI Act: Digital Omnibus in force; page expanded
+
+**`version_bump`** — The *Digital Omnibus on AI* was adopted on 8 July 2026,
+published in the Official Journal on 24 July 2026 as
+**[Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)**
+and **entered into force on 27 July 2026**. The
+[EU AI Act](reference_eu_ai_act.md) page now reflects the amended law instead
+of the May provisional agreement: stand-alone **Annex III** high-risk
+obligations move to **2 December 2027**, **Annex I** product-embedded AI to
+**2 August 2028**, the Art. 50(2) machine-readable marking of synthetic content
+gets a grace period until 2 December 2026 for systems already on the market,
+the new Art. 5 CSAM/NCII prohibition applies after a transition ending
+2 December 2026, and the national sandbox deadline moves to 2 August 2027.
+Art. 50 transparency duties themselves apply from 2 August 2026 as originally
+scheduled; GPAI rules are unchanged.
+
+With the timeline now settled, the page was expanded in the same update: an
+**application-timeline table** (Art. 113 as amended, from the 2025
+prohibitions through the Art. 111 legacy transitions — GPAI models by 2027,
+public-authority systems by 2030, large-scale IT systems by end-2030), an "In
+depth" section on **machine-readable transparency** (Art. 50(2) + the
+Recital 133 technique families — watermarks, metadata identification,
+cryptographic provenance proofs, logging, fingerprints), a **Penalties**
+section (Art. 99 fine bands + Art. 101 GPAI fines), a **soft-law section**
+(GPAI Code of Practice, Commission guidelines on prohibited practices and the
+AI-system definition), **Art. 26 deployer duties**, **Art. 40 harmonised
+standards** (presumption of conformity — the standards delay behind the
+deferral), **Art. 72/73** post-market monitoring and serious-incident
+reporting, a **governance anchor** (AI Office · AI Board · national
+market-surveillance authorities, Arts. 64/65/70), and an **ISO/IEC 23894
+column** plus Art. 11/12/72 rows in the Cross-Framework Mapping — all terms
+and links with tooltips per the site convention. Also updated:
+[Standards at a glance](at-a-glance.md), the home page and `llms.txt`.
+
 ## 2026-06-17 — Tooltips on every Key Section term & link
 
 Completed tooltip coverage on the remaining pages. ISO/IEC 42001 (Clauses 4–10,

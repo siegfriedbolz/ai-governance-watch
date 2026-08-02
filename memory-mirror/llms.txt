@@ -13,7 +13,7 @@ Each standard has its own page with an audit-oriented summary, a plain-language 
 - [ISO/IEC 23894](https://siegfriedbolz.github.io/ai-governance-watch/reference_iso_23894/): guidance on managing AI-specific risk across the lifecycle (2023); the "how-to" companion to ISO 31000 and ISO/IEC 42001.
 
 ## Regulation & law
-- [EU AI Act](https://siegfriedbolz.github.io/ai-governance-watch/reference_eu_ai_act/): Regulation (EU) 2024/1689, the first comprehensive binding AI law — risk tiers, high-risk obligations, GPAI rules, and the 2026 Digital Omnibus timeline changes.
+- [EU AI Act](https://siegfriedbolz.github.io/ai-governance-watch/reference_eu_ai_act/): Regulation (EU) 2024/1689, the first comprehensive binding AI law — risk tiers, high-risk obligations, GPAI rules, as amended by the Digital Omnibus (Regulation (EU) 2026/1744, in force since 27 July 2026) which moved the high-risk deadlines to Dec 2027 / Aug 2028.
 - [UK AI White Paper](https://siegfriedbolz.github.io/ai-governance-watch/reference_uk_ai_white_paper/): the UK's pro-innovation, principles-based, sector-led approach (2023 White Paper CP 815 + 2024 response) and the AI Growth Lab sandboxes.
 - [DORA](https://siegfriedbolz.github.io/ai-governance-watch/reference_dora/): Digital Operational Resilience Act (Regulation (EU) 2022/2554) — five pillars, ICT third-party and critical-provider oversight; the operational-resilience angle on AI vendor risk.
 
