@@ -9,9 +9,11 @@
 site_name: AI Governance Watch
 site_description: >-
   A continuously-watched reference library of the AI governance standards
-  (NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, CSA Agentic Profile,
-  Berkeley CLTC) — built and maintained by Siegfried Bolz, AI risk auditor and
-  Adobe Experience Manager (AEM) architect.
+  (NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, the UK approach,
+  Switzerland's DSG/EDÖB practice, the Council of Europe AI Convention
+  CETS 225, CSA Agentic Profile, Berkeley CLTC) — each page states the date it
+  was last observed and cites its primary sources; built and maintained by
+  Siegfried Bolz, AI risk auditor and Adobe Experience Manager (AEM) architect.
 site_author: Siegfried Bolz
 # IMPORTANT: set this to the final URL before deploy — canonical links, OpenGraph
 # URLs, JSON-LD @ids and robots.txt Sitemap all derive from it. If you move to a

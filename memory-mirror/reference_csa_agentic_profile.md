@@ -1,11 +1,15 @@
 ---
 name: "CSA — NIST AI RMF: Agentic Profile"
 description: "Cloud Security Alliance's agentic-AI extension of the NIST AI RMF, plus CSA's wider 2026 agentic-control-plane and catastrophic-risk work."
+keywords: "CSA Agentic Profile, agentic AI governance, agent security controls, NIST AI RMF agentic profile, AI Controls Matrix AICM, OWASP agentic AI security, Agent Control Standard, autonomous agent oversight, agent identity"
 type: reference
 source_id: csa_agentic_profile
 source_url: "https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/"
+about_type: CreativeWork
+about_identifier: "CSA Agentic AI Risk Management Profile (Lab Space draft v1)"
+about_jurisdiction: "International"
 last_observed_at: "2026-09-05T00:00:00Z"
-last_observed_commit_or_version: "CSA Lab Space Agentic Profile draft v1 (early 2026); CSA research-note series on the NIST AI Agent Standards Initiative (Mar–Apr 2026); OWASP State of Agentic AI Security & Governance v2.01 (Jun 2026); Agentic Profile header "White Paper 2026-03-27, status draft"; OWASP GenAI LLM Top 10 2026 (v1.0, 2026-08-03); OWASP Agent Control Standard and GenAI Security Industry Framework Crosswalk announced 2026-09-02"
+last_observed_commit_or_version: "CSA Lab Space Agentic Profile draft v1 (early 2026); CSA research-note series on the NIST AI Agent Standards Initiative (Mar–Apr 2026); OWASP State of Agentic AI Security & Governance v2.01 (Jun 2026); Agentic Profile header 'White Paper 2026-03-27, status draft'; OWASP GenAI LLM Top 10 2026 (v1.0, 2026-08-03); OWASP Agent Control Standard and GenAI Security Industry Framework Crosswalk announced 2026-09-02"
 provenance_chain:
   - timestamp: "2026-09-05T00:00:00Z"
     pr: "manual refresh (September 2026)"

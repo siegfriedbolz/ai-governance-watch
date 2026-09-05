@@ -1,9 +1,13 @@
 ---
 name: "ISO/IEC 23894:2023 (AI Risk Management Guidance)"
 description: "ISO's guidance standard for managing AI-specific risk across the lifecycle, the companion to ISO 31000 and to the ISO/IEC 42001 management system."
+keywords: "ISO/IEC 23894, AI risk management guidance, ISO 31000 for AI, AI risk sources, Annex B risk sources, risk treatment, AI risk process, ISO AI standards"
 type: reference
 source_id: iso_23894
 source_url: "https://www.iso.org/standard/77304.html"
+about_type: CreativeWork
+about_identifier: "ISO/IEC 23894:2023"
+about_jurisdiction: "International"
 last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "ISO/IEC 23894:2023 (1st edition, published 2023-02)"
 provenance_chain:

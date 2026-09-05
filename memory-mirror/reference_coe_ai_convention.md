@@ -5,6 +5,9 @@ keywords: "CETS 225, Council of Europe AI Convention, Framework Convention on Ar
 type: reference
 source_id: coe_ai_convention
 source_url: "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225"
+about_type: Legislation
+about_identifier: "CETS No. 225"
+about_jurisdiction: "Council of Europe"
 last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "CETS 225 adopted 2024-05-17, opened for signature 2024-09-05; treaty chart status as of 2026-09-05: 21 signatures, 1 ratification (EU, 2026-05-15), not in force; text published in OJ L 2026/1081 (2026-05-13)"
 provenance_chain:

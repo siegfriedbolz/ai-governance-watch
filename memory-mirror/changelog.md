@@ -1,6 +1,7 @@
 ---
 title: Changelog
 description: Running history of every change to the watched-standards library, newest first.
+keywords: "AI standards changelog, AI governance updates, EU AI Act updates 2026, NIST AI RMF updates, ISO 42001 updates, DORA updates, CETS 225 status, AI regulation timeline"
 ---
 
 # Changelog

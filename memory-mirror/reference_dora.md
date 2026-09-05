@@ -1,9 +1,13 @@
 ---
 name: "DORA — Digital Operational Resilience Act (Reg. (EU) 2022/2554)"
 description: "The EU's binding digital operational resilience framework for the financial sector and its critical ICT third-party providers — relevant to AI vendor/outage risk."
+keywords: "DORA, Regulation (EU) 2022/2554, digital operational resilience, ICT third-party risk, critical ICT third-party providers, CTPP oversight, threat-led penetration testing, TLPT, ICT incident reporting, register of information, AI vendor resilience"
 type: reference
 source_id: dora
 source_url: "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng"
+about_type: Legislation
+about_identifier: "Regulation (EU) 2022/2554"
+about_jurisdiction: "European Union"
 last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "Reg. (EU) 2022/2554; in force 2023-01-16; applies since 2025-01-17; first designation of critical ICT third-party providers by the ESAs 2025-11-18; ESAs joint statement JC 2026 25 on ICT risks from frontier AI models 2026-07-31; first ESAs annual report on major ICT-related incidents 2026-06-03"
 provenance_chain:

@@ -5,6 +5,9 @@ keywords: "Swiss AI regulation, DSG AI, EDÖB artificial intelligence, Switzerla
 type: reference
 source_id: ch_ai_data_protection
 source_url: "https://www.bk.admin.ch/de/regulierung"
+about_type: Legislation
+about_identifier: "SR 235.1 (Bundesgesetz ueber den Datenschutz, DSG)"
+about_jurisdiction: "Switzerland"
 last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "DSG SR 235.1 consolidated 2025-07-07; EDÖB notice 2023-11-09 updated 2025-05-08; Federal Council decision 2025-02-12; CETS 225 signed 2025-03-27, not in force (1 ratification as of 2026-09-05); consultation draft due end of 2026"
 provenance_chain:

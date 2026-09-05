@@ -1,9 +1,13 @@
 ---
 name: "UK AI Regulation — A Pro-Innovation Approach"
 description: "The UK's principles-based, sector-led AI regulation model (2023 White Paper CP 815 + 2024 response), and its 2025-26 evolution toward sandboxes."
+keywords: "UK AI regulation, pro-innovation approach, AI White Paper CP 815, five cross-cutting principles, sector-led AI regulation, AI Growth Lab, regulatory sandbox, Regulating for Growth Bill, ICO FCA CMA Ofcom, UK AI policy"
 type: reference
 source_id: uk_ai_white_paper
 source_url: "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach"
+about_type: CreativeWork
+about_identifier: "CP 815 — A pro-innovation approach to AI regulation"
+about_jurisdiction: "United Kingdom"
 last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "White Paper CP 815 (2023-03); Government response (2024-02); AI Growth Lab consultation (2025-10-21 → 2026-01-07); Advisory AI Growth Lab for legal services announced 2026-06-08 (LSB, SRA, CLC, ICO); King's Speech 2026-05-13: no AI bill, Regulating for Growth Bill with statutory sandboxing powers incl. cross-cutting AI sandboxes; Advisory AI Growth Lab (legal services) open for applications since 2026-08-03"
 provenance_chain:

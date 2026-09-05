@@ -14,6 +14,9 @@
 #     2. Crawling is allowed by default, so indexing is NOT blocked — only the
 #        explicit hints here are. An llms.txt is also published for AI crawlers:
 #        https://siegfriedbolz.github.io/ai-governance-watch/llms.txt
+#     3. Every page carries <link rel="sitemap"> and <link rel="alternate">
+#        (Markdown source, llms.txt) in its head, so a crawler that never sees
+#        this file can still discover the machine-readable views.
 #
 #   When you move to a custom domain, update site_url in mkdocs.yml AND the
 #   Sitemap URL below, and this file will then be honoured at the root.
@@ -21,22 +24,64 @@
 User-agent: *
 Allow: /
 
-# Explicitly welcomed (all are allowed anyway) — search + generative engines
+# Explicitly welcomed (all are allowed anyway). Two groups, because they do
+# different things: classic crawlers build a search index, AI crawlers either
+# fetch a page to answer a question live or collect training data. The content
+# is CC BY 4.0, so both are welcome — and being cited by an answer engine is
+# the point of this library.
+
+# --- classic search crawlers ---
 User-agent: Googlebot
 Allow: /
 User-agent: Bingbot
 Allow: /
 User-agent: DuckDuckBot
 Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: Yandex
+Allow: /
+User-agent: Baiduspider
+Allow: /
+
+# --- AI answer engines: live retrieval for a user's question ---
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: MistralAI-User
+Allow: /
+User-agent: YouBot
+Allow: /
+
+# --- AI crawlers: indexing and training corpora ---
 User-agent: GPTBot
 Allow: /
 User-agent: ClaudeBot
 Allow: /
-User-agent: PerplexityBot
-Allow: /
 User-agent: Google-Extended
 Allow: /
-User-agent: Applebot
+User-agent: Applebot-Extended
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: Diffbot
 Allow: /
 
 Sitemap: https://siegfriedbolz.github.io/ai-governance-watch/sitemap.xml

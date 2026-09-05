@@ -1,9 +1,13 @@
 ---
 name: "EU AI Act (Regulation (EU) 2024/1689)"
 description: "The EU's risk-tiered AI regulation, its phased application timeline, GPAI obligations, and the Digital Omnibus (Reg. (EU) 2026/1744, in force 27 July 2026) that postponed the high-risk deadlines."
+keywords: "EU AI Act, Regulation (EU) 2024/1689, Digital Omnibus 2026/1744, high-risk AI systems, Annex III, GPAI obligations, Article 50 transparency, AI-generated content marking, conformity assessment, FRIA, AI Act penalties, AI Office enforcement"
 type: reference
 source_id: eu_ai_act
 source_url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+about_type: Legislation
+about_identifier: "Regulation (EU) 2024/1689"
+about_jurisdiction: "European Union"
 last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "Reg. (EU) 2024/1689 in force 2024-08-01; amended by Digital Omnibus Reg. (EU) 2026/1744 (in force 2026-07-27); Commission guidelines: Art. 50 transparency (final, 2026-07-20), high-risk classification (draft, 2026-05-19); Commission opinion on the Code of Practice on AI-generated content (2026-07-09); enforcement by the AI Office and national authorities since 2026-08-02 (Commission release 2026-07-31, first list of 180+ signatories of the Code of Practice on transparency of AI-generated content)"
 provenance_chain:

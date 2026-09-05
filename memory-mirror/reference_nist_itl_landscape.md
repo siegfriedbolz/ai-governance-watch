@@ -1,9 +1,13 @@
 ---
 name: "NIST ITL — International AI Standards Landscape"
 description: "NIST Information Technology Laboratory's tracking of the global AI standards landscape — an inventory/meta-source, not a standard itself."
+keywords: "NIST ITL, AI standards landscape, international AI standards, AI standards inventory, Zero Drafts pilot, NIST AI 300-1, AI Agent Standards Initiative, CAISI, standards gap analysis"
 type: reference
 source_id: nist_itl_landscape
 source_url: "https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program"
+about_type: CreativeWork
+about_identifier: "NIST ITL AI standards programme"
+about_jurisdiction: "United States"
 last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "ITL AI Program; latest landscape briefing: AI Standards Landscape webinar 2026-03-06; AI Standards page items 2026: standards-effectiveness methodology report 2026-01-15, CAISI AI Agent Standards Initiative 2026-02-17, Zero Draft NIST AI 300-1 ipd 2026-07-29/30 (comments to 2026-09-16)"
 provenance_chain:

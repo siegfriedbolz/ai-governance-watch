@@ -1,9 +1,13 @@
 ---
 name: "NIST AI Risk Management Framework (AI RMF)"
 description: "NIST's voluntary AI RMF 1.0, its Generative AI Profile, and the AI RMF Playbook — the GOVERN/MAP/MEASURE/MANAGE backbone for AI risk governance."
+keywords: "NIST AI RMF, AI Risk Management Framework, GOVERN MAP MEASURE MANAGE, NIST AI 100-1, Generative AI Profile AI 600-1, NIST AI 100-4 synthetic content, Cyber AI Profile IR 8596, trustworthy AI characteristics, AI RMF revision, AI Action Plan"
 type: reference
 source_id: nist_ai_rmf
 source_url: "https://www.nist.gov/itl/ai-risk-management-framework"
+about_type: CreativeWork
+about_identifier: "NIST AI 100-1 (AI RMF 1.0)"
+about_jurisdiction: "United States"
 last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "AI RMF 1.0 (Jan 2023) — under revision (White House AI Action Plan, no date); GenAI Profile AI 600-1 (Jul 2024); Adversarial ML AI 100-2e2025; Synthetic Content AI 100-4 (Nov 2024); Cyber AI Profile IR 8596 iprd (draft, Dec 2025); CI Profile concept note (Apr 2026); CAISI AI Agent Standards Initiative announced 2026-02-17; NIST AI 300-1 ipd (public-facing AI documentation zero draft, Jul 2026, comments to 2026-09-16)"
 provenance_chain:

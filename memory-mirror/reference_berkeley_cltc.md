@@ -1,9 +1,13 @@
 ---
 name: "UC Berkeley CLTC — AI Risk Thresholds"
 description: "Berkeley Center for Long-Term Cybersecurity work on intolerable-risk thresholds and AI-enabled cyber-threat thresholds, incl. the Bayesian-network approach."
+keywords: "Berkeley CLTC, intolerable AI risk thresholds, AI cyber risk thresholds, cyber uplift, frontier AI evaluation, GPAI risk-management standards profile, AIxCyber threat scenarios, AI risk governance for boards"
 type: reference
 source_id: berkeley_cltc
 source_url: "https://cltc.berkeley.edu/program/ai-security-initiative/"
+about_type: CreativeWork
+about_identifier: "CLTC AI risk-threshold and profile publications"
+about_jurisdiction: "International"
 last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "Toward Risk Thresholds for AI-Enabled Cyber Threats (white paper, 2026-01-22; arXiv 2601.17225); Intolerable Risk Threshold Recommendations (2025-02-03); Agentic AI Risk-Management Standards Profile (2026-02); Evaluation of Frontier AI Company Practices Using the GPAI Profile v1.2 (Apr 2026); AIxCyber Threat Scenarios 2027–2029 (2026-05-18); AgentWatch (2026-06-30); AI Risk Governance for Investors and Corporate Boards (2026-08-12)"
 provenance_chain:

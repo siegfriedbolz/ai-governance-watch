@@ -1,9 +1,13 @@
 ---
 name: "ISO/IEC 42001:2023 (AI Management System)"
 description: "The world's first AI management system standard (AIMS), its certification model, and the surrounding ISO/IEC 42000-series."
+keywords: "ISO/IEC 42001, AI management system, AIMS, ISO 42001 certification, Annex A controls, Statement of Applicability, ISO/IEC 42006, EN ISO/IEC 42001:2026, harmonised standard AI Act, AI governance certification"
 type: reference
 source_id: iso_42001
 source_url: "https://www.iso.org/standard/42001"
+about_type: CreativeWork
+about_identifier: "ISO/IEC 42001:2023"
+about_jurisdiction: "International"
 last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "ISO/IEC 42001:2023 (1st edition, published 2023-12); ISO/IEC 42006:2025 published; EN ISO/IEC 42001:2026 (CEN/CLC/JTC 21 identical adoption, published 2026-03-18)"
 provenance_chain:

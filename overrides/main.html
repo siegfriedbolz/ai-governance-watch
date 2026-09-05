@@ -1,67 +1,176 @@
 {% extends "base.html" %}
 
 <!--
-  Theme override (not published content). Adds SEO / social-share meta tags so
-  the library — and its author, Siegfried Bolz — are discoverable. MkDocs
-  Material already emits <title>, description and the canonical link; this block
-  adds author, keywords, OpenGraph and Twitter Card metadata.
+  Theme override (not published content). Emits the discovery metadata for
+  classic search engines AND for AI/LLM answer engines: descriptive meta tags,
+  Dublin Core, OpenGraph/Twitter, machine-readable alternates (Markdown source,
+  llms.txt, sitemap) and schema.org JSON-LD.
+
+  Design rules:
+    * Every value comes from page front matter or mkdocs.yml — nothing is
+      hardcoded per page, so a new page inherits the full metadata set.
+    * `dateModified` is the page's own `last_observed_at` (the observation date
+      an audit citation refers to), NOT the git commit date.
+    * `datePublished` is the EARLIEST timestamp in `provenance_chain`; that list
+      is not sorted in the source files, so it is sorted here.
+    * `about` describes the instrument the page covers (front matter
+      `about_type` / `about_identifier` / `about_jurisdiction`, `source_url`),
+      which is what an AI engine needs to link the page to the standard.
+    * All JSON strings go through `| tojson` so quotes in titles cannot break
+      the JSON-LD block.
 -->
 
 {% block extrahead %}
+  {%- set base = config.site_url or "" -%}
   {%- set page_title = config.site_name -%}
   {%- if page and page.title and not page.is_homepage -%}
     {%- set page_title = page.title ~ " — " ~ config.site_name -%}
   {%- endif -%}
-  {%- set page_desc = page.meta.description if page and page.meta and page.meta.description else config.site_description -%}
-  {%- set page_keywords = page.meta.keywords if page and page.meta and page.meta.keywords else "AI governance, AI risk auditor, AI compliance, EU AI Act, NIST AI RMF, ISO/IEC 42001, ISO/IEC 23894, DORA, CSA Agentic Profile, AI governance consultant, AEM architect, Siegfried Bolz" -%}
+  {%- set page_desc = (page.meta.description if page and page.meta and page.meta.description else config.site_description) | striptags | trim -%}
+  {%- set page_keywords = page.meta.keywords if page and page.meta and page.meta.keywords else "AI governance, AI risk auditor, AI compliance, EU AI Act, NIST AI RMF, ISO/IEC 42001, ISO/IEC 23894, DORA, Council of Europe AI Convention, CETS 225, Swiss DSG, CSA Agentic Profile, AI governance consultant, AEM architect, Siegfried Bolz" -%}
+  {%- set git_date = page.meta.git_revision_date_localized_raw_iso_date if page and page.meta and page.meta.git_revision_date_localized_raw_iso_date else "" -%}
+  {%- set observed = page.meta.last_observed_at if page and page.meta and page.meta.last_observed_at else "" -%}
+  {%- set modified = observed or git_date -%}
+  {%- set prov_dates = (page.meta.provenance_chain | map(attribute="timestamp") | list | sort) if (page and page.meta and page.meta.provenance_chain) else [] -%}
+  {%- set published = prov_dates[0] if prov_dates else modified -%}
+  {%- set raw_base = (config.repo_url | replace("https://github.com/", "https://raw.githubusercontent.com/")) ~ "/" ~ (config.edit_uri | replace("edit/", "")) if config.repo_url and config.edit_uri else "" -%}
+  {%- set license_url = "https://creativecommons.org/licenses/by/4.0/" -%}
 
   <meta name="author" content="Siegfried Bolz">
   <meta name="keywords" content="{{ page_keywords }}">
+  <!-- Allow full-length snippets and large previews: AI overviews and answer
+       engines quote from the page, so nothing here should be truncated. -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-  <meta property="og:type" content="website">
+  <!-- Dublin Core: read by library, archive and several AI ingestion pipelines. -->
+  <meta name="DC.title" content="{{ page_title }}">
+  <meta name="DC.creator" content="Siegfried-Thor Bolz">
+  <meta name="DC.publisher" content="AI Governance Watch">
+  <meta name="DC.description" content="{{ page_desc }}">
+  <meta name="DC.subject" content="{{ page_keywords }}">
+  <meta name="DC.language" content="en">
+  <meta name="DC.type" content="Text">
+  <meta name="DC.rights" content="CC BY 4.0">
+  {%- if modified %}
+  <meta name="DC.date.modified" content="{{ modified }}">
+  {%- endif %}
+  {%- if page and page.canonical_url %}
+  <meta name="DC.identifier" content="{{ page.canonical_url }}">
+  {%- endif %}
+
+  <meta property="og:type" content="{{ "website" if page and page.is_homepage else "article" }}">
+  <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="{{ config.site_name }}">
   <meta property="og:title" content="{{ page_title }}">
-  <meta property="og:description" content="{{ page_desc | striptags | trim }}">
+  <meta property="og:description" content="{{ page_desc }}">
   {%- if page and page.canonical_url %}
   <meta property="og:url" content="{{ page.canonical_url }}">
   {%- endif %}
-  {%- set og_image = config.site_url ~ "assets/og-image.png" if config.site_url else "assets/og-image.png" %}
+  {%- set og_image = base ~ "assets/og-image.png" if base else "assets/og-image.png" %}
   <meta property="og:image" content="{{ og_image }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="AI Governance Watch — by Siegfried-Thor Bolz">
+  {%- if page and not page.is_homepage %}
+  <meta property="article:author" content="Siegfried-Thor Bolz">
+  <meta property="article:section" content="AI governance">
+  {%- if published %}
+  <meta property="article:published_time" content="{{ published }}">
+  {%- endif %}
+  {%- if modified %}
+  <meta property="article:modified_time" content="{{ modified }}">
+  {%- endif %}
+  {%- for tag in page_keywords.split(",")[:12] %}
+  <meta property="article:tag" content="{{ tag | trim }}">
+  {%- endfor %}
+  {%- endif %}
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page_title }}">
-  <meta name="twitter:description" content="{{ page_desc | striptags | trim }}">
+  <meta name="twitter:description" content="{{ page_desc }}">
   <meta name="twitter:image" content="{{ og_image }}">
 
   <link rel="me" href="https://www.siegfried-bolz.de">
   <link rel="me" href="https://www.linkedin.com/in/sbolz/">
+  <link rel="license" href="{{ license_url }}">
+  <!-- Machine-readable alternates. The Markdown source is the cleanest form of
+       this page for an LLM; llms.txt is the site-level summary; the sitemap link
+       matters because robots.txt is ignored on a github.io project path. -->
+  {%- if raw_base and page and page.file and page.file.src_uri %}
+  <link rel="alternate" type="text/markdown" href="{{ raw_base }}{{ page.file.src_uri }}" title="Markdown source of this page">
+  {%- endif %}
+  {%- if base %}
+  <link rel="alternate" type="text/plain" href="{{ base }}llms.txt" title="llms.txt — site summary for AI agents">
+  <link rel="sitemap" type="application/xml" href="{{ base }}sitemap.xml" title="Sitemap">
+  {%- endif %}
 
-  {%- if page and page.meta and page.meta.git_revision_date_localized_raw_iso_date %}
-  <meta name="page-updated" content="{{ page.meta.git_revision_date_localized_raw_iso_date }}">
+  {%- if modified %}
+  <meta name="page-updated" content="{{ modified }}">
   {%- endif %}
 
   {%- if page and page.is_homepage %}
-  {%- set base = config.site_url or "" %}
+  {#- Collect every published page from the navigation for the site-level ItemList. -#}
+  {%- set ns = namespace(items=[]) -%}
+  {%- for nav_item in nav -%}
+    {%- if nav_item.children -%}
+      {%- for child in nav_item.children -%}
+        {%- if child.is_page and not child.is_homepage -%}{%- set ns.items = ns.items + [child] -%}{%- endif -%}
+      {%- endfor -%}
+    {%- elif nav_item.is_page and not nav_item.is_homepage -%}
+      {%- set ns.items = ns.items + [nav_item] -%}
+    {%- endif -%}
+  {%- endfor -%}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "WebSite",
+        "@type": ["WebSite", "Collection"],
         "@id": "{{ base }}#website",
         "url": "{{ base }}",
         "name": "AI Governance Watch",
-        "description": "{{ config.site_description | striptags | trim }}",
+        "alternateName": "AI Governance Watch — watched standards library",
+        "description": {{ (config.site_description | striptags | trim) | tojson }},
         "inLanguage": "en",
-        "publisher": { "@id": "{{ base }}#person" }
+        "license": "{{ license_url }}",
+        "isAccessibleForFree": true,
+        "keywords": {{ page_keywords | tojson }},
+        {%- if modified %}
+        "dateModified": "{{ modified }}",
+        {%- endif %}
+        "publisher": { "@id": "{{ base }}#person" },
+        "author": { "@id": "{{ base }}#person" },
+        "mainEntity": { "@id": "{{ base }}#standards" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": { "@type": "EntryPoint", "urlTemplate": "{{ base }}?q={search_term_string}" },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "{{ base }}#standards",
+        "name": "Watched AI governance standards and jurisdictions",
+        "description": "Every reference page in this library, each re-observed on a stated date and citing its primary sources.",
+        "numberOfItems": {{ ns.items | length }},
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+        "itemListElement": [
+          {%- for item in ns.items %}
+          {
+            "@type": "ListItem",
+            "position": {{ loop.index }},
+            "url": "{{ base }}{{ item.url }}",
+            "name": {{ item.title | tojson }}{% if item.meta and item.meta.description %},
+            "description": {{ (item.meta.description | striptags | trim) | tojson }}{% endif %}
+          }{{ "," if not loop.last }}
+          {%- endfor %}
+        ]
       },
       {
         "@type": "Person",
         "@id": "{{ base }}#person",
         "name": "Siegfried-Thor Bolz",
+        "alternateName": "Siegfried Bolz",
         "jobTitle": "Enterprise AEMaaCS Architect & AI Risk Auditor",
         "url": "https://www.siegfried-bolz.de",
         "image": "{{ base }}assets/portrait.png",
@@ -74,7 +183,9 @@
         "knowsAbout": [
           "AI governance", "AI risk auditing", "AI compliance",
           "EU AI Act", "NIST AI RMF", "ISO/IEC 42001", "ISO/IEC 23894",
-          "DORA", "CSA Agentic Profile", "OWASP Top 10 for LLM Applications",
+          "DORA", "Council of Europe Framework Convention on AI (CETS 225)",
+          "Swiss Federal Act on Data Protection (DSG)",
+          "CSA Agentic Profile", "OWASP Top 10 for LLM Applications",
           "Adobe Experience Manager", "AEMaaCS", "Cybersecurity"
         ],
         "hasCredential": [
@@ -106,22 +217,63 @@
   }
   </script>
   {%- elif page and page.canonical_url %}
-  {%- set base = config.site_url or "" %}
+  {%- set about_type = page.meta.about_type if page.meta and page.meta.about_type else "" -%}
+  {%- set about_name = page.meta.name if page.meta and page.meta.name else page.title -%}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
+    "@id": "{{ page.canonical_url }}#article",
     "headline": {{ page.title | tojson }},
-    "description": {{ (page_desc | striptags | trim) | tojson }},
+    "name": {{ about_name | tojson }},
+    "description": {{ page_desc | tojson }},
+    "abstract": {{ page_desc | tojson }},
+    "keywords": {{ page_keywords | tojson }},
     "url": "{{ page.canonical_url }}",
     "mainEntityOfPage": "{{ page.canonical_url }}",
     "inLanguage": "en",
     "isAccessibleForFree": true,
-    {%- if page.meta and page.meta.git_revision_date_localized_raw_iso_date %}
-    "dateModified": "{{ page.meta.git_revision_date_localized_raw_iso_date }}",
+    "license": "{{ license_url }}",
+    "creativeWorkStatus": "Published",
+    {%- if published %}
+    "datePublished": "{{ published }}",
     {%- endif %}
-    "author": { "@type": "Person", "name": "Siegfried-Thor Bolz", "url": "https://www.siegfried-bolz.de" },
-    "publisher": { "@type": "Person", "name": "Siegfried-Thor Bolz", "url": "https://www.siegfried-bolz.de" },
+    {%- if modified %}
+    "dateModified": "{{ modified }}",
+    {%- endif %}
+    {%- if raw_base and page.file and page.file.src_uri %}
+    "encoding": {
+      "@type": "MediaObject",
+      "encodingFormat": "text/markdown",
+      "contentUrl": "{{ raw_base }}{{ page.file.src_uri }}"
+    },
+    {%- endif %}
+    {%- if about_type %}
+    "about": {
+      "@type": "{{ about_type }}",
+      "name": {{ about_name | tojson }}{% if page.meta.about_identifier %},
+      {{ '"legislationIdentifier"' if about_type == "Legislation" else '"identifier"' }}: {{ page.meta.about_identifier | tojson }}{% endif %}{% if page.meta.about_jurisdiction %},
+      {{ '"legislationJurisdiction"' if about_type == "Legislation" else '"spatialCoverage"' }}: {{ page.meta.about_jurisdiction | tojson }}{% endif %}{% if page.meta.source_url %},
+      "url": {{ page.meta.source_url | tojson }},
+      "sameAs": {{ page.meta.source_url | tojson }}{% endif %}
+    },
+    {%- endif %}
+    {%- if page.meta and page.meta.source_url %}
+    "citation": {
+      "@type": "CreativeWork",
+      "name": {{ about_name | tojson }},
+      "url": {{ page.meta.source_url | tojson }}
+    },
+    {%- endif %}
+    {%- if page.meta and page.meta.last_observed_commit_or_version %}
+    "version": {{ page.meta.last_observed_commit_or_version | tojson }},
+    {%- endif %}
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "AI risk auditors, compliance and governance officers, security architects"
+    },
+    "author": { "@type": "Person", "name": "Siegfried-Thor Bolz", "url": "https://www.siegfried-bolz.de"{% if base %}, "@id": "{{ base }}#person"{% endif %} },
+    "publisher": { "@type": "Person", "name": "Siegfried-Thor Bolz", "url": "https://www.siegfried-bolz.de"{% if base %}, "@id": "{{ base }}#person"{% endif %} },
     "isPartOf": { "@type": "WebSite", "name": "AI Governance Watch"{% if base %}, "url": "{{ base }}", "@id": "{{ base }}#website"{% endif %} }
   }
   </script>
