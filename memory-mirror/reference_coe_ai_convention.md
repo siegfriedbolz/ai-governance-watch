@@ -83,7 +83,7 @@ travel, and as the vocabulary regulators will share.
 
 - **Framework convention** — a treaty that sets objectives and principles and leaves the choice of measures to each Party ("adopt or maintain … measures", Art. 1(2)); it binds states, and reaches companies only through the domestic law that implements it.
 - **Party** — a state or organisation that has ratified (or acceded to) the Convention. A **signatory** has only expressed an intention to become a Party; signature creates no obligations under the Convention.
-- **Activities within the lifecycle of AI systems** — the Convention's unit of scope: design, development, use and decommissioning, not the "AI system" as a product (Art. 2 adopts the OECD-style definition of an AI system used by the EU AI Act).
+- **Activities within the lifecycle of AI systems** — the Convention's unit of scope: the Explanatory Report reads it as the whole chain from design and development through use to decommissioning, not the "AI system" as a product. Art. 2 defines the AI system itself, in terms closely aligned with the OECD definition and with the EU AI Act's Art. 3(1).
 - **Art. 3(1)(b) declaration** — the statement each Party must make on how it will address AI risks from private actors: by applying Chapters II–VI to them, or by "other appropriate measures". The EU's declaration points to the AI Act.
 - **Conference of the Parties** — the follow-up body (Art. 23) that will interpret the Convention, receive Party reports (Art. 24) and consider amendments once the treaty is in force.
 - **Entry into force** — first day of the month after three months have passed since **five** signatories, **including at least three Council of Europe member states**, have ratified (Art. 30(3)). The EU counts as a signatory but not as a member state.
@@ -93,8 +93,8 @@ travel, and as the vocabulary regulators will share.
 **Object and scope (Chapter I).** Art. 1 states the purpose — AI lifecycle
 activities "fully consistent with human rights, democracy and the rule of
 law" — and the method: measures "graduated and differentiated" by the severity
-and probability of adverse impacts. Art. 2 defines an AI system in the wording
-also used by the EU AI Act. Art. 3 draws the line that matters most for scope:
+and probability of adverse impacts. Art. 2 defines an AI system in terms closely
+aligned with the EU AI Act's definition. Art. 3 draws the line that matters most for scope:
 the Convention **applies** to activities of public authorities and of private
 actors acting on their behalf (3(1)(a)); for all other private actors a Party
 must "address risks and impacts" and declare *how* (3(1)(b)). Activities for

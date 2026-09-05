@@ -1,11 +1,11 @@
 # AI Governance Watch
 
-> A continuously-watched reference library of the AI governance standards an external AI risk auditor has to keep current — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, the UK pro-innovation approach, Switzerland's DSG/EDÖB practice and CETS 225 path, the CSA Agentic Profile, the Berkeley CLTC risk-threshold work, and the NIST ITL standards landscape. Built and maintained by Siegfried-Thor Bolz, Enterprise Adobe Experience Manager (AEM / AEMaaCS) architect and AI risk auditor near Munich, Germany.
+> A continuously-watched reference library of the AI governance standards an external AI risk auditor has to keep current — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, the UK pro-innovation approach, Switzerland's DSG/EDÖB practice, the Council of Europe AI Convention (CETS 225), the CSA Agentic Profile, the Berkeley CLTC risk-threshold work, and the NIST ITL standards landscape. Built and maintained by Siegfried-Thor Bolz, Enterprise Adobe Experience Manager (AEM / AEMaaCS) architect and AI risk auditor near Munich, Germany.
 
 Each standard has its own page with an audit-oriented summary, a plain-language explainer, the clauses you would cite, an auditor checklist, a cross-framework mapping, and a rolling changelog of what changed. Content is general information, not legal advice; every page links back to its primary source. The site is in English.
 
 ## Standards overview
-- [Standards at a glance](https://siegfriedbolz.github.io/ai-governance-watch/at-a-glance/): side-by-side comparison of all ten — type, binding vs voluntary, jurisdiction, status, and what each governs.
+- [Standards at a glance](https://siegfriedbolz.github.io/ai-governance-watch/at-a-glance/): side-by-side comparison of all eleven — type, binding vs voluntary, jurisdiction, status, and what each governs.
 
 ## Frameworks & management systems
 - [NIST AI RMF](https://siegfriedbolz.github.io/ai-governance-watch/reference_nist_ai_rmf/): NIST's voluntary AI Risk Management Framework (AI RMF 1.0, NIST AI 100-1, 2023) — GOVERN / MAP / MEASURE / MANAGE, trustworthy-AI characteristics, and the Generative AI Profile (NIST AI 600-1, 2024).

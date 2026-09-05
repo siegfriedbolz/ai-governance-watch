@@ -51,7 +51,7 @@ yet.
 **`substantive`** — Every page re-observed on 5 September 2026:
 
 - **[Switzerland — AI regulation and data protection](reference_ch_ai_data_protection.md)**
-  is the **tenth watched jurisdiction**: the technology-neutral DSG applied
+  is the **tenth watched instrument** and the first Swiss one: the technology-neutral DSG applied
   directly to AI by the EDÖB (notice of 9 November 2023, updated 8 May 2025),
   the Federal Council's sectoral decision of 12 February 2025, the signature of
   the Council of Europe AI Convention (CETS 225) on 27 March 2025 — **not in

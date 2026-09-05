@@ -34,8 +34,8 @@ applicable to AI-based processing** on 9 November 2023 and re-affirmed on
 sectoral approach, cross-sector rules only for central fundamental-rights areas
 such as data protection, ratification of the **Council of Europe Framework
 Convention on AI (CETS 225)**, and a consultation draft to be prepared by the
-Federal Office of Justice by the end of 2026, plus a parallel plan of non-binding
-measures. Third, **supervisory practice** — dated EDÖB notices, pre-investigations
+Federal Department of Justice and Police (EJPD, with UVEK and EDA) by the end
+of 2026, plus a parallel plan of non-binding measures. Third, **supervisory practice** — dated EDÖB notices, pre-investigations
 (X/Grok 2025, Meta 2026) and the annual activity report. Switzerland **signed**
 CETS 225 on 27 March 2025; the Convention is **not yet in force** (one
 ratification, the EU on 15 May 2026, against five required).
@@ -112,7 +112,7 @@ Swiss authority does.
     Der Schwerpunkt lag auf Massnahmen wie Selbstverpflichtungserklärungen einzelner
     Branchen, Ethikkodizes und Standards.
 
-**In our words —** eighteen months after the decision, the visible implementation
+**In our words —** a year after the decision, the visible implementation
 work is on the **soft-law track**: the Digital Switzerland advisory board
 discussed self-regulation concepts from the media and energy industries, and
 the government's own framing is that legislation "usually takes several years",
@@ -194,8 +194,8 @@ the source texts before relying on them.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
-| `2026-09-05` | editorial | CETS 225 content and treaty status now maintained on the dedicated [Council of Europe AI Convention page](reference_coe_ai_convention.md); this page links there instead of restating the ratification count. |
 | `2026-09-05` | baseline | Initial baseline: DSG applied to AI (EDÖB 2023/2025), Federal Council decision 2025-02-12, CETS 225 signed 2025-03-27 and not in force (1 ratification, EU 2026-05-15), soft-law track (2026-02-10), consultation draft due end of 2026, EDÖB activity report 2025/26 captured. |
+| `2026-09-05` | editorial | CETS 225 content and treaty status now maintained on the dedicated [Council of Europe AI Convention page](reference_coe_ai_convention.md); this page links there instead of restating the ratification count. |
 
 ## Sources
 

@@ -1,6 +1,6 @@
 ---
 title: Standards at a glance
-description: "A side-by-side comparison of the AI governance standards tracked here — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, the UK approach, Switzerland (DSG/EDÖB/CETS 225), CSA Agentic Profile and Berkeley CLTC: type, binding vs voluntary, jurisdiction, status and what each governs."
+description: "A side-by-side comparison of the AI governance standards tracked here — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, the UK approach, Switzerland (DSG/EDÖB), the Council of Europe AI Convention (CETS 225), CSA Agentic Profile and Berkeley CLTC: type, binding vs voluntary, jurisdiction, status and what each governs."
 keywords: "AI governance standards comparison, EU AI Act vs NIST AI RMF, ISO 42001 vs 23894, binding vs voluntary AI standards, DORA, AI compliance overview"
 ---
 
