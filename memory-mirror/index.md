@@ -92,6 +92,14 @@ back to a verifiable observation of a public source at a documented point in tim
     the Federal Council's sectoral decision (2025), and the ratification path
     for the Council of Europe AI Convention — consultation draft due end of 2026.
 
+-   **[Council of Europe AI Convention (CETS 225)](reference_coe_ai_convention.md)**
+
+    ---
+
+    The first binding international AI treaty (2024): obligations on states,
+    not companies; who has signed and ratified, why it is not yet in force, and
+    how the EU, Switzerland and the UK implement it.
+
 </div>
 
 ### Agentic, thresholds & landscape

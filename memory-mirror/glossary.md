@@ -13,6 +13,7 @@ normative definitions). Each links back to the standard that uses it.
 - **AIMS (AI Management System)** — the organisation-wide framework that [ISO/IEC 42001](reference_iso_42001.md) certifies.
 - **AI-SBOM** — an "AI bill of materials": the inventory of models, datasets and components an AI system is built from.
 - **Annex III (EU AI Act)** — the list of use cases that make a system *high-risk*. See [EU AI Act](reference_eu_ai_act.md).
+- **CETS 225** — the Council of Europe Framework Convention on AI (2024), the first binding international AI treaty; binds states, not companies, and is not yet in force. See [Council of Europe AI Convention](reference_coe_ai_convention.md).
 - **Conformity assessment** — the check (internal or by a notified body) that a high-risk system meets the EU AI Act before it goes to market.
 - **Cyber uplift** — how much an AI model increases an attacker's capability. See [Berkeley CLTC](reference_berkeley_cltc.md).
 - **FRIA** — Fundamental Rights Impact Assessment, required of certain deployers of high-risk systems (EU AI Act, Art. 27).

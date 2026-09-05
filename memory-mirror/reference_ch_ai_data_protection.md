@@ -64,7 +64,7 @@ the Convention is the direction of travel.
 - **DSG** — Bundesgesetz über den Datenschutz (Federal Act on Data Protection), SR 235.1, revised, in force since 2023-09-01; supplemented by the ordinance **DSV** (SR 235.11).
 - **EDÖB** — Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter, the federal data-protection authority; supervises private and federal processing, no fining power against companies (penalties target natural persons).
 - **Vernehmlassung** — the formal consultation procedure that precedes federal legislation; the AI draft is due by the end of 2026.
-- **CETS 225** — the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (Vilnius, 2024-09-05); the first binding international AI treaty.
+- **CETS 225** — the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (Vilnius, 2024-09-05); the first binding international AI treaty. Full page: [Council of Europe AI Convention (CETS 225)](reference_coe_ai_convention.md) — the status statement ("not in force") is maintained there.
 - **Sectoral approach** — the Federal Council's choice to adapt existing sector laws rather than enact a horizontal AI statute.
 
 ## In depth: the Federal Council's sectoral approach and the CETS 225 path
@@ -141,7 +141,7 @@ published at the observation date.
 | 2026-02-10 | Digital Switzerland advisory board: self-regulation measures (media, energy) | soft-law track under way |
 | 2026-05-15 | EU deposits its approval of CETS 225 (Council Decision (EU) 2026/1080) | first and, at the observation date, only ratification |
 | **by end of 2026** | Consultation draft (EJPD/BJ) on transparency, data protection, non-discrimination, oversight; UVEK plan of non-binding measures | **announced**, not published |
-| open | Entry into force of CETS 225 — needs 5 ratifications incl. 3 CoE member states (Art. 30(3)) | **not in force** |
+| open | Entry into force of CETS 225 — needs 5 ratifications incl. 3 CoE member states (Art. 30(3)) | **not in force** — current status on the [CETS 225 page](reference_coe_ai_convention.md) |
 
 ## Key Sections
 
@@ -151,7 +151,7 @@ published at the observation date.
 - **[DSG Art. 14 (representative in Switzerland)](https://www.fedlex.admin.ch/eli/cc/2022/491/de "SR 235.1 Article 14 — foreign controllers processing Swiss personal data at scale must designate a representative in Switzerland; enforced against X/Twitter in the Grok pre-investigation (2025).")** — enforced against a foreign platform in the Grok case.
 - **[Federal Council decision (2025-02-12)](https://www.admin.ch/gov/de/start/dokumentation/medienmitteilungen/bundesrat.msg-id-104110.html "Media release of 12 February 2025: ratify CETS 225, sectoral approach, cross-sector rules only for fundamental-rights areas such as data protection, consultation draft by end of 2026, parallel non-binding measures.")** — the political mandate and the three regulatory goals.
 - **[BAKOM Auslegeordnung and analyses (2025)](https://www.bakom.admin.ch/de/kuenstliche-intelligenz "BAKOM's stock-taking report to the Federal Council (11 February 2025) with its three base analyses — legal (BJ, 184 pp., article-by-article reading of CETS 225 and the EU AI Act against Swiss law), sectoral, and a 20-country comparison.")** — the evidence base for the decision; the legal analysis maps CETS 225 article by article onto Swiss law.
-- **[CETS 225 — treaty text (OJ L 2026/1081)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601081 "The Council of Europe Framework Convention on AI as published in the EU Official Journal L 2026/1081 (13 May 2026), annexed to Council Decision (EU) 2026/1080. Eight chapters, 36 articles; entry into force needs five ratifications incl. three CoE member states.")** — the Convention Switzerland has committed to implement; seven lifecycle principles (Art. 6–13), risk and impact assessment (Art. 16), oversight (Art. 26).
+- **[CETS 225 — treaty text (OJ L 2026/1081)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601081 "The Council of Europe Framework Convention on AI as published in the EU Official Journal L 2026/1081 (13 May 2026), annexed to Council Decision (EU) 2026/1080. Eight chapters, 36 articles; entry into force needs five ratifications incl. three CoE member states.")** — the Convention Switzerland has committed to implement; seven lifecycle principles (Art. 6–13), risk and impact assessment (Art. 16), oversight (Art. 26). Article-by-article reading and treaty status: [CETS 225 page](reference_coe_ai_convention.md).
 
 ## Audit-Relevant Anchors
 
@@ -194,6 +194,7 @@ the source texts before relying on them.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` | editorial | CETS 225 content and treaty status now maintained on the dedicated [Council of Europe AI Convention page](reference_coe_ai_convention.md); this page links there instead of restating the ratification count. |
 | `2026-09-05` | baseline | Initial baseline: DSG applied to AI (EDÖB 2023/2025), Federal Council decision 2025-02-12, CETS 225 signed 2025-03-27 and not in force (1 ratification, EU 2026-05-15), soft-law track (2026-02-10), consultation draft due end of 2026, EDÖB activity report 2025/26 captured. |
 
 ## Sources

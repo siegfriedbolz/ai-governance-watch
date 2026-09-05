@@ -15,6 +15,32 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-09-05 (2) — Council of Europe AI Convention (CETS 225) gets its own page
+
+**`substantive`** — **[Council of Europe AI Convention (CETS 225)](reference_coe_ai_convention.md)**
+is the **eleventh watched instrument** and the first international treaty in
+the library: the Framework Convention on AI and Human Rights, Democracy and
+the Rule of Law (adopted 17 May 2024, opened for signature 5 September 2024).
+The page reads the Convention article by article from the text published in
+OJ L 2026/1081 (scope and the Art. 3(1)(b) private-actor declaration, the
+Chapter III principles, remedies, the Art. 16 risk and impact management
+framework, Art. 26 oversight, Art. 30 entry into force), records the treaty
+chart **as of 5 September 2026 — 21 signatures, one ratification (the EU,
+15 May 2026), not in force** — and sets out how the EU (Council Decision (EU)
+2026/1080: exclusively through the AI Act), Switzerland (sector laws, draft due
+end of 2026) and the UK (signed only) implement it.
+
+**`editorial`** — From now on the Convention's status is stated **only on that
+page**; the [Switzerland](reference_ch_ai_data_protection.md),
+[EU AI Act](reference_eu_ai_act.md) and
+[UK AI White Paper](reference_uk_ai_white_paper.md) pages link there instead
+of restating ratification counts (new key terms, source lines and one
+Key-Sections bullet on the EU page for Council Decision (EU) 2026/1080).
+Glossary, home, at-a-glance, `llms.txt`, navigation and the source
+manifest (`coe_ai_convention`, four targets) updated.
+
+---
+
 ## 2026-09-05 — September refresh across all standards; Switzerland added
 
 **`version_bump`** — **ISO/IEC 42001** now also exists as **EN ISO/IEC 42001:2026**

@@ -55,6 +55,7 @@ whether the UK starts shifting toward harder, statutory rules.
 - **Pro-innovation approach** — the UK's principles-based, sector-led model (vs the EU's single law).
 - **The five principles** — safety; transparency; fairness; accountability; contestability.
 - **AI Growth Lab** — proposed regulatory sandboxes to test AI under relaxed, time-limited rules.
+- **CETS 225** — the Council of Europe AI Convention, which the UK **signed on 2024-09-05** but, as of the observation date, has neither ratified nor implemented by statute. Status and content on the [CETS 225 page](reference_coe_ai_convention.md).
 
 ## In depth: the five principles — the source's words and ours
 
@@ -139,6 +140,7 @@ Cells link to the direct source (UK principles → the White Paper full text).
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` | editorial | Added the Council of Europe link: the UK signed the CETS 225 Convention on 2024-09-05 and has not ratified — status on the new [CETS 225 page](reference_coe_ai_convention.md). |
 | `2026-09-05` | substantive | The AI Growth Lab moved from consultation to delivery: on 2026-06-08 DSIT announced the **Advisory AI Growth Lab for legal services** — an advisory sandbox run jointly by the Legal Services Board, SRA, Council for Licensed Conveyancers and the ICO, with applications opening later in summer 2026 and further sectors to follow. Participation is explicitly **not** regulatory approval and changes no existing requirement. No horizontal AI statute; the sector-led, principles-based model of the White Paper still stands. |
 | `2026-06-16` | baseline | Initial baseline: 2023 White Paper + 2024 response; AI Growth Lab consultation (Oct 2025 → Jan 2026) noted as the live evolution. |
 
@@ -148,3 +150,4 @@ Public web sources only — local/private provenance is kept in a private mirror
 
 - **Primary (web):** [gov.uk — White Paper](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach) · [gov.uk — White Paper (full text)](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper)
 - **Update 2026-09-05:** [gov.uk — Advisory AI Growth Lab announcement (2026-06-08)](https://www.gov.uk/government/news/advisory-ai-growth-lab-to-support-responsible-ai-adoption-in-legal-services) · [gov.uk — Advisory AI Growth Lab: legal services (overview)](https://www.gov.uk/government/publications/advisory-ai-growth-lab-legal-services) — retrieved 2026-09-05.
+- **Council of Europe (web):** [CoE Treaty Office — chart for CETS 225](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225) (UK signature 2024-09-05, no ratification; status as of 2026-09-05) — maintained on the [CETS 225 page](reference_coe_ai_convention.md).

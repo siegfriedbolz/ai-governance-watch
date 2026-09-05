@@ -177,3 +177,26 @@ sources:
       - url: "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225"
         adapter: html_extraction
         note: "CoE treaty chart for CETS 225 — signatures, ratifications, entry into force. SPA, browser only; quote the 'status as of' date."
+
+  - id: coe_ai_convention
+    domain: "International treaty"
+    title: "Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (CETS 225) — text, explanatory report, EU conclusion decision, signature and ratification status"
+    reference_file: reference_coe_ai_convention.md
+    license: "Council of Europe treaty text and Explanatory Report © Council of Europe; quoted via the EU Official Journal (OJ L 2026/1081)"
+    reproduction: facts-and-quotation
+    cadence: monthly
+    enabled: true
+    state: planned
+    targets:
+      - url: "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225"
+        adapter: html_extraction
+        note: "Treaty Office chart — the only authoritative source for signatures, ratifications, declarations and entry into force. Single-page application: needs a browser-based fetch; store the 'status as of' date with every snapshot. Raise cadence to weekly once the fourth ratification appears."
+      - url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601081"
+        adapter: html_extraction
+        note: "Convention text as published in OJ L 2026/1081 (13 May 2026), annexed to Council Decision (EU) 2026/1080 — stable; a change here would mean an amendment under Art. 28."
+      - url: "https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng"
+        adapter: html_extraction
+        note: "Council Decision (EU) 2026/1080 — EU conclusion, Art. 3 (implemented exclusively through the AI Act) and the annexed declarations; stable."
+      - url: "https://rm.coe.int/1680afae67"
+        adapter: html_extraction
+        note: "Explanatory Report (Vilnius, 5 September 2024). rm.coe.int refuses automated clients (HTTP 403): browser-based fetch or manual check only; content is stable."
