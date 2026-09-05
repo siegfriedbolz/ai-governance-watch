@@ -5,7 +5,7 @@ type: reference
 source_id: dora
 source_url: "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng"
 last_observed_at: "2026-09-05T00:00:00Z"
-last_observed_commit_or_version: "Reg. (EU) 2022/2554; in force 2023-01-16; applies since 2025-01-17; first designation of critical ICT third-party providers by the ESAs 2025-11-18"
+last_observed_commit_or_version: "Reg. (EU) 2022/2554; in force 2023-01-16; applies since 2025-01-17; first designation of critical ICT third-party providers by the ESAs 2025-11-18; ESAs joint statement JC 2026 25 on ICT risks from frontier AI models 2026-07-31; first ESAs annual report on major ICT-related incidents 2026-06-03"
 provenance_chain:
   - timestamp: "2026-09-05T00:00:00Z"
     pr: "manual refresh (September 2026)"
@@ -97,6 +97,8 @@ party", so its outages and breaches become *your* regulated problem.
 - **[Art. 24-27 (testing, incl. TLPT)](https://www.digital-operational-resilience-act.com/Article_24.html "DORA Articles 24-27 — the resilience-testing programme up to threat-led penetration testing (TLPT); the testing evidence an auditor inspects.")** — resilience testing evidence an auditor inspects.
 - **Critical ICT third-party oversight**{ title="DORA's EU-level oversight regime for Critical ICT Third-Party Providers — directly relevant where a financial entity depends on a large AI or cloud provider." } — directly relevant where a financial entity depends on a large AI/cloud provider.
 - **[Art. 31 (designation of critical ICT third-party providers)](https://www.digital-operational-resilience-act.com/Article_31.html "DORA Article 31 — the criteria and procedure by which the ESAs designate critical ICT third-party providers; the first designation list was published on 2025-11-18.")** — the designation mechanism; **first CTPP list published by the ESAs on 2025-11-18** — check whether a client's AI/cloud providers are on it.
+- **[ESAs statement JC 2026 25 — ICT risks from frontier AI models (2026-07-31)](https://www.eba.europa.eu/publications-and-media/press-releases/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision-mitigate-ict-risks-frontier "Joint statement of EBA, EIOPA and ESMA of 31 July 2026 (JC 2026 25): financial entities should adjust their ICT risk management along prevention, detection and management (Art. 5–16), assess and monitor supply-chain exposure incl. CTPPs (Art. 28–30), evolve resilience testing towards AI-enhanced threat scenarios (Art. 24–27) and update continuity planning for multi-system failures; AI-related risks enter the 2027 Oversight Examination Methodology. Not new law — supervisory expectations under existing DORA.")** — the supervisors' own reading of frontier-AI risk under DORA: the first document to cite when a client asks what DORA expects of AI-enabled attack scenarios.
+- **[ESAs first annual report on major ICT-related incidents (2026-06-03)](https://www.eba.europa.eu/publications-and-media/press-releases/esas-publish-first-report-dora-major-ict-related-incidents "First ESAs report under Art. 19 aggregating the major ICT-related incidents financial entities reported in 2025: system failures and external events dominate, only around a tenth are cyber-related, about a third have cross-border impact; third-party dependencies are the stated focus for supervision.")** — the empirical baseline for concentration-risk and third-party arguments in an audit.
 
 ## Auditor Checklist
 
@@ -124,6 +126,7 @@ Indicative cross-references, **not** authoritative equivalences.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` (2) | substantive | **Supervisors addressed frontier AI under DORA.** The three ESAs issued joint statement **JC 2026 25** (2026-07-31): adjust ICT risk management for AI-enabled attacks along prevention / detection / management, engage CTPPs on the risk, test against AI-enhanced scenarios, and expect AI risks in the **2027 Oversight Examination Methodology**. The ESAs' **first annual major-incident report** (2026-06-03, reporting year 2025) shows system failures — not cyberattacks — as the main driver and names third-party dependencies as the supervisory focus. |
 | `2026-09-05` | substantive | **Critical ICT third-party oversight is now operational:** on 2025-11-18 the three ESAs (EBA, EIOPA, ESMA) designated the first **critical ICT third-party providers (CTPPs)** under Art. 31 and announced examination activities. For the AI-vendor-resilience angle this is the concrete list a financial entity's concentration-risk analysis should be checked against. |
 | `2026-06-16` | baseline | Initial baseline: DORA applies since 2025-01-17; five pillars and ICT third-party oversight captured for the AI-vendor-resilience angle. |
 
@@ -133,3 +136,4 @@ Public web sources only — local/private provenance is kept in a private mirror
 
 - **Primary (web):** [EUR-Lex — DORA (2022/2554)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng) · [EIOPA — DORA](https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en)
 - **Update 2026-09-05:** [EIOPA — ESAs designate critical ICT third-party providers (2025-11-18)](https://www.eiopa.europa.eu/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital-2025-11-18_en) — retrieved 2026-09-05.
+- **Update 2026-09-05 (2):** [EBA — ESAs statement on frontier AI models (2026-07-31)](https://www.eba.europa.eu/publications-and-media/press-releases/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision-mitigate-ict-risks-frontier) · [ESMA — JC 2026 25 (PDF)](https://www.esma.europa.eu/sites/default/files/2026-07/JC_2026_25_ESA_statement_on_frontier_AI_models.pdf) · [EBA — first report on DORA major ICT-related incidents (2026-06-03)](https://www.eba.europa.eu/publications-and-media/press-releases/esas-publish-first-report-dora-major-ict-related-incidents) — retrieved 2026-09-05.

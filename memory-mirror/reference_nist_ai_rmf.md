@@ -5,7 +5,7 @@ type: reference
 source_id: nist_ai_rmf
 source_url: "https://www.nist.gov/itl/ai-risk-management-framework"
 last_observed_at: "2026-09-05T00:00:00Z"
-last_observed_commit_or_version: "AI RMF 1.0 (Jan 2023) — under revision (White House AI Action Plan, no date); GenAI Profile AI 600-1 (Jul 2024); Adversarial ML AI 100-2e2025; Synthetic Content AI 100-4 (Nov 2024); Cyber AI Profile IR 8596 iprd (draft, Dec 2025); CI Profile concept note (Apr 2026)"
+last_observed_commit_or_version: "AI RMF 1.0 (Jan 2023) — under revision (White House AI Action Plan, no date); GenAI Profile AI 600-1 (Jul 2024); Adversarial ML AI 100-2e2025; Synthetic Content AI 100-4 (Nov 2024); Cyber AI Profile IR 8596 iprd (draft, Dec 2025); CI Profile concept note (Apr 2026); CAISI AI Agent Standards Initiative announced 2026-02-17; NIST AI 300-1 ipd (public-facing AI documentation zero draft, Jul 2026, comments to 2026-09-16)"
 provenance_chain:
   - timestamp: "2026-09-05T00:00:00Z"
     pr: "manual refresh (September 2026)"
@@ -127,6 +127,8 @@ trade-offs an auditor will later inspect.
 - **[MAP 1.x](https://airc.nist.gov/airmf-resources/playbook/map/ "NIST AI RMF MAP category 1 — documenting intended purpose, context of use and foreseeable misuse; this framing sets the scope of an audit.")** — intended purpose, context of use, and foreseeable misuse are documented (the basis of an audit scope).
 - **[MEASURE 2.x](https://airc.nist.gov/airmf-resources/playbook/measure/ "NIST AI RMF MEASURE category 2 — evaluating system performance and trustworthiness with named metrics and test sets.")** — system performance and trustworthiness are evaluated with named metrics and test sets.
 - **[MANAGE 2.x / 4.x](https://airc.nist.gov/airmf-resources/playbook/manage/ "NIST AI RMF MANAGE categories 2/4 — documenting and maintaining risk responses and post-deployment monitoring; the audit trail an assessor inspects.")** — risk responses and post-deployment monitoring are documented and maintained — the audit trail an assessor inspects.
+- **[AI Agent Standards Initiative — CAISI (2026-02-17)](https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure "NIST announcement of 17 February 2026: the Center for AI Standards and Innovation, with ITL, NSF and federal partners, launches an initiative on secure, interoperable AI agents — industry-led standards, open protocols, research on agent security and identity; RFI on AI agent security and an ITL concept paper on agent identity and authorization followed. No agentic RMF profile yet.")** — where an agentic NIST profile will come from; until then the CSA draft profile is the practitioner stand-in.
+- **[NIST AI 300-1 ipd — public-facing AI documentation (Jul 2026)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.300-1.ipd.pdf "NIST AI 300-1 initial public draft, July 2026 — guidance and templates for public-facing AI documentation, an AI Standards Zero Draft; comments to 16 September 2026. The documentation counterpart to GOVERN/MAP transparency actions and to EU AI Act Art. 13/50 information duties.")** — a template set for the documentation an auditor asks for; draft, cite with date.
 
 ## Auditor Checklist
 
@@ -156,6 +158,7 @@ the official [NIST AIRC crosswalks](https://airc.nist.gov/) before relying on th
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` (2) | substantive | Two NIST work streams added: the **CAISI AI Agent Standards Initiative** (announced 2026-02-17: agent security, identity/authorization, interoperability — the future home of an agentic profile) and the zero draft **NIST AI 300-1 ipd** on public-facing AI documentation (July 2026, comments to 2026-09-16). RMF revision status unchanged. |
 | `2026-09-05` | substantive | **AI RMF 1.0 is under revision** — NIST states the framework is being revised as part of the White House AI Action Plan (no target date on the landing page). New companions captured: **NIST AI 100-4** (synthetic-content risks, Nov 2024), **NIST IR 8596 iprd** (Cyber AI Profile — CSF 2.0 profile for AI, initial public draft, Dec 2025), and the **concept note for an AI RMF Profile on Trustworthy AI in Critical Infrastructure** (2026-04-07). Agentic Profile still unpublished. |
 | `2026-06-16` | baseline | Initial baseline: AI RMF 1.0, GenAI Profile 600-1, Adversarial ML 100-2e2025 captured. Agentic Profile noted as forthcoming (NIST, ~Q4 2026). |
 
@@ -163,3 +166,4 @@ the official [NIST AIRC crosswalks](https://airc.nist.gov/) before relying on th
 
 - **Primary (web):** [AI RMF landing](https://www.nist.gov/itl/ai-risk-management-framework) · [AI Resource Center (AIRC)](https://airc.nist.gov/) · [AI 100-1 (DOI)](https://doi.org/10.6028/NIST.AI.100-1) · [GenAI Profile 600-1 (PDF)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) · [Playbook (interactive)](https://airc.nist.gov/airmf-resources/playbook/)
 - **Update 2026-09-05:** [AI RMF landing — revision notice](https://www.nist.gov/itl/ai-risk-management-framework) · [AI 100-4 (PDF)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf) · [IR 8596 iprd](https://csrc.nist.gov/pubs/ir/8596/iprd) · [CI-profile concept note](https://www.nist.gov/programs-projects/concept-note-ai-rmf-profile-trustworthy-ai-critical-infrastructure) — all retrieved 2026-09-05.
+- **Update 2026-09-05 (2):** [NIST — AI Agent Standards Initiative (2026-02-17)](https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure) · [NIST — AI 300-1 ipd catalogue entry](https://www.nist.gov/publications/guidance-and-templates-public-facing-ai-documentation-ai-standards-zero-draft-initial) · [NIST AI 300-1 ipd (PDF)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.300-1.ipd.pdf) — retrieved 2026-09-05.

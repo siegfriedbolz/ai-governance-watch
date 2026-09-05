@@ -5,7 +5,7 @@ type: reference
 source_id: csa_agentic_profile
 source_url: "https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/"
 last_observed_at: "2026-09-05T00:00:00Z"
-last_observed_commit_or_version: "CSA Lab Space Agentic Profile draft v1 (early 2026); CSA research-note series on the NIST AI Agent Standards Initiative (Mar–Apr 2026); OWASP State of Agentic AI Security & Governance v2.01 (Jun 2026)"
+last_observed_commit_or_version: "CSA Lab Space Agentic Profile draft v1 (early 2026); CSA research-note series on the NIST AI Agent Standards Initiative (Mar–Apr 2026); OWASP State of Agentic AI Security & Governance v2.01 (Jun 2026); Agentic Profile header "White Paper 2026-03-27, status draft"; OWASP GenAI LLM Top 10 2026 (v1.0, 2026-08-03); OWASP Agent Control Standard and GenAI Security Industry Framework Crosswalk announced 2026-09-02"
 provenance_chain:
   - timestamp: "2026-09-05T00:00:00Z"
     pr: "manual refresh (September 2026)"
@@ -107,6 +107,8 @@ on exact references.
 - **AI Controls Matrix (AICM) + Catastrophic Risk Annex** — control set for loss of human oversight and large-scale, irreversible outcomes.
 - **[CSA research notes — NIST AI Agent Standards Initiative (2026)](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-agent-governance-framework-gap-20260403/ "CSA Lab Space research-note series (March–April 2026) reading NIST's emerging AI-agent standards work: red-teaming guidance, the governance-framework gap CISOs face, and the federal compliance angle. Interpretive notes, not NIST documents.")** — how CSA reads NIST's emerging agent-standards work (red-teaming, governance gap, federal compliance); interpretive, not normative.
 - **OWASP State of Agentic AI Security & Governance v2.01**{ title="OWASP GenAI Security Project's agentic threat-and-governance report, version 2.01 (June 2026), which supersedes v1.0 (2025). The threat-side companion to the CSA profile's control functions." } — the threat-side companion; **v2.01 (June 2026) supersedes v1.0**.
+- **[OWASP GenAI LLM Top 10 2026 (v1.0, 2026-08-03)](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/ "OWASP GenAI Security Project — 2026 edition of the Top 10 for LLM applications (v1.0, 3 August 2026): updated rankings and expanded threat coverage; Excessive Agency moves up the list. Supersedes the 2025 edition as the threat catalogue to pair with the profile's controls.")** — the 2026 threat list to map the profile's Govern/Map/Measure/Manage controls against.
+- **[OWASP Agent Control Standard (ACS) and Framework Crosswalk (announced 2026-09-02)](https://genai.owasp.org/2026/09/01/owasp-genai-security-project-unveils-2026-top-10-for-llm-applications-new-agent-control-standard-and-sponsors-as-community-tops-30000-members/ "OWASP GenAI Security Project announcement of 2 September 2026: the Agent Control Standard, donated to the project, extends agentic guidance towards practical runtime enforcement; the GenAI Security Industry Framework Crosswalk connects OWASP guidance to established security, risk and compliance frameworks.")** — runtime enforcement (ACS) is the missing layer between the profile's control statements and an agent that actually stops; the crosswalk is the mapping aid.
 
 ## Audit-Relevant Anchors
 
@@ -144,6 +146,7 @@ Cells link to the direct source (CSA draft · NIST AIRC · EU AI Act · OWASP Ge
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` (2) | substantive | **OWASP moved.** The **GenAI LLM Top 10 2026** (v1.0) was released 2026-08-03; on 2026-09-02 OWASP announced the **Agent Control Standard (ACS)** — runtime enforcement for agents — and the **GenAI Security Industry Framework Crosswalk**. The CSA profile itself is unchanged (header: White Paper 2026-03-27, status draft); it notes that NIST/CAISI plan an AI Agent Interoperability Profile for Q4 2026. |
 | `2026-09-05` | substantive | The Agentic Profile itself is still the Lab Space **draft v1**. Around it, CSA published a **research-note series on NIST's AI Agent Standards Initiative** (red-teaming guidance 2026-03-31; the agent-governance framework gap 2026-04-03; federal framework and compliance notes, Apr 2026). Cross-reference updated: **OWASP State of Agentic AI Security & Governance v2.01** (June 2026) supersedes v1.0 as the threat-side companion. |
 | `2026-06-16` | baseline | Initial baseline: CSA Agentic Profile draft v1 (early 2026) plus CSA 2026 catastrophic-risk / AICM / STAR-for-AI programme captured. |
 
@@ -151,3 +154,4 @@ Cells link to the direct source (CSA draft · NIST AIRC · EU AI Act · OWASP Ge
 
 - **Primary (web):** [CSA Lab Space — Agentic NIST AI RMF Profile v1](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/) · [CSAI Foundation milestones (2026-04-29)](https://cloudsecurityalliance.org/press-releases/2026/04/29/csai-foundation-announces-key-milestones-to-secure-the-agentic-control-plane)
 - **Update 2026-09-05:** [Research note — governance gap (2026-04-03)](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-agent-governance-framework-gap-20260403/) · [Research note — red-teaming (2026-03)](https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-ai-agent-red-teaming-standards-202603/) · [Research note — federal framework](https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-ai-agent-standards-federal-framework/) · [OWASP — State of Agentic AI Security & Governance](https://genai.owasp.org/resource/state-of-agentic-ai-security-and-governance/) — retrieved 2026-09-05.
+- **Update 2026-09-05 (2):** [OWASP — GenAI LLM Top 10 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) · [OWASP — announcement of 2026-09-02 (ACS, crosswalk)](https://genai.owasp.org/2026/09/01/owasp-genai-security-project-unveils-2026-top-10-for-llm-applications-new-agent-control-standard-and-sponsors-as-community-tops-30000-members/) — retrieved 2026-09-05.

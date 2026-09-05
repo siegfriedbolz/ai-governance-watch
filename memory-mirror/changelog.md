@@ -15,6 +15,46 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-09-05 (3) — Live-source re-check: July–September developments caught up
+
+A second pass on the same day, this time against the live sources rather than
+the pages: everything already stated held up; six pages were missing things
+that happened between July and September 2026.
+
+**`substantive`**
+
+- **[DORA](reference_dora.md)** — the three ESAs' joint statement **JC 2026 25**
+  on ICT risks from frontier AI models (31 July 2026): prevention / detection /
+  management under Art. 5–16, CTPP engagement, AI-enhanced resilience testing,
+  AI risks in the 2027 Oversight Examination Methodology; plus the ESAs' first
+  annual major-incident report (3 June 2026).
+- **[EU AI Act](reference_eu_ai_act.md)** — enforcement by the AI Office and
+  national authorities since 2 August 2026 (Commission release of 31 July);
+  first list of more than 180 signatories of the Code of Practice on
+  transparency of AI-generated content; complaints and whistleblower tools.
+- **[UK AI White Paper](reference_uk_ai_white_paper.md)** — King's Speech of
+  13 May 2026: no AI bill, but the **Regulating for Growth Bill** with statutory
+  sandboxing powers and cross-cutting AI sandboxes; the legal-services Advisory
+  AI Growth Lab open for applications since 3 August 2026.
+- **[CSA Agentic Profile](reference_csa_agentic_profile.md)** — OWASP **GenAI
+  LLM Top 10 2026** (3 August 2026) and the **Agent Control Standard** and
+  framework crosswalk announced on 2 September 2026.
+- **[Berkeley CLTC](reference_berkeley_cltc.md)** — AIxCyber Threat Scenarios
+  2027–2029 (May), AgentWatch (June) and AI Risk Governance for Investors and
+  Corporate Boards (August 2026).
+- **[NIST AI RMF](reference_nist_ai_rmf.md)** and
+  **[NIST ITL landscape](reference_nist_itl_landscape.md)** — the CAISI AI
+  Agent Standards Initiative (17 February 2026) and the Zero Draft NIST AI 300-1
+  ipd on public-facing AI documentation (July 2026, comments to 16 September).
+
+**`editorial`** — Switzerland: the consultation draft is attributed to the
+Federal Office of Justice (BJ, within the EJPD) as the Federal Chancellery's
+regulation page states. Unchanged after re-check: ISO/IEC 42001 and 23894,
+the CETS 225 treaty chart, the Swiss EDÖB practice pages, the NIST RMF
+revision notice and the CSA profile draft.
+
+---
+
 ## 2026-09-05 (2) — Council of Europe AI Convention (CETS 225) gets its own page
 
 **`substantive`** — **[Council of Europe AI Convention (CETS 225)](reference_coe_ai_convention.md)**

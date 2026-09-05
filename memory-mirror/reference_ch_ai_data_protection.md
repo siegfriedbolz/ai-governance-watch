@@ -34,8 +34,9 @@ applicable to AI-based processing** on 9 November 2023 and re-affirmed on
 sectoral approach, cross-sector rules only for central fundamental-rights areas
 such as data protection, ratification of the **Council of Europe Framework
 Convention on AI (CETS 225)**, and a consultation draft to be prepared by the
-Federal Department of Justice and Police (EJPD, with UVEK and EDA) by the end
-of 2026, plus a parallel plan of non-binding measures. Third, **supervisory practice** — dated EDÖB notices, pre-investigations
+Federal Office of Justice (BJ, within the EJPD; with BAKOM and the
+Directorate of International Law) by the end of 2026, plus a parallel plan of
+non-binding measures. Third, **supervisory practice** — dated EDÖB notices, pre-investigations
 (X/Grok 2025, Meta 2026) and the annual activity report. Switzerland **signed**
 CETS 225 on 27 March 2025; the Convention is **not yet in force** (one
 ratification, the EU on 15 May 2026, against five required).

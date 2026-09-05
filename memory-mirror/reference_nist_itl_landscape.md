@@ -5,7 +5,7 @@ type: reference
 source_id: nist_itl_landscape
 source_url: "https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program"
 last_observed_at: "2026-09-05T00:00:00Z"
-last_observed_commit_or_version: "ITL AI Program; latest landscape briefing: AI Standards Landscape webinar 2026-03-06"
+last_observed_commit_or_version: "ITL AI Program; latest landscape briefing: AI Standards Landscape webinar 2026-03-06; AI Standards page items 2026: standards-effectiveness methodology report 2026-01-15, CAISI AI Agent Standards Initiative 2026-02-17, Zero Draft NIST AI 300-1 ipd 2026-07-29/30 (comments to 2026-09-16)"
 provenance_chain:
   - timestamp: "2026-09-05T00:00:00Z"
     pr: "manual refresh (September 2026)"
@@ -91,6 +91,8 @@ itself.
 - **Priorities**{ title="The areas NIST ITL is currently focusing its AI-standards effort on — evaluation and testing methods, generative AI and agentic systems." } — where NIST is focusing (evaluation, testing, agentic AI, GenAI).
 - **Progress**{ title="The current status of in-flight AI standards and profiles NIST ITL is tracking or contributing to." } — status of in-flight standards and profiles.
 - **Watch items without a publication**{ title="Two NIST work items that appear in the standards landscape but had no citable document at the observation date: the COSAiS control overlays for securing AI systems (SP 800-53-based) and the AI RMF Profile on Trustworthy AI in Critical Infrastructure (concept note only)." } — COSAiS overlays and the critical-infrastructure RMF profile: no citable document yet; check the ITL programme page by hand.
+- **[Zero Drafts pilot — NIST AI 300-1 ipd (Jul 2026)](https://www.nist.gov/artificial-intelligence/ai-standards "NIST AI Standards page: on 29 July 2026 NIST released the initial public draft of guidance and templates for public-facing AI documentation (NIST AI 300-1 ipd) under the AI Standards Zero Drafts pilot, comments to 16 September 2026; the page also lists the 6 March 2026 landscape webinar and a 15 January 2026 report on measuring the effectiveness of AI standards development.")** — the first Zero Draft to reach public-draft stage; a signal of which standards NIST wants to seed in SDOs.
+- **[AI Agent Standards Initiative (2026-02-17)](https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure "CAISI-led initiative on AI agent standards, protocols, security and identity — the newest entry in the landscape.")** — the agentic strand of the landscape, run by CAISI.
 
 ## Audit-Relevant Anchors
 
@@ -122,6 +124,7 @@ A landscape "where it points" map (not a control crosswalk):
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` (2) | substantive | Landscape entries added from NIST's AI Standards page: the **Zero Draft NIST AI 300-1 ipd** on public-facing AI documentation (2026-07-29, comments to 2026-09-16), the **CAISI AI Agent Standards Initiative** (2026-02-17) and the report on measuring AI-standards effectiveness (2026-01-15). |
 | `2026-09-05` | editorial | Re-observed; no newer landscape briefing than the 2026-03-06 webinar. Two items to watch without a publication yet: NIST's **COSAiS** control overlays for securing AI systems and the **AI RMF profile for critical infrastructure** (concept note 2026-04-07; see the AI RMF page). The **AI RMF revision** announced under the AI Action Plan will reshape the landscape when it lands. |
 | `2026-06-16` | baseline | Initial baseline: ITL AI program landscape, anchored to the 2026-03-06 AI Standards Landscape webinar. |
 
@@ -130,3 +133,4 @@ A landscape "where it points" map (not a control crosswalk):
 Public web sources only — local/private provenance is kept in a private mirror.
 
 - **Primary (web):** [NIST ITL AI Program](https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program) · [ITL AI engagement](https://www.nist.gov/artificial-intelligence/itl-ai-engagement)
+- **Update 2026-09-05 (2):** [NIST — AI Standards](https://www.nist.gov/artificial-intelligence/ai-standards) · [NIST — AI Agent Standards Initiative](https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure) · [NIST AI 300-1 ipd (PDF)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.300-1.ipd.pdf) — retrieved 2026-09-05.
