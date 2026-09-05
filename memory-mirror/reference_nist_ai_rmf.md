@@ -4,9 +4,12 @@ description: "NIST's voluntary AI RMF 1.0, its Generative AI Profile, and the AI
 type: reference
 source_id: nist_ai_rmf
 source_url: "https://www.nist.gov/itl/ai-risk-management-framework"
-last_observed_at: "2026-06-16T00:00:00Z"
-last_observed_commit_or_version: "AI RMF 1.0 (Jan 2023); GenAI Profile AI 600-1 (Jul 2024); Adversarial ML Taxonomy AI 100-2e2025"
+last_observed_at: "2026-09-05T00:00:00Z"
+last_observed_commit_or_version: "AI RMF 1.0 (Jan 2023) — under revision (White House AI Action Plan, no date); GenAI Profile AI 600-1 (Jul 2024); Adversarial ML AI 100-2e2025; Synthetic Content AI 100-4 (Nov 2024); Cyber AI Profile IR 8596 iprd (draft, Dec 2025); CI Profile concept note (Apr 2026)"
 provenance_chain:
+  - timestamp: "2026-09-05T00:00:00Z"
+    pr: "manual refresh (September 2026)"
+    change: substantive
   - timestamp: "2026-06-16T00:00:00Z"
     pr: "baseline (manual)"
     change: baseline
@@ -16,8 +19,8 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [nist.gov/itl/ai-risk-management-framework](https://www.nist.gov/itl/ai-risk-management-framework) ·
-    **Last observed:** `2026-06-16` ·
-    **Version:** AI RMF 1.0 (2023) + GenAI Profile 600-1 (2024) ·
+    **Last observed:** `2026-09-05` ·
+    **Version:** AI RMF 1.0 (2023, **revision in progress**) + GenAI Profile 600-1 (2024) + companions 100-4 / IR 8596 (draft) ·
     **Status:** pilot ·
     **Licence:** U.S. Government work — public domain (`public-domain`)
 
@@ -113,6 +116,10 @@ trade-offs an auditor will later inspect.
 - **Trustworthy AI characteristics** — valid & reliable, safe, secure & resilient, accountable & transparent, explainable & interpretable, privacy-enhanced, and fair (with harmful bias managed).
 - **[GenAI Profile (600-1)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)** — 12 risks incl. confabulation, dangerous/CBRN information, data privacy, harmful bias, information integrity, information security, IP, and value-chain/component integration.
 - **[AI RMF Playbook](https://airc.nist.gov/airmf-resources/playbook/)** — actionable, suggested-action companion to the four functions (maintained as a living web resource on the AI Resource Center).
+- **[AI RMF revision (in progress)](https://www.nist.gov/itl/ai-risk-management-framework "NIST's landing page states that AI RMF 1.0 is being revised as part of the White House AI Action Plan; no publication date is given. A successor may appear under a new document number — watch the landing page, not the PDF.")** — NIST says RMF 1.0 is being revised under the White House AI Action Plan; no date yet. A revision may ship under a **new number**, so a fingerprint of the 100-1 PDF will not notice it.
+- **[Synthetic content — NIST AI 100-4](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf "NIST AI 100-4 'Reducing Risks Posed by Synthetic Content' (Nov 2024) — watermarking, metadata/provenance (C2PA-style), detection and their limits; the technical counterpart to EU AI Act Art. 50(2).")** — provenance, watermarking, detection and their limits; the technical counterpart to EU AI Act Art. 50(2).
+- **[Cyber AI Profile — NIST IR 8596 (draft)](https://csrc.nist.gov/pubs/ir/8596/iprd "NIST IR 8596 initial public draft (Dec 2025) — a Cybersecurity Framework 2.0 Community Profile for AI with three focus areas: securing AI systems, defending against AI-enabled attacks, and using AI for cyber defence. Draft — cite with date.")** — CSF 2.0 profile for AI (secure / defend / thwart), **draft** — cite with its date.
+- **[Critical-infrastructure profile — concept note](https://www.nist.gov/programs-projects/concept-note-ai-rmf-profile-trustworthy-ai-critical-infrastructure "NIST concept note (2026-04-07) for an AI RMF Profile on Trustworthy AI in Critical Infrastructure — not yet a profile; signals the next sector profile after GenAI.")** — the next sector profile in preparation (concept note, 2026-04-07).
 
 ## Audit-Relevant Anchors
 
@@ -149,8 +156,10 @@ the official [NIST AIRC crosswalks](https://airc.nist.gov/) before relying on th
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` | substantive | **AI RMF 1.0 is under revision** — NIST states the framework is being revised as part of the White House AI Action Plan (no target date on the landing page). New companions captured: **NIST AI 100-4** (synthetic-content risks, Nov 2024), **NIST IR 8596 iprd** (Cyber AI Profile — CSF 2.0 profile for AI, initial public draft, Dec 2025), and the **concept note for an AI RMF Profile on Trustworthy AI in Critical Infrastructure** (2026-04-07). Agentic Profile still unpublished. |
 | `2026-06-16` | baseline | Initial baseline: AI RMF 1.0, GenAI Profile 600-1, Adversarial ML 100-2e2025 captured. Agentic Profile noted as forthcoming (NIST, ~Q4 2026). |
 
 ## Sources
 
 - **Primary (web):** [AI RMF landing](https://www.nist.gov/itl/ai-risk-management-framework) · [AI Resource Center (AIRC)](https://airc.nist.gov/) · [AI 100-1 (DOI)](https://doi.org/10.6028/NIST.AI.100-1) · [GenAI Profile 600-1 (PDF)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) · [Playbook (interactive)](https://airc.nist.gov/airmf-resources/playbook/)
+- **Update 2026-09-05:** [AI RMF landing — revision notice](https://www.nist.gov/itl/ai-risk-management-framework) · [AI 100-4 (PDF)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf) · [IR 8596 iprd](https://csrc.nist.gov/pubs/ir/8596/iprd) · [CI-profile concept note](https://www.nist.gov/programs-projects/concept-note-ai-rmf-profile-trustworthy-ai-critical-infrastructure) — all retrieved 2026-09-05.

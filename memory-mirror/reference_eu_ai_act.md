@@ -4,9 +4,12 @@ description: "The EU's risk-tiered AI regulation, its phased application timelin
 type: reference
 source_id: eu_ai_act
 source_url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
-last_observed_at: "2026-08-02T00:00:00Z"
-last_observed_commit_or_version: "Reg. (EU) 2024/1689 in force 2024-08-01; amended by Digital Omnibus Reg. (EU) 2026/1744 (adopted 2026-07-08, OJ 2026-07-24, in force 2026-07-27)"
+last_observed_at: "2026-09-05T00:00:00Z"
+last_observed_commit_or_version: "Reg. (EU) 2024/1689 in force 2024-08-01; amended by Digital Omnibus Reg. (EU) 2026/1744 (in force 2026-07-27); Commission guidelines: Art. 50 transparency (final, 2026-07-20), high-risk classification (draft, 2026-05-19); Commission opinion on the Code of Practice on AI-generated content (2026-07-09)"
 provenance_chain:
+  - timestamp: "2026-09-05T00:00:00Z"
+    pr: "manual refresh (September 2026)"
+    change: substantive
   - timestamp: "2026-06-16T00:00:00Z"
     pr: "baseline (manual)"
     change: baseline
@@ -19,7 +22,7 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [EUR-Lex ELI permalink](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng) ·
-    **Last observed:** `2026-08-02` ·
+    **Last observed:** `2026-09-05` ·
     **Version:** Base regulation in force 2024-08-01; amended by **Digital Omnibus** Reg. (EU) 2026/1744, in force 2026-07-27 ·
     **Status:** planned — automated watch adapter not yet live; this page is updated manually (see provenance chain) ·
     **Licence:** © European Union (EUR-Lex), Decision 2011/833/EU (`open-attribution`)
@@ -181,6 +184,9 @@ the documents clients work with first:
 - **[GPAI Code of Practice (July 2025)](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai "The voluntary Code of Practice for general-purpose AI models (transparency, copyright, safety & security chapters) — signing it is the Commission-recognised way for GPAI providers to demonstrate Art. 53/55 compliance.")** — the voluntary route for GPAI providers to demonstrate Art. 53/55 compliance (transparency, copyright, safety & security chapters).
 - **[Guidelines on prohibited AI practices (Feb 2025)](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act "Commission guidelines interpreting the Art. 5 prohibitions — manipulation, exploitation, social scoring, emotion recognition at work/school, untargeted facial scraping — with practical examples.")** — the Commission's interpretation of the Art. 5 bans, with practical examples.
 - **[Guidelines on the AI-system definition (Feb 2025)](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application "Commission guidelines on the Art. 3(1) definition — which software falls inside or outside the Act's scope; the companion to the definition quoted above.")** — which software falls inside the Art. 3(1) definition quoted above.
+- **[Guidelines on transparency obligations — Art. 50 (July 2026)](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems "Final Commission guidelines (2026-07-20) on Art. 50: scope, definitions, the four transparency duties and their exceptions — chatbot disclosure, machine-readable marking, emotion/biometric notice, deepfake and public-interest text disclosure.")** — the final reading of the four Art. 50 duties and their exceptions (published 2026-07-20).
+- **[Commission opinion on the Code of Practice on AI-generated content (July 2026)](https://digital-strategy.ec.europa.eu/en/library/commission-opinion-assessment-code-practice-transparency-ai-generated-content "Commission opinion (2026-07-09) assessing the voluntary Code of Practice on marking and labelling AI-generated content, incl. deepfakes — the practical route to Art. 50(2)/(4) compliance.")** — the Commission's assessment of the voluntary marking/labelling code (2026-07-09).
+- **[Draft guidelines on high-risk classification — Art. 6 (May 2026)](https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems "Draft Commission guidelines (2026-05-19) on classifying high-risk AI systems under Art. 6 and Annex III — intended purpose, safety components, the Art. 6(3) exceptions. Still a draft under targeted consultation; not final.")** — **draft**, under targeted consultation; do not cite as final.
 
 ## Penalties
 
@@ -253,6 +259,7 @@ and [ISO/IEC 23894](reference_iso_23894.md) pages).
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` | substantive | **Commission soft law caught up with Art. 50.** Final **Guidelines on transparency obligations for providers and deployers** published 2026-07-20; **Commission opinion assessing the Code of Practice on transparency of AI-generated content** published 2026-07-09; **draft Guidelines on the classification of high-risk AI systems** (Art. 6) published 2026-05-19 for targeted consultation — still a draft. Application timeline and penalties unchanged since the Omnibus entry. |
 | `2026-08-02` | version_bump | **Digital Omnibus is now law.** Reg. (EU) 2026/1744 (adopted 2026-07-08, OJ 2026-07-24) **entered into force 2026-07-27**, amending Reg. 2024/1689: Annex III high-risk → **2027-12-02**; Annex I product-embedded AI → **2028-08-02**; Art. 50(2) marking grace period for pre-existing systems → 2026-12-02; new Art. 5 CSAM/NCII prohibition (transition to 2026-12-02); sandbox deadline → 2027-08-02. Art. 50 transparency itself applies from 2026-08-02 as scheduled; GPAI rules unchanged. |
 | `2026-06-16` | baseline | Initial baseline. Captured base regulation plus the **2026-05-07 Digital Omnibus provisional agreement** (high-risk deferral to 2027/2028, new Art. 5 prohibition) — pending OJ publication. |
 
@@ -262,3 +269,4 @@ and [ISO/IEC 23894](reference_iso_23894.md) pages).
 - **Digital Omnibus (primary):** [EUR-Lex — Reg. (EU) 2026/1744 ELI permalink](https://eur-lex.europa.eu/eli/reg/2026/1744/oj) (Digital Omnibus on AI; OJ 2026-07-24, in force 2026-07-27) · [Consilium press release — final Council green light, 2026-06-29](https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/)
 - **Soft law (web):** [GPAI Code of Practice](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai) · [Guidelines on prohibited practices](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act) · [Guidelines on the AI-system definition](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application)
 - **Digital Omnibus (analysis):** [Gibson Dunn analysis](https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/) · [Bird & Bird — May trilogue agreement](https://www.twobirds.com/en/insights/2026/digital-omnibus-on-ai-provisional-agreement-reached-at-the-may-trilogue) · [Lewis Silkin — entry into force, 2026-07-27](https://www.lewissilkin.com/insights/2026/07/27/the-digital-omnibus-on-ai-enters-into-force-today-102nedo)
+- **Update 2026-09-05:** [Art. 50 guidelines](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems) · [Opinion on the AI-generated-content code](https://digital-strategy.ec.europa.eu/en/library/commission-opinion-assessment-code-practice-transparency-ai-generated-content) · [Draft high-risk classification guidelines](https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems) — retrieved 2026-09-05 from the EC policy hub.

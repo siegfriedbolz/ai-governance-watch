@@ -4,9 +4,12 @@ description: "NIST Information Technology Laboratory's tracking of the global AI
 type: reference
 source_id: nist_itl_landscape
 source_url: "https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program"
-last_observed_at: "2026-06-16T00:00:00Z"
+last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "ITL AI Program; latest landscape briefing: AI Standards Landscape webinar 2026-03-06"
 provenance_chain:
+  - timestamp: "2026-09-05T00:00:00Z"
+    pr: "manual refresh (September 2026)"
+    change: editorial
   - timestamp: "2026-06-16T00:00:00Z"
     pr: "baseline (manual)"
     change: baseline
@@ -16,7 +19,7 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [NIST ITL AI Program](https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program) ·
-    **Last observed:** `2026-06-16` ·
+    **Last observed:** `2026-09-05` ·
     **Version:** latest briefing — ITL AI Standards Landscape webinar (2026-03-06) ·
     **Status:** planned ·
     **Licence:** U.S. Government work — public domain (`public-domain`)
@@ -87,6 +90,7 @@ itself.
 - **[The landscape](https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program "The inventory of active and emerging AI standards across the major bodies — ISO/IEC SC 42, IEEE, CEN-CENELEC and others — and how they relate.")** — the inventory of active and emerging AI standards across bodies.
 - **Priorities**{ title="The areas NIST ITL is currently focusing its AI-standards effort on — evaluation and testing methods, generative AI and agentic systems." } — where NIST is focusing (evaluation, testing, agentic AI, GenAI).
 - **Progress**{ title="The current status of in-flight AI standards and profiles NIST ITL is tracking or contributing to." } — status of in-flight standards and profiles.
+- **Watch items without a publication**{ title="Two NIST work items that appear in the standards landscape but had no citable document at the observation date: the COSAiS control overlays for securing AI systems (SP 800-53-based) and the AI RMF Profile on Trustworthy AI in Critical Infrastructure (concept note only)." } — COSAiS overlays and the critical-infrastructure RMF profile: no citable document yet; check the ITL programme page by hand.
 
 ## Audit-Relevant Anchors
 
@@ -118,6 +122,7 @@ A landscape "where it points" map (not a control crosswalk):
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` | editorial | Re-observed; no newer landscape briefing than the 2026-03-06 webinar. Two items to watch without a publication yet: NIST's **COSAiS** control overlays for securing AI systems and the **AI RMF profile for critical infrastructure** (concept note 2026-04-07; see the AI RMF page). The **AI RMF revision** announced under the AI Action Plan will reshape the landscape when it lands. |
 | `2026-06-16` | baseline | Initial baseline: ITL AI program landscape, anchored to the 2026-03-06 AI Standards Landscape webinar. |
 
 ## Sources

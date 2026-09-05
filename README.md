@@ -97,6 +97,7 @@ Status follows the rollout plan from `docs/implementation-plan.md`
 | NIST ITL standards landscape      | Standards inventory  | `html_extraction` | monthly  | planned  |
 | UK AI Regulation White Paper      | UK jurisdiction      | `html_extraction` | quarterly| planned  |
 | DORA                              | Operational resilience | `eurlex_celex`  | quarterly| planned  |
+| Switzerland (DSG / EDÖB / CETS 225) | Swiss jurisdiction   | `html_extraction` | monthly  | planned  |
 
 (*"planned"* means scoped in the plan; *"pilot"* means actively iterating;
 *"live"* means routinely produces PRs.)

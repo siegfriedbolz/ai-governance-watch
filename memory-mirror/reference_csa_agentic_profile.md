@@ -4,9 +4,12 @@ description: "Cloud Security Alliance's agentic-AI extension of the NIST AI RMF,
 type: reference
 source_id: csa_agentic_profile
 source_url: "https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/"
-last_observed_at: "2026-06-16T00:00:00Z"
-last_observed_commit_or_version: "CSA Lab Space draft v1 (early 2026; public page Apr 2026)"
+last_observed_at: "2026-09-05T00:00:00Z"
+last_observed_commit_or_version: "CSA Lab Space Agentic Profile draft v1 (early 2026); CSA research-note series on the NIST AI Agent Standards Initiative (Mar–Apr 2026); OWASP State of Agentic AI Security & Governance v2.01 (Jun 2026)"
 provenance_chain:
+  - timestamp: "2026-09-05T00:00:00Z"
+    pr: "manual refresh (September 2026)"
+    change: substantive
   - timestamp: "2026-06-16T00:00:00Z"
     pr: "baseline (manual)"
     change: baseline
@@ -16,8 +19,8 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [CSA Lab Space — Agentic NIST AI RMF Profile v1](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/) ·
-    **Last observed:** `2026-06-16` ·
-    **Version:** Lab Space draft v1 (early 2026) ·
+    **Last observed:** `2026-09-05` ·
+    **Version:** Lab Space draft v1 (early 2026) + CSA research notes (Mar–Apr 2026) ·
     **Status:** planned ·
     **Licence:** no licence stated on the CSA Lab Space draft; CSA's published agentic work uses CC BY / CC BY-SA — treated here as facts & short attributed quotation (`facts-and-quotation`)
 
@@ -102,6 +105,8 @@ on exact references.
 - **[AG-MS (Measure)](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/)** — evaluation of agent behaviour, reliability, and oversight effectiveness.
 - **[AG-MG (Manage)](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/)** — response, containment, and recovery for autonomous behaviour.
 - **AI Controls Matrix (AICM) + Catastrophic Risk Annex** — control set for loss of human oversight and large-scale, irreversible outcomes.
+- **[CSA research notes — NIST AI Agent Standards Initiative (2026)](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-agent-governance-framework-gap-20260403/ "CSA Lab Space research-note series (March–April 2026) reading NIST's emerging AI-agent standards work: red-teaming guidance, the governance-framework gap CISOs face, and the federal compliance angle. Interpretive notes, not NIST documents.")** — how CSA reads NIST's emerging agent-standards work (red-teaming, governance gap, federal compliance); interpretive, not normative.
+- **OWASP State of Agentic AI Security & Governance v2.01**{ title="OWASP GenAI Security Project's agentic threat-and-governance report, version 2.01 (June 2026), which supersedes v1.0 (2025). The threat-side companion to the CSA profile's control functions." } — the threat-side companion; **v2.01 (June 2026) supersedes v1.0**.
 
 ## Audit-Relevant Anchors
 
@@ -139,8 +144,10 @@ Cells link to the direct source (CSA draft · NIST AIRC · EU AI Act · OWASP Ge
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` | substantive | The Agentic Profile itself is still the Lab Space **draft v1**. Around it, CSA published a **research-note series on NIST's AI Agent Standards Initiative** (red-teaming guidance 2026-03-31; the agent-governance framework gap 2026-04-03; federal framework and compliance notes, Apr 2026). Cross-reference updated: **OWASP State of Agentic AI Security & Governance v2.01** (June 2026) supersedes v1.0 as the threat-side companion. |
 | `2026-06-16` | baseline | Initial baseline: CSA Agentic Profile draft v1 (early 2026) plus CSA 2026 catastrophic-risk / AICM / STAR-for-AI programme captured. |
 
 ## Sources
 
 - **Primary (web):** [CSA Lab Space — Agentic NIST AI RMF Profile v1](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/) · [CSAI Foundation milestones (2026-04-29)](https://cloudsecurityalliance.org/press-releases/2026/04/29/csai-foundation-announces-key-milestones-to-secure-the-agentic-control-plane)
+- **Update 2026-09-05:** [Research note — governance gap (2026-04-03)](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-agent-governance-framework-gap-20260403/) · [Research note — red-teaming (2026-03)](https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-ai-agent-red-teaming-standards-202603/) · [Research note — federal framework](https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-ai-agent-standards-federal-framework/) · [OWASP — State of Agentic AI Security & Governance](https://genai.owasp.org/resource/state-of-agentic-ai-security-and-governance/) — retrieved 2026-09-05.

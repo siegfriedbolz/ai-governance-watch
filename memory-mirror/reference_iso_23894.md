@@ -4,9 +4,12 @@ description: "ISO's guidance standard for managing AI-specific risk across the l
 type: reference
 source_id: iso_23894
 source_url: "https://www.iso.org/standard/77304.html"
-last_observed_at: "2026-06-16T00:00:00Z"
+last_observed_at: "2026-09-05T00:00:00Z"
 last_observed_commit_or_version: "ISO/IEC 23894:2023 (1st edition, published 2023-02)"
 provenance_chain:
+  - timestamp: "2026-09-05T00:00:00Z"
+    pr: "manual refresh (September 2026)"
+    change: editorial
   - timestamp: "2026-06-16T00:00:00Z"
     pr: "baseline (manual)"
     change: baseline
@@ -16,7 +19,7 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [iso.org/standard/77304.html](https://www.iso.org/standard/77304.html) ·
-    **Last observed:** `2026-06-16` ·
+    **Last observed:** `2026-09-05` ·
     **Version:** ISO/IEC 23894:2023, 1st edition ·
     **Status:** planned (metadata-only watch — full text is paywalled) ·
     **Licence:** ISO/IEC copyright — proprietary (`proprietary-metadata-only`)
@@ -133,6 +136,7 @@ the NIST AI RMF cells link to readable sources.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` | editorial | Re-observed; no change to ISO/IEC 23894:2023 (1st edition) in the ISO catalogue. Companion note: ISO/IEC 42001 now also exists as EN ISO/IEC 42001:2026 (see the 42001 page). |
 | `2026-06-16` | baseline | Initial baseline: ISO/IEC 23894:2023 (1st ed.) is current; positioned as the "how" companion to ISO/IEC 42001 and ISO 31000. |
 
 ## Sources

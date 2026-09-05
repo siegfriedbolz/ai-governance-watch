@@ -4,9 +4,12 @@ description: "The EU's binding digital operational resilience framework for the 
 type: reference
 source_id: dora
 source_url: "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng"
-last_observed_at: "2026-06-16T00:00:00Z"
-last_observed_commit_or_version: "Reg. (EU) 2022/2554; in force 2023-01-16; applies since 2025-01-17"
+last_observed_at: "2026-09-05T00:00:00Z"
+last_observed_commit_or_version: "Reg. (EU) 2022/2554; in force 2023-01-16; applies since 2025-01-17; first designation of critical ICT third-party providers by the ESAs 2025-11-18"
 provenance_chain:
+  - timestamp: "2026-09-05T00:00:00Z"
+    pr: "manual refresh (September 2026)"
+    change: substantive
   - timestamp: "2026-06-16T00:00:00Z"
     pr: "baseline (manual)"
     change: baseline
@@ -16,8 +19,8 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [EUR-Lex ELI permalink](https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng) ·
-    **Last observed:** `2026-06-16` ·
-    **Version:** Reg. (EU) 2022/2554 — **applies since 2025-01-17** ·
+    **Last observed:** `2026-09-05` ·
+    **Version:** Reg. (EU) 2022/2554 — **applies since 2025-01-17**; CTPP oversight live since the ESAs' designation of 2025-11-18 ·
     **Status:** planned ·
     **Licence:** © European Union (EUR-Lex), Decision 2011/833/EU (`open-attribution`)
 
@@ -93,6 +96,7 @@ party", so its outages and breaches become *your* regulated problem.
 - **[Art. 28-30 (third-party risk)](https://www.digital-operational-resilience-act.com/Article_28.html "DORA Articles 28-30 — the register of information on ICT third parties plus the mandatory contractual provisions for ICT/AI vendors.")** — the register of information and contractual must-haves for ICT/AI vendors.
 - **[Art. 24-27 (testing, incl. TLPT)](https://www.digital-operational-resilience-act.com/Article_24.html "DORA Articles 24-27 — the resilience-testing programme up to threat-led penetration testing (TLPT); the testing evidence an auditor inspects.")** — resilience testing evidence an auditor inspects.
 - **Critical ICT third-party oversight**{ title="DORA's EU-level oversight regime for Critical ICT Third-Party Providers — directly relevant where a financial entity depends on a large AI or cloud provider." } — directly relevant where a financial entity depends on a large AI/cloud provider.
+- **[Art. 31 (designation of critical ICT third-party providers)](https://www.digital-operational-resilience-act.com/Article_31.html "DORA Article 31 — the criteria and procedure by which the ESAs designate critical ICT third-party providers; the first designation list was published on 2025-11-18.")** — the designation mechanism; **first CTPP list published by the ESAs on 2025-11-18** — check whether a client's AI/cloud providers are on it.
 
 ## Auditor Checklist
 
@@ -120,6 +124,7 @@ Indicative cross-references, **not** authoritative equivalences.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` | substantive | **Critical ICT third-party oversight is now operational:** on 2025-11-18 the three ESAs (EBA, EIOPA, ESMA) designated the first **critical ICT third-party providers (CTPPs)** under Art. 31 and announced examination activities. For the AI-vendor-resilience angle this is the concrete list a financial entity's concentration-risk analysis should be checked against. |
 | `2026-06-16` | baseline | Initial baseline: DORA applies since 2025-01-17; five pillars and ICT third-party oversight captured for the AI-vendor-resilience angle. |
 
 ## Sources
@@ -127,3 +132,4 @@ Indicative cross-references, **not** authoritative equivalences.
 Public web sources only — local/private provenance is kept in a private mirror.
 
 - **Primary (web):** [EUR-Lex — DORA (2022/2554)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng) · [EIOPA — DORA](https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en)
+- **Update 2026-09-05:** [EIOPA — ESAs designate critical ICT third-party providers (2025-11-18)](https://www.eiopa.europa.eu/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital-2025-11-18_en) — retrieved 2026-09-05.

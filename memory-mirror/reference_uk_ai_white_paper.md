@@ -4,9 +4,12 @@ description: "The UK's principles-based, sector-led AI regulation model (2023 Wh
 type: reference
 source_id: uk_ai_white_paper
 source_url: "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach"
-last_observed_at: "2026-06-16T00:00:00Z"
-last_observed_commit_or_version: "White Paper CP 815 (2023-03); Government response (2024-02); AI Growth Lab consultation (opened 2025-10-21, closed 2026-01-07)"
+last_observed_at: "2026-09-05T00:00:00Z"
+last_observed_commit_or_version: "White Paper CP 815 (2023-03); Government response (2024-02); AI Growth Lab consultation (2025-10-21 → 2026-01-07); Advisory AI Growth Lab for legal services announced 2026-06-08 (LSB, SRA, CLC, ICO)"
 provenance_chain:
+  - timestamp: "2026-09-05T00:00:00Z"
+    pr: "manual refresh (September 2026)"
+    change: substantive
   - timestamp: "2026-06-16T00:00:00Z"
     pr: "baseline (manual)"
     change: baseline
@@ -16,8 +19,8 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [gov.uk — AI regulation: a pro-innovation approach](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach) ·
-    **Last observed:** `2026-06-16` ·
-    **Version:** White Paper CP 815 (2023) + 2024 response ·
+    **Last observed:** `2026-09-05` ·
+    **Version:** White Paper CP 815 (2023) + 2024 response + **Advisory AI Growth Lab, legal services (June 2026)** ·
     **Status:** planned ·
     **Licence:** © Crown copyright, Open Government Licence v3.0 (`open-attribution`)
 
@@ -100,6 +103,7 @@ statute.
 - **Sector-led delivery**{ title="The UK's model of having existing sector regulators (ICO, FCA, Ofcom, etc.) apply the five AI principles using their current powers, rather than creating one central AI regulator." } — regulators apply the principles using existing powers.
 - **Central functions**{ title="The cross-government support functions — monitoring, risk assessment and horizon-scanning — that coordinate regulators and watch for gaps in the sector-led model." } — monitoring, risk assessment, horizon-scanning support to regulators.
 - **AI Growth Lab (2025-26)** — sandboxes with targeted, time-limited regulatory modifications.
+- **[Advisory AI Growth Lab — legal services (June 2026)](https://www.gov.uk/government/news/advisory-ai-growth-lab-to-support-responsible-ai-adoption-in-legal-services "DSIT announcement (2026-06-08): the first sectoral AI Growth Lab, an advisory sandbox for testing AI in legal services within existing rules, run jointly by the LSB, SRA, CLC and ICO. Participation is not regulatory approval; applications open later in summer 2026.")** — the first live Growth Lab: an *advisory* sandbox (no rule modifications), jointly run by LSB, SRA, CLC and ICO; more sectors announced to follow.
 
 ## Audit-Relevant Anchors
 
@@ -135,6 +139,7 @@ Cells link to the direct source (UK principles → the White Paper full text).
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` | substantive | The AI Growth Lab moved from consultation to delivery: on 2026-06-08 DSIT announced the **Advisory AI Growth Lab for legal services** — an advisory sandbox run jointly by the Legal Services Board, SRA, Council for Licensed Conveyancers and the ICO, with applications opening later in summer 2026 and further sectors to follow. Participation is explicitly **not** regulatory approval and changes no existing requirement. No horizontal AI statute; the sector-led, principles-based model of the White Paper still stands. |
 | `2026-06-16` | baseline | Initial baseline: 2023 White Paper + 2024 response; AI Growth Lab consultation (Oct 2025 → Jan 2026) noted as the live evolution. |
 
 ## Sources
@@ -142,3 +147,4 @@ Cells link to the direct source (UK principles → the White Paper full text).
 Public web sources only — local/private provenance is kept in a private mirror.
 
 - **Primary (web):** [gov.uk — White Paper](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach) · [gov.uk — White Paper (full text)](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper)
+- **Update 2026-09-05:** [gov.uk — Advisory AI Growth Lab announcement (2026-06-08)](https://www.gov.uk/government/news/advisory-ai-growth-lab-to-support-responsible-ai-adoption-in-legal-services) · [gov.uk — Advisory AI Growth Lab: legal services (overview)](https://www.gov.uk/government/publications/advisory-ai-growth-lab-legal-services) — retrieved 2026-09-05.

@@ -15,6 +15,54 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-09-05 — September refresh across all standards; Switzerland added
+
+**`version_bump`** — **ISO/IEC 42001** now also exists as **EN ISO/IEC 42001:2026**
+(CEN/CENELEC JTC 21, published 18 March 2026, identical adoption) — the vehicle
+for any future harmonised-standard citation under the AI Act; not cited as such
+yet.
+
+**`substantive`** — Every page re-observed on 5 September 2026:
+
+- **[Switzerland — AI regulation and data protection](reference_ch_ai_data_protection.md)**
+  is the **tenth watched jurisdiction**: the technology-neutral DSG applied
+  directly to AI by the EDÖB (notice of 9 November 2023, updated 8 May 2025),
+  the Federal Council's sectoral decision of 12 February 2025, the signature of
+  the Council of Europe AI Convention (CETS 225) on 27 March 2025 — **not in
+  force** (one ratification, the EU on 15 May 2026) — the soft-law track of
+  February 2026, the EDÖB activity report 2025/26, and the consultation draft
+  due by the end of 2026. Sources: Fedlex, EDÖB, Federal Chancellery, BAKOM,
+  the CoE treaty chart and the EU Official Journal (L 2026/1080–1081).
+- **[EU AI Act](reference_eu_ai_act.md)** — Commission soft law caught up with
+  Art. 50: final transparency guidelines (20 July 2026), the opinion on the Code
+  of Practice on AI-generated content (9 July 2026), and **draft** high-risk
+  classification guidelines (19 May 2026, still under consultation).
+- **[NIST AI RMF](reference_nist_ai_rmf.md)** — NIST states that **AI RMF 1.0 is
+  being revised** under the White House AI Action Plan (no date); companions
+  captured: AI 100-4 (synthetic content), IR 8596 iprd (Cyber AI Profile,
+  draft), and the concept note for a critical-infrastructure profile
+  (7 April 2026).
+- **[DORA](reference_dora.md)** — the ESAs designated the first **critical ICT
+  third-party providers** on 18 November 2025; Art. 31 added as an anchor.
+- **[UK AI White Paper](reference_uk_ai_white_paper.md)** — the AI Growth Lab
+  went live as the **Advisory AI Growth Lab for legal services** (8 June 2026;
+  LSB, SRA, CLC, ICO).
+- **[CSA Agentic Profile](reference_csa_agentic_profile.md)** — CSA's research-note
+  series on NIST's AI Agent Standards Initiative (March–April 2026); OWASP
+  *State of Agentic AI Security & Governance* **v2.01** (June 2026) supersedes v1.0.
+- **[Berkeley CLTC](reference_berkeley_cltc.md)** — *Evaluation of Frontier AI
+  Company Practices Using the GPAI Risk-Management Standards Profile v1.2*
+  (April 2026); direct links to the agentic profile and the arXiv version of the
+  cyber-thresholds paper.
+
+**`editorial`** — ISO/IEC 23894 and the NIST ITL landscape re-observed without
+change; two NIST watch items without a citable document noted (COSAiS overlays,
+critical-infrastructure profile). Sources allow-list extended to `admin.ch`
+sub-domains and `coe.int`; the NIST Playbook target corrected to the AI
+Resource Center (the ARIA repository is a different NIST programme).
+
+---
+
 ## 2026-08-02 — EU AI Act: Digital Omnibus in force; page expanded
 
 **`version_bump`** — The *Digital Omnibus on AI* was adopted on 8 July 2026,

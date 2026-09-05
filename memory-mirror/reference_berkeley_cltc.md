@@ -4,9 +4,12 @@ description: "Berkeley Center for Long-Term Cybersecurity work on intolerable-ri
 type: reference
 source_id: berkeley_cltc
 source_url: "https://cltc.berkeley.edu/program/ai-security-initiative/"
-last_observed_at: "2026-06-16T00:00:00Z"
-last_observed_commit_or_version: "Toward Risk Thresholds for AI-Enabled Cyber Threats (white paper, 2026-01-22); Intolerable Risk Threshold Recommendations (2025-02-03); Agentic AI Risk Management Standards Profile (2026-02-11)"
+last_observed_at: "2026-09-05T00:00:00Z"
+last_observed_commit_or_version: "Toward Risk Thresholds for AI-Enabled Cyber Threats (white paper, 2026-01-22; arXiv 2601.17225); Intolerable Risk Threshold Recommendations (2025-02-03); Agentic AI Risk-Management Standards Profile (2026-02); Evaluation of Frontier AI Company Practices Using the GPAI Profile v1.2 (Apr 2026)"
 provenance_chain:
+  - timestamp: "2026-09-05T00:00:00Z"
+    pr: "manual refresh (September 2026)"
+    change: substantive
   - timestamp: "2026-06-16T00:00:00Z"
     pr: "baseline (manual)"
     change: baseline
@@ -16,7 +19,7 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [CLTC AI Security Initiative](https://cltc.berkeley.edu/program/ai-security-initiative/) ·
-    **Last observed:** `2026-06-16` ·
+    **Last observed:** `2026-09-05` ·
     **Version:** Cyber-threat thresholds white paper (2026-01-22) ·
     **Status:** planned ·
     **Licence:** © UC Regents (CLTC), no explicit open licence (`facts-and-quotation`)
@@ -98,6 +101,8 @@ is moving quickly.
 - **[AI-enabled cyber-threat thresholds](https://cltc.berkeley.edu/2026/01/22/cltc-white-paper-proposes-new-approach-to-risk-thresholds-for-ai-enabled-cyber-threats/ "CLTC's structured, Bayesian-network method (Jan 2026) for setting thresholds on how much a model lowers the cost/skill of offensive cyber-attacks.")** — a structured, Bayesian-network method for setting thresholds on offensive-cyber uplift from AI.
 - **[Agentic AI Risk Management Profile](https://cltc.berkeley.edu/program/ai-security-initiative/ "CLTC's controls for the unique risks of agentic AI systems, complementing the CSA Agentic Profile.")** — controls for the unique risks of agentic systems (complements the CSA Agentic Profile).
 - **[Capability evaluations](https://cltc.berkeley.edu/program/ai-security-initiative/ "Tests of what a model can actually do — e.g. cyber or biosecurity uplift — used to tie risk thresholds to observed capability rather than speculation.")** — thresholds tied to observed model capabilities (cyber, biosecurity).
+- **[Agentic AI Risk-Management Standards Profile (PDF)](https://cltc.berkeley.edu/wp-content/uploads/2026/02/Agentic-AI-Risk-Management-Standards-Profile.pdf "CLTC's Agentic AI Risk-Management Standards Profile (February 2026) — recommendations for autonomous systems organised along the NIST AI RMF functions GOVERN/MAP/MEASURE/MANAGE; companion to CLTC's General-Purpose AI Profile.")** — the agentic profile itself, organised along the four NIST RMF functions.
+- **[Evaluation of Frontier AI Company Practices (Apr 2026)](https://cltc.berkeley.edu/wp-content/uploads/2026/04/Berkeley-Evaluation-of-Frontier-AI-v1-2.pdf "CLTC (Madkour, Newman, Raman, Jackson, Murphy, Yuan), April 2026 — an assessment of frontier AI developers' published practices against the General-Purpose AI Risk-Management Standards Profile v1.2. Useful as a worked example of profile-based assessment.")** — CLTC's own profile used as an assessment instrument on frontier developers; a worked example for profile-based audits.
 
 ## Audit-Relevant Anchors
 
@@ -129,8 +134,10 @@ Indicative cross-references, **not** authoritative equivalences.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` | substantive | New CLTC publication: **Evaluation of Frontier AI Company Practices Using the General-Purpose AI Risk-Management Standards Profile v1.2** (April 2026) — applies CLTC's own profile as an assessment instrument to frontier developers. The **Agentic AI Risk-Management Standards Profile** (Feb 2026) now has a direct PDF link; the cyber-thresholds white paper is also on arXiv (2601.17225). |
 | `2026-06-16` | baseline | Initial baseline: cyber-threat thresholds white paper (2026-01-22), intolerable-risk recommendations (2025-02), and the Feb-2026 Agentic Profile captured. |
 
 ## Sources
 
 - **Primary (web):** [CLTC AI Security Initiative](https://cltc.berkeley.edu/program/ai-security-initiative/) · [White paper announcement (2026-01-22)](https://cltc.berkeley.edu/2026/01/22/cltc-white-paper-proposes-new-approach-to-risk-thresholds-for-ai-enabled-cyber-threats/) · [Intolerable Risk Thresholds](https://cltc.berkeley.edu/publication/intolerable-ai-risk-thresholds/)
+- **Update 2026-09-05:** [Agentic profile (PDF)](https://cltc.berkeley.edu/wp-content/uploads/2026/02/Agentic-AI-Risk-Management-Standards-Profile.pdf) · [Frontier-AI evaluation v1.2 (PDF)](https://cltc.berkeley.edu/wp-content/uploads/2026/04/Berkeley-Evaluation-of-Frontier-AI-v1-2.pdf) · [Cyber-thresholds paper on arXiv](https://arxiv.org/abs/2601.17225) — retrieved 2026-09-05.

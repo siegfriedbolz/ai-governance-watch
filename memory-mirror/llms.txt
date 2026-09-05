@@ -1,11 +1,11 @@
 # AI Governance Watch
 
-> A continuously-watched reference library of the AI governance standards an external AI risk auditor has to keep current — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, the UK pro-innovation approach, the CSA Agentic Profile, the Berkeley CLTC risk-threshold work, and the NIST ITL standards landscape. Built and maintained by Siegfried-Thor Bolz, Enterprise Adobe Experience Manager (AEM / AEMaaCS) architect and AI risk auditor near Munich, Germany.
+> A continuously-watched reference library of the AI governance standards an external AI risk auditor has to keep current — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, the UK pro-innovation approach, Switzerland's DSG/EDÖB practice and CETS 225 path, the CSA Agentic Profile, the Berkeley CLTC risk-threshold work, and the NIST ITL standards landscape. Built and maintained by Siegfried-Thor Bolz, Enterprise Adobe Experience Manager (AEM / AEMaaCS) architect and AI risk auditor near Munich, Germany.
 
 Each standard has its own page with an audit-oriented summary, a plain-language explainer, the clauses you would cite, an auditor checklist, a cross-framework mapping, and a rolling changelog of what changed. Content is general information, not legal advice; every page links back to its primary source. The site is in English.
 
 ## Standards overview
-- [Standards at a glance](https://siegfriedbolz.github.io/ai-governance-watch/at-a-glance/): side-by-side comparison of all nine — type, binding vs voluntary, jurisdiction, status, and what each governs.
+- [Standards at a glance](https://siegfriedbolz.github.io/ai-governance-watch/at-a-glance/): side-by-side comparison of all ten — type, binding vs voluntary, jurisdiction, status, and what each governs.
 
 ## Frameworks & management systems
 - [NIST AI RMF](https://siegfriedbolz.github.io/ai-governance-watch/reference_nist_ai_rmf/): NIST's voluntary AI Risk Management Framework (AI RMF 1.0, NIST AI 100-1, 2023) — GOVERN / MAP / MEASURE / MANAGE, trustworthy-AI characteristics, and the Generative AI Profile (NIST AI 600-1, 2024).
@@ -16,6 +16,7 @@ Each standard has its own page with an audit-oriented summary, a plain-language 
 - [EU AI Act](https://siegfriedbolz.github.io/ai-governance-watch/reference_eu_ai_act/): Regulation (EU) 2024/1689, the first comprehensive binding AI law — risk tiers, high-risk obligations, GPAI rules, as amended by the Digital Omnibus (Regulation (EU) 2026/1744, in force since 27 July 2026) which moved the high-risk deadlines to Dec 2027 / Aug 2028.
 - [UK AI White Paper](https://siegfriedbolz.github.io/ai-governance-watch/reference_uk_ai_white_paper/): the UK's pro-innovation, principles-based, sector-led approach (2023 White Paper CP 815 + 2024 response) and the AI Growth Lab sandboxes.
 - [DORA](https://siegfriedbolz.github.io/ai-governance-watch/reference_dora/): Digital Operational Resilience Act (Regulation (EU) 2022/2554) — five pillars, ICT third-party and critical-provider oversight; the operational-resilience angle on AI vendor risk.
+- [Switzerland — AI regulation and data protection](https://siegfriedbolz.github.io/ai-governance-watch/reference_ch_ai_data_protection/): no Swiss AI act — the technology-neutral Federal Act on Data Protection (DSG) applied directly to AI by the EDÖB, the Federal Council's 2025 sectoral decision, and the ratification path for the Council of Europe AI Convention (CETS 225, signed 2025, not in force); consultation draft due end of 2026.
 
 ## Agentic, thresholds & landscape
 - [CSA Agentic Profile](https://siegfriedbolz.github.io/ai-governance-watch/reference_csa_agentic_profile/): the Cloud Security Alliance's draft extension of the NIST AI RMF to agentic AI (AG-GV / AG-MP / AG-MS / AG-MG).

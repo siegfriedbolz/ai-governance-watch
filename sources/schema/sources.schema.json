@@ -57,7 +57,7 @@
       "type": "string",
       "format": "uri",
       "description": "HTTPS URL on the domain allowlist. Adding a new domain is a deliberate, reviewed schema change.",
-      "pattern": "^https://(www\\.nist\\.gov|airc\\.nist\\.gov|nvlpubs\\.nist\\.gov|csrc\\.nist\\.gov|github\\.com|raw\\.githubusercontent\\.com|eur-lex\\.europa\\.eu|digital-strategy\\.ec\\.europa\\.eu|artificialintelligenceact\\.eu|(www\\.)?iso\\.org|cloudsecurityalliance\\.org|labs\\.cloudsecurityalliance\\.org|cltc\\.berkeley\\.edu|www\\.gov\\.uk)(/|$)"
+      "pattern": "^https://(www\\.nist\\.gov|airc\\.nist\\.gov|nvlpubs\\.nist\\.gov|csrc\\.nist\\.gov|github\\.com|raw\\.githubusercontent\\.com|eur-lex\\.europa\\.eu|digital-strategy\\.ec\\.europa\\.eu|artificialintelligenceact\\.eu|(www\\.)?iso\\.org|cloudsecurityalliance\\.org|labs\\.cloudsecurityalliance\\.org|cltc\\.berkeley\\.edu|www\\.gov\\.uk|(www\\.)?admin\\.ch|(www\\.)?bk\\.admin\\.ch|(www\\.)?edoeb\\.admin\\.ch|(www\\.)?bakom\\.admin\\.ch|(www\\.)?fedlex\\.admin\\.ch|(www\\.)?coe\\.int|rm\\.coe\\.int)(/|$)"
     },
     "target": {
       "type": "object",

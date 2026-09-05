@@ -29,7 +29,10 @@ sources:
     targets:
       - url: "https://github.com/usnistgov/ARIA"
         adapter: github_repo
-        note: "NIST AI RMF Playbook / supporting material — commit-level watch via GitHub API."
+        note: "NIST ARIA (Assessing Risks and Impacts of AI) programme repository — commit-level watch via GitHub API. Not the Playbook: the AI RMF Playbook is a web resource on the AI Resource Center (see the airc.nist.gov target)."
+      - url: "https://airc.nist.gov/airmf-resources/playbook/"
+        adapter: html_extraction
+        note: "AI RMF Playbook (interactive, living web resource on the AIRC) — the actual Playbook target; also the place a revised AI RMF would surface first."
       - url: "https://www.nist.gov/itl/ai-risk-management-framework"
         adapter: html_extraction
         note: "AI RMF landing page — version, errata, crosswalk announcements."
@@ -151,3 +154,26 @@ sources:
       - url: "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng"
         adapter: eurlex_celex
         note: "Consolidated legal text + RTS/ITS references; ICT third-party resilience scope."
+
+  - id: ch_ai_data_protection
+    domain: "Swiss jurisdiction"
+    title: "Switzerland — AI regulation and data protection: DSG (SR 235.1) applied to AI by the EDÖB, the Federal Council's sectoral decision, and the CETS 225 ratification path"
+    reference_file: reference_ch_ai_data_protection.md
+    license: "Swiss federal law and official publications — reuse with source attribution; CoE treaty text quoted via the EU Official Journal"
+    reproduction: open-attribution
+    cadence: monthly
+    enabled: true
+    state: planned
+    targets:
+      - url: "https://www.bk.admin.ch/de/regulierung"
+        adapter: html_extraction
+        note: "Federal Chancellery AI-regulation page — where the consultation draft (due end of 2026) will be announced. admin.ch refuses automated clients (HTTP 403): needs a browser-based fetch or a manual check; raise cadence to weekly once the consultation opens."
+      - url: "https://www.edoeb.admin.ch/de/ki-und-datenschutz"
+        adapter: html_extraction
+        note: "EDÖB topic page — every new AI notice or pre-investigation is linked here first; the EDÖB publishes updates as new pages, so watch the link list, not a single notice."
+      - url: "https://www.fedlex.admin.ch/eli/cc/2022/491/de"
+        adapter: html_extraction
+        note: "DSG SR 235.1 ELI — single-page application; consolidation date via the Fedlex SPARQL endpoint. Amendments pending (AS 2025 444)."
+      - url: "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225"
+        adapter: html_extraction
+        note: "CoE treaty chart for CETS 225 — signatures, ratifications, entry into force. SPA, browser only; quote the 'status as of' date."

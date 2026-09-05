@@ -4,9 +4,12 @@ description: "The world's first AI management system standard (AIMS), its certif
 type: reference
 source_id: iso_42001
 source_url: "https://www.iso.org/standard/42001"
-last_observed_at: "2026-06-16T00:00:00Z"
-last_observed_commit_or_version: "ISO/IEC 42001:2023 (1st edition, published 2023-12); ISO/IEC 42006:2025 published (2025)"
+last_observed_at: "2026-09-05T00:00:00Z"
+last_observed_commit_or_version: "ISO/IEC 42001:2023 (1st edition, published 2023-12); ISO/IEC 42006:2025 published; EN ISO/IEC 42001:2026 (CEN/CLC/JTC 21 identical adoption, published 2026-03-18)"
 provenance_chain:
+  - timestamp: "2026-09-05T00:00:00Z"
+    pr: "manual refresh (September 2026)"
+    change: version_bump
   - timestamp: "2026-06-16T00:00:00Z"
     pr: "baseline (manual)"
     change: baseline
@@ -16,8 +19,8 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [iso.org/standard/42001](https://www.iso.org/standard/42001) ·
-    **Last observed:** `2026-06-16` ·
-    **Version:** ISO/IEC 42001:2023, 1st edition ·
+    **Last observed:** `2026-09-05` ·
+    **Version:** ISO/IEC 42001:2023, 1st edition — adopted as **EN ISO/IEC 42001:2026** (CEN, 2026-03-18) ·
     **Status:** planned (metadata-only watch — full text is paywalled) ·
     **Licence:** ISO/IEC copyright — proprietary (`proprietary-metadata-only`)
 
@@ -107,6 +110,7 @@ regulatory readiness — which is exactly how I position it in an engagement.
 - **Annex B**{ title="ISO/IEC 42001's implementation guidance for the Annex A controls." } — implementation guidance for those controls.
 - **Annex C**{ title="ISO/IEC 42001's list of potential AI-related organisational objectives and risk sources to consider." } — potential AI-related organisational objectives and risk sources.
 - **Annex D**{ title="ISO/IEC 42001 guidance on applying the AI management system across domains and sectors." } — applying the AIMS across domains/sectors.
+- **EN ISO/IEC 42001:2026**{ title="The European adoption of ISO/IEC 42001:2023 by CEN/CENELEC JTC 21 (published 2026-03-18; identical text). Relevant because harmonised standards under the AI Act are European standards — this is the vehicle through which 42001 could be cited in the Official Journal. As of the observation date it has not been cited as harmonised." } — the European (CEN) edition of the same text, published 2026-03-18; the vehicle for any future harmonised-standard citation under the AI Act — **not** cited as such at the observation date.
 
 ## Audit-Relevant Anchors
 
@@ -145,9 +149,11 @@ the NIST and EU AI Act cells link to readable sources.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-05` | version_bump | **European adoption:** CEN/CENELEC JTC 21 published **EN ISO/IEC 42001:2026** on 2026-03-18 — an identical adoption of ISO/IEC 42001:2023 as a European Standard (definitive text available, DAV). The international text is unchanged; what changes is its status in the European standardisation system. Not (yet) cited in the OJ as a harmonised standard under the AI Act. |
 | `2026-06-16` | baseline | Initial baseline: ISO/IEC 42001:2023 (1st ed.) is current and un-amended; ISO/IEC 42006:2025 (cert-body requirements) published in 2025. |
 
 ## Sources
 
 - **Primary (web):** [ISO catalogue — 42001](https://www.iso.org/standard/42001) · [ISO — "42001 explained"](https://www.iso.org/home/insights-news/resources/iso-42001-explained-what-it-is.html)
 - **Note:** Full normative text is paywalled — this reference tracks **catalogue metadata only** (edition, stage, status). No full-text fetch.
+- **Update 2026-09-05:** [CEN catalogue entry — EN ISO/IEC 42001:2026 (iTeh mirror)](https://standards.iteh.ai/catalog/standards/cen/adc675e8-4669-4965-b4c1-c8f724832217/en-iso-iec-42001-2026) — publication 2026-03-18, status *Published*, committee CEN/CLC/JTC 21; retrieved 2026-09-05. Catalogue metadata only.
