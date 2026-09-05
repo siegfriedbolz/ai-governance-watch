@@ -128,8 +128,7 @@ A landscape "where it points" map (not a control crosswalk):
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
-| `2026-09-05` (2) | substantive | Landscape entries added from NIST's AI Standards page: the **Zero Draft NIST AI 300-1 ipd** on public-facing AI documentation (2026-07-29, comments to 2026-09-16), the **CAISI AI Agent Standards Initiative** (2026-02-17) and the report on measuring AI-standards effectiveness (2026-01-15). |
-| `2026-09-05` | editorial | Re-observed; no newer landscape briefing than the 2026-03-06 webinar. Two items to watch without a publication yet: NIST's **COSAiS** control overlays for securing AI systems and the **AI RMF profile for critical infrastructure** (concept note 2026-04-07; see the AI RMF page). The **AI RMF revision** announced under the AI Action Plan will reshape the landscape when it lands. |
+| `2026-09-05` | substantive | Re-observed; no newer landscape briefing than the 2026-03-06 webinar. Added from NIST's AI Standards page: the **Zero Draft NIST AI 300-1 ipd** on public-facing AI documentation (2026-07-29, comments to 2026-09-16), the **CAISI AI Agent Standards Initiative** (2026-02-17) and the report on measuring AI-standards effectiveness (2026-01-15). Two items remain on watch without a publication: NIST's **COSAiS** control overlays for securing AI systems and the **AI RMF profile for critical infrastructure** (concept note 2026-04-07; see the AI RMF page). The **AI RMF revision** announced under the AI Action Plan will reshape the landscape when it lands. |
 | `2026-06-16` | baseline | Initial baseline: ITL AI program landscape, anchored to the 2026-03-06 AI Standards Landscape webinar. |
 
 ## Sources

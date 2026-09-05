@@ -16,117 +16,93 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
-## 2026-09-05 (3) — Live-source re-check: July–September developments caught up
+## 2026-09-05 — September refresh: every standard re-observed, Switzerland and the Council of Europe Convention added
 
-A second pass on the same day, this time against the live sources rather than
-the pages: everything already stated held up; six pages were missing things
-that happened between July and September 2026.
-
-**`substantive`**
-
-- **[DORA](reference_dora.md)** — the three ESAs' joint statement **JC 2026 25**
-  on ICT risks from frontier AI models (31 July 2026): prevention / detection /
-  management under Art. 5–16, CTPP engagement, AI-enhanced resilience testing,
-  AI risks in the 2027 Oversight Examination Methodology; plus the ESAs' first
-  annual major-incident report (3 June 2026).
-- **[EU AI Act](reference_eu_ai_act.md)** — enforcement by the AI Office and
-  national authorities since 2 August 2026 (Commission release of 31 July);
-  first list of more than 180 signatories of the Code of Practice on
-  transparency of AI-generated content; complaints and whistleblower tools.
-- **[UK AI White Paper](reference_uk_ai_white_paper.md)** — King's Speech of
-  13 May 2026: no AI bill, but the **Regulating for Growth Bill** with statutory
-  sandboxing powers and cross-cutting AI sandboxes; the legal-services Advisory
-  AI Growth Lab open for applications since 3 August 2026.
-- **[CSA Agentic Profile](reference_csa_agentic_profile.md)** — OWASP **GenAI
-  LLM Top 10 2026** (3 August 2026) and the **Agent Control Standard** and
-  framework crosswalk announced on 2 September 2026.
-- **[Berkeley CLTC](reference_berkeley_cltc.md)** — AIxCyber Threat Scenarios
-  2027–2029 (May), AgentWatch (June) and AI Risk Governance for Investors and
-  Corporate Boards (August 2026).
-- **[NIST AI RMF](reference_nist_ai_rmf.md)** and
-  **[NIST ITL landscape](reference_nist_itl_landscape.md)** — the CAISI AI
-  Agent Standards Initiative (17 February 2026) and the Zero Draft NIST AI 300-1
-  ipd on public-facing AI documentation (July 2026, comments to 16 September).
-
-**`editorial`** — Switzerland: the consultation draft is attributed to the
-Federal Office of Justice (BJ, within the EJPD) as the Federal Chancellery's
-regulation page states. Unchanged after re-check: ISO/IEC 42001 and 23894,
-the CETS 225 treaty chart, the Swiss EDÖB practice pages, the NIST RMF
-revision notice and the CSA profile draft.
-
----
-
-## 2026-09-05 (2) — Council of Europe AI Convention (CETS 225) gets its own page
-
-**`substantive`** — **[Council of Europe AI Convention (CETS 225)](reference_coe_ai_convention.md)**
-is the **eleventh watched instrument** and the first international treaty in
-the library: the Framework Convention on AI and Human Rights, Democracy and
-the Rule of Law (adopted 17 May 2024, opened for signature 5 September 2024).
-The page reads the Convention article by article from the text published in
-OJ L 2026/1081 (scope and the Art. 3(1)(b) private-actor declaration, the
-Chapter III principles, remedies, the Art. 16 risk and impact management
-framework, Art. 26 oversight, Art. 30 entry into force), records the treaty
-chart **as of 5 September 2026 — 21 signatures, one ratification (the EU,
-15 May 2026), not in force** — and sets out how the EU (Council Decision (EU)
-2026/1080: exclusively through the AI Act), Switzerland (sector laws, draft due
-end of 2026) and the UK (signed only) implement it.
-
-**`editorial`** — From now on the Convention's status is stated **only on that
-page**; the [Switzerland](reference_ch_ai_data_protection.md),
-[EU AI Act](reference_eu_ai_act.md) and
-[UK AI White Paper](reference_uk_ai_white_paper.md) pages link there instead
-of restating ratification counts (new key terms, source lines and one
-Key-Sections bullet on the EU page for Council Decision (EU) 2026/1080).
-Glossary, home, at-a-glance, `llms.txt`, navigation and the source
-manifest (`coe_ai_convention`, four targets) updated.
-
----
-
-## 2026-09-05 — September refresh across all standards; Switzerland added
+The library grew from nine watched instruments to eleven and every existing
+page was re-observed twice: first against the primary sources, then against the
+supervisors' and governments' news pages, which is where most of the
+July–September developments had appeared. All pages now carry
+`last_observed_at` **2026-09-05**.
 
 **`version_bump`** — **ISO/IEC 42001** now also exists as **EN ISO/IEC 42001:2026**
-(CEN/CENELEC JTC 21, published 18 March 2026, identical adoption) — the vehicle
-for any future harmonised-standard citation under the AI Act; not cited as such
-yet.
+(CEN/CENELEC JTC 21, published 18 March 2026, identical adoption; corroborated
+through the UNI national adoption, in force 30 July 2026) — the vehicle for any
+future harmonised-standard citation under the AI Act; not cited as such yet, and
+no JTC 21 deliverable has been cited in the Official Journal.
 
-**`substantive`** — Every page re-observed on 5 September 2026:
+**`substantive` — two new pages**
 
 - **[Switzerland — AI regulation and data protection](reference_ch_ai_data_protection.md)**
-  is the **tenth watched instrument** and the first Swiss one: the technology-neutral DSG applied
-  directly to AI by the EDÖB (notice of 9 November 2023, updated 8 May 2025),
-  the Federal Council's sectoral decision of 12 February 2025, the signature of
-  the Council of Europe AI Convention (CETS 225) on 27 March 2025 — **not in
-  force** (one ratification, the EU on 15 May 2026) — the soft-law track of
-  February 2026, the EDÖB activity report 2025/26, and the consultation draft
-  due by the end of 2026. Sources: Fedlex, EDÖB, Federal Chancellery, BAKOM,
-  the CoE treaty chart and the EU Official Journal (L 2026/1080–1081).
+  is the **tenth watched instrument** and the first Swiss one: the
+  technology-neutral DSG applied directly to AI by the EDÖB (notice of
+  9 November 2023, updated 8 May 2025), the Federal Council's sectoral decision
+  of 12 February 2025, the signature of the Council of Europe AI Convention on
+  27 March 2025, the soft-law track of February 2026, the EDÖB activity report
+  2025/26, and the consultation draft due by the end of 2026 (prepared by the
+  Federal Office of Justice within the EJPD). Sources: Fedlex, EDÖB, Federal
+  Chancellery, BAKOM, the CoE treaty chart and the EU Official Journal.
+- **[Council of Europe AI Convention (CETS 225)](reference_coe_ai_convention.md)**
+  is the **eleventh** and the first international treaty here: adopted
+  17 May 2024, opened for signature 5 September 2024, read article by article
+  from the text published in OJ L 2026/1081 (scope and the Art. 3(1)(b)
+  private-actor declaration, the Chapter III principles, remedies, the Art. 16
+  risk and impact management framework, Art. 26 oversight, Art. 30 entry into
+  force). The treaty chart **as of 5 September 2026 shows 21 signatures and one
+  ratification — the EU on 15 May 2026 — so the Convention is not in force**.
+  Implementation paths: the EU exclusively through the AI Act (Council Decision
+  (EU) 2026/1080), Switzerland through sector laws, the UK signature only.
+
+**`substantive` — every existing page re-observed**
+
 - **[EU AI Act](reference_eu_ai_act.md)** — Commission soft law caught up with
   Art. 50: final transparency guidelines (20 July 2026), the opinion on the Code
-  of Practice on AI-generated content (9 July 2026), and **draft** high-risk
-  classification guidelines (19 May 2026, still under consultation).
+  of Practice on AI-generated content (9 July 2026), **draft** high-risk
+  classification guidelines (19 May 2026, still under consultation). Enforcement
+  by the AI Office and national authorities began **2 August 2026**, with a first
+  list of more than 180 signatories of the AI-generated-content code and the
+  complaints, whistleblower and GPAI downstream-provider channels live.
 - **[NIST AI RMF](reference_nist_ai_rmf.md)** — NIST states that **AI RMF 1.0 is
-  being revised** under the White House AI Action Plan (no date); companions
-  captured: AI 100-4 (synthetic content), IR 8596 iprd (Cyber AI Profile,
-  draft), and the concept note for a critical-infrastructure profile
-  (7 April 2026).
+  being revised** under the White House AI Action Plan (no date). Companions
+  captured: AI 100-4 (synthetic content), IR 8596 iprd (Cyber AI Profile, draft),
+  the concept note for a critical-infrastructure profile (7 April 2026), the
+  **CAISI AI Agent Standards Initiative** (17 February 2026) and the zero draft
+  NIST AI 300-1 ipd on public-facing AI documentation (July 2026).
 - **[DORA](reference_dora.md)** — the ESAs designated the first **critical ICT
-  third-party providers** on 18 November 2025; Art. 31 added as an anchor.
-- **[UK AI White Paper](reference_uk_ai_white_paper.md)** — the AI Growth Lab
-  went live as the **Advisory AI Growth Lab for legal services** (8 June 2026;
-  LSB, SRA, CLC, ICO).
-- **[CSA Agentic Profile](reference_csa_agentic_profile.md)** — CSA's research-note
-  series on NIST's AI Agent Standards Initiative (March–April 2026); OWASP
-  *State of Agentic AI Security & Governance* **v2.01** (June 2026) supersedes v1.0.
+  third-party providers** on 18 November 2025 (Art. 31 added as an anchor), then
+  addressed AI directly in joint statement **JC 2026 25** (31 July 2026) and
+  published their **first annual major-incident report** (3 June 2026).
+- **[UK AI White Paper](reference_uk_ai_white_paper.md)** — the **Advisory AI
+  Growth Lab for legal services** was announced on 8 June 2026 and has been open
+  for applications since 3 August 2026; the King's Speech of 13 May 2026 brought
+  the **Regulating for Growth Bill** with statutory sandboxing powers and
+  cross-cutting AI sandboxes — but **no AI bill**.
+- **[CSA Agentic Profile](reference_csa_agentic_profile.md)** — CSA's
+  research-note series on NIST's AI Agent Standards Initiative (March–April 2026)
+  around a profile that is still a draft; OWASP *State of Agentic AI Security &
+  Governance* **v2.01** (June 2026) supersedes v1.0, the **GenAI LLM Top 10 2026**
+  followed on 3 August 2026, and the **Agent Control Standard** and framework
+  crosswalk were announced on 2 September 2026.
 - **[Berkeley CLTC](reference_berkeley_cltc.md)** — *Evaluation of Frontier AI
-  Company Practices Using the GPAI Risk-Management Standards Profile v1.2*
-  (April 2026); direct links to the agentic profile and the arXiv version of the
-  cyber-thresholds paper.
+  Company Practices* using the GPAI profile v1.2 (April 2026), AIxCyber Threat
+  Scenarios 2027–2029 (May), AgentWatch (June) and AI Risk Governance for
+  Investors and Corporate Boards (August 2026).
+- **[NIST ITL landscape](reference_nist_itl_landscape.md)** — the CAISI
+  initiative, the AI 300-1 zero draft and the January 2026 report on measuring
+  standards effectiveness; no newer landscape briefing than 6 March 2026.
+- **[ISO/IEC 23894](reference_iso_23894.md)** — re-observed, unchanged
+  (1st edition, 2023).
 
-**`editorial`** — ISO/IEC 23894 and the NIST ITL landscape re-observed without
-change; two NIST watch items without a citable document noted (COSAiS overlays,
-critical-infrastructure profile). Sources allow-list extended to `admin.ch`
-sub-domains and `coe.int`; the NIST Playbook target corrected to the AI
-Resource Center (the ARIA repository is a different NIST programme).
+**`editorial`** — The Convention's ratification status is from now on stated
+**only** on its own page; Switzerland, the EU AI Act and the UK pages link there
+instead of repeating counts. Sources allow-list extended to `admin.ch`
+sub-domains, `coe.int` and `rm.coe.int`; the NIST Playbook target corrected to
+the AI Resource Center (the ARIA repository is a different NIST programme);
+glossary, home, at-a-glance, `llms.txt`, navigation and the source manifest
+updated for both new pages. Site plumbing, no content change: the discovery
+metadata was rebuilt — per-page JSON-LD with a typed `about` node and the
+observation date as `dateModified`, an `ItemList` of every page on the home
+page, Dublin Core tags, and machine-readable alternates (Markdown source,
+`llms.txt`, sitemap) so AI answer engines can read the library directly.
 
 ---
 

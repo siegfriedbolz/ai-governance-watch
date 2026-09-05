@@ -198,8 +198,7 @@ the source texts before relying on them.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
-| `2026-09-05` | baseline | Initial baseline: DSG applied to AI (EDÖB 2023/2025), Federal Council decision 2025-02-12, CETS 225 signed 2025-03-27 and not in force (1 ratification, EU 2026-05-15), soft-law track (2026-02-10), consultation draft due end of 2026, EDÖB activity report 2025/26 captured. |
-| `2026-09-05` | editorial | CETS 225 content and treaty status now maintained on the dedicated [Council of Europe AI Convention page](reference_coe_ai_convention.md); this page links there instead of restating the ratification count. |
+| `2026-09-05` | baseline | Initial baseline: DSG applied to AI (EDÖB 2023/2025), Federal Council decision 2025-02-12, CETS 225 signed 2025-03-27 and not in force (1 ratification, EU 2026-05-15), soft-law track (2026-02-10), consultation draft due end of 2026 (prepared by the Federal Office of Justice, BJ, within the EJPD), EDÖB activity report 2025/26 captured. The Convention's content and treaty status are maintained on the dedicated [Council of Europe AI Convention page](reference_coe_ai_convention.md); this page links there instead of restating the ratification count. |
 
 ## Sources
 

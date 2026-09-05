@@ -141,8 +141,7 @@ Indicative cross-references, **not** authoritative equivalences.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
-| `2026-09-05` (2) | substantive | Three newer CLTC publications captured: **AIxCyber Threat Scenarios 2027–2029** (2026-05-18, scenario companion to the cyber-thresholds paper), **AgentWatch** (2026-06-30, browser-agent privacy/security evaluation) and **AI Risk Governance for Investors and Corporate Boards** (2026-08-12, updated 2026-08-26). |
-| `2026-09-05` | substantive | New CLTC publication: **Evaluation of Frontier AI Company Practices Using the General-Purpose AI Risk-Management Standards Profile v1.2** (April 2026) — applies CLTC's own profile as an assessment instrument to frontier developers. The **Agentic AI Risk-Management Standards Profile** (Feb 2026) now has a direct PDF link; the cyber-thresholds white paper is also on arXiv (2601.17225). |
+| `2026-09-05` | substantive | Four newer CLTC publications captured: **Evaluation of Frontier AI Company Practices Using the General-Purpose AI Risk-Management Standards Profile v1.2** (April 2026) — CLTC's own profile applied as an assessment instrument to frontier developers; **AIxCyber Threat Scenarios 2027–2029** (2026-05-18), the scenario companion to the cyber-thresholds paper; **AgentWatch** (2026-06-30), a privacy/security evaluation of browser-based agents; and **AI Risk Governance for Investors and Corporate Boards** (2026-08-12, updated 2026-08-26). The Agentic AI Risk-Management Standards Profile (Feb 2026) now has a direct PDF link, and the cyber-thresholds white paper is also on arXiv (2601.17225). |
 | `2026-06-16` | baseline | Initial baseline: cyber-threat thresholds white paper (2026-01-22), intolerable-risk recommendations (2025-02), and the Feb-2026 Agentic Profile captured. |
 
 ## Sources
