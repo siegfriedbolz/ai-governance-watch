@@ -1,7 +1,7 @@
 ---
 name: "NIST ITL — International AI Standards Landscape"
 description: "NIST Information Technology Laboratory's tracking of the global AI standards landscape — an inventory/meta-source, not a standard itself."
-keywords: "NIST ITL, AI standards landscape, international AI standards, AI standards inventory, Zero Drafts pilot, NIST AI 300-1, AI Agent Standards Initiative, CAISI, standards gap analysis"
+keywords: "NIST ITL, AI standards landscape, international AI standards, AI standards inventory, Zero Drafts pilot, NIST AI 300-1, AI Agent Standards Initiative, CAISI, standards gap analysis, NIST IR 8587, token and assertion protection"
 type: reference
 source_id: nist_itl_landscape
 source_url: "https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program"
@@ -9,8 +9,11 @@ about_type: CreativeWork
 about_identifier: "NIST ITL AI standards programme"
 about_jurisdiction: "United States"
 last_observed_at: "2026-09-05T00:00:00Z"
-last_observed_commit_or_version: "ITL AI Program; latest landscape briefing: AI Standards Landscape webinar 2026-03-06; AI Standards page items 2026: standards-effectiveness methodology report 2026-01-15, CAISI AI Agent Standards Initiative 2026-02-17, Zero Draft NIST AI 300-1 ipd 2026-07-29/30 (comments to 2026-09-16)"
+last_observed_commit_or_version: "ITL AI Program; latest landscape briefing: AI Standards Landscape webinar 2026-03-06; AI Standards page items 2026: standards-effectiveness methodology report 2026-01-15, CAISI AI Agent Standards Initiative 2026-02-17, Zero Draft NIST AI 300-1 ipd 2026-07-29/30 (comments to 2026-09-16); related final publication NIST IR 8587 (September 2026)"
 provenance_chain:
+  - timestamp: "2026-09-15T00:00:00Z"
+    pr: "manual addition (NIST IR 8587 final)"
+    change: editorial
   - timestamp: "2026-09-05T00:00:00Z"
     pr: "manual refresh (September 2026)"
     change: editorial
@@ -97,6 +100,7 @@ itself.
 - **Watch items without a publication**{ title="Two NIST work items that appear in the standards landscape but had no citable document at the observation date: the COSAiS control overlays for securing AI systems (SP 800-53-based) and the AI RMF Profile on Trustworthy AI in Critical Infrastructure (concept note only)." } — COSAiS overlays and the critical-infrastructure RMF profile: no citable document yet; check the ITL programme page by hand.
 - **[Zero Drafts pilot — NIST AI 300-1 ipd (Jul 2026)](https://www.nist.gov/artificial-intelligence/ai-standards "NIST AI Standards page: on 29 July 2026 NIST released the initial public draft of guidance and templates for public-facing AI documentation (NIST AI 300-1 ipd) under the AI Standards Zero Drafts pilot, comments to 16 September 2026; the page also lists the 6 March 2026 landscape webinar and a 15 January 2026 report on measuring the effectiveness of AI standards development.")** — the first Zero Draft to reach public-draft stage; a signal of which standards NIST wants to seed in SDOs.
 - **[AI Agent Standards Initiative (2026-02-17)](https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure "CAISI-led initiative on AI agent standards, protocols, security and identity — the newest entry in the landscape.")** — the agentic strand of the landscape, run by CAISI.
+- **[NIST IR 8587 — Protecting Tokens and Assertions from Forgery, Theft, and Misuse (final, Sep 2026)](https://csrc.nist.gov/pubs/ir/8587/final "NIST/CISA implementation recommendations for federal agencies and cloud service providers on protecting identity tokens, access tokens and assertions; builds on SP 800-53 and responds to Executive Order 14306. Final version published 15 September 2026 after the December 2025 initial public draft.")** — an identity-and-access publication, not an AI standard: listed because its §1.1.1 applies the guidance to AI agents that use signed tokens while explicitly leaving agent-specific access risks out of scope, and points to the CAISI initiative and the NCCoE agent-identity project (see [agentic-AI work](reference_csa_agentic_profile.md)).
 
 ## Audit-Relevant Anchors
 
@@ -128,6 +132,7 @@ A landscape "where it points" map (not a control crosswalk):
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-15` | editorial | Added **NIST IR 8587** (final, September 2026; NIST/CISA) on protecting identity tokens, access tokens and assertions. Not an AI standard; tracked because §1.1.1 brings AI agents that use signed tokens into its scope and names the agent-specific access risks as a gap for further NIST/CISA guidance. Rest of the page not re-observed. |
 | `2026-09-05` | substantive | Re-observed; no newer landscape briefing than the 2026-03-06 webinar. Added from NIST's AI Standards page: the **Zero Draft NIST AI 300-1 ipd** on public-facing AI documentation (2026-07-29, comments to 2026-09-16), the **CAISI AI Agent Standards Initiative** (2026-02-17) and the report on measuring AI-standards effectiveness (2026-01-15). Two items remain on watch without a publication: NIST's **COSAiS** control overlays for securing AI systems and the **AI RMF profile for critical infrastructure** (concept note 2026-04-07; see the AI RMF page). The **AI RMF revision** announced under the AI Action Plan will reshape the landscape when it lands. |
 | `2026-06-16` | baseline | Initial baseline: ITL AI program landscape, anchored to the 2026-03-06 AI Standards Landscape webinar. |
 
@@ -137,3 +142,4 @@ Public web sources only — local/private provenance is kept in a private mirror
 
 - **Primary (web):** [NIST ITL AI Program](https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program) · [ITL AI engagement](https://www.nist.gov/artificial-intelligence/itl-ai-engagement)
 - **Update 2026-09-05 (2):** [NIST — AI Standards](https://www.nist.gov/artificial-intelligence/ai-standards) · [NIST — AI Agent Standards Initiative](https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure) · [NIST AI 300-1 ipd (PDF)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.300-1.ipd.pdf) — retrieved 2026-09-05.
+- **Update 2026-09-15:** [NIST — news release on the final IR 8587](https://www.nist.gov/news-events/news/2026/09/nist-finalizes-guidelines-protecting-online-identity-and-access-tokens) · [NIST IR 8587 (CSRC)](https://csrc.nist.gov/pubs/ir/8587/final) · [NIST IR 8587 (PDF, doi:10.6028/NIST.IR.8587)](https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8587.pdf) — retrieved 2026-09-15.

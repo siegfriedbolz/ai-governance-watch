@@ -16,6 +16,25 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-09-15 — NIST token guidance final; NCCoE agent-identity paper tracked
+
+**`editorial`** — two additive source entries, no page fully re-observed
+(`last_observed_at` stays 2026-09-05):
+
+- **[NIST ITL landscape](reference_nist_itl_landscape.md)** — NIST and CISA
+  published the final **NIST IR 8587**, *Protecting Tokens and Assertions from
+  Forgery, Theft, and Misuse* (15 September 2026). It is identity-and-access
+  guidance, not an AI standard; it is tracked because §1.1.1 brings AI agents
+  that use signed tokens into scope and names agent-specific access risks as a
+  gap for further guidance.
+- **[CSA Agentic Profile](reference_csa_agentic_profile.md)** — added the NIST
+  NCCoE concept paper *Accelerating the Adoption of Software and AI Agent Identity
+  and Authorization* (draft, 5 February 2026; comments closed 2 April 2026) as the
+  standards-based identity layer beneath the profile's agent-authority controls,
+  with IR 8587 as the token baseline.
+
+---
+
 ## 2026-09-05 — September refresh: every standard re-observed, Switzerland and the Council of Europe Convention added
 
 The library grew from nine watched instruments to eleven and every existing

@@ -1,7 +1,7 @@
 ---
 name: "CSA — NIST AI RMF: Agentic Profile"
 description: "Cloud Security Alliance's agentic-AI extension of the NIST AI RMF, plus CSA's wider 2026 agentic-control-plane and catastrophic-risk work."
-keywords: "CSA Agentic Profile, agentic AI governance, agent security controls, NIST AI RMF agentic profile, AI Controls Matrix AICM, OWASP agentic AI security, Agent Control Standard, autonomous agent oversight, agent identity"
+keywords: "CSA Agentic Profile, agentic AI governance, agent security controls, NIST AI RMF agentic profile, AI Controls Matrix AICM, OWASP agentic AI security, Agent Control Standard, autonomous agent oversight, agent identity, AI agent authorization, NCCoE agent identity concept paper"
 type: reference
 source_id: csa_agentic_profile
 source_url: "https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/"
@@ -9,8 +9,11 @@ about_type: CreativeWork
 about_identifier: "CSA Agentic AI Risk Management Profile (Lab Space draft v1)"
 about_jurisdiction: "International"
 last_observed_at: "2026-09-05T00:00:00Z"
-last_observed_commit_or_version: "CSA Lab Space Agentic Profile draft v1 (early 2026); CSA research-note series on the NIST AI Agent Standards Initiative (Mar–Apr 2026); OWASP State of Agentic AI Security & Governance v2.01 (Jun 2026); Agentic Profile header 'White Paper 2026-03-27, status draft'; OWASP GenAI LLM Top 10 2026 (v1.0, 2026-08-03); OWASP Agent Control Standard and GenAI Security Industry Framework Crosswalk announced 2026-09-02"
+last_observed_commit_or_version: "CSA Lab Space Agentic Profile draft v1 (early 2026); CSA research-note series on the NIST AI Agent Standards Initiative (Mar–Apr 2026); OWASP State of Agentic AI Security & Governance v2.01 (Jun 2026); Agentic Profile header 'White Paper 2026-03-27, status draft'; OWASP GenAI LLM Top 10 2026 (v1.0, 2026-08-03); OWASP Agent Control Standard and GenAI Security Industry Framework Crosswalk announced 2026-09-02; NIST NCCoE concept paper on software and AI agent identity and authorization (draft, 2026-02-05)"
 provenance_chain:
+  - timestamp: "2026-09-15T00:00:00Z"
+    pr: "manual addition (NCCoE agent identity concept paper)"
+    change: editorial
   - timestamp: "2026-09-05T00:00:00Z"
     pr: "manual refresh (September 2026)"
     change: substantive
@@ -113,6 +116,7 @@ on exact references.
 - **OWASP State of Agentic AI Security & Governance v2.01**{ title="OWASP GenAI Security Project's agentic threat-and-governance report, version 2.01 (June 2026), which supersedes v1.0 (2025). The threat-side companion to the CSA profile's control functions." } — the threat-side companion; **v2.01 (June 2026) supersedes v1.0**.
 - **[OWASP GenAI LLM Top 10 2026 (v1.0, 2026-08-03)](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/ "OWASP GenAI Security Project — 2026 edition of the Top 10 for LLM applications (v1.0, 3 August 2026): updated rankings and expanded threat coverage; Excessive Agency moves up the list. Supersedes the 2025 edition as the threat catalogue to pair with the profile's controls.")** — the 2026 threat list to map the profile's Govern/Map/Measure/Manage controls against.
 - **[OWASP Agent Control Standard (ACS) and Framework Crosswalk (announced 2026-09-02)](https://genai.owasp.org/2026/09/01/owasp-genai-security-project-unveils-2026-top-10-for-llm-applications-new-agent-control-standard-and-sponsors-as-community-tops-30000-members/ "OWASP GenAI Security Project announcement of 2 September 2026: the Agent Control Standard, donated to the project, extends agentic guidance towards practical runtime enforcement; the GenAI Security Industry Framework Crosswalk connects OWASP guidance to established security, risk and compliance frameworks.")** — runtime enforcement (ACS) is the missing layer between the profile's control statements and an agent that actually stops; the crosswalk is the mapping aid.
+- **[NIST NCCoE — Accelerating the Adoption of Software and AI Agent Identity and Authorization (concept paper, draft, 2026-02-05)](https://www.nccoe.nist.gov/publications/other/accelerating-adoption-software-and-ai-agent-identity-and-authorization-concept "NCCoE concept paper (draft, February 2026) scoping a possible project that applies existing identity and authorization standards — MCP, OAuth 2.0/2.1, OpenID Connect, SPIFFE/SPIRE among them — to software and AI agents. Question areas cover use cases, identification, authentication, authorization, auditing and non-repudiation, and prompt injection. Public comments ran 5 February – 2 April 2026; the paper itself is not guidance.")** — the identity layer under the profile's AG-GV question "is the agent's authority bounded, logged and revocable?"; a scoping paper, not guidance, so cite it as a signal of NIST's direction. The token baseline it builds on is now final: [NIST IR 8587](https://csrc.nist.gov/pubs/ir/8587/final) applies to agents using signed tokens (§1.1.1) and requires tightly scoped, short-lived tokens for workload identities (§5.3.1.6).
 
 ## Audit-Relevant Anchors
 
@@ -150,6 +154,7 @@ Cells link to the direct source (CSA draft · NIST AIRC · EU AI Act · OWASP Ge
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-15` | editorial | Added the **NIST NCCoE concept paper on software and AI agent identity and authorization** (draft, 2026-02-05; comment period closed 2026-04-02) as the standards-based identity layer for agent authority, and linked the final **NIST IR 8587** (September 2026) for its agent scope (§1.1.1) and workload-token rules (§5.3.1.6). Rest of the page not re-observed. |
 | `2026-09-05` | substantive | The Agentic Profile itself is still the Lab Space **draft v1** (header: White Paper 2026-03-27, status draft) and notes that NIST/CAISI plan an AI Agent Interoperability Profile for Q4 2026. Around it, CSA published a **research-note series on NIST's AI Agent Standards Initiative** (red-teaming guidance 2026-03-31; the agent-governance framework gap 2026-04-03; federal framework and compliance notes, Apr 2026). **OWASP moved twice:** *State of Agentic AI Security & Governance* **v2.01** (June 2026) supersedes v1.0 as the threat-side companion; the **GenAI LLM Top 10 2026** (v1.0) followed on 2026-08-03, and on 2026-09-02 OWASP announced the **Agent Control Standard (ACS)** — runtime enforcement for agents — plus the **GenAI Security Industry Framework Crosswalk**. |
 | `2026-06-16` | baseline | Initial baseline: CSA Agentic Profile draft v1 (early 2026) plus CSA 2026 catastrophic-risk / AICM / STAR-for-AI programme captured. |
 
@@ -158,3 +163,4 @@ Cells link to the direct source (CSA draft · NIST AIRC · EU AI Act · OWASP Ge
 - **Primary (web):** [CSA Lab Space — Agentic NIST AI RMF Profile v1](https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/) · [CSAI Foundation milestones (2026-04-29)](https://cloudsecurityalliance.org/press-releases/2026/04/29/csai-foundation-announces-key-milestones-to-secure-the-agentic-control-plane)
 - **Update 2026-09-05:** [Research note — governance gap (2026-04-03)](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-agent-governance-framework-gap-20260403/) · [Research note — red-teaming (2026-03)](https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-ai-agent-red-teaming-standards-202603/) · [Research note — federal framework](https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-ai-agent-standards-federal-framework/) · [OWASP — State of Agentic AI Security & Governance](https://genai.owasp.org/resource/state-of-agentic-ai-security-and-governance/) — retrieved 2026-09-05.
 - **Update 2026-09-05 (2):** [OWASP — GenAI LLM Top 10 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) · [OWASP — announcement of 2026-09-02 (ACS, crosswalk)](https://genai.owasp.org/2026/09/01/owasp-genai-security-project-unveils-2026-top-10-for-llm-applications-new-agent-control-standard-and-sponsors-as-community-tops-30000-members/) — retrieved 2026-09-05.
+- **Update 2026-09-15:** [NIST NCCoE — concept paper landing page](https://www.nccoe.nist.gov/publications/other/accelerating-adoption-software-and-ai-agent-identity-and-authorization-concept) · [Concept paper (PDF)](https://www.nccoe.nist.gov/sites/default/files/2026-02/accelerating-the-adoption-of-software-and-ai-agent-identity-and-authorization-concept-paper.pdf) · [NIST IR 8587 (CSRC)](https://csrc.nist.gov/pubs/ir/8587/final) — retrieved 2026-09-15.
