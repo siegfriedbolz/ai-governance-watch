@@ -36,5 +36,7 @@ skills/ai-governance-watch/
 6. Editorial diffs log silently; substantive and version-bump diffs open a
    PR against `inbox/`.
 
-Adapters must implement the `fetch(source_config) -> ContentEnvelope` and
-`describe() -> AdapterMetadata` contract documented in `SKILL.md`.
+Adapters must implement the `fetch(source_config, target_config) -> ContentEnvelope`
+and `describe() -> AdapterMetadata` contract. Target kinds, successor risk,
+`watch_hint` and the envelope fields are fixed in `docs/adapter-contract.md`
+(2026-09-21); `SKILL.md` will restate them when it lands.

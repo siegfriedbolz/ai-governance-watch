@@ -8,9 +8,12 @@ source_url: "https://www.coe.int/en/web/conventions/full-list?module=signatures-
 about_type: Legislation
 about_identifier: "CETS No. 225"
 about_jurisdiction: "Council of Europe"
-last_observed_at: "2026-09-05T00:00:00Z"
-last_observed_commit_or_version: "CETS 225 adopted 2024-05-17, opened for signature 2024-09-05; treaty chart status as of 2026-09-05: 21 signatures, 1 ratification (EU, 2026-05-15), not in force; text published in OJ L 2026/1081 (2026-05-13)"
+last_observed_at: "2026-09-21T00:00:00Z"
+last_observed_commit_or_version: "CETS 225 adopted 2024-05-17, opened for signature 2024-09-05; treaty chart status as of 2026-09-21: 21 signatures, 1 ratification (EU, 2026-05-15), not in force; text published in OJ L 2026/1081 (2026-05-13)"
 provenance_chain:
+  - timestamp: "2026-09-21T00:00:00Z"
+    pr: "manual re-observation of the treaty chart (2026-09-21)"
+    change: editorial
   - timestamp: "2026-09-05T00:00:00Z"
     pr: "baseline (manual)"
     change: baseline
@@ -20,8 +23,8 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [Council of Europe Treaty Office — chart of signatures and ratifications, CETS 225](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225) · [Convention text as published in OJ L 2026/1081](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601081) · [Explanatory Report (CETS 225)](https://rm.coe.int/1680afae67) ·
-    **Last observed:** `2026-09-05` ·
-    **Version:** adopted by the Committee of Ministers 2024-05-17, opened for signature Vilnius 2024-09-05; **not in force** (status as of 2026-09-05: one ratification) ·
+    **Last observed:** `2026-09-21` ·
+    **Version:** adopted by the Committee of Ministers 2024-05-17, opened for signature Vilnius 2024-09-05; **not in force** (status as of 2026-09-21: one ratification) ·
     **Status:** planned ·
     **Licence:** Council of Europe treaty text and Explanatory Report © Council of Europe — quoted under facts-and-quotation, here via the EU Official Journal (`facts-and-quotation`)
 
@@ -187,7 +190,7 @@ compliant with entirely different domestic rules.
 | 2025-05-15 → 2026-06-15 | Further signatures: Ukraine, Uruguay, Bosnia and Herzegovina, Armenia, North Macedonia, Albania | signatures |
 | 2026-04-21 | Council Decision (EU) 2026/1080 — EU approves the Convention; implementation exclusively via the AI Act | adopted |
 | 2026-05-13 | Convention text and Decision published in OJ L 2026/1080–1081 | published |
-| 2026-05-15 | EU deposits its instrument of approval | **first and only ratification** as of 2026-09-05 |
+| 2026-05-15 | EU deposits its instrument of approval | **first and only ratification** as of 2026-09-21 |
 | open | Entry into force — five ratifications incl. three CoE member states, then the first day of the month after three months (Art. 30(3)) | **not in force** |
 | open | Conference of the Parties adopts its rules of procedure within 12 months of entry into force (Art. 23(4)) | not started |
 
@@ -245,6 +248,7 @@ the source texts before relying on them.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-09-21` | editorial | Treaty chart re-read (status as of 2026-09-21): still 21 signatures and one ratification (EU, 2026-05-15); latest signatures Albania (2026-06-15), North Macedonia (2026-05-08), Armenia (2026-01-27). Not in force. Treaty chart fully re-observed in the browser; Convention text, Explanatory Report and Council Decision (EU) 2026/1080 are stable and were not re-read. |
 | `2026-09-05` | baseline | Initial baseline: Convention text (OJ L 2026/1081), Explanatory Report, Council Decision (EU) 2026/1080, treaty chart as of 2026-09-05 (21 signatures, 1 ratification, not in force), EU/Swiss/UK implementation paths captured. |
 
 ## Sources

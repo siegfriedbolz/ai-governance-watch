@@ -31,6 +31,20 @@
   {%- set git_date = page.meta.git_revision_date_localized_raw_iso_date if page and page.meta and page.meta.git_revision_date_localized_raw_iso_date else "" -%}
   {%- set observed = page.meta.last_observed_at if page and page.meta and page.meta.last_observed_at else "" -%}
   {%- set modified = observed or git_date -%}
+  {#- Home page: "Last updated" is the newest observation of any watched page, not the
+      commit date of index.md — a watch library is as current as its latest re-observation. -#}
+  {%- if page and page.is_homepage -%}
+    {%- set newest = namespace(value="") -%}
+    {%- for nav_item in nav -%}
+      {%- for child in (nav_item.children if nav_item.children else [nav_item]) -%}
+        {%- if child.is_page and child.meta and child.meta.last_observed_at -%}
+          {%- set seen = (child.meta.last_observed_at | string)[:10] -%}
+          {%- if seen > newest.value -%}{%- set newest.value = seen -%}{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- if newest.value -%}{%- set modified = newest.value -%}{%- endif -%}
+  {%- endif -%}
   {%- set prov_dates = (page.meta.provenance_chain | map(attribute="timestamp") | list | sort) if (page and page.meta and page.meta.provenance_chain) else [] -%}
   {%- set published = prov_dates[0] if prov_dates else modified -%}
   {%- set raw_base = (config.repo_url | replace("https://github.com/", "https://raw.githubusercontent.com/")) ~ "/" ~ (config.edit_uri | replace("edit/", "")) if config.repo_url and config.edit_uri else "" -%}

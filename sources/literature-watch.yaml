@@ -6,6 +6,14 @@
 #
 # Validates against sources/schema/sources.schema.json. Every URL must sit
 # on the domain allowlist enforced by that schema (Appendix E hardening).
+#
+# Target contract since 2026-09-21 (docs/adapter-contract.md): every target has a
+# `kind` (document | landing_page | news_feed | legal_search); every source has at
+# least one news_feed or legal_search target, because landing pages alone missed
+# six developments on 2026-09-05 and Implementing Regulation (EU) 2026/1755 on
+# 2026-09-21. A source whose successor would appear under a new identifier or URL
+# declares `successor_risk: true`, and each of its targets then carries a
+# `watch_hint` — the page to check by hand when the fingerprint stays silent.
 
 version: 1
 paused: false
@@ -26,19 +34,35 @@ sources:
     cadence: weekly
     enabled: true
     state: pilot
+    successor_risk: true
     targets:
       - url: "https://github.com/usnistgov/ARIA"
         adapter: github_repo
+        kind: document
+        watch_hint: "ARIA is a programme repository, not the framework; a revised AI RMF never shows up here. Hand-check: https://www.nist.gov/itl/ai-risk-management-framework (\"under revision\" banner, new document number)."
         note: "NIST ARIA (Assessing Risks and Impacts of AI) programme repository — commit-level watch via GitHub API. Not the Playbook: the AI RMF Playbook is a web resource on the AI Resource Center (see the airc.nist.gov target)."
       - url: "https://airc.nist.gov/airmf-resources/playbook/"
         adapter: html_extraction
+        kind: landing_page
+        check_interval_days: 14
+        watch_hint: "A revised Playbook or an AI RMF 2.0 would be announced here and on airc.nist.gov/ before the old URL changes; a new framework version gets a new publication number (AI 100-1 rev. or a new AI 100-x). Hand-check the AIRC home page and the NIST AI publications list when this page is silent for a full cadence."
         note: "AI RMF Playbook (interactive, living web resource on the AIRC) — the actual Playbook target; also the place a revised AI RMF would surface first."
       - url: "https://www.nist.gov/itl/ai-risk-management-framework"
         adapter: html_extraction
+        kind: landing_page
+        check_interval_days: 14
+        watch_hint: "The landing page says the framework is under revision (White House AI Action Plan) without a date. The successor will carry a new number and a new nvlpubs URL, so this page must be read, not fingerprinted: look for a new \"AI RMF\" item, a public-comment call, or a changed version line."
         note: "AI RMF landing page — version, errata, crosswalk announcements."
       - url: "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
         adapter: html_extraction
+        kind: document
+        watch_hint: "A revised GenAI Profile is published as a new PDF (600-1r1 or similar); this URL then stays unchanged. Hand-check: https://www.nist.gov/publications search for \"600-1\"."
         note: "GenAI Profile (AI 600-1) — frozen PDF; version metadata watch."
+      - url: "https://www.nist.gov/artificial-intelligence"
+        adapter: html_extraction
+        kind: news_feed
+        note: "NIST AI news list — new publications, comment calls and initiative announcements (CAISI, zero drafts, profiles) appear here first; compare new items against the page's Recent Changes."
+        watch_hint: "The list is paginated and dated; only items newer than last_observed_at count. A revised AI RMF is announced here as a news item before any URL changes."
 
   - id: eu_ai_act
     domain: "EU AI Act"
@@ -52,10 +76,25 @@ sources:
     targets:
       - url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
         adapter: eurlex_celex
+        kind: document
         note: "Consolidated legal text via EUR-Lex/CELLAR — amendments, corrigenda, consolidations."
       - url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
         adapter: html_extraction
+        kind: landing_page
         note: "EC policy hub — guidelines, delegated/implementing acts, timeline changes (e.g. Digital Omnibus)."
+      - url: "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1689"
+        adapter: eurlex_celex
+        kind: legal_search
+        note: "EUR-Lex 'all documents' view of the AI Act: lists amending acts, corrigenda and every delegated or implementing act adopted on its basis (each under its own number). New entries here are new law — the view that would have shown Implementing Regulation (EU) 2026/1755 in July 2026."
+        watch_hint: "EUR-Lex answers automated clients with an AWS WAF challenge (HTTP 202, empty body) — never bypass it; read the view in the browser pane, or resolve a new act through the Publications Office Cellar (publications.europa.eu/resource/celex/<CELEX>)."
+      - url: "https://digital-strategy.ec.europa.eu/en/news"
+        adapter: html_extraction
+        kind: news_feed
+        note: "Commission digital-strategy news list — AI Act guidelines, codes of practice, enforcement announcements and AI Office releases; compare new AI items against the page's Recent Changes."
+      - url: "https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act"
+        adapter: html_extraction
+        kind: landing_page
+        note: "Enforcement framework page — AI Office tools (complaints, whistleblower, downstream-provider channel), requests for information, proceedings under Art. 92/101 and Implementing Regulation (EU) 2026/1755."
 
   - id: iso_42001
     domain: "ISO/IEC 42001 (AIMS)"
@@ -66,10 +105,18 @@ sources:
     cadence: monthly
     enabled: true
     state: planned
+    successor_risk: true
     targets:
       - url: "https://www.iso.org/standard/42001"
         adapter: iso_metadata
+        kind: landing_page
+        watch_hint: "A new edition or an amendment (AMD 1) gets its own catalogue number and page; this page then only changes its stage code. Hand-check the SC 42 committee page and the CEN-CENELEC JTC 21 news for EN adoption and OJ citation as a harmonised standard."
         note: "Catalogue metadata only (title, edition, status, stage). Full text is paywalled — never fetched."
+      - url: "https://www.iso.org/committee/6794475.html"
+        adapter: iso_metadata
+        kind: news_feed
+        note: "ISO/IEC JTC 1/SC 42 committee page — published standards and work programme; a revision of 42001 or a new 42000-series document appears here as a work item before publication."
+        watch_hint: "The committee list is metadata only; a new work item has a new standard number, so compare the list against the 42000-series items already on the page."
 
   - id: csa_agentic_profile
     domain: "CSA / Agentic AI"
@@ -80,10 +127,23 @@ sources:
     cadence: weekly
     enabled: true
     state: planned
+    successor_risk: true
     targets:
       - url: "https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-rmf-profile-v1/"
         adapter: html_extraction
+        kind: document
+        watch_hint: "The URL carries \"v1\"; a v2 or a final profile will live under a new path and this page will keep its draft header. Hand-check: https://cloudsecurityalliance.org/research (agentic items) and the Lab Space index when the header still says draft after a full cadence."
         note: "CSA Lab Space draft — version/stage and section structure watch."
+      - url: "https://cloudsecurityalliance.org/research"
+        adapter: html_extraction
+        kind: news_feed
+        note: "CSA research list — new agentic profiles, AICM releases and research notes; compare new items against the page's Recent Changes."
+        watch_hint: "The list mixes all CSA topics; only agentic, AI Controls Matrix and NIST-profile items belong to this source."
+      - url: "https://genai.owasp.org/"
+        adapter: html_extraction
+        kind: news_feed
+        note: "OWASP GenAI Security Project news — LLM and Agentic Top 10 releases, Agent Control Standard, State of Agentic AI Security; the agentic-security counterpart to the CSA profile."
+        watch_hint: "Announcements name a resource before its page exists; the downloadable documents sit behind /download/<id>/ with stable ids and swapped files — record the version and date from the announcement."
 
   - id: berkeley_cltc
     domain: "Cyber Thresholds"
@@ -97,7 +157,12 @@ sources:
     targets:
       - url: "https://cltc.berkeley.edu/program/ai-security-initiative/"
         adapter: html_extraction
+        kind: landing_page
         note: "AI Security Initiative hub — new white papers and profile releases."
+      - url: "https://cltc.berkeley.edu/publications/"
+        adapter: html_extraction
+        kind: news_feed
+        note: "CLTC publications list — every new white paper and report of the AI Security Initiative appears here with a date; compare new items against the page's Recent Changes."
 
   - id: iso_23894
     domain: "ISO AI Risk Mgmt"
@@ -111,7 +176,13 @@ sources:
     targets:
       - url: "https://www.iso.org/standard/77304.html"
         adapter: iso_metadata
+        kind: landing_page
+        watch_hint: "The page shows \"under systematic review\" as routine maintenance; a confirmed revision becomes a new work item with a new number on the SC 42 committee page (watched under iso_42001)."
         note: "Catalogue metadata only (edition, status, stage). Full text paywalled — never fetched."
+      - url: "https://www.iso.org/committee/6794475.html"
+        adapter: iso_metadata
+        kind: news_feed
+        note: "ISO/IEC JTC 1/SC 42 committee page — a revision of 23894 or a new risk-management deliverable appears here as a work item with a new number before publication."
 
   - id: nist_itl_landscape
     domain: "Standards inventory"
@@ -122,10 +193,18 @@ sources:
     cadence: monthly
     enabled: true
     state: planned
+    successor_risk: true
     targets:
       - url: "https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program"
         adapter: html_extraction
+        kind: landing_page
+        watch_hint: "The programme page changes rarely; standards-landscape briefings and zero drafts are posted as separate news items and documents under new URLs. Hand-check the AI Standards page and the NIST AI news list."
         note: "ITL AI program overview — standards-landscape updates, webinars, priorities."
+      - url: "https://www.nist.gov/artificial-intelligence/ai-standards"
+        adapter: html_extraction
+        kind: news_feed
+        note: "NIST AI Standards page — dated list of standards-effectiveness reports, zero drafts, CAISI initiatives and webinars; compare new items against the page's Recent Changes."
+        watch_hint: "Items link to documents under nvlpubs or nist.gov/system/files with their own URLs; the page itself only gains a line."
 
   - id: uk_ai_white_paper
     domain: "UK jurisdiction"
@@ -139,7 +218,13 @@ sources:
     targets:
       - url: "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach"
         adapter: html_extraction
+        kind: landing_page
+        watch_hint: "The White Paper page is historical; a move to statute (Regulating for Growth Bill) or a new sandbox appears as a separate gov.uk publication or news item. Hand-check the DSIT organisation page and bills.parliament.uk when this page is silent."
         note: "White Paper landing + government responses; watch for a move from principles to statute."
+      - url: "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology"
+        adapter: html_extraction
+        kind: news_feed
+        note: "DSIT organisation page — latest news, speeches and publications; AI Growth Lab openings, consultation launches and bill introductions surface here; compare new AI items against the page's Recent Changes."
 
   - id: dora
     domain: "Operational resilience"
@@ -153,7 +238,61 @@ sources:
     targets:
       - url: "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng"
         adapter: eurlex_celex
+        kind: document
         note: "Consolidated legal text + RTS/ITS references; ICT third-party resilience scope."
+      - url: "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32022R2554"
+        adapter: eurlex_celex
+        kind: legal_search
+        note: "EUR-Lex 'all documents' view of DORA: RTS/ITS and delegated acts adopted on its basis, each under its own number."
+        watch_hint: "EUR-Lex answers automated clients with an AWS WAF challenge (HTTP 202) — read in the browser pane or resolve through the Publications Office Cellar; never bypass the challenge."
+      - url: "https://www.eba.europa.eu/publications-and-media/press-releases"
+        adapter: html_extraction
+        kind: news_feed
+        note: "EBA press releases — joint ESA statements (e.g. JC 2026 25 on frontier AI), CTPP designations, guidelines; compare new DORA/AI items against the page's Recent Changes."
+      - url: "https://www.esma.europa.eu/press-news/esma-news"
+        adapter: html_extraction
+        kind: news_feed
+        note: "ESMA news — the second publication channel of the Joint Committee; joint statements and oversight publications appear here with the JC number."
+      - url: "https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en"
+        adapter: html_extraction
+        kind: landing_page
+        note: "EIOPA DORA hub — RTS/ITS status, oversight framework, register-of-information templates."
+
+  - id: eu_cra
+    domain: "Product cybersecurity"
+    title: "EU Cyber Resilience Act — CRA (Regulation (EU) 2024/2847): essential cybersecurity requirements for products with digital elements, manufacturer reporting via ENISA's Single Reporting Platform (Art. 14, since 2026-09-11), and the Art. 12 bridge to the AI Act's high-risk regime"
+    reference_file: reference_eu_cra.md
+    license: "© European Union, EUR-Lex — reuse under Decision 2011/833/EU (attribution); ENISA pages © ENISA, reuse with source acknowledgement"
+    reproduction: open-attribution
+    cadence: monthly
+    enabled: true
+    state: planned
+    targets:
+      - url: "https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng"
+        adapter: eurlex_celex
+        kind: document
+        note: "Legal text via the ELI permalink — stable; a change here means a corrigendum, an amendment or a delegated/implementing act referenced from the consolidated view. EUR-Lex throttles automated clients (HTTP 202 with an empty body): retry with back-off or fetch via a browser."
+      - url: "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act"
+        adapter: html_extraction
+        kind: landing_page
+        note: "Commission policy page — where delegated and implementing acts (Annex III/IV product lists, reporting-format specifications, harmonised-standard requests) and the 2027-12-11 full-application guidance are announced first."
+      - url: "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting"
+        adapter: html_extraction
+        kind: landing_page
+        note: "Commission page on the Art. 14 reporting obligations — confirms the 2026-09-11 start and the 2027-12-11 extension to open-source stewards (Art. 24(3)); watch for the delegated act on sensitivity/dissemination grounds and for national single-entry-point announcements."
+      - url: "https://www.enisa.europa.eu/tools/cra-single-reporting-platform"
+        adapter: html_extraction
+        kind: landing_page
+        note: "ENISA Single Reporting Platform hub (launched 2026-09-11 with initial operating capability) — FAQ, user manuals, factsheet, terms; new versions of the manuals and the platform's capability stages surface here. Commission effectiveness review due by 2028-09-11 (Art. 70)."
+      - url: "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R2847"
+        adapter: eurlex_celex
+        kind: legal_search
+        note: "EUR-Lex 'all documents' view of the CRA: delegated acts (Annex III/IV product lists, notification format and procedures under Art. 14(10)), implementing acts and corrigenda, each under its own number."
+        watch_hint: "EUR-Lex answers automated clients with an AWS WAF challenge (HTTP 202) — read in the browser pane or resolve through the Publications Office Cellar; never bypass the challenge."
+      - url: "https://www.enisa.europa.eu/news"
+        adapter: html_extraction
+        kind: news_feed
+        note: "ENISA news — Single Reporting Platform capability stages, CRA guidance, vulnerability-database links; compare new CRA items against the page's Recent Changes."
 
   - id: ch_ai_data_protection
     domain: "Swiss jurisdiction"
@@ -164,18 +303,28 @@ sources:
     cadence: monthly
     enabled: true
     state: planned
+    successor_risk: true
     targets:
       - url: "https://www.bk.admin.ch/de/regulierung"
         adapter: html_extraction
+        kind: landing_page
+        check_interval_days: 30
+        watch_hint: "admin.ch refuses automated clients (HTTP 403); the consultation draft due end of 2026 will be published under a new fedlex.admin.ch consultation URL. Hand-check in the browser pane: this page, the EJPD/BJ news and the Fedlex consultations list."
         note: "Federal Chancellery AI-regulation page — where the consultation draft (due end of 2026) will be announced. admin.ch refuses automated clients (HTTP 403): needs a browser-based fetch or a manual check; raise cadence to weekly once the consultation opens."
       - url: "https://www.edoeb.admin.ch/de/ki-und-datenschutz"
         adapter: html_extraction
+        kind: news_feed
+        watch_hint: "The EDÖB publishes each notice as a new page linked from this topic page; a fingerprint of the page catches the link list, the notice text lives elsewhere. admin.ch returns 403 to clients — browser pane."
         note: "EDÖB topic page — every new AI notice or pre-investigation is linked here first; the EDÖB publishes updates as new pages, so watch the link list, not a single notice."
       - url: "https://www.fedlex.admin.ch/eli/cc/2022/491/de"
         adapter: html_extraction
+        kind: document
+        watch_hint: "Single-page application: the consolidation date is only visible in the browser or through the Fedlex SPARQL endpoint; an amendment (AS 2025 444) changes the consolidated text under the same ELI."
         note: "DSG SR 235.1 ELI — single-page application; consolidation date via the Fedlex SPARQL endpoint. Amendments pending (AS 2025 444)."
       - url: "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225"
         adapter: html_extraction
+        kind: landing_page
+        watch_hint: "Browser-only treaty chart (SPA); the status is stated on the coe_ai_convention page only. Read it in the browser pane and store the \"status as of\" date; a Swiss ratification appears as a date in the Switzerland row."
         note: "CoE treaty chart for CETS 225 — signatures, ratifications, entry into force. SPA, browser only; quote the 'status as of' date."
 
   - id: coe_ai_convention
@@ -187,16 +336,31 @@ sources:
     cadence: monthly
     enabled: true
     state: planned
+    successor_risk: true
     targets:
       - url: "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225"
         adapter: html_extraction
+        kind: landing_page
+        check_interval_days: 14
+        watch_hint: "Single-page application — nothing to fingerprint; read in the browser pane and record the \"status as of\" date, the signature count, the ratification count and entry into force. The fifth ratification (with three CoE members) starts the three-month clock of Art. 30."
         note: "Treaty Office chart — the only authoritative source for signatures, ratifications, declarations and entry into force. Single-page application: needs a browser-based fetch; store the 'status as of' date with every snapshot. Raise cadence to weekly once the fourth ratification appears."
       - url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601081"
         adapter: html_extraction
+        kind: document
+        watch_hint: "Stable OJ text; an amendment under Art. 28 of the Convention would be published as a new OJ item. EUR-Lex answers automated clients with an AWS WAF challenge (HTTP 202) — browser pane or Cellar."
         note: "Convention text as published in OJ L 2026/1081 (13 May 2026), annexed to Council Decision (EU) 2026/1080 — stable; a change here would mean an amendment under Art. 28."
       - url: "https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng"
         adapter: html_extraction
+        kind: document
+        watch_hint: "Stable Council decision; EU implementing measures for the Convention appear as AI Act acts, watched under eu_ai_act."
         note: "Council Decision (EU) 2026/1080 — EU conclusion, Art. 3 (implemented exclusively through the AI Act) and the annexed declarations; stable."
       - url: "https://rm.coe.int/1680afae67"
         adapter: html_extraction
+        kind: document
+        watch_hint: "Explanatory Report on rm.coe.int, which refuses automated clients (403); the file is held in the library. Hand-check https://www.coe.int/en/web/artificial-intelligence for news on the Convention."
         note: "Explanatory Report (Vilnius, 5 September 2024). rm.coe.int refuses automated clients (HTTP 403): browser-based fetch or manual check only; content is stable."
+      - url: "https://www.coe.int/en/web/artificial-intelligence"
+        adapter: html_extraction
+        kind: news_feed
+        note: "Council of Europe AI portal news — ratifications, Conference of the Parties, HUDERIA methodology updates; compare new items against the page's Recent Changes."
+        watch_hint: "The portal is the announcement channel; the authoritative status stays the treaty chart."

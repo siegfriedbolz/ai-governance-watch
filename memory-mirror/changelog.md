@@ -16,6 +16,71 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-09-21 — EU Cyber Resilience Act added as the twelfth watched instrument
+
+**`substantive` — new page**
+
+- **[EU Cyber Resilience Act (CRA)](reference_eu_cra.md)** — Regulation (EU)
+  2024/2847, the EU's binding product-cybersecurity law for hardware and
+  software with digital elements, added ten days after its first operational
+  obligation went live: since **11 September 2026** manufacturers must report
+  actively exploited vulnerabilities and severe incidents under Art. 14
+  (24-hour early warning, 72-hour notification, final report) through ENISA's
+  **Single Reporting Platform**, launched the same day. Full application —
+  essential requirements, conformity assessment, CE marking, the five-year
+  support period, penalties up to EUR 15 million or 2.5 % of worldwide turnover —
+  follows on **11 December 2027**, when the reporting duty also extends to
+  open-source software stewards (Art. 24(3)). The page is tracked here for
+  **Art. 12**: a high-risk AI system that is also a product with digital
+  elements meets the AI Act's Art. 15(1) cybersecurity duty by meeting the CRA's
+  Annex I, assessed once under the AI Act's Art. 43 procedure. Sources: EUR-Lex,
+  the Commission's CRA and CRA-reporting pages, ENISA.
+
+**`editorial` — cross-references on existing pages** (the EU AI Act page and
+the CETS 225 treaty chart were fully re-observed and carry `last_observed_at`
+2026-09-21; all other pages keep 2026-09-05)
+
+- **[EU AI Act](reference_eu_ai_act.md)** — **`substantive`**: Commission
+  Implementing Regulation (EU) 2026/1755 (2026-07-20) added — the procedures
+  for Art. 92 GPAI evaluations and Art. 101 fining proceedings, with interim
+  measures; the press-reported first Art. 91 requests for information
+  (2026-09-01) are noted as reported, not primary-verified. Plus the new anchor
+  for the CRA Art. 12 bridge to Art. 15/43 and the parallel Art. 73 / CRA
+  Art. 14 reporting clocks; Art. 15 row of the cross-framework mapping
+  annotated.
+- **[DORA](reference_dora.md)** — new anchor on the parallel CRA Art. 14 duty
+  for financial entities that ship their own software products, and the EBA's
+  final **Guidelines on third-party risk management** (2026-09-18, aligned with
+  DORA, ICT and non-ICT arrangements for critical or important functions,
+  two-year transition) as the governance layer around DORA's ICT third-party
+  rules.
+- **[Berkeley CLTC](reference_berkeley_cltc.md)** — new AI Security Initiative
+  report *Closing Gaps Across the Ecosystem* (2026-09-15) on AI-powered
+  nonconsensual intimate images and CSAM, with a four-layer ecosystem model and
+  regulatory recommendations.
+- Re-checked on 2026-09-21 with no change found: NIST AI RMF and companions
+  (IR 8596 still a draft, no AI RMF 2.0 announcement), NIST ITL landscape, CSA
+  Agentic Profile (still draft v1 of 2026-03-27), ISO/IEC 42001 and 23894
+  catalogue entries, UK (Regulating for Growth Bill not yet introduced),
+  Switzerland (consultation draft still due end of 2026), the EU AI Act's
+  Commission pages (latest dated items 2026-08-31), and the CETS 225 treaty
+  chart (status as of 2026-09-21: 21 signatures, one ratification, not in
+  force — unchanged).
+- Glossary: *CRA*, *actively exploited vulnerability*, *product with digital
+  elements*, *SBOM*. Watch list: `eu_cra` with four targets (EUR-Lex ELI,
+  Commission CRA and CRA-reporting pages, ENISA SRP hub); `enisa.europa.eu`
+  added to the source-domain allowlist.
+- Site plumbing: the watch contract now distinguishes target kinds (document,
+  landing page, news feed, legal search), marks sources whose successor would
+  appear under a new identifier and requires a `watch_hint` on their targets;
+  every source gained a news-feed or legal-search target (`docs/adapter-contract.md`,
+  schema and watch list updated; allowlist extended by the EBA, ESMA, EIOPA and
+  OWASP GenAI hosts). The home page's "Last updated" line and its `dateModified`
+  now show the newest `last_observed_at` of any watched page instead of the
+  commit date of the home page itself.
+
+---
+
 ## 2026-09-15 — NIST token guidance final; NCCoE agent-identity paper tracked
 
 **`editorial`** — two additive source entries, no page fully re-observed

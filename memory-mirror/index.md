@@ -1,7 +1,7 @@
 ---
 title: AI Governance Watch
-description: "A continuously-watched reference library of AI governance standards — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, Swiss DSG/EDÖB, the Council of Europe AI Convention (CETS 225), CSA Agentic Profile, Berkeley CLTC — by Siegfried-Thor Bolz, Enterprise AEMaaCS architect & AI risk auditor near Munich, Germany."
-keywords: "AI Risk Auditor, AI Governance, AI Compliance, CMS AI Audit, AI audit for enterprise CMS, EU AI Act, NIST AI RMF, ISO/IEC 42001, ISO/IEC 27001, ISO/IEC 23894, DORA, OWASP LLM & Agentic Top 10, MITRE ATLAS, CSA Agentic Profile, Berkeley CLTC, Adobe Experience Manager, AEMaaCS, AEM Exit, Headless CMS, RAG, Vertex AI, Cybersecurity, Siegfried-Thor Bolz"
+description: "A continuously-watched reference library of AI governance standards — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, the EU Cyber Resilience Act, Swiss DSG/EDÖB, the Council of Europe AI Convention (CETS 225), CSA Agentic Profile, Berkeley CLTC — by Siegfried-Thor Bolz, Enterprise AEMaaCS architect & AI risk auditor near Munich, Germany."
+keywords: "AI Risk Auditor, AI Governance, AI Compliance, CMS AI Audit, AI audit for enterprise CMS, EU AI Act, NIST AI RMF, ISO/IEC 42001, ISO/IEC 27001, ISO/IEC 23894, DORA, Cyber Resilience Act, CRA, OWASP LLM & Agentic Top 10, MITRE ATLAS, CSA Agentic Profile, Berkeley CLTC, Adobe Experience Manager, AEMaaCS, AEM Exit, Headless CMS, RAG, Vertex AI, Cybersecurity, Siegfried-Thor Bolz"
 ---
 
 # AI Governance Watch
@@ -24,7 +24,7 @@ back to a verifiable observation of a public source at a documented point in tim
 
 !!! tip "How to use this library"
     New here? Start with **[Standards at a glance](at-a-glance.md)** to compare
-    all eleven, or browse the **[glossary](glossary.md)**. Use the **search** (top
+    all twelve, or browse the **[glossary](glossary.md)**. Use the **search** (top
     of the page, or press `/`) to look across every standard at once. Open a
     standard to read its summary and audit anchors, and check the
     [changelog](changelog.md) to see what changed recently.
@@ -83,6 +83,15 @@ back to a verifiable observation of a public source at a documented point in tim
 
     The EU Digital Operational Resilience Act — ICT and third-party resilience
     for finance; relevant to AI vendor and outage risk.
+
+-   **[EU Cyber Resilience Act (CRA)](reference_eu_cra.md)**
+
+    ---
+
+    Regulation (EU) 2024/2847 — product cybersecurity for hardware and software
+    with digital elements. Vulnerability and incident reporting live since
+    11 Sep 2026 (ENISA platform); full application 11 Dec 2027; Art. 12 is the
+    cybersecurity bridge to the AI Act's high-risk regime.
 
 -   **[Switzerland — AI & data protection](reference_ch_ai_data_protection.md)**
 

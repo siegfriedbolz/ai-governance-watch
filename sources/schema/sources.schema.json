@@ -57,7 +57,7 @@
       "type": "string",
       "format": "uri",
       "description": "HTTPS URL on the domain allowlist. Adding a new domain is a deliberate, reviewed schema change.",
-      "pattern": "^https://(www\\.nist\\.gov|airc\\.nist\\.gov|nvlpubs\\.nist\\.gov|csrc\\.nist\\.gov|github\\.com|raw\\.githubusercontent\\.com|eur-lex\\.europa\\.eu|digital-strategy\\.ec\\.europa\\.eu|artificialintelligenceact\\.eu|(www\\.)?iso\\.org|cloudsecurityalliance\\.org|labs\\.cloudsecurityalliance\\.org|cltc\\.berkeley\\.edu|www\\.gov\\.uk|(www\\.)?admin\\.ch|(www\\.)?bk\\.admin\\.ch|(www\\.)?edoeb\\.admin\\.ch|(www\\.)?bakom\\.admin\\.ch|(www\\.)?fedlex\\.admin\\.ch|(www\\.)?coe\\.int|rm\\.coe\\.int)(/|$)"
+      "pattern": "^https://(www\\.nist\\.gov|airc\\.nist\\.gov|nvlpubs\\.nist\\.gov|csrc\\.nist\\.gov|github\\.com|raw\\.githubusercontent\\.com|eur-lex\\.europa\\.eu|digital-strategy\\.ec\\.europa\\.eu|artificialintelligenceact\\.eu|(www\\.)?iso\\.org|cloudsecurityalliance\\.org|labs\\.cloudsecurityalliance\\.org|cltc\\.berkeley\\.edu|www\\.gov\\.uk|(www\\.)?admin\\.ch|(www\\.)?bk\\.admin\\.ch|(www\\.)?edoeb\\.admin\\.ch|(www\\.)?bakom\\.admin\\.ch|(www\\.)?fedlex\\.admin\\.ch|(www\\.)?coe\\.int|rm\\.coe\\.int|(www\\.)?enisa\\.europa\\.eu|(www\\.)?eba\\.europa\\.eu|(www\\.)?esma\\.europa\\.eu|(www\\.)?eiopa\\.europa\\.eu|genai\\.owasp\\.org)(/|$)"
     },
     "target": {
       "type": "object",
@@ -66,11 +66,28 @@
       "properties": {
         "url": { "$ref": "#/$defs/allowlisted_url" },
         "adapter": { "$ref": "#/$defs/adapter" },
+        "kind": { "$ref": "#/$defs/target_kind" },
         "note": {
           "type": "string",
           "description": "Optional human note on what this target covers."
+        },
+        "watch_hint": {
+          "type": "string",
+          "minLength": 20,
+          "description": "What a fingerprint of this URL cannot see, and which page to check by hand when it stays silent: a successor that appears under a new identifier or URL (a revised NIST framework, a new ISO edition, a project that moves on), a chart that only renders in a browser, a host that refuses automated clients. The library's quelle_hinweis mechanic (2026-09-04). Required when the source declares successor_risk."
+        },
+        "check_interval_days": {
+          "type": "integer",
+          "minimum": 7,
+          "description": "Optional per-target override of the source cadence, in days. Shorten it for targets with successor risk or an announced consultation; the routine treats the target as due when this many days have passed since its last observation."
         }
       }
+    },
+    "target_kind": {
+      "type": "string",
+      "enum": ["document", "landing_page", "news_feed", "legal_search"],
+      "default": "document",
+      "description": "What the target is, which decides what a change means. document: the source text itself (a change is a version bump or corrigendum). landing_page: the publisher's page about the source (a change is an announcement to read). news_feed: a list of new items — press releases, publications, news — whose NEW entries are compared against the page's Recent Changes, not fingerprinted as a whole (lesson of 2026-09-05: six developments lived only on news pages). legal_search: an EUR-Lex/registry view that lists acts based on or amending the source — the only way to see a delegated or implementing act that carries its own number (lesson of 2026-09-21: Implementing Regulation (EU) 2026/1755 was missed by every landing-page watch)."
     },
     "source": {
       "type": "object",
@@ -130,10 +147,24 @@
           ],
           "description": "Reproduction policy tier the library applies to this source. Governs how much of the source may be reproduced on a public page (vs. paraphrased in our own words)."
         },
+        "successor_risk": {
+          "type": "boolean",
+          "default": false,
+          "description": "True when a successor of this source would appear under a new identifier or URL, so that a fingerprint on the current URL would never fire (a framework under revision, a draft with a project page, a treaty chart behind a browser-only app). Every target of such a source carries a watch_hint, and the routine never reports the source as 'unchanged' without naming the hand-check."
+        },
         "targets": {
           "type": "array",
           "minItems": 1,
           "items": { "$ref": "#/$defs/target" }
+        }
+      },
+      "if": {
+        "properties": { "successor_risk": { "const": true } },
+        "required": ["successor_risk"]
+      },
+      "then": {
+        "properties": {
+          "targets": { "items": { "required": ["watch_hint"] } }
         }
       }
     }
