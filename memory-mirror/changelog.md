@@ -77,7 +77,9 @@ the CETS 225 treaty chart were fully re-observed and carry `last_observed_at`
   schema and watch list updated; allowlist extended by the EBA, ESMA, EIOPA and
   OWASP GenAI hosts). The home page's "Last updated" line and its `dateModified`
   now show the newest `last_observed_at` of any watched page instead of the
-  commit date of the home page itself.
+  commit date of the home page itself. New social-preview card (`assets/og-image.png`)
+  in the visual family of the Auditable Modular RAG card: the library as the subject, the
+  author bottom right; source in `docs/og-card.html`.
 
 ---
 

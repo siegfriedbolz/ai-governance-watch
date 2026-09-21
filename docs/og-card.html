@@ -1,0 +1,96 @@
+<!-- Source of memory-mirror/assets/og-image.png (1200x630). Render: headless Chromium, viewport 1200x630, deviceScaleFactor 2, then downscale with Lanczos. Same visual family as the Auditable Modular RAG card on siegfried-bolz.de. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; font-family: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; color: #eef4ff; }
+  .bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(900px 520px at 88% 100%, rgba(120, 72, 210, .55) 0%, rgba(120, 72, 210, 0) 60%),
+      radial-gradient(700px 420px at 8% 92%, rgba(24, 96, 200, .55) 0%, rgba(24, 96, 200, 0) 60%),
+      radial-gradient(800px 500px at 60% 0%, rgba(20, 34, 70, 1) 0%, rgba(8, 14, 32, 0) 70%),
+      linear-gradient(135deg, #0b1020 0%, #0f1730 45%, #16224a 100%);
+  }
+  .frame {
+    position: absolute; left: 30px; top: 30px; right: 30px; bottom: 30px;
+    border-radius: 34px;
+    border: 2px solid rgba(150, 205, 255, .55);
+    box-shadow: 0 0 0 1px rgba(255,255,255,.06) inset, 0 0 60px rgba(60, 140, 255, .18);
+    background: linear-gradient(160deg, rgba(255,255,255,.05), rgba(255,255,255,.015));
+  }
+  .eyebrow { position: absolute; left: 96px; top: 108px; font-weight: 700; font-size: 20px; letter-spacing: .12em; color: #7fd8ff; text-transform: uppercase; }
+  .title { position: absolute; left: 92px; top: 152px; font-weight: 800; font-size: 86px; line-height: .92; letter-spacing: -.03em; color: #f6f9ff; text-shadow: 0 6px 30px rgba(0,0,0,.35); }
+  .subtitle { position: absolute; left: 96px; top: 336px; font-weight: 600; font-size: 27px; color: #86e6f6; letter-spacing: -.01em; }
+  .chips { position: absolute; left: 96px; top: 455px; display: flex; gap: 14px; }
+  .chip { padding: 12px 22px; border-radius: 999px; border: 1.5px solid rgba(160, 200, 255, .65); background: rgba(40, 70, 140, .32); font-weight: 600; font-size: 20px; color: #e6eeff; }
+  .who { position: absolute; right: 100px; bottom: 100px; display: flex; align-items: center; gap: 18px; }
+  .who img { width: 86px; height: 86px; border-radius: 18px; object-fit: cover; object-position: 50% 30%; border: 2px solid rgba(190, 220, 255, .75); box-shadow: 0 6px 24px rgba(0,0,0,.4); }
+  .who .name { font-weight: 700; font-size: 25px; color: #f6f9ff; }
+  .who .role { font-weight: 600; font-size: 19px; color: #7fd8ff; margin-top: 2px; }
+  .url { position: absolute; right: 100px; bottom: 56px; font-weight: 700; font-size: 20px; color: #7fd8ff; }
+  .motif { position: absolute; right: 72px; top: 64px; transform: scale(.84); transform-origin: top right; }
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="frame"></div>
+
+<div class="eyebrow">Continuously watched · PR-gated</div>
+<div class="title">AI Governance<br>Watch</div>
+<div class="subtitle">A living map of AI governance standards</div>
+<div class="chips"><span class="chip">Re-observed</span><span class="chip">Provenance-backed</span><span class="chip">12 standards</span></div>
+
+<!-- motif: a "watch" hub with standard nodes, in the icon-card style of the RAG card -->
+<svg class="motif" width="420" height="330" viewBox="0 0 420 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gCyan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fd8ff"/><stop offset="1" stop-color="#5aa0ff"/></linearGradient>
+    <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9a8cff"/><stop offset="1" stop-color="#6b6bff"/></linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb35c"/><stop offset="1" stop-color="#ff8a5c"/></linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .card { fill: rgba(20,32,70,.55); stroke-width: 2.5; }
+      .lbl { font-family: Inter, Arial, sans-serif; font-weight: 700; font-size: 15px; fill: #e6eeff; text-anchor: middle; }
+      .line { stroke: #7fd8ff; stroke-width: 2; opacity: .8; }
+      .dot { fill: #7fd8ff; }
+    </style>
+  </defs>
+  <!-- connectors -->
+  <g filter="url(#glow)">
+    <path class="line" d="M210 108 V70"/><path class="line" d="M210 222 V260"/>
+    <path class="line" d="M152 165 H112"/><path class="line" d="M268 165 H308"/>
+    <path class="line" d="M160 118 L120 84"/><path class="line" d="M260 118 L300 84"/>
+    <path class="line" d="M160 212 L120 246"/><path class="line" d="M260 212 L300 246"/>
+    <circle class="dot" cx="210" cy="70" r="4"/><circle class="dot" cx="210" cy="260" r="4"/>
+    <circle class="dot" cx="112" cy="165" r="4"/><circle class="dot" cx="308" cy="165" r="4"/>
+    <circle class="dot" cx="120" cy="84" r="4"/><circle class="dot" cx="300" cy="84" r="4"/>
+    <circle class="dot" cx="120" cy="246" r="4"/><circle class="dot" cx="300" cy="246" r="4"/>
+  </g>
+  <!-- hub: watch dial -->
+  <rect class="card" x="152" y="108" width="116" height="114" rx="18" stroke="url(#gCyan)"/>
+  <circle cx="210" cy="165" r="34" stroke="url(#gCyan)" stroke-width="3" fill="none"/>
+  <path d="M210 145 V165 L224 175" stroke="#7fd8ff" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <circle cx="210" cy="165" r="3.5" fill="#7fd8ff"/>
+  <!-- nodes -->
+  <g>
+    <rect class="card" x="150" y="8" width="120" height="52" rx="14" stroke="url(#gCyan)"/><text class="lbl" x="210" y="40">EU AI Act</text>
+    <rect class="card" x="150" y="270" width="120" height="52" rx="14" stroke="url(#gPurple)"/><text class="lbl" x="210" y="302">CETS 225</text>
+    <rect class="card" x="4" y="139" width="104" height="52" rx="14" stroke="url(#gCyan)"/><text class="lbl" x="56" y="171">NIST AI RMF</text>
+    <rect class="card" x="312" y="139" width="104" height="52" rx="14" stroke="url(#gOrange)"/><text class="lbl" x="364" y="171">CRA</text>
+    <rect class="card" x="24" y="42" width="104" height="48" rx="14" stroke="url(#gCyan)"/><text class="lbl" x="76" y="72">ISO 42001</text>
+    <rect class="card" x="292" y="42" width="104" height="48" rx="14" stroke="url(#gPurple)"/><text class="lbl" x="344" y="72">DORA</text>
+    <rect class="card" x="24" y="240" width="104" height="48" rx="14" stroke="url(#gPurple)"/><text class="lbl" x="76" y="270">ISO 23894</text>
+    <rect class="card" x="292" y="240" width="104" height="48" rx="14" stroke="url(#gCyan)"/><text class="lbl" x="344" y="270">CSA Agentic</text>
+  </g>
+</svg>
+
+<div class="who">
+  <img src="../memory-mirror/assets/portrait.png" alt="">
+  <div><div class="name">Siegfried-Thor Bolz</div><div class="role">AI Risk Auditor</div></div>
+</div>
+<div class="url">siegfriedbolz.github.io/ai-governance-watch</div>
+</body>
+</html>
