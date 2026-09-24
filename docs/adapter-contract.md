@@ -2,21 +2,21 @@
 
 Status: contract fixed on 2026-09-21 (backlog item 3 of the September 2026 refresh). It binds
 `sources/literature-watch.yaml` today through `sources/schema/sources.schema.json`, and it binds
-every adapter written in Phase 3 and later. It exists because two refreshes showed the same gap
-from two sides:
+every adapter written in Phase 3 and later. It exists because a URL fingerprint answers a narrower
+question than a watch needs:
 
-- **2026-09-05** — the first pass re-observed every source's landing page and found nothing; the
-  second pass against the supervisors' and governments' *news pages* found six July–September
-  developments (an ESAs statement, a Commission release, a King's Speech, an OWASP release, three
-  CLTC papers). Landing pages announce; news lists record.
-- **2026-09-21** — Commission Implementing Regulation (EU) 2026/1755 (procedures for Art. 92
-  evaluations and Art. 101 fines under the AI Act) had been in the Official Journal since
-  21 July 2026. No landing page mentioned it. A delegated or implementing act carries its own
-  number and its own ELI; a fingerprint on the base act's URL never fires.
+- **A landing page announces; a news list records.** A publisher's page about a source carries the
+  headline, not the inventory. Supervisory statements, consultations, speeches and releases appear
+  on news and press pages and never touch the page the fingerprint watches.
+- **A base act's URL does not change when a new act builds on it.** A delegated or implementing act
+  carries its own number and its own ELI, and it does not appear inside the act it supplements — so
+  a fingerprint on the base act's URL cannot fire, however correct the comparison is.
+- **A successor arrives under a new identifier.** A revised framework gets a new publication number,
+  a new edition a new catalogue page; the old URL keeps serving the old text indefinitely.
 
-The library's online-source register solved the same problem on 2026-09-04 with a `quelle_hinweis`
-field ("which page to look at by hand"); this contract adopts that mechanic rather than inventing
-a second one.
+The library's online-source register solved the same problem with a `quelle_hinweis` field
+("which page to look at by hand"); this contract adopts that mechanic rather than inventing a
+second one.
 
 ## 1. Target kinds
 
@@ -32,7 +32,8 @@ Every target declares a `kind`. The kind decides what a change means and how the
 Rules that follow:
 
 1. **Every source has at least one `news_feed` or `legal_search` target.** A source watched through
-   its landing page alone is the configuration that missed 2026-09-05 and 2026-09-21.
+   its landing page alone cannot see the two changes described above — an announcement that lives
+   only on a news page, and an act that carries its own identifier.
 2. A `news_feed` or `legal_search` target never produces "unchanged" on its own. It produces a
    (possibly empty) list of new items, and the routine reports the count. Zero new items is a
    statement about the list, not about the source.
