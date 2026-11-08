@@ -8,9 +8,12 @@ source_url: "https://cltc.berkeley.edu/program/ai-security-initiative/"
 about_type: CreativeWork
 about_identifier: "CLTC AI risk-threshold and profile publications"
 about_jurisdiction: "International"
-last_observed_at: "2026-09-05T00:00:00Z"
-last_observed_commit_or_version: "Toward Risk Thresholds for AI-Enabled Cyber Threats (white paper, 2026-01-22; arXiv 2601.17225); Intolerable Risk Threshold Recommendations (2025-02-03); Agentic AI Risk-Management Standards Profile (2026-02); Evaluation of Frontier AI Company Practices Using the GPAI Profile v1.2 (Apr 2026); AIxCyber Threat Scenarios 2027–2029 (2026-05-18); AgentWatch (2026-06-30); AI Risk Governance for Investors and Corporate Boards (2026-08-12); Closing Gaps Across the Ecosystem — AI-powered NCII and CSAM (2026-09-15)"
+last_observed_at: "2026-10-30T00:00:00Z"
+last_observed_commit_or_version: "Toward Risk Thresholds for AI-Enabled Cyber Threats (white paper, 2026-01-22; arXiv 2601.17225); Intolerable Risk Threshold Recommendations (2025-02-03); Agentic AI Risk-Management Standards Profile (2026-02); Evaluation of Frontier AI Company Practices Using the GPAI Profile v1.2 (Apr 2026); AIxCyber Threat Scenarios 2027–2029 (2026-05-18); AgentWatch (2026-06-30); AI Risk Governance for Investors and Corporate Boards (2026-08-12); Closing Gaps Across the Ecosystem — AI-powered NCII and CSAM (2026-09-15); blog post 'Who Decides How to Respond during a Cyber Crisis? What Three Tabletop Exercises Revealed About AI-Enabled Cybercrime' (Baram/Manky, 2026-10-20); publications list re-read 2026-10-30 (now served at /research/research-library/)"
 provenance_chain:
+  - timestamp: "2026-10-30T00:00:00Z"
+    pr: "manual re-observation (October 2026): CLTC research library and AI Security Initiative hub re-read"
+    change: editorial
   - timestamp: "2026-09-21T00:00:00Z"
     pr: "manual addition (CLTC report 2026-09-15)"
     change: editorial
@@ -26,7 +29,7 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [CLTC AI Security Initiative](https://cltc.berkeley.edu/program/ai-security-initiative/) ·
-    **Last observed:** `2026-09-05` ·
+    **Last observed:** `2026-10-30` ·
     **Version:** Cyber-threat thresholds white paper (2026-01-22) ·
     **Status:** planned ·
     **Licence:** © UC Regents (CLTC), no explicit open licence (`facts-and-quotation`)
@@ -119,6 +122,7 @@ is moving quickly.
 
 - **[Threshold definitions](https://cltc.berkeley.edu/publication/intolerable-ai-risk-thresholds/ "CLTC's defined 'intolerable' risk lines — externally-sourced reference points an auditor can test a deployer's risk appetite against.")** — give an auditor defensible, externally-sourced "intolerable" lines to test a deployer's risk appetite against.
 - **[Bayesian threshold method](https://cltc.berkeley.edu/2026/01/22/cltc-white-paper-proposes-new-approach-to-risk-thresholds-for-ai-enabled-cyber-threats/ "CLTC's documented Bayesian-network methodology (Jan 2026) for setting cyber-threat thresholds — citable when challenging ad-hoc risk acceptance.")** — a documented methodology an assessor can cite when challenging ad-hoc risk acceptance.
+- **[Decision rights before attribution — three tabletop exercises on AI-enabled cybercrime (2026-10-20)](https://cltc.berkeley.edu/publication/who-decides-how-to-respond-during-a-cyber-crisis-what-three-tabletop-exercises-revealed-about-ai-enabled-cybercrime/ "CLTC blog post by Gil Baram and Derek Manky (20 October 2026) on three tabletop exercises — Berkeley (December 2024), Singapore (October 2025), Tel Aviv (December 2025, with the Berkeley Risk and Security Lab and Fortinet) — with 63 practitioners, officials and executives: AI-orchestrated intrusions compress the window between access and exfiltration below the time forensics needs, so ransom, disclosure and board-notification decisions arrive before attribution; information-sharing protocols that require attribution before data exchange form a loop; the remedy proposed is to settle decision rights (who calls the ransom decision, who speaks publicly, whose priority prevails) before an incident.")** — the operational consequence of the thresholds work: once AI compresses attack timelines, an incident-response plan that sequences detect → attribute → notify → disclose no longer works; an auditor can test whether decision rights are assigned in advance.
 - **[Cyber-uplift framing](https://cltc.berkeley.edu/2026/01/22/cltc-white-paper-proposes-new-approach-to-risk-thresholds-for-ai-enabled-cyber-threats/ "Framing risk around how much a model lowers the cost/skill of cyber-attacks — directly relevant to security assessments of frontier-model deployments.")** — directly relevant to security assessments of frontier-model deployments.
 
 ## Auditor Checklist
@@ -145,6 +149,7 @@ Indicative cross-references, **not** authoritative equivalences.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-10-30` | editorial | Research library (`news_feed`, now served at `/research/research-library/` — the old `/publications/` URL redirects) and the AI Security Initiative hub re-read: one new item since 2026-09-15, the blog post **Who Decides How to Respond during a Cyber Crisis?** (Baram/Manky, 2026-10-20) on three tabletop exercises about AI-enabled cybercrime — decisions arrive before attribution, so decision rights must be settled in advance. No new white paper; the thresholds, agentic-profile and evaluation papers are unchanged. The library lists *Closing Gaps Across the Ecosystem* as 2026-09-14 while the report page says 2026-09-15 — the page date is kept. |
 | `2026-09-21` | editorial | Added the AI Security Initiative report **Closing Gaps Across the Ecosystem** (2026-09-15) on AI-powered nonconsensual intimate images and CSAM — a four-layer ecosystem model (human, model, deployment, distribution) with federal and state regulatory recommendations; extends the initiative's threshold work into content harms and platform liability. Rest of the page not re-observed. |
 | `2026-09-05` | substantive | Four newer CLTC publications captured: **Evaluation of Frontier AI Company Practices Using the General-Purpose AI Risk-Management Standards Profile v1.2** (April 2026) — CLTC's own profile applied as an assessment instrument to frontier developers; **AIxCyber Threat Scenarios 2027–2029** (2026-05-18), the scenario companion to the cyber-thresholds paper; **AgentWatch** (2026-06-30), a privacy/security evaluation of browser-based agents; and **AI Risk Governance for Investors and Corporate Boards** (2026-08-12, updated 2026-08-26). The Agentic AI Risk-Management Standards Profile (Feb 2026) now has a direct PDF link, and the cyber-thresholds white paper is also on arXiv (2601.17225). |
 | `2026-06-16` | baseline | Initial baseline: cyber-threat thresholds white paper (2026-01-22), intolerable-risk recommendations (2025-02), and the Feb-2026 Agentic Profile captured. |
@@ -154,4 +159,5 @@ Indicative cross-references, **not** authoritative equivalences.
 - **Primary (web):** [CLTC AI Security Initiative](https://cltc.berkeley.edu/program/ai-security-initiative/) · [White paper announcement (2026-01-22)](https://cltc.berkeley.edu/2026/01/22/cltc-white-paper-proposes-new-approach-to-risk-thresholds-for-ai-enabled-cyber-threats/) · [Intolerable Risk Thresholds](https://cltc.berkeley.edu/publication/intolerable-ai-risk-thresholds/)
 - **Update 2026-09-05:** [Agentic profile (PDF)](https://cltc.berkeley.edu/wp-content/uploads/2026/02/Agentic-AI-Risk-Management-Standards-Profile.pdf) · [Frontier-AI evaluation v1.2 (PDF)](https://cltc.berkeley.edu/wp-content/uploads/2026/04/Berkeley-Evaluation-of-Frontier-AI-v1-2.pdf) · [Cyber-thresholds paper on arXiv](https://arxiv.org/abs/2601.17225) — retrieved 2026-09-05.
 - **Update 2026-09-05 (2):** [CLTC — AIxCyber Threat Scenarios 2027–2029](https://cltc.berkeley.edu/2026/05/18/aixcyber-threat-scenarios-2027-2029/) · [CLTC — AI Risk Governance for Investors and Corporate Boards](https://cltc.berkeley.edu/2026/08/12/ai-risk-governance-a-structured-approach-for-investors-and-corporate-boards/) · [CLTC — AI Risk Governance (PDF)](https://cltc.berkeley.edu/wp-content/uploads/2026/08/AI_Risk_Governance.pdf) · [CLTC — publications list](https://cltc.berkeley.edu/publications/) — retrieved 2026-09-05.
+- **Update 2026-10-30:** [CLTC — research library (publications list)](https://cltc.berkeley.edu/research/research-library/) · [CLTC — Who Decides How to Respond during a Cyber Crisis? (2026-10-20)](https://cltc.berkeley.edu/publication/who-decides-how-to-respond-during-a-cyber-crisis-what-three-tabletop-exercises-revealed-about-ai-enabled-cybercrime/) — retrieved 2026-10-30.
 - **Update 2026-09-21:** [CLTC — Closing Gaps Across the Ecosystem (2026-09-15)](https://cltc.berkeley.edu/2026/09/15/new-cltc-report-on-ai-powered-nonconsensual-intimate-images-and-child-sexual-abuse-materials/) — retrieved 2026-09-21.

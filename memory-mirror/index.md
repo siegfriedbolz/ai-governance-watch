@@ -68,7 +68,8 @@ back to a verifiable observation of a public source at a documented point in tim
 
     Regulation (EU) 2024/1689 — risk tiers, high-risk obligations, GPAI rules,
     and the Digital Omnibus (Reg. (EU) 2026/1744, in force since 27 July 2026)
-    that moved the high-risk deadlines to 2027/28.
+    that moved the high-risk deadlines to 2027/28; first harmonised standard
+    (EN 18286:2026, Art. 17 QMS) cited in the Official Journal on 14 Oct 2026.
 
 -   **[UK AI White Paper](reference_uk_ai_white_paper.md)**
 

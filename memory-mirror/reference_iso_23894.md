@@ -8,9 +8,12 @@ source_url: "https://www.iso.org/standard/77304.html"
 about_type: CreativeWork
 about_identifier: "ISO/IEC 23894:2023"
 about_jurisdiction: "International"
-last_observed_at: "2026-09-05T00:00:00Z"
-last_observed_commit_or_version: "ISO/IEC 23894:2023 (1st edition, published 2023-02)"
+last_observed_at: "2026-10-30T00:00:00Z"
+last_observed_commit_or_version: "ISO/IEC 23894:2023 (1st edition, published 2023-02); ISO catalogue re-read 2026-10-30: stage 60.60, no amendment or revision on the SC 42 work programme; related SC 42 items under development: ISO/IEC DTS 25568 (risks in generative AI systems, 50.00), ISO/IEC CD 25870 (data elements for reporting AI system incidents, 30.20)"
 provenance_chain:
+  - timestamp: "2026-10-30T00:00:00Z"
+    pr: "manual re-observation (October 2026): catalogue and SC 42 work programme re-read in the browser"
+    change: editorial
   - timestamp: "2026-09-05T00:00:00Z"
     pr: "manual refresh (September 2026)"
     change: editorial
@@ -23,7 +26,7 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [iso.org/standard/77304.html](https://www.iso.org/standard/77304.html) ·
-    **Last observed:** `2026-09-05` ·
+    **Last observed:** `2026-10-30` ·
     **Version:** ISO/IEC 23894:2023, 1st edition ·
     **Status:** planned (metadata-only watch — full text is paywalled) ·
     **Licence:** ISO/IEC copyright — proprietary (`proprietary-metadata-only`)
@@ -112,6 +115,7 @@ the later ISO/IEC 42005:2025 (AI system impact assessment).
 - **Clause 6 process**{ title="ISO/IEC 23894 Clause 6 — the documented AI risk process (identify, analyse, evaluate, treat, monitor) an auditor traces against ISO/IEC 42001 Clause 6.1." } — the documented AI risk process an auditor traces against ISO/IEC 42001 Clause 6.1.
 - **Annex B risk sources**{ title="ISO/IEC 23894 Annex B — the catalogue of AI-specific risk sources used as a defensible coverage checklist in an audit." } — a defensible checklist of AI-specific risks to test coverage of.
 - **ISO 31000 alignment**{ title="The deliberate reuse of the general ISO 31000 risk process, letting an auditor connect AI risk to the organisation's existing enterprise-risk framework." } — lets an auditor connect AI risk to the organisation's enterprise risk framework.
+- **SC 42 risk-adjacent work items (not yet published)**{ title="On the ISO/IEC JTC 1/SC 42 work programme as read on 2026-10-30: ISO/IEC DTS 25568 — Guidance on addressing risks in generative AI systems (stage 50.00, approval), ISO/IEC CD 25870 — Data elements for reporting AI system incidents (stage 30.20), ISO/IEC 42105 — Guidance for human oversight of AI systems (stage 60.00, about to publish). None of them amends 23894; they are the specialised companions an auditor will be asked to map to Clause 6 and Annex B once published." } — the generative-AI risk guidance, the incident-reporting data elements and the human-oversight guidance are the next companions to this standard; nothing citable until ISO publishes them.
 
 ## Auditor Checklist
 
@@ -140,6 +144,7 @@ the NIST AI RMF cells link to readable sources.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-10-30` | editorial | Re-observed in the browser (iso.org refuses automated clients): ISO/IEC 23894:2023 unchanged — edition 1, stage 60.60, no amendment, no revision work item on the SC 42 programme (51 items under development, none touching 23894). Noted the risk-adjacent items in the pipeline: **ISO/IEC DTS 25568** (risks in generative AI systems, 50.00), **ISO/IEC CD 25870** (data elements for reporting AI system incidents, 30.20) and **ISO/IEC 42105** (human oversight, 60.00). Companion note: the AI Act's first harmonised standard, EN 18286:2026 (Art. 17 QMS), was cited in the OJ on 2026-10-14 — see the [42001 page](reference_iso_42001.md); it does not touch risk-management guidance. |
 | `2026-09-05` | editorial | Re-observed; no change to ISO/IEC 23894:2023 (1st edition) in the ISO catalogue. Companion note: ISO/IEC 42001 now also exists as EN ISO/IEC 42001:2026 (see the 42001 page). |
 | `2026-06-16` | baseline | Initial baseline: ISO/IEC 23894:2023 (1st ed.) is current; positioned as the "how" companion to ISO/IEC 42001 and ISO 31000. |
 
@@ -149,3 +154,4 @@ Public web sources only — local/private provenance is kept in a private mirror
 
 - **Primary (web):** [ISO catalogue — 23894](https://www.iso.org/standard/77304.html)
 - **Note:** Full normative text is paywalled — this reference tracks **catalogue metadata only** (edition, stage, status). No full-text fetch.
+- **Update 2026-10-30:** [ISO catalogue — 23894 (re-read in the browser)](https://www.iso.org/standard/77304.html) · [ISO/IEC JTC 1/SC 42 — standards under development](https://www.iso.org/committee/6794475/x/catalogue/p/0/u/1/w/0/d/0) — retrieved 2026-10-30.

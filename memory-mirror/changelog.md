@@ -16,6 +16,89 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-10-30 — October re-observation of all twelve pages: first AI Act harmonised standard, second CETS 225 ratification, NIST renamed to "super intelligence"
+
+**`substantive`** — every page re-observed against at least one register
+(news list, legal register or treaty chart; EUR-Lex views resolved through the
+Publications Office Cellar, `admin.ch`, `iso.org` and `coe.int` read in the
+browser); all twelve pages carry `last_observed_at` 2026-10-30.
+
+- **[EU AI Act](reference_eu_ai_act.md)** — **`substantive`**: Commission
+  Implementing Decision (EU) 2026/2274 (2026-10-12, OJ 2026-10-14) publishes the
+  reference of **EN 18286:2026** — *Artificial intelligence — Quality management
+  system for EU AI Act regulatory purposes* — the **first harmonised standard**
+  under Art. 40, giving a presumption of conformity with the Art. 17 QMS
+  requirements it covers; it layers on ISO/IEC 42001, which itself stays
+  un-harmonised. Governance trail added: AI Board ninth meeting (2026-09-17),
+  AI Scientific Panel special meeting on loss-of-control incidents (2026-10-09;
+  the AI Office has requested serious-incident reports and sent requests for
+  information on security practices), AI Office report on external-evaluator
+  requirements (2026-10-21). High-risk classification guidelines still a draft.
+  Register note: the harmonised-standard decision is *based on* Reg. (EU)
+  No 1025/2012 and only *cites* the AI Act, so EUR-Lex's "all documents based
+  on this act" view does not list it — the Commission news list did.
+- **[ISO/IEC 42001](reference_iso_42001.md)** — **`substantive`**: ISO text
+  unchanged (edition 1, stage 60.60); SC 42 work programme shows a new
+  ISO/IEC AWI 42003 (implementation guidance for 42001) and ISO/IEC 42105
+  (human oversight) at stage 60.00; the EN 18286 relationship recorded.
+  **[ISO/IEC 23894](reference_iso_23894.md)** — `editorial`: unchanged; risk-
+  adjacent items in the pipeline (DTS 25568 generative-AI risks, CD 25870
+  incident-reporting data elements) noted.
+- **[Council of Europe AI Convention (CETS 225)](reference_coe_ai_convention.md)**
+  — **`substantive`**: **Bosnia and Herzegovina ratified on 2026-10-28**, the
+  first Council of Europe member state — the chart (status as of 2026-10-30)
+  now shows 21 signatories and two ratifications; still not in force (three
+  more needed, two of them by member states). CDNET's second plenary
+  (2026-10-21/23) adopted two HUDERIA Model components. The Swiss and UK pages,
+  the at-a-glance table and `llms.txt` follow the new count.
+- **[NIST AI RMF](reference_nist_ai_rmf.md)** and
+  **[NIST ITL landscape](reference_nist_itl_landscape.md)** — **`substantive`**:
+  the framework is unchanged (RMF 1.0 still under revision, no draft, no new
+  number), but under **Executive Order 14434** (2026-09-29, 91 FR 63129) NIST
+  renamed its AI pages to "super intelligence (SI)": `nist.gov/artificial-intelligence`
+  redirects to `/super-intelligence`, CAISI is now CAISSI, the ITL AI Program
+  and AI Standards pages moved to new URLs (updated 2026-09-30). New
+  companions: **Key Practices for Incident Readiness and Response in SI
+  Training and Evaluation** (CAISSI/NSA SISC/CISA, 2026-10-16), the
+  **TEVV-Athlon Framework NIST AI 200-2 ipd** (comments closed 2026-10-06),
+  SP 1353 ipd on AI for CSF 2.0 analysis, the ITL webinar on an agentic NVD
+  enrichment workflow (2026-09-17). IR 8596 and AI 300-1 remain drafts.
+- **[CSA Agentic Profile](reference_csa_agentic_profile.md)** —
+  **`substantive`**: profile still draft v1; CSA peer reviews on
+  *Authorization of Agents*, *The Six Pillars of MCP* and the *AARM
+  Benchmarking Framework*, the published *Frontier Ready Assessment Framework*
+  (2026-10-08); OWASP *Exploit Roundup Q3 2026* (2026-10-08), *GenAI Red
+  Teaming Manual v1.0* (2026-10-20), *LLM Exploit Generation Guide 2.0*
+  (2026-10-27); cross-tracked NIST incident-readiness practices and the UK
+  CMA/DRCF agentic-economy guidance.
+- **[UK AI White Paper](reference_uk_ai_white_paper.md)** — **`substantive`**:
+  Parliament's bills register shows no Regulating for Growth Bill as of
+  2026-10-30 (private member's *Artificial Intelligence (Consent and Misuse)
+  Bill*, 1st reading 2026-10-20); CMA guidance on using AI agents under
+  consumer law updated 2026-10-30 with the DRCF joint statement on an agentic
+  economy (CMA, FCA, ICO, Ofcom: existing frameworks apply to personal AI
+  agents; autonomy does not diminish the deployer's responsibility).
+- **[EU Cyber Resilience Act](reference_eu_cra.md)** — **`substantive`**:
+  register pass added Commission Delegated Regulation (EU) 2026/881 (grounds
+  for delaying dissemination of notifications, Art. 16; in force 2026-05-10),
+  the Commission's implementation guidance of 2026-07-27 and two
+  language-version corrigenda (DE 2026-08-06, SL 2026-10-09); no amendment.
+- **[DORA](reference_dora.md)** — `editorial`: no new act in the register;
+  ESAs Autumn 2026 risk update (2026-09-23: non-EEA ICT dependencies,
+  AI-enabled attacks) and Joint Committee work programme 2027 (2026-10-13).
+- **[Switzerland](reference_ch_ai_data_protection.md)** — `editorial`:
+  consultation draft still due end of 2026; EDÖB/BACS Cyber Security Month
+  notice on generative AI at work (2026-10-16); DSG consolidation unchanged.
+- **[Berkeley CLTC](reference_berkeley_cltc.md)** — `editorial`: blog post on
+  three tabletop exercises about AI-enabled cybercrime (2026-10-20); the
+  publications list now lives at `/research/research-library/`.
+
+Watch configuration: `sources/literature-watch.yaml` gains watch-hints for the
+NIST URL moves, the CLTC redirect and the harmonised-standard register gap; no
+source added or removed.
+
+---
+
 ## 2026-09-21 — EU Cyber Resilience Act added as the twelfth watched instrument
 
 **`substantive` — new page**

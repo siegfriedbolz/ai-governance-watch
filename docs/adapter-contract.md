@@ -72,6 +72,22 @@ empty body) and the challenge is never bypassed — read in the browser pane or 
 the Publications Office Cellar; rm.coe.int and admin.ch return 403; the CoE chart and Fedlex are
 single-page applications.
 
+Three properties of registers that a `legal_search` or `news_feed` target has to allow for:
+
+- **A register view is defined by a relation, and the relation can be the wrong one.** EUR-Lex's
+  "all documents based on this act" view lists what is *based on* the act. A Commission decision
+  that cites a harmonised standard in the Official Journal is based on Regulation (EU) No 1025/2012
+  and only *cites* the AI Act, so it never appears in the AI Act's view; the Commission's news list
+  and its standardisation page are where it surfaces. The Publications Office SPARQL endpoint
+  (`publications.europa.eu/webapi/rdf/sparql`, predicates `cdm:resource_legal_based_on_resource_legal`,
+  `…_amends_…`, `…_corrects_…`, `…_completes_…`) is the machine route to the same views without
+  touching the WAF.
+- **A renamed or moved page is compared item by item, never declared unchanged because the items
+  looked for are still there.** A redirect makes the old URL a fingerprint of the new page, and a
+  move is exactly when lines are dropped.
+- **A bot challenge is `unreadable`, not `unchanged`,** and is not bypassed; if the document is
+  obtained another way (a downloaded copy), the envelope records that provenance.
+
 ## 3. Cadence and `check_interval_days`
 
 `cadence` stays a property of the source. A target may shorten its own interval with

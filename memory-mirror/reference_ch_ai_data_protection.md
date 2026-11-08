@@ -8,9 +8,12 @@ source_url: "https://www.bk.admin.ch/de/regulierung"
 about_type: Legislation
 about_identifier: "SR 235.1 (Bundesgesetz ueber den Datenschutz, DSG)"
 about_jurisdiction: "Switzerland"
-last_observed_at: "2026-09-05T00:00:00Z"
-last_observed_commit_or_version: "DSG SR 235.1 consolidated 2025-07-07; EDÖB notice 2023-11-09 updated 2025-05-08; Federal Council decision 2025-02-12; CETS 225 signed 2025-03-27, not in force (1 ratification as of 2026-09-05); consultation draft due end of 2026"
+last_observed_at: "2026-10-30T00:00:00Z"
+last_observed_commit_or_version: "DSG SR 235.1 consolidated 2025-07-07; EDÖB notice 2023-11-09 updated 2025-05-08; Federal Council decision 2025-02-12; CETS 225 signed 2025-03-27, not in force (2 ratifications as of 2026-10-30 — EU and Bosnia and Herzegovina; Switzerland has not ratified); consultation draft due end of 2026 (BK page unchanged 2026-10-30); EDÖB/BACS Cyber Security Month notice on generative AI at the workplace 2026-10-16"
 provenance_chain:
+  - timestamp: "2026-10-30T00:00:00Z"
+    pr: "manual re-observation (October 2026): BK regulation page, EDÖB topic page, Fedlex DSG and the CETS 225 treaty chart read in the browser"
+    change: editorial
   - timestamp: "2026-09-05T00:00:00Z"
     pr: "baseline (manual)"
     change: baseline
@@ -20,7 +23,7 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [bk.admin.ch — Regulierung von KI](https://www.bk.admin.ch/de/regulierung) · [EDÖB — KI und Datenschutz](https://www.edoeb.admin.ch/de/ki-und-datenschutz) · [Fedlex — DSG SR 235.1](https://www.fedlex.admin.ch/eli/cc/2022/491/de) ·
-    **Last observed:** `2026-09-05` ·
+    **Last observed:** `2026-10-30` ·
     **Version:** DSG in force since 2023-09-01 (consolidated 2025-07-07); Federal Council decision 2025-02-12; CETS 225 signed 2025-03-27, **not in force** ·
     **Status:** planned ·
     **Licence:** Swiss federal legal texts and official publications — reuse with source attribution (`open-attribution`); Council of Europe treaty text © CoE, quoted via the EU Official Journal (facts and quotation)
@@ -143,7 +146,8 @@ published at the observation date.
 | 2025-02-12 | Federal Council decision: sectoral approach, ratify CETS 225, consultation draft by end of 2026 | political mandate — **not law** |
 | 2025-03-27 | Switzerland signs CETS 225 in Strasbourg | **signature only**, no ratification |
 | 2026-02-10 | Digital Switzerland advisory board: self-regulation measures (media, energy) | soft-law track under way |
-| 2026-05-15 | EU deposits its approval of CETS 225 (Council Decision (EU) 2026/1080) | first and, at the observation date, only ratification |
+| 2026-05-15 | EU deposits its approval of CETS 225 (Council Decision (EU) 2026/1080) | first ratification |
+| 2026-10-28 | Bosnia and Herzegovina ratifies CETS 225 — the first Council of Europe member state; Switzerland has signed only | second ratification; still not in force (2 of 5) — see the [CETS 225 page](reference_coe_ai_convention.md) |
 | **by end of 2026** | Consultation draft (EJPD/BJ) on transparency, data protection, non-discrimination, oversight; UVEK plan of non-binding measures | **announced**, not published |
 | open | Entry into force of CETS 225 — needs 5 ratifications incl. 3 CoE member states (Art. 30(3)) | **not in force** — current status on the [CETS 225 page](reference_coe_ai_convention.md) |
 
@@ -164,6 +168,7 @@ published at the observation date.
 - **[EDÖB activity report 2025/2026 — focus chapter AI](https://www.edoeb.admin.ch/de/taetigkeitsbericht-des-edob "33rd activity report (published 2026-06-30), 'Schwerpunkt I: Künstliche Intelligenz': supervisory practice April 2025–March 2026 incl. the Meta 'Name Tag' facial-recognition pre-investigation (DPIA and prior consultation expected), smart glasses, federal AI assistants with local prompt processing, and the joint statement of 61 authorities on AI-generated images (2026-02-23).")** — a year of supervisory practice with the EDÖB's concrete expectations (DPIA before facial recognition, local prompt processing in the administration).
 - **[Treaty chart — CETS 225 signatures and ratifications](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225 "Council of Europe Treaty Office chart for CETS 225 — the only authoritative source for who has signed, who has ratified and whether the Convention is in force. Single-page application: read it in a browser and quote the 'status as of' date.")** — the only authoritative status source; always quote its "status as of" date.
 - **[Bundeskanzlei — Regulierung von KI](https://www.bk.admin.ch/de/regulierung "The Federal Chancellery's AI regulation page — where the consultation draft due by the end of 2026 will be announced; links the FAQs 'KI und Recht' and 'KI und Urheberrecht'.")** — where the consultation draft will appear.
+- **[EDÖB and BACS — Cyber Security Month campaign on generative AI at the workplace (2026-10-16)](https://www.edoeb.admin.ch/de/ki-und-datenschutz "EDÖB notice of 16 October 2026: within the Cyber Security Month dedicated to AI at the workplace, the EDÖB and the Federal Office for Cybersecurity (BACS) launched a joint awareness campaign on the data-protection challenges of generative AI at work. Listed on the EDÖB's 'KI und Datenschutz' topic page; no new supervisory position, an awareness measure.")** — the EDÖB's latest AI notice: awareness, not a new legal position; useful as the regulator's current framing of workplace GenAI risks.
 
 ## Auditor Checklist
 
@@ -198,9 +203,11 @@ the source texts before relying on them.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-10-30` | editorial | Re-observed in the browser (all three `admin.ch` sources refuse automated clients): the **Bundeskanzlei regulation page** is unchanged — consultation draft on AI regulation still due from the BJ by the **end of 2026**, implementation plan for non-binding measures by BAKOM on the same horizon, FAQs 'KI und Recht' / 'KI und Urheberrecht' dated 2026-05-18; the **EDÖB topic page** gained one notice, the EDÖB/BACS **Cyber Security Month campaign** on generative AI at the workplace (2026-10-16); **Fedlex DSG** still consolidated as of 2025-07-07. Treaty status moved on the [CETS 225 page](reference_coe_ai_convention.md): a second ratification (Bosnia and Herzegovina, 2026-10-28), Switzerland still signature-only, Convention not in force. |
 | `2026-09-05` | baseline | Initial baseline: DSG applied to AI (EDÖB 2023/2025), Federal Council decision 2025-02-12, CETS 225 signed 2025-03-27 and not in force (1 ratification, EU 2026-05-15), soft-law track (2026-02-10), consultation draft due end of 2026 (prepared by the Federal Office of Justice, BJ, within the EJPD), EDÖB activity report 2025/26 captured. The Convention's content and treaty status are maintained on the dedicated [Council of Europe AI Convention page](reference_coe_ai_convention.md); this page links there instead of restating the ratification count. |
 
 ## Sources
 
 - **Primary (web):** [Fedlex — DSG SR 235.1](https://www.fedlex.admin.ch/eli/cc/2022/491/de) · [Fedlex — DSV SR 235.11](https://www.fedlex.admin.ch/eli/cc/2022/568/de) · [EDÖB — KI und Datenschutz](https://www.edoeb.admin.ch/de/ki-und-datenschutz) · [EDÖB — DSG directly applicable to AI (2023-11-09)](https://www.edoeb.admin.ch/de/09112023-geltendes-dsg-ist-auf-ki-anwendbar) · [EDÖB — update (2025-05-08)](https://www.edoeb.admin.ch/de/update-geltendes-datenschutzgesetz-ist-auf-ki-direkt-anwendbar) · [EDÖB — X/Grok (2025-03-20)](https://www.edoeb.admin.ch/de/abschluss-vorabklaerung-x-grok) · [EDÖB — Datenschutztag 2026](https://www.edoeb.admin.ch/de/datenschutztag-2026) · [EDÖB — activity reports](https://www.edoeb.admin.ch/de/taetigkeitsbericht-des-edob) · [Federal Council — decision (2025-02-12)](https://www.admin.ch/gov/de/start/dokumentation/medienmitteilungen/bundesrat.msg-id-104110.html) · [Federal Council — signature (2025-03-26)](https://www.admin.ch/de/nsb?id=104646) · [Federal Council — advisory board (2026-02-10)](https://www.admin.ch/de/newnsb/5oOec_8ZQEV1X-55waGOg) · [Bundeskanzlei — Regulierung](https://www.bk.admin.ch/de/regulierung) · [BAKOM — Künstliche Intelligenz](https://www.bakom.admin.ch/de/kuenstliche-intelligenz) · [CoE — treaty chart CETS 225](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225) · [EUR-Lex — Convention text, OJ L 2026/1081](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601081) · [EUR-Lex — Council Decision (EU) 2026/1080](https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng) — all retrieved 2026-09-05.
+- **Update 2026-10-30:** [Bundeskanzlei — Regulierung](https://www.bk.admin.ch/de/regulierung) · [EDÖB — KI und Datenschutz (topic page with the 2026-10-16 notice)](https://www.edoeb.admin.ch/de/ki-und-datenschutz) · [Fedlex — DSG SR 235.1 (Stand 2025-07-07)](https://www.fedlex.admin.ch/eli/cc/2022/491/de) · [CoE treaty chart, status as of 2026-10-30](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225) — all read in the browser, 2026-10-30.
 - **Note:** `admin.ch` pages refuse automated clients (HTTP 403) and the CoE treaty chart is a single-page application — both are read in a browser; the watch stores dated text snapshots. Secondary commentary (law-firm alerts, practitioner blogs) is deliberately not cited here.

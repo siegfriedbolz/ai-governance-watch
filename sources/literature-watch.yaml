@@ -62,7 +62,7 @@ sources:
         adapter: html_extraction
         kind: news_feed
         note: "NIST AI news list — new publications, comment calls and initiative announcements (CAISI, zero drafts, profiles) appear here first; compare new items against the page's Recent Changes."
-        watch_hint: "The list is paginated and dated; only items newer than last_observed_at count. A revised AI RMF is announced here as a news item before any URL changes."
+        watch_hint: "The list is paginated and dated; only items newer than last_observed_at count. A revised AI RMF is announced here as a news item before any URL changes. Since 2026-09-30 this URL redirects to https://www.nist.gov/super-intelligence (Executive Order 14434 renamed NIST's AI pages to 'super intelligence'; CAISI is now CAISSI at /caissi) — fingerprint the redirect target, and read the dated news list at /news-events/news-updates/topic/2753736."
 
   - id: eu_ai_act
     domain: "EU AI Act"
@@ -86,7 +86,7 @@ sources:
         adapter: eurlex_celex
         kind: legal_search
         note: "EUR-Lex 'all documents' view of the AI Act: lists amending acts, corrigenda and every delegated or implementing act adopted on its basis (each under its own number). New entries here are new law — the view that would have shown Implementing Regulation (EU) 2026/1755 in July 2026."
-        watch_hint: "EUR-Lex answers automated clients with an AWS WAF challenge (HTTP 202, empty body) — never bypass it; read the view in the browser pane, or resolve a new act through the Publications Office Cellar (publications.europa.eu/resource/celex/<CELEX>)."
+        watch_hint: "EUR-Lex answers automated clients with an AWS WAF challenge (HTTP 202, empty body) — never bypass it; read the view in the browser pane, or resolve a new act through the Publications Office Cellar (publications.europa.eu/resource/celex/<CELEX>; its SPARQL endpoint publications.europa.eu/webapi/rdf/sparql lists acts based on, amending or correcting CELEX 32024R1689). Known gap: a Commission implementing decision that cites a harmonised standard in the OJ (e.g. (EU) 2026/2274 for EN 18286:2026, 2026-10-14) is based on Regulation (EU) No 1025/2012 and only cites the AI Act, so it never appears in this view — catch it on the Commission news list and the 'Standardisation of the AI Act' page."
       - url: "https://digital-strategy.ec.europa.eu/en/news"
         adapter: html_extraction
         kind: news_feed
@@ -163,6 +163,7 @@ sources:
         adapter: html_extraction
         kind: news_feed
         note: "CLTC publications list — every new white paper and report of the AI Security Initiative appears here with a date; compare new items against the page's Recent Changes."
+        watch_hint: "Since at least 2026-10-30 this URL redirects to https://cltc.berkeley.edu/research/research-library/ (the research library with date and type filters); fingerprint the redirect target. Blog posts appear in the same list as white papers — the 'Type' column tells them apart."
 
   - id: iso_23894
     domain: "ISO AI Risk Mgmt"
@@ -198,13 +199,13 @@ sources:
       - url: "https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program"
         adapter: html_extraction
         kind: landing_page
-        watch_hint: "The programme page changes rarely; standards-landscape briefings and zero drafts are posted as separate news items and documents under new URLs. Hand-check the AI Standards page and the NIST AI news list."
+        watch_hint: "The programme page changes rarely; standards-landscape briefings and zero drafts are posted as separate news items and documents under new URLs. Hand-check the AI Standards page and the NIST AI news list. Since 2026-09-30 this URL redirects to https://www.nist.gov/super-intelligence/nist-information-technology-laboratory-itl-si-program ('ITL SI Program', Executive Order 14434) — a fingerprint of the old URL is a fingerprint of the redirect target."
         note: "ITL AI program overview — standards-landscape updates, webinars, priorities."
       - url: "https://www.nist.gov/artificial-intelligence/ai-standards"
         adapter: html_extraction
         kind: news_feed
         note: "NIST AI Standards page — dated list of standards-effectiveness reports, zero drafts, CAISI initiatives and webinars; compare new items against the page's Recent Changes."
-        watch_hint: "Items link to documents under nvlpubs or nist.gov/system/files with their own URLs; the page itself only gains a line."
+        watch_hint: "Items link to documents under nvlpubs or nist.gov/system/files with their own URLs; the page itself only gains a line. Since 2026-09-30 this URL redirects to https://www.nist.gov/super-intelligence/super-intelligence-standards ('SI Standards', Executive Order 14434); the move dropped at least one line (the CAISI agent-initiative item) — compare the item list against the page's Recent Changes, never assume a renamed page is unchanged."
 
   - id: uk_ai_white_paper
     domain: "UK jurisdiction"
