@@ -16,6 +16,31 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-11-08 — UK: first statutory hook for AI agents (Cyber Security and Resilience Bill); CSA APAS
+
+**`substantive`** — two pages re-observed (`last_observed_at` 2026-11-08 on the UK and CSA
+pages; all other pages keep 2026-10-30)
+
+- **[UK AI White Paper](reference_uk_ai_white_paper.md)** — **`substantive`**: DSIT added the
+  factsheet *Agentic AI resilience measures* (2026-11-03) to the Cyber Security and Resilience
+  (Network and Information Systems) Bill: after Royal Assent and consultation, secondary
+  legislation is to introduce four measures on agentic loss of control for NIS-regulated
+  entities — security and resilience requirements (agent monitoring, agent risk assessments),
+  affected-party notification, evidence preservation, ministerial post-incident review powers.
+  The Bill passed Lords third reading on 2026-11-02 and is at Commons consideration of Lords
+  amendments. Still no Regulating for Growth bill in the register.
+- **[CSA Agentic Profile](reference_csa_agentic_profile.md)** — `editorial`: CSA *Autonomous
+  Pentest Assurance Standard (APAS)* (2026-11-04); OWASP *GenAI Data Security Best Practices v2,
+  Part 1* (2026-11-03); peer reviews on MCP and agent authorisation still open; cross-reference to
+  the UK factsheet.
+
+Registers checked for the other ten pages on 2026-11-08 without change: Cellar views of the AI
+Act, DORA and CRA; Commission AI pages (last updates unchanged); CETS 225 treaty chart (status as
+of 2026-11-08: 2 ratifications, 19 signatures); NIST news list and AI RMF landing page; ISO
+catalogue and SC 42 programme; Bundeskanzlei regulation page; EBA and ENISA news; CLTC library.
+
+---
+
 ## 2026-10-30 — October re-observation of all twelve pages: first AI Act harmonised standard, second CETS 225 ratification, NIST renamed to "super intelligence"
 
 **`substantive`** — every page re-observed against at least one register
