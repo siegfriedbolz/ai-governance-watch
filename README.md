@@ -96,6 +96,7 @@ Status follows the rollout plan from `docs/implementation-plan.md`
 | Berkeley CLTC                     | Cyber Thresholds     | `html_extraction` | monthly  | planned  |
 | NIST ITL standards landscape      | Standards inventory  | `html_extraction` | monthly  | planned  |
 | UK AI Regulation White Paper      | UK jurisdiction      | `html_extraction` | quarterly| planned  |
+| GDPR (Reg. 2016/679) for AI systems | Data protection      | `eurlex_celex` + `html_extraction` | monthly | planned |
 | DORA                              | Operational resilience | `eurlex_celex`  | quarterly| planned  |
 | EU Cyber Resilience Act (Reg. 2024/2847) | Product cybersecurity | `eurlex_celex` + `html_extraction` | monthly | planned |
 | Switzerland (DSG / EDÖB / CETS 225) | Swiss jurisdiction   | `html_extraction` | monthly  | planned  |

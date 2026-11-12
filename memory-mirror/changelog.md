@@ -16,18 +16,53 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
-## 2026-11-12 — EU AI Act: Art. 2(8) research-and-testing exclusion; CELEX for the Digital Omnibus
+## 2026-11-12 — New page: GDPR for AI systems; EU AI Act: education and health sector sections, Art. 2(8) research-and-testing exclusion {#2026-11-12-eu-ai-act-art-28-research-and-testing-exclusion-celex-for-the-digital-omnibus}
 
-**`editorial`** — one page enriched without re-observation (`last_observed_at` unchanged:
-2026-10-30 on the EU AI Act page)
+**`baseline`** for the new page · **`editorial`** for the EU AI Act page (enriched without
+re-observation; its `last_observed_at` stays 2026-10-30)
 
-- **[EU AI Act](reference_eu_ai_act.md)** — new in-depth section on **Art. 2(8)**: research,
-  testing and development before placing on the market or putting into service are outside the
-  Act; the exclusion ends with putting into service, and testing in real-world conditions
-  (Art. 3(57)) is not covered and follows Art. 60. One checklist item added. The Digital Omnibus
-  now carries its CELEX number **32026R1744**. Texts read in the Publications Office Cellar on
-  2026-11-12; the Omnibus text confirms Art. 2(8) unchanged (it replaced Art. 2(2), 2(7) and
-  Art. 60(1)–(2), and added Art. 2(13)).
+- **[GDPR](reference_gdpr.md)** — thirteenth watched source, added as a baseline. Regulation
+  (EU) 2016/679 as it applies to AI systems: how it and the AI Act fit together (AI Act
+  Arts. 2(7), 4a, 26(9), 27(4), 86), health data and other special categories (Art. 9),
+  automated decisions (Art. 22), the DPIA (Art. 35), fines (Art. 83); EDPB Opinion 28/2024 and
+  the consultation versions of Guidelines 02/2026 (anonymisation) and 03/2026 (web scraping for
+  generative AI); CJEU C-634/21 and C-203/22; for Germany §§ 22 and 38 BDSG and the three DSK
+  orientation aids on AI, including the one on RAG. Register pass via the Publications Office
+  Cellar: the GDPR is unamended; the Digital Omnibus data part (COM(2025) 837) is a proposal —
+  the Council's negotiating mandate of 21 October 2026 (document 14756/26) is set beside it
+  point by point (definition of personal data, pseudonymisation, special categories in AI,
+  legitimate interest for AI, Art. 22, breach notification, DPIA lists); 'awaiting committee
+  decision' in Parliament; EDPB-EDPS Joint Opinion 2/2026 on it. Also: EDPB Guidelines 1/2024
+  on legitimate interest, final as version 2.0 since 10 November 2026; the EDPB's consultation
+  templates for DPIAs and for breach notification; the EDPB's 2027 coordinated enforcement
+  topic, automated decision-making in recruitment; on the AI Act side EDPB-EDPS Joint Opinion
+  1/2026 and EDPB Statement 3/2024, the ChatGPT taskforce report and the consultation version of
+  Guidelines 1/2026 on scientific research. For Germany also the DSK list of
+  processing operations requiring a DPIA (No. 11: AI that steers the interaction with data
+  subjects or evaluates their personal aspects).
+- **[EU AI Act](reference_eu_ai_act.md)** — three new in-depth sections.
+  **[Education and vocational training](reference_eu_ai_act.md#education-and-vocational-training)**:
+  Annex III point 3 as source text; the line between a tutor and a system that evaluates
+  learning outcomes, drawn with the Commission's **draft** guidelines on high-risk
+  classification (summative vs formative evaluation); the Art. 6(3) derogation and its
+  profiling limit; the Art. 5(1)(f) emotion-inference ban with the examples of the
+  Commission's guidelines on prohibited practices. **[Health and medical devices](reference_eu_ai_act.md#health-and-medical-devices)**:
+  Art. 6(1) as source text, MDR and IVDR in Annex I Section A with the class table of
+  MDCG 2025-6 / AIB 2025-1, the Omnibus changes (Arts. 2(13), 6(1a)–(1c), 43(3), 113), Annex III
+  point 5(a), (c), (d), and the pending MDR/IVDR revision COM(2025) 1023 marked as a proposal
+  ('awaiting committee decision' in Parliament; no Council general approach — progress report
+  of 5 June 2026). **[Art. 2(8)](reference_eu_ai_act.md#research-and-testing-exclusion)**: research, testing and development
+  before placing on the market or putting into service are outside the Act; the exclusion ends
+  with putting into service, and testing in real-world conditions (Art. 3(57)) is not covered
+  and follows Art. 60. The Digital Omnibus now carries its CELEX number **32026R1744**; its text
+  confirms Art. 2(8) unchanged (it replaced Art. 2(2), 2(7) and Art. 60(1)–(2), and added
+  Art. 2(13)). Texts read in the Publications Office Cellar on 2026-11-12.
+  Three checklist items added. **Correction:** the bias-detection ground for special-category
+  data is the new **Art. 4a** — the Omnibus deleted Art. 10(5), which this page still named.
+- Overview pages, glossary (four terms), navigation and source register updated for the new page;
+  the source register now watches the EDPB documents, news and consultation lists and the DSK list
+  of orientation aids — `edpb.europa.eu` and `datenschutzkonferenz-online.de` added to the
+  source-domain allowlist.
 
 ---
 

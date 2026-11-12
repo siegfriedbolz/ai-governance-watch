@@ -1,7 +1,7 @@
 ---
 name: "EU AI Act (Regulation (EU) 2024/1689)"
 description: "The EU's risk-tiered AI regulation, its phased application timeline, GPAI obligations, the Digital Omnibus (Reg. (EU) 2026/1744, in force 27 July 2026) that postponed the high-risk deadlines, and the first harmonised standard EN 18286:2026 (Art. 17 QMS) cited in the OJ on 14 October 2026."
-keywords: "EU AI Act, Regulation (EU) 2024/1689, Digital Omnibus 2026/1744, EN 18286 harmonised standard, Implementing Decision 2026/2274, high-risk AI systems, Annex III, GPAI obligations, Article 50 transparency, AI-generated content marking, conformity assessment, Art. 2(8) research and testing exclusion, testing in real-world conditions, FRIA, AI Act penalties, AI Office enforcement"
+keywords: "EU AI Act, Regulation (EU) 2024/1689, Digital Omnibus 2026/1744, EN 18286 harmonised standard, Implementing Decision 2026/2274, high-risk AI systems, Annex III, GPAI obligations, Article 50 transparency, AI-generated content marking, conformity assessment, Art. 2(8) research and testing exclusion, testing in real-world conditions, AI in education, Annex III point 3, AI medical devices, MDR, IVDR, MDCG 2025-6, GDPR, FRIA, AI Act penalties, AI Office enforcement"
 type: reference
 source_id: eu_ai_act
 source_url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
@@ -11,6 +11,9 @@ about_jurisdiction: "European Union"
 last_observed_at: "2026-10-30T00:00:00Z"
 last_observed_commit_or_version: "Reg. (EU) 2024/1689 in force 2024-08-01; amended by Digital Omnibus Reg. (EU) 2026/1744 (in force 2026-07-27); Commission guidelines: Art. 50 transparency (final, 2026-07-20), high-risk classification (draft, 2026-05-19); Commission opinion on the Code of Practice on AI-generated content (2026-07-09); enforcement by the AI Office and national authorities since 2026-08-02 (Commission release 2026-07-31, first list of 180+ signatories of the Code of Practice on transparency of AI-generated content); Commission Implementing Regulation (EU) 2026/1755 of 2026-07-20 (procedures for Art. 92 evaluations and Art. 101 fines, interim measures; OJ 2026-07-21); Commission Implementing Decision (EU) 2026/2274 of 2026-10-12 (OJ 2026-10-14): reference of EN 18286:2026 — the first harmonised standard under Art. 40 (quality management system, Art. 17) — published; AI Board ninth meeting 2026-09-17; AI Scientific Panel special meeting on frontier-AI safety 2026-10-09 (loss-of-control incidents, AI Office requests for information); AI Office workshop report on external GPAI evaluators 2026-10-21; high-risk classification guidelines still a draft"
 provenance_chain:
+  - timestamp: "2026-11-12T00:00:00Z"
+    pr: "manual addition, no re-observation: sector sections on education (Annex III point 3) and on health and medical devices (Art. 6(1), Annex I Section A, Annex III point 5; MDCG 2025-6), checked against the Commission guidelines on prohibited practices and the draft guidelines on high-risk classification; Art. 10(5) corrected to Art. 4a; texts read via the Publications Office Cellar"
+    change: editorial
   - timestamp: "2026-11-12T00:00:00Z"
     pr: "manual addition, no re-observation: Art. 2(8) source text and the real-world-testing boundary (Arts. 3(57), 60), CELEX 32026R1744 for the Digital Omnibus; texts read via the Publications Office Cellar"
     change: editorial
@@ -54,9 +57,10 @@ provenance_chain:
     grants a marking grace period, strengthens the **AI Office**'s enforcement
     powers over GPAI-based systems, softens the
     [Art. 4](https://artificialintelligenceact.eu/article/4/ "EU AI Act Article 4 — AI literacy: providers and deployers must ensure a sufficient level of AI literacy in their staff; the Omnibus softened this from guaranteeing competence to supporting literacy measures.")
-    AI-literacy duty from *guaranteeing* to *supporting*, extends the
-    [Art. 10(5)](https://artificialintelligenceact.eu/article/10/ "EU AI Act Article 10(5) — the legal ground to process special categories of personal data strictly for bias detection and correction; the Omnibus extends it beyond high-risk to all AI systems, with a strict-necessity threshold.")
-    bias-detection ground to **all** AI systems, reinstates registration for
+    AI-literacy duty from *guaranteeing* to *supporting*, moves the
+    bias-detection ground of the former Art. 10(5) into a new
+    [Art. 4a](https://artificialintelligenceact.eu/article/4a/ "EU AI Act Article 4a, inserted by the Digital Omnibus, which deleted Art. 10(5) — the legal ground to process special categories of personal data strictly for bias detection and correction, under six cumulative safeguards; para. 2 extends it beyond high-risk systems to other AI systems and models and to deployers, with a strict-necessity threshold.")
+    and extends it to **all** AI systems, reinstates registration for
     [Art. 6(3)](https://artificialintelligenceact.eu/article/6/ "EU AI Act Article 6(3) — the derogation that lets a system escape high-risk classification when it performs only narrow procedural or preparatory tasks; the Omnibus reinstates the duty to register such carve-outs in the EU database.")
     carve-outs, narrows "safety component" and extends SME simplifications to
     small mid-caps — **all dates in the
@@ -193,6 +197,219 @@ duties (classification incl. the Art. 6(3) check, logging, human-oversight
 design, a technical-documentation skeleton) is not required by the Act during
 the prototype, but it is cheaper to design in than to retrofit.
 
+## In depth: education and vocational training (Annex III, point 3) {#education-and-vocational-training}
+
+!!! quote "Source text — EU AI Act, Annex III, point 3 (© European Union, EUR-Lex)"
+    Education and vocational training: (a) AI systems intended to be used to
+    determine access or admission or to assign natural persons to educational
+    and vocational training institutions at all levels; (b) AI systems
+    intended to be used to evaluate learning outcomes, including when those
+    outcomes are used to steer the learning process of natural persons in
+    educational and vocational training institutions at all levels; (c) AI
+    systems intended to be used for the purpose of assessing the appropriate
+    level of education that an individual will receive or will be able to
+    access, in the context of or within educational and vocational training
+    institutions at all levels; (d) AI systems intended to be used for
+    monitoring and detecting prohibited behaviour of students during tests in
+    the context of or within educational and vocational training institutions
+    at all levels.
+
+**In our words —** AI in education is not high-risk as such. Four intended
+purposes are: deciding **admission**, **evaluating learning outcomes**,
+**assessing the level of education** a person gets access to, and
+**proctoring**. Recital 56 gives the reason — such systems may determine the
+educational and professional course of a person's life. The Digital Omnibus
+left point 3 unchanged. What decides a concrete case:
+
+1. **The intended purpose, not the label.** The decisive words in
+   point 3(b) are *evaluate learning outcomes*. The Commission's
+   [draft guidelines on high-risk classification](https://ec.europa.eu/newsroom/dae/redirection/document/128561 "Draft Commission guidelines on the classification of high-risk AI systems under Article 6 of Regulation (EU) 2024/1689, published 19 May 2026 for stakeholder consultation — a draft, not final; it predates the Digital Omnibus. Section 3.3 covers education and vocational training (paras. 210–225 read on 2026-11-12).")
+   (paras. 220–225, **a draft — not final**) draw the line between
+   *summative* and *formative* evaluation: a system whose evaluation counts
+   towards a final decision — a grade, a certificate, a qualification,
+   including intermediate grades that feed the final one — is high-risk; a
+   system that only gives feedback and learning support is not. The draft
+   names adaptive learning systems that adjust difficulty, intelligent
+   tutoring systems with personalised feedback, and learning-analytics
+   platforms as **outside** point 3(b) — and a learning assistant whose
+   end-of-unit reports the teacher uses for grading as **inside**. A tutor or
+   a virtual case patient used for practice is on the safe side of that line
+   only as long as its output does not flow into grading or certification.
+   Tools that learners use of their own accord, without the institution
+   requiring it, are outside unless they lead to a recognised credential
+   (para. 225).
+2. **"At all levels" is wide.** The same draft (paras. 210–212) reads
+   *educational and vocational training institutions at all levels* as
+   covering formal and non-formal education, public and private, online or
+   in person — expressly including **adult and continuing education**.
+   Institutions are normally accredited or sanctioned by the national
+   authorities and may award a certificate. Providers of professional
+   training that issue certificates should treat themselves as in scope.
+   Systems aimed mainly at training the educators themselves fall outside
+   point 3 and may fall under the employment use cases of point 4
+   (para. 214).
+3. **The Art. 6(3) derogation exists, but it is narrow.** An Annex III system
+   is not high-risk where it poses no significant risk, including by not
+   materially influencing the outcome of decision-making — a narrow
+   procedural task, improving the result of a completed human activity,
+   detecting deviations from prior decision patterns without replacing the
+   human assessment, or a preparatory task. It **never** applies where the
+   system performs **profiling** of natural persons — defined by reference
+   to GDPR Art. 4(4) (Art. 3(52)), which names the evaluation of a person's
+   performance. The draft guidelines say so for this area in terms: point 3
+   systems will often perform profiling and should then always be classified
+   as high-risk, even if a filter condition is met (para. 215). A provider
+   relying on the derogation
+   documents the assessment before placing on the market and registers the
+   system ([Art. 6(4)](https://artificialintelligenceact.eu/article/6/ "EU AI Act Article 6(4) — a provider who considers an Annex III system not to be high-risk documents its assessment before placing on the market or putting into service, is subject to the registration obligation in Art. 49(2), and provides the documentation to national competent authorities on request."),
+   Art. 49(2)).
+4. **Emotion inference is prohibited, not high-risk.**
+   [Art. 5(1)(f)](https://artificialintelligenceact.eu/article/5/ "EU AI Act Article 5(1)(f) — prohibits placing on the market, putting into service for this purpose, or using AI systems to infer emotions of a natural person in the areas of workplace and education institutions, except where the system is intended for medical or safety reasons; applicable since 2 February 2025.")
+   bans AI systems that infer emotions of a person in education institutions,
+   except for medical or safety reasons — applicable since 2 February 2025.
+   An emotion recognition system identifies or infers emotions or intentions
+   from **biometric data** (Art. 3(39)); Recital 18 excludes physical states
+   such as fatigue and the mere detection of readily apparent expressions or
+   gestures unless they are used to infer emotions. The Commission's final
+   [guidelines on prohibited practices](https://ec.europa.eu/newsroom/dae/redirection/document/112367 "Commission Guidelines on prohibited artificial intelligence practices established by Regulation (EU) 2024/1689, C(2025) 5052 final of 29 July 2025 (published 4 February 2025); para. 255 on education institutions read on 2026-11-12.")
+   (para. 255) give the examples: an institution using emotion recognition
+   to infer the **interest and attention** of students — prohibited;
+   eye-tracking in an online exam to detect unauthorised material — not
+   prohibited, as long as it does not also detect emotions such as
+   anxiousness; emotion recognition in a **role-play used for training** —
+   allowed if the results cannot affect the evaluation or certification of
+   the person trained.
+5. **Two duties apply whatever the classification:** learners must be told
+   that they are interacting with an AI system
+   ([Art. 50(1)](https://artificialintelligenceact.eu/article/50/ "EU AI Act Article 50(1) — providers ensure that AI systems intended to interact directly with natural persons inform them that they are interacting with an AI system, unless this is obvious; applicable since 2 August 2026."),
+   since 2 August 2026), and provider and deployer take measures to support
+   the AI literacy of their staff (Art. 4, as replaced by the Omnibus).
+
+Where a system is high-risk, the obligations apply from **2 December 2027**
+(see the [application timeline](#application-timeline-as-amended-by-the-omnibus)).
+A deployer that is a body governed by public law or a private entity
+providing public services — many education providers are — must also perform
+a fundamental rights impact assessment before use
+([Art. 27(1)](https://artificialintelligenceact.eu/article/27/ "EU AI Act Article 27(1) — before deploying a high-risk AI system referred to in Art. 6(2), deployers that are bodies governed by public law or private entities providing public services, and deployers of systems under Annex III points 5(b) and (c), perform a fundamental rights impact assessment.")).
+Learner data are personal data throughout: the
+[GDPR](reference_gdpr.md) applies today, including Art. 22 where a result is
+decided without a human.
+
+**Audit note —** the classification turns on a sentence in the product
+description. The evidence to ask for is the written intended purpose, the
+list of functions that produce a score, grade, pass/fail or placement
+decision, and — the point the draft guidelines turn on — whether any of that
+output reaches the people who grade or certify. A system specified as a tutor and later
+extended with assessment has changed class; that change should be a
+documented decision, not a feature release.
+
+## In depth: health and medical devices (Art. 6(1), Annex I, Annex III point 5) {#health-and-medical-devices}
+
+!!! quote "Source text — EU AI Act, Art. 6(1) (© European Union, EUR-Lex)"
+    Irrespective of whether an AI system is placed on the market or put into
+    service independently of the products referred to in points (a) and (b),
+    that AI system shall be considered to be high-risk where both of the
+    following conditions are fulfilled: (a) the AI system is intended to be
+    used as a safety component of a product, or the AI system is itself a
+    product, covered by the Union harmonisation legislation listed in
+    Annex I; (b) the product whose safety component pursuant to point (a) is
+    the AI system, or the AI system itself as a product, is required to
+    undergo a third-party conformity assessment, with a view to the placing
+    on the market or the putting into service of that product pursuant to the
+    Union harmonisation legislation listed in Annex I.
+
+**In our words —** health AI reaches the high-risk regime by two separate
+routes, and most health-related AI reaches it by neither.
+
+**Route 1 — the AI is a medical device or a safety component of one.**
+Annex I, Section A lists the Medical Devices Regulation (EU) 2017/745 (MDR,
+point 11) and the In Vitro Diagnostic Regulation (EU) 2017/746 (IVDR,
+point 12). The AI system is high-risk when the device needs a **notified
+body** under those regulations. The joint guidance of the AI Board and the
+Medical Device Coordination Group
+([MDCG 2025-6 / AIB 2025-1, June 2025](https://health.ec.europa.eu/document/download/b78a17d7-e3cd-4943-851d-e02a2f22bbb4_en?filename=mdcg_2025-6_en.pdf "AIB 2025-1 / MDCG 2025-6 — Interplay between the Medical Devices Regulation (MDR) & In vitro Diagnostic Medical Devices Regulation (IVDR) and the Artificial Intelligence Act (AIA), June 2025: a first set of FAQ, endorsed by the AI Board and the MDCG; not a Commission document and not legally binding. Table 1 maps MDR and IVDR classes to the Art. 6(1) conditions."))
+tabulates it: MDR class IIa, IIb and III and IVDR class B, C and D — yes;
+MDR class I without sterile, measuring or reusable-surgical function and
+in-house devices under Art. 5(5) MDR/IVDR — no. Because MDR classification
+rule 11 puts software that provides information used for diagnostic or
+therapeutic decisions in **class IIa or higher**, clinical decision-support
+AI is normally on this route. The AI Act does not change the MDR class
+(Recital 51); the MDR class decides the AI Act status.
+
+What the Digital Omnibus changed on this route, and what it did not:
+
+- **Obligations apply from 2 August 2028** (Art. 113, as amended).
+- **MDR and IVDR stay in Section A.** The Omnibus deleted only point 1
+  (the old Machinery Directive) and added the Machinery Regulation to
+  Section B.
+- **A narrower "safety component":** AI used solely for non-safety aspects of
+  user assistance, performance optimisation, service efficiency, automation,
+  convenience or quality control is not a safety component, unless its
+  failure would endanger health and safety (Art. 6(1a)–(1b)).
+- **One conformity assessment:** the provider follows the MDR/IVDR
+  procedure, the AI Act requirements are part of it, and MDR/IVDR notified
+  bodies must apply for designation under the AI Act by **28 January 2028**
+  (Art. 43(3)).
+- **Possible limitation of duplicate requirements:** Arts. 9–15 and 17–25
+  may be limited where sectoral law gives equivalent or higher protection;
+  the Commission is to specify this by delegated act by **2 August 2027**
+  (Art. 2(13)).
+
+!!! warning "Pending — do not cite as law"
+    The Commission's proposal to revise the MDR and IVDR
+    (**COM(2025) 1023**, 16 December 2025) would **move both from Section A to
+    Section B** of Annex I. For Section B products only Art. 6(1), Art. 60a
+    and Arts. 102–112 apply (Art. 2(2), as replaced by the Omnibus) — the
+    high-risk requirements would then reach medical devices through the
+    sectoral law instead. On 2026-11-12 the Publications Office register
+    lists it as a **proposal**; no act amending the MDR in this sense has
+    been adopted. In Parliament the file (procedure
+    [2025/0404(COD)](https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0404(COD)))
+    stood at *awaiting committee decision* on 2026-11-12, with an indicative
+    plenary date of 18 January 2027. The Council has **no general approach
+    yet**: its latest public document is the progress report of 5 June 2026
+    ([Council document 9801/26](https://data.consilium.europa.eu/doc/document/ST-9801-2026-INIT/en/pdf)). Para. 19 records that several
+    delegations support one regulatory framework for AI-enabled medical
+    devices by limiting the application of the AI Act to them, that some want
+    additional sectoral powers for AI requirements, and that the place of
+    cybersecurity requirements is still under discussion. A note to the
+    Permanent Representatives Committee of 8 October 2026 (document 12919/26,
+    "Guidance for future work") is not public and was **not read**
+    ([register entry of the Austrian Parliament](https://www.parlament.gv.at/gegenstand/XXVIII/EU/96980)); the Health Council
+    meets on [8 December 2026](https://www.consilium.europa.eu/en/meetings/epsco/2026/12/08/) — its agenda was not yet published on
+    2026-11-12.
+
+**Route 2 — stand-alone uses in Annex III, point 5.** Three are
+health-related: systems used by or on behalf of public authorities to
+evaluate eligibility for essential public benefits and services,
+**including healthcare services** (5(a)); **risk assessment and pricing for
+life and health insurance** (5(c)); and **emergency-call classification,
+dispatch and emergency healthcare patient triage** (5(d)). These apply from
+2 December 2027. The two routes can meet: according to the Commission's
+[draft guidelines on high-risk classification](https://ec.europa.eu/newsroom/dae/redirection/document/128561 "Draft Commission guidelines on the classification of high-risk AI systems, published 19 May 2026 for stakeholder consultation — a draft, not final; paras. 331–335 on emergency healthcare patient triage read on 2026-11-12.")
+(paras. 331–335, a draft) a triage system that is a medical device and meets
+Art. 6(1) is high-risk on route 1; one that is not a medical device is
+high-risk under point 5(d).
+
+**Neither route:** appointment and administration assistants, product-advice
+and marketing chatbots, documentation and transcription aids without a
+medical purpose. For these the Act's live duties are the
+[Art. 50](https://artificialintelligenceact.eu/article/50/ "EU AI Act Article 50 — transparency duties: disclose AI interaction, mark synthetic content machine-readably, label deep fakes; applicable since 2 August 2026.")
+transparency rules — and the binding constraint is data protection: health
+data are a special category under [GDPR Art. 9](reference_gdpr.md#in-depth-health-data-and-other-special-categories-art-9).
+Art. 5 and Art. 50 apply regardless of the device class (MDCG 2025-6, Q4),
+and the Art. 5(1)(f) emotion-inference ban carries its own exception for
+systems intended for medical or safety reasons.
+
+**Audit note —** the boundary is the **intended purpose stated by the
+manufacturer**. Under the MDR, software intended for diagnosis, prevention,
+monitoring, prediction, prognosis or treatment of disease is a medical
+device (Art. 2(1) MDR). An assistant specified as general product
+information that in operation gives individual diagnostic or therapeutic
+advice has an evidence gap between its stated purpose and its behaviour —
+the finding is that gap, and it is closed either by constraining the system
+or by taking the medical-device route deliberately.
+
 ## In depth: machine-readable transparency (Art. 50 + Recital 133)
 
 !!! quote "Source text — EU AI Act, Recital 133, excerpt (© European Union, EUR-Lex)"
@@ -244,11 +461,11 @@ Not legally binding, but the Commission-endorsed compliance path — in practice
 the documents clients work with first:
 
 - **[GPAI Code of Practice (July 2025)](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai "The voluntary Code of Practice for general-purpose AI models (transparency, copyright, safety & security chapters) — signing it is the Commission-recognised way for GPAI providers to demonstrate Art. 53/55 compliance.")** — the voluntary route for GPAI providers to demonstrate Art. 53/55 compliance (transparency, copyright, safety & security chapters).
-- **[Guidelines on prohibited AI practices (Feb 2025)](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act "Commission guidelines interpreting the Art. 5 prohibitions — manipulation, exploitation, social scoring, emotion recognition at work/school, untargeted facial scraping — with practical examples.")** — the Commission's interpretation of the Art. 5 bans, with practical examples.
+- **[Guidelines on prohibited AI practices (Feb 2025)](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act "Commission guidelines interpreting the Art. 5 prohibitions — manipulation, exploitation, social scoring, emotion recognition at work/school, untargeted facial scraping — with practical examples.")** — the Commission's interpretation of the Art. 5 bans, with practical examples; the text read is [C(2025) 5052 final of 29 July 2025](https://ec.europa.eu/newsroom/dae/redirection/document/112367).
 - **[Guidelines on the AI-system definition (Feb 2025)](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application "Commission guidelines on the Art. 3(1) definition — which software falls inside or outside the Act's scope; the companion to the definition quoted above.")** — which software falls inside the Art. 3(1) definition quoted above.
 - **[Guidelines on transparency obligations — Art. 50 (July 2026)](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems "Final Commission guidelines (2026-07-20) on Art. 50: scope, definitions, the four transparency duties and their exceptions — chatbot disclosure, machine-readable marking, emotion/biometric notice, deepfake and public-interest text disclosure.")** — the final reading of the four Art. 50 duties and their exceptions (published 2026-07-20).
 - **[Commission opinion on the Code of Practice on AI-generated content (July 2026)](https://digital-strategy.ec.europa.eu/en/library/commission-opinion-assessment-code-practice-transparency-ai-generated-content "Commission opinion (2026-07-09) assessing the voluntary Code of Practice on marking and labelling AI-generated content, incl. deepfakes — the practical route to Art. 50(2)/(4) compliance.")** — the Commission's assessment of the voluntary marking/labelling code (2026-07-09).
-- **[Draft guidelines on high-risk classification — Art. 6 (May 2026)](https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems "Draft Commission guidelines (2026-05-19) on classifying high-risk AI systems under Art. 6 and Annex III — intended purpose, safety components, the Art. 6(3) exceptions. Still a draft under targeted consultation; not final.")** — **draft**, under targeted consultation; do not cite as final.
+- **[Draft guidelines on high-risk classification — Art. 6 (May 2026)](https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems "Draft Commission guidelines (2026-05-19) on classifying high-risk AI systems under Art. 6 and Annex III — intended purpose, safety components, the Art. 6(3) exceptions. Still a draft under targeted consultation; not final.")** — **draft**, under targeted consultation; do not cite as final. Read on 2026-11-12: [draft text](https://ec.europa.eu/newsroom/dae/redirection/document/128561); used on this page for [education](#education-and-vocational-training) and [health](#health-and-medical-devices), marked as draft each time.
 
 ## Penalties
 
@@ -274,6 +491,8 @@ high-risk obligations can only bite once those obligations themselves apply
 - **[Annex III](https://artificialintelligenceact.eu/annex/3/ "EU AI Act Annex III — the list of high-risk use cases (recruitment, credit, biometrics, critical infrastructure, etc.) that scopes most conformity work.")** — the high-risk use-case list that scopes most conformity work.
 - **[Art. 16](https://artificialintelligenceact.eu/article/16/ "EU AI Act Article 16 — the full set of provider obligations for high-risk AI.") + [Annex IV](https://artificialintelligenceact.eu/annex/4/ "EU AI Act Annex IV — the contents of the technical documentation a provider must compile and an auditor inspects.")** — the technical documentation an auditor inspects.
 - **[Art. 27 (FRIA)](https://artificialintelligenceact.eu/article/27/ "EU AI Act Article 27 — the Fundamental Rights Impact Assessment; directly relevant to the external-auditor engagement model.")** — directly relevant to the external-auditor engagement model.
+- **Sector entry points: [education](#education-and-vocational-training) and [health and medical devices](#health-and-medical-devices)**{ title="Two in-depth sections of this page: Annex III point 3 (admission, evaluation of learning outcomes, level assessment, proctoring) with the Art. 6(3) derogation and the Art. 5(1)(f) emotion-inference ban; and the two health routes — Art. 6(1) with Annex I Section A points 11 and 12 (MDR, IVDR; MDCG 2025-6) from 2 August 2028, and Annex III point 5(a), (c), (d) from 2 December 2027." } — where the classification of a tutor, an assessment tool, a clinical decision-support system or a patient chatbot is decided.
+- **[Personal data: the GDPR applies in parallel](reference_gdpr.md "GDPR (Reg. (EU) 2016/679) — Art. 2(7) of this Act leaves it unaffected: legal basis, special categories such as health data (Art. 9), automated decisions (Art. 22) and the DPIA (Art. 35), which Art. 26(9) and Art. 27(4) of this Act tie to the deployer's duties; Art. 4a of this Act is the only ground it adds, for bias detection and correction.")** — the regime that already applies in full to every AI system processing personal data, whatever its risk class under this Act.
 - **[Art. 43](https://artificialintelligenceact.eu/article/43/ "EU AI Act Article 43 — the conformity-assessment procedures for high-risk AI.") + Annex [VI](https://artificialintelligenceact.eu/annex/6/ "EU AI Act Annex VI — the internal-control conformity-assessment route.")/[VII](https://artificialintelligenceact.eu/annex/7/ "EU AI Act Annex VII — the notified-body conformity-assessment route based on QMS and technical-documentation assessment.")** — which conformity route applies, and the evidence each requires.
 - **[Art. 72](https://artificialintelligenceact.eu/article/72/ "EU AI Act Article 72 — post-market monitoring: providers must run a documented plan that collects and analyses performance data over the system's lifetime and feeds it back into the risk-management system.") + [Art. 73](https://artificialintelligenceact.eu/article/73/ "EU AI Act Article 73 — serious-incident reporting: providers report serious incidents to the market-surveillance authority, at the latest within 15 days of awareness (shorter for deaths and widespread infringements).")** — post-market monitoring plan and the serious-incident reporting clock; core operating evidence after go-live.
 - **[Cybersecurity via the Cyber Resilience Act — CRA Art. 12](reference_eu_cra.md#audit-relevant-anchors "CRA (Reg. (EU) 2024/2847) Article 12 — a high-risk AI system that is also a product with digital elements is deemed to meet Art. 15(1) of this Act when it meets the CRA's Annex I (Part I product properties, Part II vulnerability-handling processes) and the EU declaration of conformity says so; the Art. 43 procedure of this Act applies and the notified body checks the CRA requirements alongside; important/critical products under CRA Annexes III/IV keep the CRA routes. Accuracy and robustness stay with Art. 15.")** — the engineering definition of "cybersecurity" that Art. 15 lacks: for high-risk AI shipped as a product, the CRA's Annex I is the concrete test, assessed in one procedure. And the reporting clocks run in parallel: Art. 73 serious incidents (to the market-surveillance authority) alongside **CRA Art. 14** (actively exploited vulnerabilities and severe product incidents, to the CSIRT via ENISA's platform, live since 2026-09-11) — see the [CRA page](reference_eu_cra.md).
@@ -291,6 +510,8 @@ Evidence-oriented checks for a high-risk AI engagement under the Act:
 
 - [ ] The system is correctly classified (prohibited / high-risk per Art. 6 + Annex III / limited / minimal).
 - [ ] Where the Art. 2(8) research-and-testing exclusion is relied on: the system is not yet placed on the market or put into service, the test environment is simulated, and any testing in real-world conditions follows Art. 60.
+- [ ] In education and training: the intended purpose is written down and checked against Annex III point 3 — any function whose result counts towards a grade, certificate or qualification (summative evaluation), any proctoring, any admission or placement decision; an Art. 6(3) derogation is documented and registered, never used where the system profiles; no emotion inference (Art. 5(1)(f)).
+- [ ] In health: the system is checked on both routes — medical device or safety component needing a notified body (Art. 6(1), Annex I Section A points 11–12, MDR rule 11) and Annex III point 5(a), (c), (d); the stated intended purpose matches what the system does in operation; health data have a GDPR Art. 9 basis.
 - [ ] A risk-management system is documented and maintained (Art. 9).
 - [ ] Data governance — training/validation/test data quality and bias — is examined (Art. 10).
 - [ ] Technical documentation per Annex IV is present and current (Art. 11).
@@ -328,7 +549,7 @@ and [ISO/IEC 23894](reference_iso_23894.md) pages).
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
-| `2026-11-12` | editorial | **Our page, not the source, changed.** Added the **Art. 2(8)** research-and-testing exclusion as source text with its limits — it ends with putting into service; testing in real-world conditions (Art. 3(57)) is not excluded and follows Art. 60 — and a matching checklist item; added the CELEX number **32026R1744** for the Digital Omnibus. Both read in the Publications Office Cellar on 2026-11-12, which also confirms that the Omnibus left Art. 2(8) unchanged (it replaced Art. 2(2), 2(7) and Art. 60(1)–(2) and added Art. 2(13)). No register re-observation: `last_observed_at` stays 2026-10-30. |
+| `2026-11-12` | editorial | **Our page, not the source, changed.** Added the **Art. 2(8)** research-and-testing exclusion as source text with its limits — it ends with putting into service; testing in real-world conditions (Art. 3(57)) is not excluded and follows Art. 60 — and a matching checklist item; added the CELEX number **32026R1744** for the Digital Omnibus. Both read in the Publications Office Cellar on 2026-11-12, which also confirms that the Omnibus left Art. 2(8) unchanged (it replaced Art. 2(2), 2(7) and Art. 60(1)–(2) and added Art. 2(13)). Same day, second addition: two sector sections — **education and vocational training** (Annex III point 3 as source text, the Art. 6(3) derogation and its profiling limit, the Art. 5(1)(f) emotion-inference ban) and **health and medical devices** (Art. 6(1) as source text; MDR and IVDR in Annex I Section A; the class table of MDCG 2025-6 / AIB 2025-1; the Omnibus changes in Arts. 2(13), 6(1a)–(1c), 43(3) and 113; Annex III point 5(a), (c), (d); the pending MDR/IVDR revision COM(2025) 1023 marked as a proposal; Parliament stage and the Council's progress report of 5 June 2026 (document 9801/26) read at source — no Council general approach yet) — both sections checked against the Commission's guidelines on prohibited practices (C(2025) 5052 final, para. 255) and its **draft** guidelines on high-risk classification (19 May 2026, paras. 210–225 and 331–335), which narrow point 3(b) to summative evaluation; two checklist items, and a link to the new [GDPR](reference_gdpr.md) page. Corrected one statement: the bias-detection ground is no longer Art. 10(5), which the Omnibus deleted, but the new **Art. 4a**. No register re-observation: `last_observed_at` stays 2026-10-30. |
 | `2026-10-30` | substantive | **First harmonised standard in the OJ.** [Commission Implementing Decision (EU) 2026/2274](https://eur-lex.europa.eu/eli/dec_impl/2026/2274/oj/eng) of 2026-10-12 (OJ L 2026/2274, 2026-10-14, in force on publication) publishes the reference of **EN 18286:2026** — *Artificial intelligence — Quality management system for EU AI Act regulatory purposes* — under Art. 40: presumption of conformity with the Art. 17 requirements it covers; CEN/CENELEC delivered it under standardisation request C(2025) 3871. The Commission presents it as lifecycle-based and layered on ISO/IEC 42001, ISO 9001 or a sectoral QMS; ISO/IEC 42001 itself stays un-harmonised. Governance trail: **AI Board ninth meeting** (2026-09-17; enforcement priorities, AI-literacy recommendations in preparation, tenth meeting planned 2026-11-18); **AI Scientific Panel special meeting** (2026-10-09) on loss-of-control incidents — the AI Office has requested and received serious-incident reports and sent requests for information on security practices, which partly verifies the press-reported September requests; **AI Office report on external-evaluator requirements** (2026-10-21). High-risk classification guidelines still a draft (consultation closed 2026-07-23); Omnibus timeline unchanged. Register pass: the Commission news list (`news_feed`) and the Publications Office Cellar (SPARQL, the machine route to the EUR-Lex 'all documents' view) were queried — no act *based on* the AI Act newer than Reg. (EU) 2026/1755; the harmonised-standard decision is based on Reg. (EU) No 1025/2012 and only *cites* the AI Act, so it does not appear in that view at all — a watch-hint now recorded in `literature-watch.yaml`. |
 | `2026-09-21` | substantive | Added **Commission Implementing Regulation (EU) 2026/1755** (2026-07-20, OJ 2026-07-21; in force 20 days later): the procedures for Art. 92 evaluations of GPAI models and Art. 101 fining proceedings, incl. interim measures. Press reports (Euractiv, Agence Europe, 2026-09-01/02; no Commission release found) say the AI Office sent its first Art. 91 requests for information to providers of the most advanced models (security, external evaluations, post-market monitoring) and to 30+ providers without a published training-data summary — treat as reported, not verified against a primary source. Added the **Cyber Resilience Act bridge**: CRA Art. 12 (Reg. (EU) 2024/2847) makes the CRA's Annex I the concrete cybersecurity test behind Art. 15(1) for high-risk AI systems that are products with digital elements, assessed once under Art. 43; and the CRA's Art. 14 vulnerability/incident reporting (live since 2026-09-11) now runs in parallel to Art. 73. New [CRA page](reference_eu_cra.md). Page fully re-observed on 2026-09-21 against the Commission policy, enforcement and GPAI-code pages, the AI Act Service Desk and the implementation timeline (latest dated items 2026-08-31): no further change — high-risk classification guidelines still a draft, Omnibus timeline unchanged, 21 full signatories of the GPAI Code of Practice plus xAI on the Safety and Security chapter. |
 | `2026-09-05` | substantive | **Commission soft law caught up with Art. 50, and enforcement started.** Final **Guidelines on transparency obligations for providers and deployers** published 2026-07-20; **Commission opinion assessing the Code of Practice on transparency of AI-generated content** published 2026-07-09; **draft Guidelines on the classification of high-risk AI systems** (Art. 6) published 2026-05-19 for targeted consultation — still a draft. Per the Commission release of 2026-07-31, from **2026-08-02** the AI Office and national authorities enforce the Act, a **first list of more than 180 signatories** of the AI-generated-content code is public, and the complaints tool, whistleblower tool and GPAI downstream-provider complaints channel are live; related: the **EU Action Plan on Cybersecurity and AI** (2026-07-07). Application timeline and penalties unchanged since the Omnibus entry. Council Decision (EU) 2026/1080 added as an anchor: the EU implements the CETS 225 Convention exclusively through this Act — see the new [CETS 225 page](reference_coe_ai_convention.md). |
@@ -340,6 +561,7 @@ and [ISO/IEC 23894](reference_iso_23894.md) pages).
 - **Digital Omnibus (primary):** [EUR-Lex — Reg. (EU) 2026/1744 ELI permalink](https://eur-lex.europa.eu/eli/reg/2026/1744/oj) (Digital Omnibus on AI; OJ 2026-07-24, in force 2026-07-27) · [Consilium press release — final Council green light, 2026-06-29](https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/)
 - **Soft law (web):** [GPAI Code of Practice](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai) · [Guidelines on prohibited practices](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act) · [Guidelines on the AI-system definition](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application)
 - **Digital Omnibus (analysis):** [Gibson Dunn analysis](https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/) · [Bird & Bird — May trilogue agreement](https://www.twobirds.com/en/insights/2026/digital-omnibus-on-ai-provisional-agreement-reached-at-the-may-trilogue) · [Lewis Silkin — entry into force, 2026-07-27](https://www.lewissilkin.com/insights/2026/07/27/the-digital-omnibus-on-ai-enters-into-force-today-102nedo)
+- **Update 2026-11-12 (sector sections):** Reg. (EU) 2024/1689 (Art. 5(1)(f), Art. 6, Art. 27(1), Recitals 51 and 56, Annex I, Annex III points 3 and 5) and Reg. (EU) 2026/1744 (Arts. 2(2), 2(13), 4, 4a, 6(1a)–(1c), 43(3), 113, Annex I) read via the Publications Office Cellar · [EUR-Lex — MDR, Reg. (EU) 2017/745](https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng) (Art. 2(1), Annex VIII rule 11; read via the Cellar) · [MDCG 2025-6 / AIB 2025-1 (June 2025)](https://health.ec.europa.eu/document/download/b78a17d7-e3cd-4943-851d-e02a2f22bbb4_en?filename=mdcg_2025-6_en.pdf) via the [Commission list of MDCG documents](https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en) · [COM(2025) 1023](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC1023) (text and register status read via the Publications Office Cellar and SPARQL endpoint) · [European Parliament Legislative Observatory — 2025/0404(COD)](https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0404(COD)) · [Council progress report on the MDR/IVDR revision, document 9801/26 (5 June 2026)](https://data.consilium.europa.eu/doc/document/ST-9801-2026-INIT/en/pdf) · [Council meeting page — Health Council of 8 December 2026](https://www.consilium.europa.eu/en/meetings/epsco/2026/12/08/) · [Austrian Parliament register entry for Council document 12919/26](https://www.parlament.gv.at/gegenstand/XXVIII/EU/96980) · [Commission guidelines on prohibited AI practices, C(2025) 5052 final](https://ec.europa.eu/newsroom/dae/redirection/document/112367) via the [Commission library page](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act) · [draft Commission guidelines on high-risk classification (19 May 2026)](https://ec.europa.eu/newsroom/dae/redirection/document/128561) via the [Commission library page](https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems) — retrieved 2026-11-12.
 - **Update 2026-11-12:** [EUR-Lex — Reg. (EU) 2026/1744, CELEX 32026R1744](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744) and [EUR-Lex — Reg. (EU) 2024/1689, CELEX 32024R1689](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) (Arts. 2(8), 3(57), 60) — texts read via the Publications Office Cellar (`publications.europa.eu/resource/celex/<CELEX>`), retrieved 2026-11-12.
 - **Update 2026-10-30:** [EUR-Lex — Commission Implementing Decision (EU) 2026/2274 (OJ L 2026/2274, 2026-10-14)](https://eur-lex.europa.eu/eli/dec_impl/2026/2274/oj/eng) (text read via the Publications Office Cellar) · [EC — First harmonised standard supporting the AI Act published in the Official Journal (2026-10-19)](https://digital-strategy.ec.europa.eu/en/library/first-harmonised-standard-supporting-ai-act-published-official-journal) · [EC — Standardisation of the AI Act](https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation) · [EC — AI Board holds its ninth meeting (2026-09-18)](https://digital-strategy.ec.europa.eu/en/news/ai-board-holds-its-ninth-meeting) · [EC — Commission holds special meeting of Scientific Panel (2026-10-05)](https://digital-strategy.ec.europa.eu/en/news/commission-holds-special-meeting-scientific-panel-frontier-ai-safety-and-risks) · [EC — Special meeting of the AI Scientific Panel (2026-10-12)](https://digital-strategy.ec.europa.eu/en/news/special-meeting-ai-scientific-panel) · [EC — Requirements for qualified independent external evaluators of GPAI models (2026-10-21)](https://digital-strategy.ec.europa.eu/en/library/requirements-qualified-independent-external-evaluators-general-purpose-ai-models) · [EC — Guidelines on high-risk AI systems (draft status)](https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-high-risk-systems) · Publications Office Cellar SPARQL endpoint (acts based on / amending / correcting CELEX 32024R1689) — all retrieved 2026-10-30.
 - **Update 2026-09-21:** [EUR-Lex — Commission Implementing Regulation (EU) 2026/1755 (OJ L, 2026-07-21)](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AL_202601755) · press: [The EU AI Act Newsletter #110 (2026-09-08)](https://artificialintelligenceact.substack.com/p/the-eu-ai-act-newsletter-110-powers) — retrieved 2026-09-21.

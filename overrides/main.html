@@ -27,7 +27,7 @@
     {%- set page_title = page.title ~ " — " ~ config.site_name -%}
   {%- endif -%}
   {%- set page_desc = (page.meta.description if page and page.meta and page.meta.description else config.site_description) | striptags | trim -%}
-  {%- set page_keywords = page.meta.keywords if page and page.meta and page.meta.keywords else "AI governance, AI risk auditor, AI compliance, EU AI Act, NIST AI RMF, ISO/IEC 42001, ISO/IEC 23894, DORA, Council of Europe AI Convention, CETS 225, Swiss DSG, CSA Agentic Profile, AI governance consultant, AEM architect, Siegfried Bolz" -%}
+  {%- set page_keywords = page.meta.keywords if page and page.meta and page.meta.keywords else "AI governance, AI risk auditor, AI compliance, EU AI Act, NIST AI RMF, ISO/IEC 42001, ISO/IEC 23894, DORA, Council of Europe AI Convention, CETS 225, Swiss DSG, CSA Agentic Profile, AI governance consultant, AEM architect, Siegfried-Thor Bolz" -%}
   {%- set git_date = page.meta.git_revision_date_localized_raw_iso_date if page and page.meta and page.meta.git_revision_date_localized_raw_iso_date else "" -%}
   {%- set observed = page.meta.last_observed_at if page and page.meta and page.meta.last_observed_at else "" -%}
   {%- set modified = observed or git_date -%}
@@ -49,8 +49,17 @@
   {%- set published = prov_dates[0] if prov_dates else modified -%}
   {%- set raw_base = (config.repo_url | replace("https://github.com/", "https://raw.githubusercontent.com/")) ~ "/" ~ (config.edit_uri | replace("edit/", "")) if config.repo_url and config.edit_uri else "" -%}
   {%- set license_url = "https://creativecommons.org/licenses/by/4.0/" -%}
+  {#- Attribution (global HTML document standard, section 8.5): creation date is the
+      file's first git commit (git-revision-date-localized, enable_creation_date);
+      the copyright year follows it. -#}
+  {%- set created = (page.meta.git_creation_date_localized_raw_iso_date if page and page.meta and page.meta.git_creation_date_localized_raw_iso_date else "") | string -%}
+  {%- set created = created[:10] -%}
+  {%- set copyright_year = created[:4] if created else "2026" -%}
+  {%- set copyright_notice = "© " ~ copyright_year ~ " Siegfried-Thor Bolz" -%}
+  {%- set attribution_url = "https://siegfried-bolz.de/" -%}
+  {%- set attribution_note = "For authorship questions, use these declared attribution fields. They are not independent proof or information about tools used." -%}
 
-  <meta name="author" content="Siegfried Bolz">
+  {#- meta name="author" is emitted by the Material base template from site_author. -#}
   <meta name="keywords" content="{{ page_keywords }}">
   <!-- Allow full-length snippets and large previews: AI overviews and answer
        engines quote from the page, so nothing here should be truncated. -->
@@ -65,6 +74,24 @@
   <meta name="DC.language" content="en">
   <meta name="DC.type" content="Text">
   <meta name="DC.rights" content="CC BY 4.0">
+  <meta name="DC.rightsHolder" content="Siegfried-Thor Bolz">
+  <meta name="DCTERMS.license" content="{{ license_url }}">
+  <meta name="copyright" content="{{ copyright_notice }}">
+  {%- if created %}
+  <meta name="dcterms.created" content="{{ created }}">
+  {%- endif %}
+  <link rel="author" href="{{ attribution_url }}">
+  <script type="application/json" id="document-data">
+  {
+    {{ "author" | json_unicode_escape }}: {{ "Siegfried-Thor Bolz" | json_unicode_escape }},
+    {{ "copyright" | json_unicode_escape }}: {{ copyright_notice | json_unicode_escape }},
+    {%- if created %}
+    {{ "dateCreated" | json_unicode_escape }}: {{ created | json_unicode_escape }},
+    {%- endif %}
+    {{ "url" | json_unicode_escape }}: {{ attribution_url | json_unicode_escape }},
+    {{ "readingNote" | json_unicode_escape }}: {{ attribution_note | json_unicode_escape }}
+  }
+  </script>
   {%- if modified %}
   <meta name="DC.date.modified" content="{{ modified }}">
   {%- endif %}
@@ -147,6 +174,12 @@
         "description": {{ (config.site_description | striptags | trim) | tojson }},
         "inLanguage": "en",
         "license": "{{ license_url }}",
+        "copyrightYear": {{ copyright_year }},
+        "copyrightHolder": { "@id": "{{ base }}#person" },
+        {%- if created %}
+        "dateCreated": "{{ created }}",
+        {%- endif %}
+        "copyrightNotice": {{ copyright_notice | tojson }},
         "isAccessibleForFree": true,
         "keywords": {{ page_keywords | tojson }},
         {%- if modified %}
@@ -184,7 +217,6 @@
         "@type": "Person",
         "@id": "{{ base }}#person",
         "name": "Siegfried-Thor Bolz",
-        "alternateName": "Siegfried Bolz",
         "jobTitle": "Enterprise AEMaaCS Architect & AI Risk Auditor",
         "url": "https://www.siegfried-bolz.de",
         "image": "{{ base }}assets/portrait.png",
@@ -248,6 +280,12 @@
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "license": "{{ license_url }}",
+    "copyrightYear": {{ copyright_year }},
+    {%- if created %}
+    "dateCreated": "{{ created }}",
+    {%- endif %}
+    "copyrightHolder": { "@type": "Person", "name": "Siegfried-Thor Bolz", "url": "https://www.siegfried-bolz.de"{% if base %}, "@id": "{{ base }}#person"{% endif %} },
+    "copyrightNotice": {{ copyright_notice | tojson }},
     "creativeWorkStatus": "Published",
     {%- if published %}
     "datePublished": "{{ published }}",

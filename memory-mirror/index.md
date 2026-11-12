@@ -1,7 +1,7 @@
 ---
 title: AI Governance Watch
-description: "A continuously-watched reference library of AI governance standards — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, DORA, the EU Cyber Resilience Act, Swiss DSG/EDÖB, the Council of Europe AI Convention (CETS 225), CSA Agentic Profile, Berkeley CLTC — by Siegfried-Thor Bolz, Enterprise AEMaaCS architect & AI risk auditor near Munich, Germany."
-keywords: "AI Risk Auditor, AI Governance, AI Compliance, CMS AI Audit, AI audit for enterprise CMS, EU AI Act, NIST AI RMF, ISO/IEC 42001, ISO/IEC 27001, ISO/IEC 23894, DORA, Cyber Resilience Act, CRA, OWASP LLM & Agentic Top 10, MITRE ATLAS, CSA Agentic Profile, Berkeley CLTC, Adobe Experience Manager, AEMaaCS, AEM Exit, Headless CMS, RAG, Vertex AI, Cybersecurity, Siegfried-Thor Bolz"
+description: "A continuously-watched reference library of AI governance standards — NIST AI RMF, EU AI Act, ISO/IEC 42001 & 23894, the GDPR, DORA, the EU Cyber Resilience Act, Swiss DSG/EDÖB, the Council of Europe AI Convention (CETS 225), CSA Agentic Profile, Berkeley CLTC — by Siegfried-Thor Bolz, Enterprise AEMaaCS architect & AI risk auditor near Munich, Germany."
+keywords: "AI Risk Auditor, AI Governance, AI Compliance, CMS AI Audit, AI audit for enterprise CMS, EU AI Act, GDPR, DSGVO, NIST AI RMF, ISO/IEC 42001, ISO/IEC 27001, ISO/IEC 23894, DORA, Cyber Resilience Act, CRA, OWASP LLM & Agentic Top 10, MITRE ATLAS, CSA Agentic Profile, Berkeley CLTC, Adobe Experience Manager, AEMaaCS, AEM Exit, Headless CMS, RAG, Vertex AI, Cybersecurity, Siegfried-Thor Bolz"
 ---
 
 # AI Governance Watch
@@ -24,7 +24,7 @@ back to a verifiable observation of a public source at a documented point in tim
 
 !!! tip "How to use this library"
     New here? Start with **[Standards at a glance](at-a-glance.md)** to compare
-    all twelve, or browse the **[glossary](glossary.md)**. Use the **search** (top
+    all thirteen, or browse the **[glossary](glossary.md)**. Use the **search** (top
     of the page, or press `/`) to look across every standard at once. Open a
     standard to read its summary and audit anchors, and check the
     [changelog](changelog.md) to see what changed recently.
@@ -70,6 +70,15 @@ back to a verifiable observation of a public source at a documented point in tim
     and the Digital Omnibus (Reg. (EU) 2026/1744, in force since 27 July 2026)
     that moved the high-risk deadlines to 2027/28; first harmonised standard
     (EN 18286:2026, Art. 17 QMS) cited in the Official Journal on 14 Oct 2026.
+
+-   **[GDPR — data protection for AI](reference_gdpr.md)**
+
+    ---
+
+    Regulation (EU) 2016/679 as it applies to AI systems: legal basis, health
+    data and other special categories (Art. 9), automated decisions (Art. 22),
+    the DPIA (Art. 35) and its link to the AI Act — with the EDPB's AI
+    guidance and the German DSK orientation aids, incl. the one on RAG.
 
 -   **[UK AI White Paper](reference_uk_ai_white_paper.md)**
 

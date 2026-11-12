@@ -13,8 +13,8 @@ site_description: >-
   Switzerland's DSG/EDÖB practice, the Council of Europe AI Convention
   CETS 225, CSA Agentic Profile, Berkeley CLTC) — each page states the date it
   was last observed and cites its primary sources; built and maintained by
-  Siegfried Bolz, AI risk auditor and Adobe Experience Manager (AEM) architect.
-site_author: Siegfried Bolz
+  Siegfried-Thor Bolz, AI risk auditor and Adobe Experience Manager (AEM) architect.
+site_author: Siegfried-Thor Bolz
 # IMPORTANT: set this to the final URL before deploy — canonical links, OpenGraph
 # URLs, JSON-LD @ids and robots.txt Sitemap all derive from it. If you move to a
 # custom domain (e.g. a subpath/subdomain of siegfried-bolz.de), update it here
@@ -72,11 +72,14 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+hooks:
+  - hooks/attribution.py
+
 plugins:
   - search
   - git-revision-date-localized:
       type: date
-      enable_creation_date: false
+      enable_creation_date: true
       fallback_to_build_date: true   # local/shallow builds without full git history still work
       strict: false                  # don't fail `mkdocs build --strict` on files with no git log yet
 
@@ -113,6 +116,7 @@ nav:
       - ISO/IEC 23894: reference_iso_23894.md
   - Regulation & law:
       - EU AI Act: reference_eu_ai_act.md
+      - GDPR (data protection for AI): reference_gdpr.md
       - UK AI White Paper: reference_uk_ai_white_paper.md
       - DORA: reference_dora.md
       - EU Cyber Resilience Act (CRA): reference_eu_cra.md
@@ -127,7 +131,7 @@ nav:
   - Changelog: changelog.md
 
 copyright: >-
-  © 2026 Siegfried Bolz — content licensed
+  © 2026 Siegfried-Thor Bolz — content licensed
   <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
   Built by <a href="https://www.siegfried-bolz.de" target="_blank" rel="noopener">siegfried-bolz.de</a>.
   All information without warranty (alle Angaben ohne Gewähr) and not legal advice.
@@ -139,7 +143,7 @@ extra:
       name: siegfried-bolz.de — services & contact
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/sbolz/
-      name: Siegfried Bolz on LinkedIn
+      name: Siegfried-Thor Bolz on LinkedIn
     - icon: fontawesome/brands/github
       link: https://github.com/siegfriedbolz/ai-governance-watch
       name: ai-governance-watch on GitHub

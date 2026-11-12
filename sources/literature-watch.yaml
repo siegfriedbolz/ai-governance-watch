@@ -259,6 +259,48 @@ sources:
         kind: landing_page
         note: "EIOPA DORA hub — RTS/ITS status, oversight framework, register-of-information templates."
 
+  - id: gdpr
+    domain: "Data protection"
+    title: "GDPR — Regulation (EU) 2016/679 as it applies to AI systems: legal basis, special categories (Art. 9), automated decisions (Art. 22), DPIA (Art. 35) and the interplay with the AI Act; EDPB AI guidance and the German DSK orientation aids"
+    reference_file: reference_gdpr.md
+    license: "© European Union, EUR-Lex — reuse under Decision 2011/833/EU (attribution); EDPB and DSK documents quoted by reference only"
+    reproduction: open-attribution
+    cadence: monthly
+    enabled: true
+    state: planned
+    successor_risk: true
+    targets:
+      - url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng"
+        adapter: eurlex_celex
+        kind: document
+        note: "Legal text via the ELI permalink — stable. The regulation is unamended (three corrigenda); an amendment would arrive as a separate act under its own number."
+        watch_hint: "The Digital Omnibus data part (COM(2025) 837, procedure 2025/0360(COD)) would amend the GDPR by a new regulation with its own CELEX — check the Parliament's Legislative Observatory procedure file and the Cellar register by hand; EUR-Lex answers automated clients with an AWS WAF challenge (HTTP 202), never bypass it."
+      - url: "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32016R0679"
+        adapter: eurlex_celex
+        kind: legal_search
+        note: "EUR-Lex 'all documents' view of the GDPR: amending acts, corrigenda and proposals to amend, each under its own number. Resolve through the Publications Office Cellar SPARQL endpoint (predicates amends / corrects / completes / proposes_to_amend against CELEX 32016R0679)."
+        watch_hint: "A register target lists new acts, never 'unchanged'. Not covered by any target: CJEU judgments on Arts. 15 and 22 (curia.europa.eu is not on the allowlist) and the Council's position (consilium.europa.eu answers bots with 403) — check both by hand at every pass."
+      - url: "https://www.edpb.europa.eu/documents_en"
+        adapter: html_extraction
+        kind: news_feed
+        note: "EDPB documents register — guidelines, opinions, statements, legislative opinions, templates. Read item by item against last_observed_at, including the topic filters artificial intelligence, anonymisation/pseudonymisation, automated decision-making, DPIA, health and research."
+        watch_hint: "A consultation version and its final version carry the same number; the final appears as a new register entry (for example Guidelines 1/2024 v2.0 on 2026-11-10). Watch for final versions of 02/2026, 03/2026, 01/2025, 1/2026, the DPIA and breach-notification templates, and the joint EDPB-Commission guidelines on the GDPR and the AI Act announced in Joint Opinion 1/2026. Open round-up items; never set an entry aside by its title."
+      - url: "https://www.edpb.europa.eu/news_en"
+        adapter: html_extraction
+        kind: news_feed
+        note: "EDPB news list — plenary results and the coordinated enforcement topics (2027: automated decision-making in recruitment)."
+        watch_hint: "Plenary round-ups name several decisions in one item and their titles list only the first two; read every item's text. National DPA news on the same list is not EDPB guidance."
+      - url: "https://www.edpb.europa.eu/public-consultations_en"
+        adapter: html_extraction
+        kind: news_feed
+        note: "EDPB public-consultations register — which guidance is open, closed, or still a consultation version."
+        watch_hint: "A closed consultation does not mean a final version exists; confirm finality in the documents register. A document moves off 'open for feedback' without changing its URL."
+      - url: "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"
+        adapter: html_extraction
+        kind: landing_page
+        note: "German Datenschutzkonferenz — list of orientation aids (AI 2024, technical and organisational measures for AI systems 2025, RAG 2025)."
+        watch_hint: "A revised orientation aid appears as a new PDF with a new date in its file name; the list page may only add a line. The DSK list of processing operations requiring a DPIA (version 1.1, 2018) is not on this page — it is published by the individual authorities, for example Hamburg."
+
   - id: eu_cra
     domain: "Product cybersecurity"
     title: "EU Cyber Resilience Act — CRA (Regulation (EU) 2024/2847): essential cybersecurity requirements for products with digital elements, manufacturer reporting via ENISA's Single Reporting Platform (Art. 14, since 2026-09-11), and the Art. 12 bridge to the AI Act's high-risk regime"
