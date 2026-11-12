@@ -36,11 +36,11 @@ sources:
     state: pilot
     successor_risk: true
     targets:
-      - url: "https://github.com/usnistgov/ARIA"
-        adapter: github_repo
-        kind: document
-        watch_hint: "ARIA is a programme repository, not the framework; a revised AI RMF never shows up here. Hand-check: https://www.nist.gov/itl/ai-risk-management-framework (\"under revision\" banner, new document number)."
-        note: "NIST ARIA (Assessing Risks and Impacts of AI) programme repository — commit-level watch via GitHub API. Not the Playbook: the AI RMF Playbook is a web resource on the AI Resource Center (see the airc.nist.gov target)."
+      - url: "https://ai-challenges.nist.gov/aria"
+        adapter: html_extraction
+        kind: landing_page
+        watch_hint: "ARIA is an evaluation programme, not the framework; a revised AI RMF never shows up here. Hand-check: https://www.nist.gov/itl/ai-risk-management-framework (\"under revision\" banner, new document number). The server answers automated clients with HTTP 404 (and its root with a redirect loop) while a browser gets the page — report that as unreadable, never as removed, and read it in a browser. The page's schedule ends with the pilot summary of summer 2025; the pilot report itself is NIST AI 700-2 (published 2025-11-13); our reading: later ARIA results are more likely to appear as NIST publications than on this page. Target switched on 2026-11-12 from https://github.com/usnistgov/ARIA, which returns 404."
+        note: "NIST ARIA (Assessing Risks and Impacts of AI) programme homepage — evaluation plan, schedule and resources of NIST's AI risk and impact evaluation. Not the Playbook: the AI RMF Playbook is a web resource on the AI Resource Center (see the airc.nist.gov target)."
       - url: "https://airc.nist.gov/airmf-resources/playbook/"
         adapter: html_extraction
         kind: landing_page
@@ -58,11 +58,11 @@ sources:
         kind: document
         watch_hint: "A revised GenAI Profile is published as a new PDF (600-1r1 or similar); this URL then stays unchanged. Hand-check: https://www.nist.gov/publications search for \"600-1\"."
         note: "GenAI Profile (AI 600-1) — frozen PDF; version metadata watch."
-      - url: "https://www.nist.gov/artificial-intelligence"
+      - url: "https://www.nist.gov/news-events/news-updates/topic/2753736"
         adapter: html_extraction
         kind: news_feed
-        note: "NIST AI news list — new publications, comment calls and initiative announcements (CAISI, zero drafts, profiles) appear here first; compare new items against the page's Recent Changes."
-        watch_hint: "The list is paginated and dated; only items newer than last_observed_at count. A revised AI RMF is announced here as a news item before any URL changes. Since 2026-09-30 this URL redirects to https://www.nist.gov/super-intelligence (Executive Order 14434 renamed NIST's AI pages to 'super intelligence'; CAISI is now CAISSI at /caissi) — fingerprint the redirect target, and read the dated news list at /news-events/news-updates/topic/2753736."
+        note: "NIST news list for the super-intelligence (formerly AI) topic — new publications, comment calls and initiative announcements (CAISI, zero drafts, profiles) appear here first; compare new items against the page's Recent Changes."
+        watch_hint: "The list is paginated and dated; only items newer than last_observed_at count. A revised AI RMF is announced here as a news item before any URL changes. Target switched on 2026-11-12: the former target https://www.nist.gov/artificial-intelligence redirects since 2026-09-30 to the hub https://www.nist.gov/super-intelligence (Executive Order 14434 renamed NIST's AI pages to 'super intelligence'; CAISI is now CAISSI at /caissi), which carries no dated list — this topic list is the dated one. Hand-check the hub for new sub-pages the list does not announce."
 
   - id: eu_ai_act
     domain: "EU AI Act"
@@ -159,11 +159,11 @@ sources:
         adapter: html_extraction
         kind: landing_page
         note: "AI Security Initiative hub — new white papers and profile releases."
-      - url: "https://cltc.berkeley.edu/publications/"
+      - url: "https://cltc.berkeley.edu/research/research-library/"
         adapter: html_extraction
         kind: news_feed
         note: "CLTC publications list — every new white paper and report of the AI Security Initiative appears here with a date; compare new items against the page's Recent Changes."
-        watch_hint: "Since at least 2026-10-30 this URL redirects to https://cltc.berkeley.edu/research/research-library/ (the research library with date and type filters); fingerprint the redirect target. Blog posts appear in the same list as white papers — the 'Type' column tells them apart."
+        watch_hint: "Target switched on 2026-11-12: the former target https://cltc.berkeley.edu/publications/ redirects here (observed since 2026-10-30); this research library has date and type filters. Blog posts appear in the same list as white papers — the 'Type' column tells them apart."
 
   - id: iso_23894
     domain: "ISO AI Risk Mgmt"
@@ -196,16 +196,16 @@ sources:
     state: planned
     successor_risk: true
     targets:
-      - url: "https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program"
+      - url: "https://www.nist.gov/super-intelligence/nist-information-technology-laboratory-itl-si-program"
         adapter: html_extraction
         kind: landing_page
-        watch_hint: "The programme page changes rarely; standards-landscape briefings and zero drafts are posted as separate news items and documents under new URLs. Hand-check the AI Standards page and the NIST AI news list. Since 2026-09-30 this URL redirects to https://www.nist.gov/super-intelligence/nist-information-technology-laboratory-itl-si-program ('ITL SI Program', Executive Order 14434) — a fingerprint of the old URL is a fingerprint of the redirect target."
+        watch_hint: "The programme page changes rarely; standards-landscape briefings and zero drafts are posted as separate news items and documents under new URLs. Hand-check the AI Standards page and the NIST AI news list. Target switched on 2026-11-12: the former target https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program redirects here since 2026-09-30 ('ITL SI Program', Executive Order 14434). A further rename would again appear only as a redirect — check that this URL still answers without one."
         note: "ITL AI program overview — standards-landscape updates, webinars, priorities."
-      - url: "https://www.nist.gov/artificial-intelligence/ai-standards"
+      - url: "https://www.nist.gov/super-intelligence/super-intelligence-standards"
         adapter: html_extraction
         kind: news_feed
-        note: "NIST AI Standards page — dated list of standards-effectiveness reports, zero drafts, CAISI initiatives and webinars; compare new items against the page's Recent Changes."
-        watch_hint: "Items link to documents under nvlpubs or nist.gov/system/files with their own URLs; the page itself only gains a line. Since 2026-09-30 this URL redirects to https://www.nist.gov/super-intelligence/super-intelligence-standards ('SI Standards', Executive Order 14434); the move dropped at least one line (the CAISI agent-initiative item) — compare the item list against the page's Recent Changes, never assume a renamed page is unchanged."
+        note: "NIST SI (formerly AI) Standards page — dated list of standards-effectiveness reports, zero drafts, CAISI initiatives and webinars; compare new items against the page's Recent Changes."
+        watch_hint: "Items link to documents under nvlpubs or nist.gov/system/files with their own URLs; the page itself only gains a line. Target switched on 2026-11-12: the former target https://www.nist.gov/artificial-intelligence/ai-standards redirects here since 2026-09-30 ('SI Standards', Executive Order 14434); the move dropped at least one line (the CAISI agent-initiative item) — compare the item list against the page's Recent Changes, never assume a renamed page is unchanged."
 
   - id: uk_ai_white_paper
     domain: "UK jurisdiction"

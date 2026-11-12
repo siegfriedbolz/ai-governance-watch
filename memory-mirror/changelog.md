@@ -104,7 +104,7 @@ and UK pages, **`editorial`** for the other eight (all eleven re-observed 2026-1
   [ISO/IEC 23894](reference_iso_23894.md) (SC 42 now lists 54 items under development),
   [NIST ITL](reference_nist_itl_landscape.md), [Berkeley CLTC](reference_berkeley_cltc.md) and
   [CETS 225](reference_coe_ai_convention.md) (treaty chart as of 12 November 2026: two
-  ratifications, not in force). Links that redirected now point to their current addresses.
+  ratifications, not in force). Links that redirected now point to their current addresses, and so do the source register's watch targets for NIST (news list, ITL programme, standards page) and CLTC (research library); the ARIA target moved from a GitHub repository address that returns 404 to NIST's ARIA programme page, and `ai-challenges.nist.gov` was added to the source-domain allowlist.
 - Overview pages, glossary (four terms), navigation and source register updated for the new page;
   the source register now watches the EDPB documents, news and consultation lists and the DSK list
   of orientation aids — `edpb.europa.eu` and `datenschutzkonferenz-online.de` added to the
