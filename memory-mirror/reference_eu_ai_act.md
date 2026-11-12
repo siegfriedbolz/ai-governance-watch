@@ -1,7 +1,7 @@
 ---
 name: "EU AI Act (Regulation (EU) 2024/1689)"
 description: "The EU's risk-tiered AI regulation, its phased application timeline, GPAI obligations, the Digital Omnibus (Reg. (EU) 2026/1744, in force 27 July 2026) that postponed the high-risk deadlines, and the first harmonised standard EN 18286:2026 (Art. 17 QMS) cited in the OJ on 14 October 2026."
-keywords: "EU AI Act, Regulation (EU) 2024/1689, Digital Omnibus 2026/1744, EN 18286 harmonised standard, Implementing Decision 2026/2274, high-risk AI systems, Annex III, GPAI obligations, Article 50 transparency, AI-generated content marking, conformity assessment, FRIA, AI Act penalties, AI Office enforcement"
+keywords: "EU AI Act, Regulation (EU) 2024/1689, Digital Omnibus 2026/1744, EN 18286 harmonised standard, Implementing Decision 2026/2274, high-risk AI systems, Annex III, GPAI obligations, Article 50 transparency, AI-generated content marking, conformity assessment, Art. 2(8) research and testing exclusion, testing in real-world conditions, FRIA, AI Act penalties, AI Office enforcement"
 type: reference
 source_id: eu_ai_act
 source_url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
@@ -11,6 +11,9 @@ about_jurisdiction: "European Union"
 last_observed_at: "2026-10-30T00:00:00Z"
 last_observed_commit_or_version: "Reg. (EU) 2024/1689 in force 2024-08-01; amended by Digital Omnibus Reg. (EU) 2026/1744 (in force 2026-07-27); Commission guidelines: Art. 50 transparency (final, 2026-07-20), high-risk classification (draft, 2026-05-19); Commission opinion on the Code of Practice on AI-generated content (2026-07-09); enforcement by the AI Office and national authorities since 2026-08-02 (Commission release 2026-07-31, first list of 180+ signatories of the Code of Practice on transparency of AI-generated content); Commission Implementing Regulation (EU) 2026/1755 of 2026-07-20 (procedures for Art. 92 evaluations and Art. 101 fines, interim measures; OJ 2026-07-21); Commission Implementing Decision (EU) 2026/2274 of 2026-10-12 (OJ 2026-10-14): reference of EN 18286:2026 — the first harmonised standard under Art. 40 (quality management system, Art. 17) — published; AI Board ninth meeting 2026-09-17; AI Scientific Panel special meeting on frontier-AI safety 2026-10-09 (loss-of-control incidents, AI Office requests for information); AI Office workshop report on external GPAI evaluators 2026-10-21; high-risk classification guidelines still a draft"
 provenance_chain:
+  - timestamp: "2026-11-12T00:00:00Z"
+    pr: "manual addition, no re-observation: Art. 2(8) source text and the real-world-testing boundary (Arts. 3(57), 60), CELEX 32026R1744 for the Digital Omnibus; texts read via the Publications Office Cellar"
+    change: editorial
   - timestamp: "2026-10-30T00:00:00Z"
     pr: "manual re-observation (October 2026): first harmonised standard EN 18286:2026 cited in the OJ, AI Scientific Panel on loss-of-control incidents, register pass via the Publications Office Cellar"
     change: substantive
@@ -42,6 +45,7 @@ provenance_chain:
     agreed in the May 2026 trilogue — was adopted on **8 July 2026**, published
     in the Official Journal on **24 July 2026** as
     **[Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)**
+    (CELEX [`32026R1744`](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744))
     and **entered into force on 27 July 2026**. Headline change: the high-risk
     regime is deferred — stand-alone **Annex III** systems to
     **2 December 2027**, **Annex I** product-embedded AI to **2 August 2028**
@@ -147,6 +151,48 @@ decides how heavy your duties are.
     set, not three.
     [Verify certificate ↗](https://certificates.conted.ox.ac.uk/5d483a65-dba2-47a2-92b0-8acfe0dcfd3a)
 
+## In depth: prototypes, research and testing (Art. 2(8)) { #research-and-testing-exclusion }
+
+!!! quote "Source text — EU AI Act, Art. 2(8) (© European Union, EUR-Lex)"
+    This Regulation does not apply to any research, testing or development
+    activity regarding AI systems or AI models prior to their being placed on
+    the market or put into service. Such activities shall be conducted in
+    accordance with applicable Union law. Testing in real world conditions
+    shall not be covered by that exclusion.
+
+**In our words —** building and trying out an AI system *before* it is placed
+on the market or put into service is outside the Act — the typical case is a
+prototype or MVP built under contract and tried out on synthetic data. Three
+limits decide whether the exclusion really holds:
+
+1. **It ends with putting into service.** Once the system is used for its
+   intended purpose — on real applications, real persons, real decisions — the
+   regime applies at the dates of the
+   [application timeline](#application-timeline-as-amended-by-the-omnibus),
+   for Annex III systems from 2 December 2027.
+2. **Testing in real-world conditions is not excluded.**
+   [Art. 3(57)](https://artificialintelligenceact.eu/article/3/ "EU AI Act Article 3(57) — testing in real-world conditions: temporary testing of an AI system for its intended purpose in real-world conditions outside a laboratory or otherwise simulated environment.")
+   defines it as testing for the intended purpose outside a laboratory or
+   otherwise simulated environment. For Annex III systems it follows
+   [Art. 60](https://artificialintelligenceact.eu/article/60/ "EU AI Act Article 60 — testing of high-risk AI systems in real-world conditions outside regulatory sandboxes: a real-world testing plan submitted to and approved by the market-surveillance authority (tacit approval after 30 days where national law allows), registration of the test except for certain Annex III areas, plus further conditions in para. 4; para. 1 and 2 were replaced by the Digital Omnibus.")
+   — a real-world testing plan approved by the market-surveillance authority
+   and, outside a few Annex III areas, registration of the test — or runs in a
+   regulatory sandbox under Arts. 57–59.
+3. **Other Union law keeps applying** — above all the GDPR wherever personal
+   data are processed.
+
+The Digital Omnibus did **not** change Art. 2(8): it replaced Art. 2(2) and
+Art. 2(7), added Art. 2(13), and replaced the first two paragraphs of Art. 60.
+
+**Audit note —** for a prototype phase the questions are whether the test
+environment is demonstrably simulated (synthetic data, no effect on real
+persons or real decisions) and whether that boundary is recorded in writing,
+so that the date of putting into service — and with it the start of the
+provider and deployer duties — can be fixed later. Work that anticipates those
+duties (classification incl. the Art. 6(3) check, logging, human-oversight
+design, a technical-documentation skeleton) is not required by the Act during
+the prototype, but it is cheaper to design in than to retrofit.
+
 ## In depth: machine-readable transparency (Art. 50 + Recital 133)
 
 !!! quote "Source text — EU AI Act, Recital 133, excerpt (© European Union, EUR-Lex)"
@@ -244,6 +290,7 @@ high-risk obligations can only bite once those obligations themselves apply
 Evidence-oriented checks for a high-risk AI engagement under the Act:
 
 - [ ] The system is correctly classified (prohibited / high-risk per Art. 6 + Annex III / limited / minimal).
+- [ ] Where the Art. 2(8) research-and-testing exclusion is relied on: the system is not yet placed on the market or put into service, the test environment is simulated, and any testing in real-world conditions follows Art. 60.
 - [ ] A risk-management system is documented and maintained (Art. 9).
 - [ ] Data governance — training/validation/test data quality and bias — is examined (Art. 10).
 - [ ] Technical documentation per Annex IV is present and current (Art. 11).
@@ -281,11 +328,11 @@ and [ISO/IEC 23894](reference_iso_23894.md) pages).
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-11-12` | editorial | **Our page, not the source, changed.** Added the **Art. 2(8)** research-and-testing exclusion as source text with its limits — it ends with putting into service; testing in real-world conditions (Art. 3(57)) is not excluded and follows Art. 60 — and a matching checklist item; added the CELEX number **32026R1744** for the Digital Omnibus. Both read in the Publications Office Cellar on 2026-11-12, which also confirms that the Omnibus left Art. 2(8) unchanged (it replaced Art. 2(2), 2(7) and Art. 60(1)–(2) and added Art. 2(13)). No register re-observation: `last_observed_at` stays 2026-10-30. |
 | `2026-10-30` | substantive | **First harmonised standard in the OJ.** [Commission Implementing Decision (EU) 2026/2274](https://eur-lex.europa.eu/eli/dec_impl/2026/2274/oj/eng) of 2026-10-12 (OJ L 2026/2274, 2026-10-14, in force on publication) publishes the reference of **EN 18286:2026** — *Artificial intelligence — Quality management system for EU AI Act regulatory purposes* — under Art. 40: presumption of conformity with the Art. 17 requirements it covers; CEN/CENELEC delivered it under standardisation request C(2025) 3871. The Commission presents it as lifecycle-based and layered on ISO/IEC 42001, ISO 9001 or a sectoral QMS; ISO/IEC 42001 itself stays un-harmonised. Governance trail: **AI Board ninth meeting** (2026-09-17; enforcement priorities, AI-literacy recommendations in preparation, tenth meeting planned 2026-11-18); **AI Scientific Panel special meeting** (2026-10-09) on loss-of-control incidents — the AI Office has requested and received serious-incident reports and sent requests for information on security practices, which partly verifies the press-reported September requests; **AI Office report on external-evaluator requirements** (2026-10-21). High-risk classification guidelines still a draft (consultation closed 2026-07-23); Omnibus timeline unchanged. Register pass: the Commission news list (`news_feed`) and the Publications Office Cellar (SPARQL, the machine route to the EUR-Lex 'all documents' view) were queried — no act *based on* the AI Act newer than Reg. (EU) 2026/1755; the harmonised-standard decision is based on Reg. (EU) No 1025/2012 and only *cites* the AI Act, so it does not appear in that view at all — a watch-hint now recorded in `literature-watch.yaml`. |
 | `2026-09-21` | substantive | Added **Commission Implementing Regulation (EU) 2026/1755** (2026-07-20, OJ 2026-07-21; in force 20 days later): the procedures for Art. 92 evaluations of GPAI models and Art. 101 fining proceedings, incl. interim measures. Press reports (Euractiv, Agence Europe, 2026-09-01/02; no Commission release found) say the AI Office sent its first Art. 91 requests for information to providers of the most advanced models (security, external evaluations, post-market monitoring) and to 30+ providers without a published training-data summary — treat as reported, not verified against a primary source. Added the **Cyber Resilience Act bridge**: CRA Art. 12 (Reg. (EU) 2024/2847) makes the CRA's Annex I the concrete cybersecurity test behind Art. 15(1) for high-risk AI systems that are products with digital elements, assessed once under Art. 43; and the CRA's Art. 14 vulnerability/incident reporting (live since 2026-09-11) now runs in parallel to Art. 73. New [CRA page](reference_eu_cra.md). Page fully re-observed on 2026-09-21 against the Commission policy, enforcement and GPAI-code pages, the AI Act Service Desk and the implementation timeline (latest dated items 2026-08-31): no further change — high-risk classification guidelines still a draft, Omnibus timeline unchanged, 21 full signatories of the GPAI Code of Practice plus xAI on the Safety and Security chapter. |
 | `2026-09-05` | substantive | **Commission soft law caught up with Art. 50, and enforcement started.** Final **Guidelines on transparency obligations for providers and deployers** published 2026-07-20; **Commission opinion assessing the Code of Practice on transparency of AI-generated content** published 2026-07-09; **draft Guidelines on the classification of high-risk AI systems** (Art. 6) published 2026-05-19 for targeted consultation — still a draft. Per the Commission release of 2026-07-31, from **2026-08-02** the AI Office and national authorities enforce the Act, a **first list of more than 180 signatories** of the AI-generated-content code is public, and the complaints tool, whistleblower tool and GPAI downstream-provider complaints channel are live; related: the **EU Action Plan on Cybersecurity and AI** (2026-07-07). Application timeline and penalties unchanged since the Omnibus entry. Council Decision (EU) 2026/1080 added as an anchor: the EU implements the CETS 225 Convention exclusively through this Act — see the new [CETS 225 page](reference_coe_ai_convention.md). |
 | `2026-08-02` | version_bump | **Digital Omnibus is now law.** Reg. (EU) 2026/1744 (adopted 2026-07-08, OJ 2026-07-24) **entered into force 2026-07-27**, amending Reg. 2024/1689: Annex III high-risk → **2027-12-02**; Annex I product-embedded AI → **2028-08-02**; Art. 50(2) marking grace period for pre-existing systems → 2026-12-02; new Art. 5 CSAM/NCII prohibition (transition to 2026-12-02); sandbox deadline → 2027-08-02. Art. 50 transparency itself applies from 2026-08-02 as scheduled; GPAI rules unchanged. |
-| `2026-06-16` | baseline | Initial baseline. Captured base regulation plus the **2026-05-07 Digital Omnibus provisional agreement** (high-risk deferral to 2027/2028, new Art. 5 prohibition) — pending OJ publication. |
 
 ## Sources
 
@@ -293,6 +340,7 @@ and [ISO/IEC 23894](reference_iso_23894.md) pages).
 - **Digital Omnibus (primary):** [EUR-Lex — Reg. (EU) 2026/1744 ELI permalink](https://eur-lex.europa.eu/eli/reg/2026/1744/oj) (Digital Omnibus on AI; OJ 2026-07-24, in force 2026-07-27) · [Consilium press release — final Council green light, 2026-06-29](https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/)
 - **Soft law (web):** [GPAI Code of Practice](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai) · [Guidelines on prohibited practices](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act) · [Guidelines on the AI-system definition](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application)
 - **Digital Omnibus (analysis):** [Gibson Dunn analysis](https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/) · [Bird & Bird — May trilogue agreement](https://www.twobirds.com/en/insights/2026/digital-omnibus-on-ai-provisional-agreement-reached-at-the-may-trilogue) · [Lewis Silkin — entry into force, 2026-07-27](https://www.lewissilkin.com/insights/2026/07/27/the-digital-omnibus-on-ai-enters-into-force-today-102nedo)
+- **Update 2026-11-12:** [EUR-Lex — Reg. (EU) 2026/1744, CELEX 32026R1744](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744) and [EUR-Lex — Reg. (EU) 2024/1689, CELEX 32024R1689](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) (Arts. 2(8), 3(57), 60) — texts read via the Publications Office Cellar (`publications.europa.eu/resource/celex/<CELEX>`), retrieved 2026-11-12.
 - **Update 2026-10-30:** [EUR-Lex — Commission Implementing Decision (EU) 2026/2274 (OJ L 2026/2274, 2026-10-14)](https://eur-lex.europa.eu/eli/dec_impl/2026/2274/oj/eng) (text read via the Publications Office Cellar) · [EC — First harmonised standard supporting the AI Act published in the Official Journal (2026-10-19)](https://digital-strategy.ec.europa.eu/en/library/first-harmonised-standard-supporting-ai-act-published-official-journal) · [EC — Standardisation of the AI Act](https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation) · [EC — AI Board holds its ninth meeting (2026-09-18)](https://digital-strategy.ec.europa.eu/en/news/ai-board-holds-its-ninth-meeting) · [EC — Commission holds special meeting of Scientific Panel (2026-10-05)](https://digital-strategy.ec.europa.eu/en/news/commission-holds-special-meeting-scientific-panel-frontier-ai-safety-and-risks) · [EC — Special meeting of the AI Scientific Panel (2026-10-12)](https://digital-strategy.ec.europa.eu/en/news/special-meeting-ai-scientific-panel) · [EC — Requirements for qualified independent external evaluators of GPAI models (2026-10-21)](https://digital-strategy.ec.europa.eu/en/library/requirements-qualified-independent-external-evaluators-general-purpose-ai-models) · [EC — Guidelines on high-risk AI systems (draft status)](https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-high-risk-systems) · Publications Office Cellar SPARQL endpoint (acts based on / amending / correcting CELEX 32024R1689) — all retrieved 2026-10-30.
 - **Update 2026-09-21:** [EUR-Lex — Commission Implementing Regulation (EU) 2026/1755 (OJ L, 2026-07-21)](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AL_202601755) · press: [The EU AI Act Newsletter #110 (2026-09-08)](https://artificialintelligenceact.substack.com/p/the-eu-ai-act-newsletter-110-powers) — retrieved 2026-09-21.
 - **Update 2026-09-05:** [Art. 50 guidelines](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems) · [Opinion on the AI-generated-content code](https://digital-strategy.ec.europa.eu/en/library/commission-opinion-assessment-code-practice-transparency-ai-generated-content) · [Draft high-risk classification guidelines](https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems) — retrieved 2026-09-05 from the EC policy hub.

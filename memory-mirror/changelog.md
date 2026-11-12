@@ -16,6 +16,21 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ---
 
+## 2026-11-12 — EU AI Act: Art. 2(8) research-and-testing exclusion; CELEX for the Digital Omnibus
+
+**`editorial`** — one page enriched without re-observation (`last_observed_at` unchanged:
+2026-10-30 on the EU AI Act page)
+
+- **[EU AI Act](reference_eu_ai_act.md)** — new in-depth section on **Art. 2(8)**: research,
+  testing and development before placing on the market or putting into service are outside the
+  Act; the exclusion ends with putting into service, and testing in real-world conditions
+  (Art. 3(57)) is not covered and follows Art. 60. One checklist item added. The Digital Omnibus
+  now carries its CELEX number **32026R1744**. Texts read in the Publications Office Cellar on
+  2026-11-12; the Omnibus text confirms Art. 2(8) unchanged (it replaced Art. 2(2), 2(7) and
+  Art. 60(1)–(2), and added Art. 2(13)).
+
+---
+
 ## 2026-11-08 — UK: first statutory hook for AI agents (Cyber Security and Resilience Bill); CSA APAS
 
 **`substantive`** — two pages re-observed (`last_observed_at` 2026-11-08 on the UK and CSA
