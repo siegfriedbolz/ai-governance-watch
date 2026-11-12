@@ -19,7 +19,8 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 ## 2026-11-12 — New page: GDPR for AI systems; EU AI Act: education and health sector sections, Art. 2(8) research-and-testing exclusion {#2026-11-12-eu-ai-act-art-28-research-and-testing-exclusion-celex-for-the-digital-omnibus}
 
 **`baseline`** for the new page · **`editorial`** for the EU AI Act page (enriched without
-re-observation; its `last_observed_at` stays 2026-10-30)
+re-observation; its `last_observed_at` stays 2026-10-30) · **`substantive`** for the CRA, DORA
+and UK pages, **`editorial`** for the other eight (all eleven re-observed 2026-11-12)
 
 - **[GDPR](reference_gdpr.md)** — thirteenth watched source, added as a baseline. Regulation
   (EU) 2016/679 as it applies to AI systems: how it and the AI Act fit together (AI Act
@@ -73,6 +74,37 @@ re-observation; its `last_observed_at` stays 2026-10-30)
   part 3 (Annex III); Joint Opinion 1/2026 says the EDPB and the Commission *are working on*
   joint guidelines on the GDPR and the AI Act, where the page had said *announced*; the Art. 3(1)
   quotation ends with the semicolon of the legal text; five links point to their current addresses.
+- **The other eleven pages reviewed against their sources and re-observed, same day.**
+  **[CRA](reference_eu_cra.md):** the October register pass was incomplete. The CRA has been
+  amended — Regulation (EU) 2025/327 (EHDS), Art. 104, replaces Art. 13(4) and Art. 31(3) and
+  inserts Art. 32(5a); Commission Delegated Regulation (EU) 2025/1535 (exclusion for
+  L-category vehicles, Art. 2(5)) predates Delegated Regulation 2026/881, which the page had
+  called the first delegated act; Commission Implementing Regulation (EU) 2025/2392 gives the
+  technical description of the Annex III and IV categories (Art. 7(4)); the register holds
+  eight corrigenda, the one of 2 July 2025 correcting Art. 64(10); the proposal COM(2026) 590
+  would delete Art. 5. ENISA's joint statements of 21 October and 4 November 2026 both point
+  manufacturers to the Art. 14 reporting duty.
+  **[DORA](reference_dora.md):** the ESAs' annual incident report rests on Art. 22(2), not
+  Art. 19; JC 2026 25 speaks of the 2027 Oversight Plan and of embedding AI-related risks into
+  the Oversight Examination Methodology; four corrigenda are dated 2025, not three; added the
+  Digital Omnibus proposal COM(2025) 837, Art. 8, which would route Art. 19 incident reporting
+  through a single entry point (Council mandate: a national entry point).
+  **[UK](reference_uk_ai_white_paper.md):** applications to the Advisory AI Growth Lab for
+  legal services **closed on 23 October 2026** — the page had still called it open; the Cyber
+  Security and Resilience Bill is listed for Commons consideration of Lords amendments on
+  24 November 2026.
+  **[NIST AI RMF](reference_nist_ai_rmf.md):** the Q4 2026 date for an AI Agent
+  Interoperability Profile is reported by the CSA draft, not stated by NIST; IR 8596 is an
+  Initial Preliminary Draft. **[Switzerland](reference_ch_ai_data_protection.md):** the
+  Summary now counts two ratifications of CETS 225, as the rest of the page already did.
+  **[CSA Agentic Profile](reference_csa_agentic_profile.md):** the OWASP GenAI LLM Top 10 2026
+  is dated 4 August 2026 on its title page; OWASP's *Securing Agentic Applications V2*
+  (10 November 2026) added; the CSA review of *The Six Pillars of MCP* has closed.
+  Unchanged on re-observation: [ISO/IEC 42001](reference_iso_42001.md) and
+  [ISO/IEC 23894](reference_iso_23894.md) (SC 42 now lists 54 items under development),
+  [NIST ITL](reference_nist_itl_landscape.md), [Berkeley CLTC](reference_berkeley_cltc.md) and
+  [CETS 225](reference_coe_ai_convention.md) (treaty chart as of 12 November 2026: two
+  ratifications, not in force). Links that redirected now point to their current addresses.
 - Overview pages, glossary (four terms), navigation and source register updated for the new page;
   the source register now watches the EDPB documents, news and consultation lists and the DSK list
   of orientation aids — `edpb.europa.eu` and `datenschutzkonferenz-online.de` added to the

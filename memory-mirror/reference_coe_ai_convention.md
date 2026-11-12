@@ -8,9 +8,12 @@ source_url: "https://www.coe.int/en/web/conventions/full-list?module=signatures-
 about_type: Legislation
 about_identifier: "CETS No. 225"
 about_jurisdiction: "Council of Europe"
-last_observed_at: "2026-10-30T00:00:00Z"
-last_observed_commit_or_version: "CETS 225 adopted 2024-05-17, opened for signature 2024-09-05; treaty chart status as of 2026-10-30: 21 signatories, 2 ratifications (EU 2026-05-15; Bosnia and Herzegovina 2026-10-28 — first Council of Europe member state), 19 signatures not followed by ratification, not in force; text published in OJ L 2026/1081 (2026-05-13); CDNET second plenary 2026-10-21/23 adopted two HUDERIA Model components"
+last_observed_at: "2026-11-12T00:00:00Z"
+last_observed_commit_or_version: "CETS 225 adopted 2024-05-17, opened for signature 2024-09-05; treaty chart status as of 2026-11-12: 21 signatories, 2 ratifications (EU 2026-05-15; Bosnia and Herzegovina 2026-10-28 — first Council of Europe member state), 19 signatures not followed by ratification, not in force; text published in OJ L 2026/1081 (2026-05-13); CDNET second plenary 2026-10-21/23 adopted two HUDERIA Model components"
 provenance_chain:
+  - timestamp: "2026-11-12T00:00:00Z"
+    pr: "manual re-observation (November 2026): treaty chart and CoE AI portal read in the browser"
+    change: editorial
   - timestamp: "2026-10-30T00:00:00Z"
     pr: "manual re-observation of the treaty chart and the CoE AI portal (2026-10-30): second ratification (Bosnia and Herzegovina)"
     change: substantive
@@ -26,8 +29,8 @@ provenance_chain:
 
 !!! info "Provenance & licence"
     **Source:** [Council of Europe Treaty Office — chart of signatures and ratifications, CETS 225](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225) · [Convention text as published in OJ L 2026/1081](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601081) · [Explanatory Report (CETS 225)](https://rm.coe.int/1680afae67) ·
-    **Last observed:** `2026-10-30` ·
-    **Version:** adopted by the Committee of Ministers 2024-05-17, opened for signature Vilnius 2024-09-05; **not in force** (status as of 2026-10-30: two ratifications — EU and Bosnia and Herzegovina) ·
+    **Last observed:** `2026-11-12` ·
+    **Version:** adopted by the Committee of Ministers 2024-05-17, opened for signature Vilnius 2024-09-05; **not in force** (status as of 2026-11-12: two ratifications — EU and Bosnia and Herzegovina) ·
     **Status:** planned ·
     **Licence:** Council of Europe treaty text and Explanatory Report © Council of Europe — quoted under facts-and-quotation, here via the EU Official Journal (`facts-and-quotation`)
 
@@ -226,7 +229,7 @@ its "status as of" date; re-read the chart before quoting them.
 
 Evidence-oriented checks whenever a client, a policy or a report invokes the Convention:
 
-- [ ] The report states the treaty chart's "status as of" date and says plainly whether the Convention is **in force** (as of 2026-09-05: it is not).
+- [ ] The report states the treaty chart's "status as of" date and says plainly whether the Convention is **in force** (as of 2026-11-12: it is not).
 - [ ] "Signed" and "ratified" are not conflated — a signatory has no obligations under the Convention yet.
 - [ ] For an EU client, Convention compliance is evidenced through the [EU AI Act](reference_eu_ai_act.md) (Council Decision (EU) 2026/1080, Art. 3) — no separate "CETS 225 control set" is invented.
 - [ ] For a Swiss client, the Convention is cited as the **direction of travel** behind the sectoral approach, not as binding Swiss law ([Switzerland page](reference_ch_ai_data_protection.md)).
@@ -255,6 +258,7 @@ the source texts before relying on them.
 
 | Date | Severity | What changed |
 | ---- | -------- | ------------ |
+| `2026-11-12` | editorial | Re-observed, status unchanged: the [treaty chart](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225) (status as of 12/11/2026, read in the browser) shows 19 signatures not followed by ratification and **2 ratifications** (EU 2026-05-15, Bosnia and Herzegovina 2026-10-28); **not in force**. The [CoE AI portal](https://www.coe.int/en/web/artificial-intelligence) start page carries no item newer than the CDNET plenary of 21–23 October 2026; its full news list was not read. The date in the auditor checklist ("as of …: it is not") had stayed at 2026-09-05 and now matches the observation date. The articles this page cites (Arts. 3, 16, 23(4), 24, 26, 30(3)) were compared with the OJ text and Council Decision (EU) 2026/1080; the Explanatory Report was not re-read. |
 | `2026-10-30` | substantive | **Second ratification.** Treaty chart re-read in the browser (status as of 2026-10-30): **Bosnia and Herzegovina ratified on 2026-10-28** — the first Council of Europe member state — so the chart now shows 21 signatories, **2 ratifications** (EU 2026-05-15, Bosnia and Herzegovina 2026-10-28) and 19 signatures not followed by ratification. Still **not in force**: Art. 30(3) needs five ratifications including three member states, so three more are needed, two of them by member states; no new signatures since Albania (2026-06-15). CoE AI portal (`news_feed`) read in the browser: the **CDNET second plenary** (2026-10-21/23) adopted two HUDERIA Model components (Stakeholder Engagement Process; Roles and Responsibilities in the AI Project Lifecycle). Convention text, Explanatory Report and Council Decision (EU) 2026/1080 are stable and were not re-read. The Swiss page's ratification count follows this page. |
 | `2026-09-21` | editorial | Treaty chart re-read (status as of 2026-09-21): still 21 signatures and one ratification (EU, 2026-05-15); latest signatures Albania (2026-06-15), North Macedonia (2026-05-08), Armenia (2026-01-27). Not in force. Treaty chart fully re-observed in the browser; Convention text, Explanatory Report and Council Decision (EU) 2026/1080 are stable and were not re-read. |
 | `2026-09-05` | baseline | Initial baseline: Convention text (OJ L 2026/1081), Explanatory Report, Council Decision (EU) 2026/1080, treaty chart as of 2026-09-05 (21 signatures, 1 ratification, not in force), EU/Swiss/UK implementation paths captured. |
@@ -263,4 +267,5 @@ the source texts before relying on them.
 
 - **Primary (web):** [CoE Treaty Office — chart of signatures and ratifications, CETS 225](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225) · [CoE — Convention text (rm.coe.int)](https://rm.coe.int/1680afae3c) · [CoE — Explanatory Report](https://rm.coe.int/1680afae67) · [EUR-Lex — Convention text, OJ L 2026/1081](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601081) · [EUR-Lex — Council Decision (EU) 2026/1080](https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng) — all retrieved 2026-09-05.
 - **Update 2026-10-30:** [CoE Treaty Office — chart of signatures and ratifications, status as of 2026-10-30 (read in the browser)](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225) · [CoE — CDNET adopts two HUDERIA components during its second plenary (2026-10-21/23)](https://www.coe.int/en/web/artificial-intelligence/-/cdnet-adopts-two-huderia-components-on-stakeholder-engagement-process-and-ai-roles-and-responsibilities-during-its-second-plenary) · [CoE AI portal (news list)](https://www.coe.int/en/web/artificial-intelligence) — retrieved 2026-10-30.
+- **Update 2026-11-12:** [CoE Treaty Office — chart of signatures and ratifications, status as of 2026-11-12 (read in the browser)](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225) · [CoE AI portal (start page)](https://www.coe.int/en/web/artificial-intelligence) — retrieved 2026-11-12.
 - **Note:** the treaty chart is a single-page application and `rm.coe.int` refuses automated clients (HTTP 403) — both are read in a browser; the watch stores dated text snapshots and the OJ publication serves as the machine-readable copy of the text. Secondary commentary is deliberately not cited here.

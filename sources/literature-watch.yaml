@@ -245,7 +245,7 @@ sources:
         adapter: eurlex_celex
         kind: legal_search
         note: "EUR-Lex 'all documents' view of DORA: RTS/ITS and delegated acts adopted on its basis, each under its own number."
-        watch_hint: "EUR-Lex answers automated clients with an AWS WAF challenge (HTTP 202) — read in the browser pane or resolve through the Publications Office Cellar; never bypass the challenge."
+        watch_hint: "EUR-Lex answers automated clients with an AWS WAF challenge (HTTP 202) — read in the browser pane or resolve through the Publications Office Cellar; never bypass the challenge. A register search for acts amending DORA does not return proposals whose title does not name it: COM(2025) 837 (Digital Omnibus), Art. 8, would amend Art. 19 — check omnibus proposals by hand."
       - url: "https://www.eba.europa.eu/publications-and-media/press-releases"
         adapter: html_extraction
         kind: news_feed
@@ -331,7 +331,7 @@ sources:
         adapter: eurlex_celex
         kind: legal_search
         note: "EUR-Lex 'all documents' view of the CRA: delegated acts (Annex III/IV product lists, notification format and procedures under Art. 14(10)), implementing acts and corrigenda, each under its own number."
-        watch_hint: "EUR-Lex answers automated clients with an AWS WAF challenge (HTTP 202) — read in the browser pane or resolve through the Publications Office Cellar; never bypass the challenge."
+        watch_hint: "EUR-Lex answers automated clients with an AWS WAF challenge (HTTP 202) — read in the browser pane or resolve through the Publications Office Cellar; never bypass the challenge. Query every relation type (based on, amending, correcting, supplementing, proposing to amend): the CRA was amended by Regulation (EU) 2025/327 (Art. 104) and is supplemented by acts under Arts. 2(5), 7(4) and 14(9); corrigenda carry their own CELEX suffix R(nn)."
       - url: "https://www.enisa.europa.eu/news"
         adapter: html_extraction
         kind: news_feed
