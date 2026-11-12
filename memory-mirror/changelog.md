@@ -69,7 +69,9 @@ and UK pages, **`editorial`** for the other eight (all eleven re-observed 2026-1
   recital 38 **keeps** the sentence on the less intrusive automated solution — it is already
   in the Commission's recital — and does not add it. Also: ISO/IEC 42001 Annex A.8 is
   information for interested parties; para. 63 of the DSK orientation aid is an example from
-  medical diagnostics, and its wider application is marked as our reading; the glossary gives
+  medical diagnostics — for an approved medical device that meets the professional standard
+  it names Art. 9(2)(h) with the treatment contract, consent only otherwise — and its wider
+  application is marked as our reading; the glossary gives
   the MDCG's own expansion of *MDAI*; the draft high-risk guidelines link is labelled as
   part 3 (Annex III); Joint Opinion 1/2026 says the EDPB and the Commission *are working on*
   joint guidelines on the GDPR and the AI Act, where the page had said *announced*; the Art. 3(1)
