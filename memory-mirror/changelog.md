@@ -23,7 +23,7 @@ re-observation; its `last_observed_at` stays 2026-10-30)
 
 - **[GDPR](reference_gdpr.md)** — thirteenth watched source, added as a baseline. Regulation
   (EU) 2016/679 as it applies to AI systems: how it and the AI Act fit together (AI Act
-  Arts. 2(7), 4a, 26(9), 27(4), 86), health data and other special categories (Art. 9),
+  Arts. 2(7), 4a, 26(9), 27(4), 59, 86), health data and other special categories (Art. 9),
   automated decisions (Art. 22), the DPIA (Art. 35), fines (Art. 83); EDPB Opinion 28/2024 and
   the consultation versions of Guidelines 02/2026 (anonymisation) and 03/2026 (web scraping for
   generative AI); CJEU C-634/21 and C-203/22; for Germany §§ 22 and 38 BDSG and the three DSK
@@ -55,10 +55,24 @@ re-observation; its `last_observed_at` stays 2026-10-30)
   before placing on the market or putting into service are outside the Act; the exclusion ends
   with putting into service, and testing in real-world conditions (Art. 3(57)) is not covered
   and follows Art. 60. The Digital Omnibus now carries its CELEX number **32026R1744**; its text
-  confirms Art. 2(8) unchanged (it replaced Art. 2(2), 2(7) and Art. 60(1)–(2), and added
-  Art. 2(13)). Texts read in the Publications Office Cellar on 2026-11-12.
+  confirms Art. 2(8) unchanged (it replaced Art. 2(2), 2(7), the first subparagraph of
+  Art. 60(1) and Art. 60(2), and added Art. 2(13) and Art. 60a). Texts read in the Publications Office Cellar on 2026-11-12.
   Three checklist items added. **Correction:** the bias-detection ground for special-category
   data is the new **Art. 4a** — the Omnibus deleted Art. 10(5), which this page still named.
+- **Corrections after a review of both pages against the sources, same day.** The AI Act opens
+  **two** grounds for processing personal data, not one: Art. 4a and **Art. 59** (further
+  processing inside a regulatory sandbox; Recital 140) — the two articles its Art. 2(7)
+  reserves. Since the Omnibus, **Art. 60** on testing in real-world conditions also covers
+  systems under Annex I Section A, and a new Art. 60a covers Section B products; the
+  Art. 2(8) section had named Annex III only. In the Council mandate on the Digital Omnibus,
+  recital 38 **keeps** the sentence on the less intrusive automated solution — it is already
+  in the Commission's recital — and does not add it. Also: ISO/IEC 42001 Annex A.8 is
+  information for interested parties; para. 63 of the DSK orientation aid is an example from
+  medical diagnostics, and its wider application is marked as our reading; the glossary gives
+  the MDCG's own expansion of *MDAI*; the draft high-risk guidelines link is labelled as
+  part 3 (Annex III); Joint Opinion 1/2026 says the EDPB and the Commission *are working on*
+  joint guidelines on the GDPR and the AI Act, where the page had said *announced*; the Art. 3(1)
+  quotation ends with the semicolon of the legal text; five links point to their current addresses.
 - Overview pages, glossary (four terms), navigation and source register updated for the new page;
   the source register now watches the EDPB documents, news and consultation lists and the DSK list
   of orientation aids — `edpb.europa.eu` and `datenschutzkonferenz-online.de` added to the

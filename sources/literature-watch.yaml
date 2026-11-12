@@ -284,7 +284,7 @@ sources:
         adapter: html_extraction
         kind: news_feed
         note: "EDPB documents register — guidelines, opinions, statements, legislative opinions, templates. Read item by item against last_observed_at, including the topic filters artificial intelligence, anonymisation/pseudonymisation, automated decision-making, DPIA, health and research."
-        watch_hint: "A consultation version and its final version carry the same number; the final appears as a new register entry (for example Guidelines 1/2024 v2.0 on 2026-11-10). Watch for final versions of 02/2026, 03/2026, 01/2025, 1/2026, the DPIA and breach-notification templates, and the joint EDPB-Commission guidelines on the GDPR and the AI Act announced in Joint Opinion 1/2026. Open round-up items; never set an entry aside by its title."
+        watch_hint: "A consultation version and its final version carry the same number; the final appears as a new register entry (for example Guidelines 1/2024 v2.0 on 2026-11-10). Watch for final versions of 02/2026, 03/2026, 01/2025, 1/2026, the DPIA and breach-notification templates, and the joint EDPB-Commission guidelines on the GDPR and the AI Act that Joint Opinion 1/2026 says are being worked on. Open round-up items; never set an entry aside by its title."
       - url: "https://www.edpb.europa.eu/news_en"
         adapter: html_extraction
         kind: news_feed

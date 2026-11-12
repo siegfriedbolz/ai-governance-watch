@@ -27,7 +27,7 @@ normative definitions). Each links back to the standard that uses it.
 - **ICT third-party risk** — risk from outside tech / AI / cloud providers a financial firm depends on. Central to [DORA](reference_dora.md).
 - **Intolerable risk** — a level of risk that should be prevented outright, not merely managed. See [Berkeley CLTC](reference_berkeley_cltc.md).
 - **ISO 31000** — the general (non-AI) risk-management standard that [ISO/IEC 23894](reference_iso_23894.md) builds on.
-- **MDAI (medical device AI)** — an AI system that is a medical device or a safety component of one; high-risk under the EU AI Act when the device needs a notified body under the MDR or IVDR. See [EU AI Act](reference_eu_ai_act.md#health-and-medical-devices).
+- **MDAI (Medical Device Artificial Intelligence)** — the term the joint guidance of the AI Board and the Medical Device Coordination Group (MDCG 2025-6 / AIB 2025-1) uses for AI systems used for medical purposes. Such a system is high-risk under the EU AI Act when it is a medical device, or a safety component of one, that needs a notified body under the MDR or IVDR. See [EU AI Act](reference_eu_ai_act.md#health-and-medical-devices).
 - **Model card** — short structured documentation of a model's purpose, data, performance and limitations.
 - **Oversight theatre** — human oversight that exists on paper but cannot actually stop the system. See [CSA Agentic Profile](reference_csa_agentic_profile.md).
 - **Product with digital elements** — the CRA's scope term: software or hardware whose intended use includes a direct or indirect data connection; AI software shipped as a product is covered. See [EU Cyber Resilience Act](reference_eu_cra.md).
