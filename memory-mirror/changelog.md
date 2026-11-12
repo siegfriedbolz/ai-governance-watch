@@ -45,7 +45,8 @@ re-observed 2026-11-12) · **`substantive`** for the CRA, DORA and UK pages, **`
   1 December 2026) — common rules for application, the sandbox plan, the written proof and the
   exit report, which are not declarations of conformity but must be recognised across the
   Union. The Art. 50 guidelines now exist as Communication C(2026) 7702 final of 5 November
-  2026 and are in the Official Journal since 12 November (C/2026/6005). Added late — older than the
+  2026 and are in the Official Journal since 12 November (C/2026/6005); compared with the text
+  published on 20 July 2026, they are unchanged in substance. Added late — older than the
   last re-observation and not on the page before: the Commission's first **Art. 112 report**
   (COM(2026) 234, May 2026 — no proposal to amend Art. 5 or Annex III); the **EU KIDS Act
   proposal** (COM(2026) 681, September 2026 — obligations for AI companions and conversational
