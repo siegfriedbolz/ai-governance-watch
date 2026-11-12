@@ -52,7 +52,11 @@ re-observed 2026-11-12) · **`substantive`** for the CRA, DORA and UK pages, **`
   chatbots that minors may access, enforced under the AI Act); a **German-language corrigendum
   to the Digital Omnibus** (29 September 2026, Art. 6(1b)) and the language-version corrigenda
   to the Act (none English; German: 9 October 2025, incl. Art. 3(40)); Implementing Regulation
-  (EU) 2025/454 on the scientific panel. No further harmonised standard; high-risk guidelines
+  (EU) 2025/454 on the scientific panel (read in full: qualified alerts, requests for
+  documentation, independence rules). Read and summarised: the seven Parliament resolutions the
+  register lists as based on the Act, and the corrigenda of the other language versions —
+  among them Art. 51(2) in Slovak and Swedish, where the 10²⁵ threshold had been printed as
+  “1025”. No further harmonised standard; high-risk guidelines
   still a draft. Also three new in-depth sections.
   **[Education and vocational training](reference_eu_ai_act.md#education-and-vocational-training)**:
   Annex III point 3 as source text; the line between a tutor and a system that evaluates
