@@ -18,9 +18,8 @@ Severity follows the project rubric: **`version_bump`** (new edition/revision),
 
 ## 2026-11-12 — New page: GDPR for AI systems; EU AI Act: education and health sector sections, Art. 2(8) research-and-testing exclusion {#2026-11-12-eu-ai-act-art-28-research-and-testing-exclusion-celex-for-the-digital-omnibus}
 
-**`baseline`** for the new page · **`editorial`** for the EU AI Act page (enriched without
-re-observation; its `last_observed_at` stays 2026-10-30) · **`substantive`** for the CRA, DORA
-and UK pages, **`editorial`** for the other eight (all eleven re-observed 2026-11-12)
+**`baseline`** for the new page · **`substantive`** for the EU AI Act page (enriched, then
+re-observed 2026-11-12) · **`substantive`** for the CRA, DORA and UK pages, **`editorial`** for the other eight (all eleven re-observed 2026-11-12)
 
 - **[GDPR](reference_gdpr.md)** — thirteenth watched source, added as a baseline. Regulation
   (EU) 2016/679 as it applies to AI systems: how it and the AI Act fit together (AI Act
@@ -41,7 +40,20 @@ and UK pages, **`editorial`** for the other eight (all eleven re-observed 2026-1
   Guidelines 1/2026 on scientific research. For Germany also the DSK list of
   processing operations requiring a DPIA (No. 11: AI that steers the interaction with data
   subjects or evaluates their personal aspects).
-- **[EU AI Act](reference_eu_ai_act.md)** — three new in-depth sections.
+- **[EU AI Act](reference_eu_ai_act.md)** — re-observed. New law: **Commission Implementing
+  Regulation (EU) 2026/2487** on AI regulatory sandboxes (OJ 11 November 2026, in force from
+  1 December 2026) — common rules for application, the sandbox plan, the written proof and the
+  exit report, which are not declarations of conformity but must be recognised across the
+  Union. The Art. 50 guidelines now exist as Communication C(2026) 7702 final of 5 November
+  2026 and are in the Official Journal since 12 November (C/2026/6005). Added late — older than the
+  last re-observation and not on the page before: the Commission's first **Art. 112 report**
+  (COM(2026) 234, May 2026 — no proposal to amend Art. 5 or Annex III); the **EU KIDS Act
+  proposal** (COM(2026) 681, September 2026 — obligations for AI companions and conversational
+  chatbots that minors may access, enforced under the AI Act); a **German-language corrigendum
+  to the Digital Omnibus** (29 September 2026, Art. 6(1b)) and the language-version corrigenda
+  to the Act (none English; German: 9 October 2025, incl. Art. 3(40)); Implementing Regulation
+  (EU) 2025/454 on the scientific panel. No further harmonised standard; high-risk guidelines
+  still a draft. Also three new in-depth sections.
   **[Education and vocational training](reference_eu_ai_act.md#education-and-vocational-training)**:
   Annex III point 3 as source text; the line between a tutor and a system that evaluates
   learning outcomes, drawn with the Commission's **draft** guidelines on high-risk
